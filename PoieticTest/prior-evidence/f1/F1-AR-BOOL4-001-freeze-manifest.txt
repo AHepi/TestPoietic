@@ -1,6 +1,0 @@
-F1-AR-BOOL4-001 frozen-before-execution manifest
-preregistration.md sha256 d27f105cc365951e40256ab2345a047e25c3bf7412d33d666fdfed06f9777fec
-preregistration-amendment-01.md sha256 07370a43584deaaab53792773c00f16c58f1947547229e9a3f14ea1c8c1569ba
-preregistration-amendment-02.md sha256 f6fa8d072e8df4215dfb2772be4e69ad5229abd63f56f8602a45a90e94134137
-execution-code.py sha256 9e5d4c1aa230b909ad69d2e46e60b878d64e537c0a4c6e698033ab472306b689
-No experimental outcome had been computed when this manifest was written.
