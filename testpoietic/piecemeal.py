@@ -424,12 +424,11 @@ def _audit(
     return authentication, plan_audit, negative_controls
 
 
-def run_campaign(plan_path: Path, output_directory: Path, subject_sha256: str) -> dict[str, object]:
-    """Write deterministic frozen-plan integrity artifacts and return their manifest.
-
-    A PASS validates only the frozen plan and its regression controls.  It is not
-    a verdict about a candidate system or an attribution of creativity.
-    """
+def authenticate_frozen_plan(
+    plan_path: Path,
+    subject_sha256: str,
+) -> tuple[Mapping[str, Any], dict[str, object]]:
+    """Authenticate the immutable plan and return it with reusable audit data."""
 
     plan, actual_plan_sha256, plan_error = _load_plan(plan_path)
     sidecar_sha256, sidecar_error = _read_sidecar(plan_path)
@@ -444,10 +443,30 @@ def run_campaign(plan_path: Path, output_directory: Path, subject_sha256: str) -
         reference_error,
         subject_sha256,
     )
+    return plan, {
+        "authenticated": bool(
+            authentication["passed"]
+            and plan_audit["passed"]
+            and negative_controls["passed"]
+        ),
+        "authentication": authentication,
+        "negative_controls": negative_controls,
+        "plan_audit": plan_audit,
+    }
+
+
+def run_campaign(plan_path: Path, output_directory: Path, subject_sha256: str) -> dict[str, object]:
+    """Write deterministic frozen-plan integrity artifacts and return their manifest.
+
+    A PASS validates only the frozen plan and its regression controls.  It is not
+    a verdict about a candidate system or an attribution of creativity.
+    """
+
+    _, report = authenticate_frozen_plan(plan_path, subject_sha256)
     payload = {
-        "authentication.json": authentication,
-        "plan_audit.json": plan_audit,
-        "negative_controls.json": negative_controls,
+        "authentication.json": report["authentication"],
+        "plan_audit.json": report["plan_audit"],
+        "negative_controls.json": report["negative_controls"],
     }
     output_directory.mkdir(parents=True, exist_ok=True)
     for name in RUN_FILES:
