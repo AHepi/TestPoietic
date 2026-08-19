@@ -1,0 +1,21 @@
+{
+  "audit_verdict": "SURFACE SCORE REPRODUCES; SEMANTIC TRANSPORT DOES NOT",
+  "declared_inferential_force": "none",
+  "face_membership_decision_procedure_declared": false,
+  "nonempty_face_cells": 12,
+  "retroactive_pret_verdict_asserted": true,
+  "retroactive_pret_verdict_recomputable": false,
+  "standing_inheritance_gate": true,
+  "subject_lines": [
+    1543,
+    1582,
+    1805
+  ],
+  "surface_pcov_12_reproduced": true,
+  "table_rows": 3,
+  "transport_manifest": {
+    "mapped_faces": 0,
+    "reason": "no typed transport manifest",
+    "valid": false
+  }
+}

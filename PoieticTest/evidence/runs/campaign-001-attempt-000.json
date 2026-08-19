@@ -1,0 +1,15 @@
+{
+  "attempt": 0,
+  "frozen_commit": "d04bd2273121427166cd4fe9442ff595db959fbd",
+  "command": "PYTHONDONTWRITEBYTECODE=1 python3 -B scripts/run_campaign.py evidence/runs/campaign-001",
+  "exit_code": 1,
+  "campaign_checks_started": false,
+  "failure": "ModuleNotFoundError: No module named 'testpoietic'",
+  "classification": "launcher import-path defect",
+  "repair_boundary": [
+    "scripts/run_campaign.py",
+    "scripts/verify_repository.py",
+    "experiments/F3-ID-BITPATCH-001/run.py"
+  ],
+  "semantic_change": false
+}

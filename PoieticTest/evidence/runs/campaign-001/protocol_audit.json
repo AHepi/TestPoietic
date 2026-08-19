@@ -1,0 +1,202 @@
+{
+  "all_line_anchors_match": true,
+  "findings": [
+    {
+      "finite_discriminator": {
+        "R_G_true": true,
+        "architectures": {
+          "G_frozen": {
+            "1": true,
+            "2": false
+          },
+          "G_other": {
+            "1": true,
+            "2": true
+          }
+        },
+        "cuts": [
+          1,
+          2
+        ],
+        "frozen_G_fails": true
+      },
+      "id": "RG-F8D-QUANTIFIER-SCOPE",
+      "mismatch": true,
+      "outer_quantifier_is_existential": true,
+      "protocol_claims_one_frozen_witness_failure_refutes_residue": true,
+      "required_refuter": "forall G in an exhaustive declared architecture class, exists n in I such that the success conjunction fails",
+      "source_lines": [
+        825,
+        830,
+        831,
+        843,
+        1614
+      ]
+    },
+    {
+      "consequent_is_existential": true,
+      "finite_discriminator": {
+        "R_X_true": true,
+        "extension_ready": {
+          "q_bad": false,
+          "q_good": true
+        },
+        "prose_refuter_triggered": true
+      },
+      "id": "RX-PROSE-REFUTER-SCOPE",
+      "mismatch": true,
+      "prose_uses_single_bad_member_refuter": true,
+      "required_refuter": "W_t is nonempty and every q in W_t lacks an extension-ready task for the same accumulated predecessor cut beta",
+      "source_lines": [
+        1416,
+        1419,
+        1423,
+        1428
+      ]
+    },
+    {
+      "F6_excludes_inference_from_O": true,
+      "F6_has_O_specific_verdict_rule": false,
+      "O_declares_a_refuter": true,
+      "id": "O-F6-MISSING-VERDICT-RULE",
+      "ledger_routes_O_to_F6": true,
+      "mismatch": true,
+      "required_protocol_content": "a preregistered physical-admissibility domain and a witness rule for a problem with no possible explanatory resolution or transforming knowledge",
+      "source_lines": [
+        411,
+        1501,
+        1602
+      ]
+    },
+    {
+      "arm_assignment_closed": false,
+      "definition_lines": {
+        "directionless": [],
+        "failure-fringe targeting": [],
+        "library-local": [],
+        "promotion-shy": []
+      },
+      "id": "F3-POLICY-ARMS-NONCLOSED",
+      "mismatch": true,
+      "mutually_exclusive_rule": false,
+      "overlap_assignment_rule": false,
+      "overlap_witness_under_ordinary_reading": {
+        "failure-fringe targeting": true,
+        "library-local": true,
+        "policy": "local library repair chosen from retained failure traces; promotion delayed",
+        "promotion-shy": true
+      },
+      "policy_terms_named_in_F3": [
+        "failure-fringe targeting",
+        "library-local",
+        "promotion-shy",
+        "directionless"
+      ],
+      "required_protocol_content": "outcome-independent membership predicates for all four arms plus either pairwise exclusivity or a preregistered overlap assignment rule",
+      "source_lines": [
+        570,
+        1596
+      ],
+      "undefined_terms": [
+        "failure-fringe targeting",
+        "library-local",
+        "promotion-shy",
+        "directionless"
+      ]
+    }
+  ],
+  "line_anchors": [
+    {
+      "actual": "**Conjecture O (Optimism). `[conjecture]`** Problems not forbidden by physical law admit explanatory resolutions or transformations that can in principle be created by enlarging the relevant repertoire. Existence is the conjectural burden; T10 keeps recognition fallible. A well-specified physically admissible problem for which no possible explanatory resolution or transforming knowledge exists refutes the conjecture.",
+      "expected": "**Conjecture O (Optimism). `[conjecture]`** Problems not forbidden by physical law admit explanatory resolutions or transformations that can in principle be created by enlarging the relevant repertoire. Existence is the conjectural burden; T10 keeps recognition fallible. A well-specified physically admissible problem for which no possible explanatory resolution or transforming knowledge exists refutes the conjecture.",
+      "identifier": "conjecture-o",
+      "line": 411,
+      "match": true
+    },
+    {
+      "actual": "**Fertility Conjecture. `[conjecture]`** Among matched-budget systems with A5-mediated promotion, universal reach, a content guard, and an unbounded evaluated problem source, policies that convert informative failure fringes into construction targets achieve greater long-run delivered content or lower assembly cost than library-local, promotion-shy, or directionless policies, except where the fringe carries no useful localization.",
+      "expected": "**Fertility Conjecture. `[conjecture]`** Among matched-budget systems with A5-mediated promotion, universal reach, a content guard, and an unbounded evaluated problem source, policies that convert informative failure fringes into construction targets achieve greater long-run delivered content or lower assembly cost than library-local, promotion-shy, or directionless policies, except where the fringe carries no useful localization.",
+      "identifier": "fertility-conjecture",
+      "line": 570,
+      "match": true
+    },
+    {
+      "actual": "**Residue \\(R_G\\) (answer-generic jump construction). `[residue]`** For a declared scaling family and one preregistered success mode,",
+      "expected": "**Residue \\(R_G\\) (answer-generic jump construction). `[residue]`** For a declared scaling family and one preregistered success mode,",
+      "identifier": "r-g-heading",
+      "line": 825,
+      "match": true
+    },
+    {
+      "actual": "\\exists G\\;",
+      "expected": "\\exists G\\;",
+      "identifier": "r-g-exists",
+      "line": 830,
+      "match": true
+    },
+    {
+      "actual": "\\forall n\\in I\\;",
+      "expected": "\\forall n\\in I\\;",
+      "identifier": "r-g-forall",
+      "line": 831,
+      "match": true
+    },
+    {
+      "actual": "where \\(G\\Downarrow_n(\\mathcal M_n,\\alpha_n)\\) means that the fixed architecture constructs the stagewise acquisition model and its physical application witness inside the declared closed account. A cut with an invalid application witness, an answer-indexed specialist, target leakage, an omitted terminal-relevant cost, or a missed preregistered threshold refutes the universal claim on that declared family. Failure merely to nominate such a \\(G\\) is **INCONCLUSIVE** unless the architecture class is exhaustively reduced. No admissible F8-D run is supplied here, so \\(R_G\\) is **UNTESTED**. It is not a premise of the finite-prefix capstone unless an application explicitly adds it.",
+      "expected": "where \\(G\\Downarrow_n(\\mathcal M_n,\\alpha_n)\\) means that the fixed architecture constructs the stagewise acquisition model and its physical application witness inside the declared closed account. A cut with an invalid application witness, an answer-indexed specialist, target leakage, an omitted terminal-relevant cost, or a missed preregistered threshold refutes the universal claim on that declared family. Failure merely to nominate such a \\(G\\) is **INCONCLUSIVE** unless the architecture class is exhaustively reduced. No admissible F8-D run is supplied here, so \\(R_G\\) is **UNTESTED**. It is not a premise of the finite-prefix capstone unless an application explicitly adds it.",
+      "identifier": "r-g-refuter-prose",
+      "line": 843,
+      "match": true
+    },
+    {
+      "actual": "**Residue \\(R_X^{\\Phi}\\) (protected physical extension). `[residue]`**",
+      "expected": "**Residue \\(R_X^{\\Phi}\\) (protected physical extension). `[residue]`**",
+      "identifier": "r-x-heading",
+      "line": 1416,
+      "match": true
+    },
+    {
+      "actual": "\\text{some }[q]\\in W_t\\text{ has a Poietic extension-ready task }A_q",
+      "expected": "\\text{some }[q]\\in W_t\\text{ has a Poietic extension-ready task }A_q",
+      "identifier": "r-x-existential-consequent",
+      "line": 1423,
+      "match": true
+    },
+    {
+      "actual": "This is the precise seam. Spark supplies the open good problem and A5 provenance. Poietic supplies physical executability, predecessor preservation or reconstruction, resources, coupling, persistence, and boundary closure. No theorem in either book proves this residue. A live problem with no extension-ready good resolution refutes it at that cut.",
+      "expected": "This is the precise seam. Spark supplies the open good problem and A5 provenance. Poietic supplies physical executability, predecessor preservation or reconstruction, resources, coupling, persistence, and boundary closure. No theorem in either book proves this residue. A live problem with no extension-ready good resolution refutes it at that cut.",
+      "identifier": "r-x-refuter-prose",
+      "line": 1428,
+      "match": true
+    },
+    {
+      "actual": "| Conjecture O | source optimism and physical admissibility frame | stage-local solubility interpretation | a physically admissible problem with no possible resolution or transforming knowledge | F6 |",
+      "expected": "| Conjecture O | source optimism and physical admissibility frame | stage-local solubility interpretation | a physically admissible problem with no possible resolution or transforming knowledge | F6 |",
+      "identifier": "ledger-o-to-f6",
+      "line": 1501,
+      "match": true
+    },
+    {
+      "actual": "**F3, failure-fringe policy tournament. `[protocol for the Fertility Conjecture]`** Compare failure-fringe targeting with library-local, promotion-shy, and directionless policies using the same seed, model architecture, target stream, available operators, appraisal battery, promotion constitution, and W4-closed budget. Predeclare either delivered content at fixed cost or cost to a fixed delivered-content target as the primary measure. Stratify cases in which the fringe contains no usable localization before the result is known. Matched-budget domination by a rival on the preregistered scaling family refutes the Fertility Conjecture on that family.",
+      "expected": "**F3, failure-fringe policy tournament. `[protocol for the Fertility Conjecture]`** Compare failure-fringe targeting with library-local, promotion-shy, and directionless policies using the same seed, model architecture, target stream, available operators, appraisal battery, promotion constitution, and W4-closed budget. Predeclare either delivered content at fixed cost or cost to a fixed delivered-content target as the primary measure. Stratify cases in which the fringe contains no usable localization before the result is known. Matched-budget domination by a rival on the preregistered scaling family refutes the Fertility Conjecture on that family.",
+      "identifier": "protocol-f3",
+      "line": 1596,
+      "match": true
+    },
+    {
+      "actual": "**F6, residue stress test. `[protocol for the finite-prefix capstone]`** Before the base step, exhibit or fail \\(\\operatorname{CreativeCapacity}(\\mathcal K_0)\\) and \\(R_{P,0}\\) separately. At every successor cut, separately exhibit or fail \\(R_{P,+}\\), \\(R_S\\), and \\(R_X^{\\Phi}\\) on the accumulated predecessor cut. No residue may be inferred from the others, from Conjecture O, or from the boxed capstone. A missing witness blocks the next prefix and records exactly which residue failed; the composition theorem remains intact but inapplicable.",
+      "expected": "**F6, residue stress test. `[protocol for the finite-prefix capstone]`** Before the base step, exhibit or fail \\(\\operatorname{CreativeCapacity}(\\mathcal K_0)\\) and \\(R_{P,0}\\) separately. At every successor cut, separately exhibit or fail \\(R_{P,+}\\), \\(R_S\\), and \\(R_X^{\\Phi}\\) on the accumulated predecessor cut. No residue may be inferred from the others, from Conjecture O, or from the boxed capstone. A missing witness blocks the next prefix and records exactly which residue failed; the composition theorem remains intact but inapplicable.",
+      "identifier": "protocol-f6",
+      "line": 1602,
+      "match": true
+    },
+    {
+      "actual": "**F8-D, answer-generic jump construction.** Freeze \\(G\\), its seed schema, the scaling family, answer boundary, matched answer-free whole-account benchmark, cost account, stopping rule, and exactly one success mode before target outcomes. At each cut require \\(G\\) itself to construct \\(\\mathcal M_n\\) and \\(\\alpha_n\\), then audit answer-freedom, W4 cost closure, W5 boundary closure, and the preregistered threshold. One hidden specialist, invalid application witness, omitted terminal-relevant cost, leakage event, or threshold miss refutes \\(R_G\\) on the declared family. Failure to discover a qualifying architecture is **INCONCLUSIVE** unless the architecture class is exhaustively reduced.",
+      "expected": "**F8-D, answer-generic jump construction.** Freeze \\(G\\), its seed schema, the scaling family, answer boundary, matched answer-free whole-account benchmark, cost account, stopping rule, and exactly one success mode before target outcomes. At each cut require \\(G\\) itself to construct \\(\\mathcal M_n\\) and \\(\\alpha_n\\), then audit answer-freedom, W4 cost closure, W5 boundary closure, and the preregistered threshold. One hidden specialist, invalid application witness, omitted terminal-relevant cost, leakage event, or threshold miss refutes \\(R_G\\) on the declared family. Failure to discover a qualifying architecture is **INCONCLUSIVE** unless the architecture class is exhaustively reduced.",
+      "identifier": "protocol-f8-d",
+      "line": 1614,
+      "match": true
+    }
+  ],
+  "mismatch_count": 4
+}
