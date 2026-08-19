@@ -1,0 +1,6 @@
+# These artifacts are verified by raw SHA-256 or byte-for-byte replay.
+# Keep their checked-out text bytes canonical on hosts with core.autocrlf enabled.
+subject/** text eol=lf
+prior-evidence/f1/** text eol=lf
+evidence/frozen/** text eol=lf
+evidence/runs/** text eol=lf

@@ -51,15 +51,20 @@ def _json_bytes(value: object) -> bytes:
 
 
 def _git_tag_commit(tag: str = "stress-plan-v1") -> str | None:
-    process = subprocess.run(
-        ["git", "rev-parse", f"{tag}^{{commit}}"],
-        cwd=REPOSITORY_ROOT,
-        text=True,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.DEVNULL,
-        check=False,
-    )
-    return process.stdout.strip() if process.returncode == 0 else None
+    """Resolve the semantic freeze from a local tag or its tracked remote ref."""
+
+    for reference in (tag, f"origin/freeze/{tag}"):
+        process = subprocess.run(
+            ["git", "rev-parse", f"{reference}^{{commit}}"],
+            cwd=REPOSITORY_ROOT,
+            text=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.DEVNULL,
+            check=False,
+        )
+        if process.returncode == 0:
+            return process.stdout.strip()
+    return None
 
 
 def run_unit_tests() -> dict[str, object]:
