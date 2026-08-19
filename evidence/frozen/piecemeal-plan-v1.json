@@ -150,6 +150,11 @@
       "source_ids": [
         "CTI",
         "CTL"
+      ],
+      "verdicts": [
+        "MAY_PASS",
+        "NOT_APPLICABLE",
+        "NOT_ESTABLISHED"
       ]
     },
     "critical_evidence": {
@@ -200,7 +205,8 @@
         "REFUTED_CONJUNCTION",
         "SURVIVED_DECLARED_ATTEMPT",
         "INTERPRETATION_DISPUTED",
-        "INCONCLUSIVE"
+        "INCONCLUSIVE",
+        "NOT_ESTABLISHED"
       ]
     },
     "evolutionary_selection": {
@@ -239,6 +245,10 @@
         "CTL",
         "POPPER",
         "DEUTSCH"
+      ],
+      "verdicts": [
+        "MAY_PASS",
+        "NOT_ESTABLISHED"
       ]
     },
     "explanatory_creativity": {
@@ -287,11 +297,13 @@
         "POPPER",
         "DEUTSCH"
       ],
+      "source_scope": "This is a Poietic operational attribution test built from Popperian criticism and Deutschian provenance; neither source says every creator is a human scientist, that every selection process is criticism, or that a successful output establishes creativity.",
       "verdicts": [
         "CRITICISABLE_TRACE_AUDITED",
         "PROVENANCE_UNRESOLVED",
         "NOT_ESTABLISHED",
-        "REFUTED_ON_DECLARED_DOMAIN"
+        "REFUTED_ON_DECLARED_DOMAIN",
+        "UNRESOLVED_NOT_NON_CREATIVE"
       ]
     },
     "knowledge_retention": {
@@ -420,6 +432,11 @@
       "role": "conditional high-fidelity reproduction test",
       "source_ids": [
         "CTL"
+      ],
+      "verdicts": [
+        "MAY_PASS",
+        "NOT_APPLICABLE",
+        "NOT_ESTABLISHED"
       ]
     }
   },
@@ -495,7 +512,7 @@
         "critical_evidence": "SURVIVED_DECLARED_ATTEMPT",
         "explanatory_creativity": "NOT_ESTABLISHED"
       },
-      "fixture": "A declared test result agrees with a prediction, but is treated as confirming the target explanation.",
+      "fixture": "A complete critical_evidence package declares its channel, instrument/interpretation chain, auxiliaries, discriminator, and protocol; its result agrees with a prediction but is treated as confirming the target explanation.",
       "id": "NC_AGREEING_RESULT_NOT_CONFIRMATION"
     },
     {
@@ -716,18 +733,21 @@
       "anchors": [
         "deductive criticism and auxiliary conditions",
         "theory-interpreted observation and predeclared refutation",
-        "P1 -> TT -> EE -> P2 and theory-laden sense organs"
+        "P1 -> TT -> EE -> P2, Objective Knowledge chapter 3",
+        "problem- and theory-guided observation, Objective Knowledge chapter 7, pages 258-259"
       ],
-      "citation": "Popper, The Logic of Scientific Discovery (1959), sections 2-3, 18, and 29-30; Conjectures and Refutations (1963), chapter 1; Objective Knowledge (1972/1979), chapter 3.",
+      "citation": "Popper, The Logic of Scientific Discovery (1959), sections 2-3, 18, and 29-30; Conjectures and Refutations (1963), chapter 1; Objective Knowledge (1972/1979), chapters 3 and 7.",
       "direct_imports": [
         "there is no logical method of having new ideas",
         "a tentative theory is tested through deductions, theory comparison, and empirical applications",
-        "an adverse result initially criticizes the conjunction of target theory, initial conditions, and auxiliaries",
+        "a falsified predicted consequence initially criticizes the whole declared system used to derive it, including target theory and initial conditions",
         "observations are selective, theory-interpreted, and fallible rather than pure data",
         "tentative theories face attempted error elimination",
-        "scientific criticism can eliminate theories in place of their holders through P1 -> TT -> EE -> P2"
+        "scientific criticism can eliminate theories in place of their holders",
+        "P1 -> TT -> EE -> P2 describes problem solving through tentative theories and error elimination"
       ],
       "id": "POPPER",
+      "poietic_operationalization": "The reusable critical-evidence package, including an instrument/interpretation chain and a predeclared protocol, operationalizes these sources; it is not supplied by them as an automatic creativity test.",
       "scope_limit": "A lone record is not automatic final falsification: criticism requires declared auxiliaries, an interpretation, and a revisable acceptance/refutation protocol.",
       "type": "primary_book"
     },
@@ -739,15 +759,34 @@
         "artificial-creativity provenance"
       ],
       "citation": "Deutsch, The Beginning of Infinity (2011), chapters 1, 2, 4, and 7; Beyond Reward and Punishment (2019).",
+      "direct_import_anchors": [
+        {
+          "anchor": "The Beginning of Infinity, chapter 4, Creation, pages 77-79.",
+          "claim_index": 0
+        },
+        {
+          "anchor": "The Beginning of Infinity, chapter 4, Creation, pages 77-79.",
+          "claim_index": 1
+        },
+        {
+          "anchor": "The Beginning of Infinity, chapters 1-2, fallible observations and explanatory instrument chains.",
+          "claim_index": 2
+        },
+        {
+          "anchor": "The Beginning of Infinity, chapter 7, Artificial Creativity, pages 160-162.",
+          "claim_index": 3
+        }
+      ],
       "direct_imports": [
-        "human knowledge uses conjecture and criticism while biological knowledge uses variation and selection",
+        "human knowledge is created through conjecture and criticism or experiment, while biological adaptations are created through mutation and natural selection",
         "their mechanisms and explanatory reach differ",
-        "sensory outputs and their interpretations are fallible and require explanatory links",
-        "variation and selection during a program run do not by themselves establish that the candidate created knowledge during that run"
+        "observations and their interpretations are theory-laden and fallible",
+        "variation and selection during a program run do not rule out an alternative explanation in which relevant knowledge was created by designers"
       ],
       "id": "DEUTSCH",
-      "poietic_operationalization": "An attribution must distinguish knowledge created in the candidate process from knowledge supplied by designers, prompts, training, tools, scores, or external sources.",
-      "scope_limit": "A fixed reward score or black-box behavior is not a proof of creativity, and an agreeing result is not confirmation.",
+      "poietic_operationalization": "A critical-evidence package must make its explanatory instrument and interpretation links explicit, and an attribution must distinguish knowledge created in the candidate process from knowledge supplied by designers, prompts, training, tools, scores, or external sources.",
+      "poietic_scope_guard": "A fixed reward score or black-box behavior is not a proof of creativity, and an agreeing result is not confirmation; this is a Poietic/Popper guard, not a direct Deutsch import.",
+      "scope_limit": "The cited passages make provenance and alternative explanations mandatory; they do not by themselves supply a behavior-only creativity criterion.",
       "type": "primary_book_and_essay"
     }
   ]

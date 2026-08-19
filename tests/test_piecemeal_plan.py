@@ -120,6 +120,12 @@ class PiecemealPlanTests(unittest.TestCase):
 
     def test_negative_controls_block_false_greens(self) -> None:
         controls = {row["id"]: row["expected"] for row in self.plan["negative_controls"]}
+        lattices = self.plan["lattices"]
+        for control_id, expected in controls.items():
+            for lattice_name, outcome in expected.items():
+                self.assertIn(
+                    outcome, lattices[lattice_name]["verdicts"], f"{control_id}:{lattice_name}"
+                )
         self.assertEqual(
             controls["NC_NAKED_REPLICATOR"],
             {
@@ -148,6 +154,10 @@ class PiecemealPlanTests(unittest.TestCase):
             controls["NC_AGREEING_RESULT_NOT_CONFIRMATION"]["critical_evidence"],
             "SURVIVED_DECLARED_ATTEMPT",
         )
+        agreeing_fixture = next(
+            row["fixture"] for row in self.plan["negative_controls"] if row["id"] == "NC_AGREEING_RESULT_NOT_CONFIRMATION"
+        )
+        self.assertIn("complete critical_evidence package", agreeing_fixture)
         self.assertEqual(
             controls["NC_UNREFUTABLE_OUTPUT"]["explanatory_creativity"],
             "NOT_ESTABLISHED",
@@ -214,13 +224,34 @@ class PiecemealPlanTests(unittest.TestCase):
         self.assertIn("higher-level explanations", sources["FOR_EMERGENCE"]["direct_imports"][0])
         self.assertIn("counterfactual causal roles", sources["FOR_REPLICATOR_NICHE"]["direct_imports"][0])
         self.assertIn("one-copy local inspection", sources["FOR_GENE_STRUCTURE"]["direct_imports"][0])
+        lattices = self.plan["lattices"]
         self.assertTrue(any("observations are selective" in claim for claim in sources["POPPER"]["direct_imports"]))
-        self.assertTrue(any("conjunction of target theory" in claim for claim in sources["POPPER"]["direct_imports"]))
+        self.assertTrue(any("whole declared system" in claim for claim in sources["POPPER"]["direct_imports"]))
+        self.assertIn("chapters 3 and 7", sources["POPPER"]["citation"])
+        self.assertIn("critical-evidence package", sources["POPPER"]["poietic_operationalization"])
+        self.assertIn("Poietic operational attribution test", lattices["explanatory_creativity"]["source_scope"])
         self.assertEqual(self.plan["bridge_conjecture"]["status"], "CONJECTURE")
         self.assertIn("conjecture and criticism", sources["DEUTSCH"]["direct_imports"][0])
         self.assertNotIn("typed selectionist form", sources["DEUTSCH"]["direct_imports"])
         self.assertNotIn("output alone does not settle where knowledge originated", sources["DEUTSCH"]["direct_imports"])
         self.assertIn("candidate process", sources["DEUTSCH"]["poietic_operationalization"])
+        self.assertIn("instrument", sources["DEUTSCH"]["poietic_operationalization"])
+        direct_anchors = sources["DEUTSCH"]["direct_import_anchors"]
+        self.assertEqual({row["claim_index"] for row in direct_anchors}, {0, 1, 2, 3})
+        anchors_by_claim = {row["claim_index"]: row["anchor"] for row in direct_anchors}
+        self.assertIn("chapter 4", anchors_by_claim[0])
+        self.assertIn("chapter 4", anchors_by_claim[1])
+        self.assertIn("chapters 1-2", anchors_by_claim[2])
+        self.assertIn("chapter 7", anchors_by_claim[3])
+        self.assertIn("do not rule out", sources["DEUTSCH"]["direct_imports"][3])
+        self.assertFalse(
+            any(
+                term in claim.lower()
+                for claim in sources["DEUTSCH"]["direct_imports"]
+                for term in ("prompt", "training", "tool", "score")
+            )
+        )
+        self.assertIn("Poietic/Popper guard", sources["DEUTSCH"]["poietic_scope_guard"])
 
 
 if __name__ == "__main__":
