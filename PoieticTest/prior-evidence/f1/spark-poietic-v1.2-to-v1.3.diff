@@ -1,0 +1,932 @@
+--- spark-poietic-layered-kernel-v1.2-purpose-guarded.md
++++ spark-poietic-layered-kernel-v1.3-experiment-first.md
+@@ -1,18 +1,16 @@
+ # The Spark–Poietic Layered Kernel
+ 
+-## Revision 1.2: dual-ledger, purpose-guarded epistemic constitution over physical realization
++## Revision 1.3: experiment-first epistemic constitution over physical realization
+ 
+ ### Status
+ 
+-Revision 1.2 repairs revision 1.1 against the supplied creativity criticism while preserving every proof-level and jurisdictional repair made in revision 1.1. It leaves expansion-equivalent restatements deleted, does not restore any theorem whose proof or hypotheses failed, and adds the missing audit axis: the document must preserve and expose its organized answer to its founding question as well as the validity of its claims.
++Revision 1.3 removes revision 1.2’s standing purpose-coverage guard, frozen weights, inherited cell partition, mandatory protocol schedule, attack-debt rules, and revision ledger. The audit that detected the loss of the generator question remains a successful historical criticism. It has no continuing authority over later revisions.
+ 
+-This document replaces the former attempt to make Spark and Poietic parallel theories of knowledge. They are not parallel. They are vertically typed.
++The organized answer to the founding question remains in the document as ordinary content. It must survive criticism on the merits of its constitutive claims, theorems, conjectures, and physical applications. Nothing is preserved merely because deleting it incurs an administrative price.
+ 
+-Spark is the epistemic constitution. It defines the conditions under which an operative change is attributable to a system as its own conjectural growth: construction from what the system already holds and what a target supplies, consequential appraisal, mediated operational award, and promotion through a declared role channel. It also owns explanatory appraisal, problems, tentative refutation, provenance, role revision, generator architecture, and every conditional growth or acquisition result about those objects.
++Revision 1.3 also begins the executable testing programme. The former positive assembly–rigidity conjecture has been withdrawn after the preregistered exhaustive experiment F1-AR-BOOL4-001 returned **REFUTED ON THIS DECLARED DOMAIN** over 14,451 Boolean-expression targets. The experiment and its verification artifacts are companions to the kernel, not premises of it.
+ 
+-Poietic is the physical realization theory. It defines substrates, attributes, tasks, constructors, possible and impossible transformations, information variables, physical resources, causal histories, boundaries, and the constructor-theoretic predicate of knowledge-bearing retention. It proves conditional realization theorems showing when a physical ecology instantiates Spark records, persistence, transition stages, resource budgets, and boundaries. It does not define good explanation, epistemic refutation, award, or knowledge growth.
+-
+-The interface is Spark's physical bridge. Spark states the abstract obligations R1–R5 and the vulnerable conjecture that physical explanatory creators admit an appropriate realization. Poietic supplies the typed physical witnesses that discharge R1–R5 for any ecology meeting them. The bridge is therefore neither a reduction of epistemology to physics nor a licence for epistemology to declare physical tasks possible.
++This document retains the vertical division of labour established in revision 1.2. Spark is the epistemic constitution. Poietic is the physical realization theory. Their interface remains typed rather than metaphorical.
+ 
+ The governing statement is:
+ 
+@@ -30,13 +28,9 @@
+ 
+ Deleting a Spark premise deletes its Spark children even when a physical model remains. Deleting a Poietic witness deletes the corresponding worldly application even when the Spark theorem remains. Deleting an identification map deletes only the cross-layer claims that use it. No decorative dependence is counted.
+ 
+-Deletion is audited in two ledgers.
+-
+-The **inferential ledger** tracks premises, definitions used by inference, proofs, application maps, witnesses, refuters, and protocols. Its deletion test is **expansion-normalized**: replace every defined name by its definiens before asking which claim, proof, application, or test no longer survives. Removing a pure abbreviation therefore has zero inferential cost. A definition is not an orphan merely because no theorem cites its name; the distinctions it introduces may still be used by an application, protocol, or guarded purpose cell.
++Revision uses two optional criticisms, neither of which is a constitutional gate. An **inferential audit** expands defined names before checking whether a premise, proof, application map, witness, or test is actually used. Pure abbreviations therefore carry no independent inferential weight. A **subject-coverage audit** may separately ask whether the document still answers the question it set out to answer. It can expose a retreat, as it did between revisions 1.0 and 1.1, but it cannot forbid the retreat, assign inherited weights to it, or compel later authors to preserve an old partition.
+ 
+-The **purpose ledger** tracks the organized answer to the founding question: what creativity is, what a creator must be, and how the attribution can be made and refuted. Its deletion test is semantic rather than lexical. After expansion, it asks which part of that answer can no longer be stated through a constitutive node, a risk-bearing synthetic node, and a separating refutation route. A node is an orphan only when it has neither an inferential use nor a declared purpose-ledger use. Purpose coverage gives no commentary inferential authority, while inferential validity makes no unpriced purpose retreat free.
+-
+-The order is mandatory. Run the inferential ledger first and delete, repair, or demote every invalid claim. Run the purpose ledger only on the surviving graded corpus, then replace any still-live question at an honest grade or record the price of abandoning it. Purpose cannot rescue a bad inference; validity cannot make the aggregate loss of the subject disappear.
++The order is practical rather than mandatory: repair false inference first, then ask whether the surviving document is still about what it claims to be about. Either audit may be discarded, revised, or rerun. Its force comes from the criticism it discovers, not from a standing role in the constitution.
+ 
+ The jurisdiction rules are strict.
+ 
+@@ -50,7 +44,7 @@
+ 
+ **J5, no physical bridge by vocabulary.** Calling a string a record, a process a test, a store persistent, or a border a system boundary supplies no realization. Each cross-layer use must cite the corresponding Poietic witness theorem.
+ 
+-The claim grades are `[background]`, `[axiom]`, `[elementary]`, `[conditional]`, `[imported]`, `[conjecture]`, `[residue]`, `[protocol]`, `[interpretation]`, and `[physical witness]`. A **conjecture** is a proposed field relation asserted on a declared domain and exposed directly to its refuter. A **residue** is instead a named missing premise, adequacy burden, or open construction question not supplied by the current derivations but required by a larger application or by the founding answer. It is not counted as a result. A residue may be inferentially load-bearing for an application or purpose-load-bearing for the founding answer. Its statement, I5 row, and protocol record together must expose its parent cut, separating refuter, protocol address, and current verdict. No protocol traces accompany this revision, so every residue has current status **UNTESTED** unless a later authenticated record states otherwise. An **interpretation** organizes already graded nodes into a reading and adds no inferential edge. Commentary has no inferential authority.
++The document uses ordinary mathematical distinctions only. Definitions stipulate vocabulary. Assumptions state what a result needs. Theorems and propositions give their premises and proofs. Conjectures state empirical or synthetic claims not established here. Open assumptions are displayed only where a theorem is conditional on them. Interpretive prose adds no inference. Experimental protocols and verdicts live in separately frozen research artifacts so that running a criticism does not constitutionalize its present design.
+ 
+ ---
+ 
+@@ -68,11 +62,11 @@
+ 
+ ### S1. Declared metatheory and finite types
+ 
+-**B1 (Finite syntax). `[background]`** Let \(\mathbb S\) be the set of finite strings over a fixed finite alphabet. Equality is decidable. There is an injective quotation map \(e\mapsto\ulcorner e\urcorner\) with decidable image, a decidable pairing operation \(\langle x,y\rangle\) with projections, and a size-ordered enumeration of \(\mathbb S\).
++**B1 (Finite syntax).** Let \(\mathbb S\) be the set of finite strings over a fixed finite alphabet. Equality is decidable. There is an injective quotation map \(e\mapsto\ulcorner e\urcorner\) with decidable image, a decidable pairing operation \(\langle x,y\rangle\) with projections, and a size-ordered enumeration of \(\mathbb S\).
+ 
+-**B2 (Finite Spark ancestry). `[background]`** Every completed Spark construction, evaluation, comparison, award, and promotion token has a finite directed acyclic ancestry. Induction on completed Spark ancestry is valid. An open history may contain no final event and need not be physically archived in full. B2 is an abstract Spark condition; it does not assert that a physical causal cone is finite or resource-closed. W4 carries that separate physical burden.
++**B2 (Finite Spark ancestry).** Every completed Spark construction, evaluation, comparison, award, and promotion token has a finite directed acyclic ancestry. Induction on completed Spark ancestry is valid. An open history may contain no final event and need not be physically archived in full. B2 is an abstract Spark condition; it does not assert that a physical causal cone is finite or resource-closed. W4 carries that separate physical burden.
+ 
+-**B3 (Distinct outcome sorts). `[background]`** Let \(\mathbb B=\{0,1\}\) be the Boolean sort. Let \(O\) be a fixed finite observational outcome alphabet with distinct values \(o_0,o_1\). Let the probe set be \(Q=\mathbb N\), with canonical encodings into \(\mathbb S\). Boolean verdicts, structure codes, probes, role tags, explicanda, and observational outcomes are distinct types even when an implementation reuses bit patterns.
++**B3 (Distinct outcome sorts).** Let \(\mathbb B=\{0,1\}\) be the Boolean sort. Let \(O\) be a fixed finite observational outcome alphabet with distinct values \(o_0,o_1\). Let the probe set be \(Q=\mathbb N\), with canonical encodings into \(\mathbb S\). Boolean verdicts, structure codes, probes, role tags, explicanda, and observational outcomes are distinct types even when an implementation reuses bit patterns.
+ 
+ A structure \(e\in\mathbb S\) may act as a partial program. Write
+ 
+@@ -82,17 +76,17 @@
+ 
+ when it converges to \(y\), and \(\varphi_e(x)\uparrow\) otherwise.
+ 
+-**B4 (Execution-observation coherence). `[background definition]`** Fix a total decidable surjective decoding map \(\delta_O:\mathbb S\to O\). Define \(\operatorname{obs}_b(e,q)=o\) when a budget-\(b\) simulation of \(\varphi_e(\bar q)\) converges to some \(y\) with \(\delta_O(y)=o\), and define it as \(\bot\) when no such convergence has occurred within the budget. Equality of partial execution behaviour entails equality of observational behaviour.
++**B4 (Execution-observation coherence).** Fix a total decidable surjective decoding map \(\delta_O:\mathbb S\to O\). Define \(\operatorname{obs}_b(e,q)=o\) when a budget-\(b\) simulation of \(\varphi_e(\bar q)\) converges to some \(y\) with \(\delta_O(y)=o\), and define it as \(\bot\) when no such convergence has occurred within the budget. Equality of partial execution behaviour entails equality of observational behaviour.
+ 
+-**A1w (Finite witnessability). `[axiom]`** If \(\operatorname{obs}_b(e,q)=o\in O\), the event has a finite witness, and every larger budget preserves the same completed report. Define \(\operatorname{obs}(e,q)=o\) exactly when some finite budget reports \(o\). A timeout is not evidence of non-occurrence unless delay is itself an observed outcome under a declared time-bound demand.
++**A1w (Finite witnessability).** If \(\operatorname{obs}_b(e,q)=o\in O\), the event has a finite witness, and every larger budget preserves the same completed report. Define \(\operatorname{obs}(e,q)=o\) exactly when some finite budget reports \(o\). A timeout is not evidence of non-occurrence unless delay is itself an observed outcome under a declared time-bound demand.
+ 
+-**A1i (Internal auditability). `[optional axiom]`** There is a structure `eval` that returns the encoded budgeted report for \(\langle b,\ulcorner e\urcorner,q\rangle\), and the records needed for a claimed replay remain internally accessible. A1i is required only for results or implementations claiming internal audit, deterministic replay, or system-owned inspection. A1w alone permits a finite event to occur without leaving a permanent internal archive.
++**A1i (Internal auditability).** There is a structure `eval` that returns the encoded budgeted report for \(\langle b,\ulcorner e\urcorner,q\rangle\), and the records needed for a claimed replay remain internally accessible. A1i is required only for results or implementations claiming internal audit, deterministic replay, or system-owned inspection. A1w alone permits a finite event to occur without leaving a permanent internal archive.
+ 
+ ### S2. Universal diagonal extension
+ 
+ The following commitments are not part of every Spark realization. They define the universal diagonal extension.
+ 
+-**A2 (Universal execution). `[axiom]`** There is a structure \(u\) such that
++**A2 (Universal execution).** There is a structure \(u\) such that
+ 
+ \[
+ \varphi_u(\langle\ulcorner e\urcorner,x\rangle)\simeq\varphi_e(x)
+@@ -100,7 +94,7 @@
+ 
+ for every \(e,x\in\mathbb S\), where \(\simeq\) is equality of partial results.
+ 
+-**A3 (Specialization). `[axiom]`** There is a total structure `spec` such that
++**A3 (Specialization).** There is a total structure `spec` such that
+ 
+ \[
+ \varphi_{\mathrm{spec}}(\langle\ulcorner e\urcorner,a\rangle)=\ulcorner e_a\urcorner
+@@ -112,7 +106,7 @@
+ \varphi_{e_a}(x)\simeq\varphi_e(\langle a,x\rangle).
+ \]
+ 
+-**A4 (Constructive closure). `[axiom schema]`** A structure can enact every finite recipe formed from quotation, pairing and projection, constants, composition, universal execution, specialization, cases on total Boolean structures, finite simulation, dovetailing, and unbounded search for a finite witness. An unbounded search may diverge. Every instance used by a proof is named in that proof.
++**A4 (Constructive closure).** A structure can enact every finite recipe formed from quotation, pairing and projection, constants, composition, universal execution, specialization, cases on total Boolean structures, finite simulation, dovetailing, and unbounded search for a finite witness. An unbounded search may diverge. Every instance used by a proof is named in that proof.
+ 
+ Define observational equivalence by
+ 
+@@ -198,7 +192,7 @@
+ 
+ iff all of the following hold: a finite defect trace makes \(A^-\) problematic; the current criteria do not judge \(A^-\) good on the relevant package; \(A^+\) is currently judged good; and \(A^+\succeq_{\mathrm{succ}}A^-\). A failed test without such a rival makes an account problematic, not tentatively refuted.
+ 
+-**A-NJ (Non-justificationist appraisal grammar). `[axiom]`** Compatible outcomes enter as explicanda or delivery records and create no support increment. Promotion changes operative reliance, not truth status. Tentative refutation is only the two-account relation above. Every standing change is reversible by later criticism even though its historical token is not deleted.
++**A-NJ (Non-justificationist appraisal grammar).** Compatible outcomes enter as explicanda or delivery records and create no support increment. Promotion changes operative reliance, not truth status. Tentative refutation is only the two-account relation above. Every standing change is reversible by later criticism even though its historical token is not deleted.
+ 
+ The declared content of an instrument is
+ 
+@@ -223,7 +217,7 @@
+ 
+ The diagonal results belong only to the universal extension A2–A4.
+ 
+-**L1 (Fixed point). `[elementary from A2–A4]`** For every internal structure \(f\) that is total on quoted structures and maps them to quoted structures, there is a structure \(e^*\) such that
++**L1 (Fixed point).** For every internal structure \(f\) that is total on quoted structures and maps them to quoted structures, there is a structure \(e^*\) such that
+ 
+ \[
+ \varphi_{e^*}(x)\simeq\varphi_{f(\ulcorner e^*\urcorner)}(x)
+@@ -250,17 +244,17 @@
+ 
+ Specialization and universality then give the displayed equality. ∎
+ 
+-**L2 (No convergence decider). `[elementary from L1 and A4]`** No total Boolean structure \(k\) decides, for every \(e,x\), whether \(\varphi_e(x)\) converges.
++**L2 (No convergence decider).** No total Boolean structure \(k\) decides, for every \(e,x\), whether \(\varphi_e(x)\) converges.
+ 
+ **Proof.** If \(k\) existed, A4 would construct a total code transformer that returns an everywhere-diverging structure when \(k\) predicts self-convergence and an everywhere-converging structure otherwise. Its L1 fixed point contradicts either verdict. ∎
+ 
+-**L3 (No non-trivial extensional decider). `[elementary from B4, L1, and A4]`** Let \(P\subseteq\mathbb S\) be extensional and non-trivial. No total Boolean structure decides membership in \(P\).
++**L3 (No non-trivial extensional decider).** Let \(P\subseteq\mathbb S\) be extensional and non-trivial. No total Boolean structure decides membership in \(P\).
+ 
+ **Proof.** Choose \(a\in P\) and \(b\notin P\). A supposed decider would permit a transformer that maps an accepted code to \(b\) and a rejected code to \(a\). A fixed point is observationally equivalent to the account selected against the verdict, contradicting extensionality. ∎
+ 
+ Let \(D_0\) be the law-family whose \(n\)-th demand is \((n,\{o_0\})\). A **conformity announcer** may return \(1\) on \(\ulcorner e\urcorner\), intending to announce that no probe will ever produce \(o_1\).
+ 
+-**L4 (No sound and complete conformity announcer). `[elementary from B4, L1, A1w, and A4]`** No conformity announcer for \(D_0\) is both sound and complete.
++**L4 (No sound and complete conformity announcer).** No conformity announcer for \(D_0\) is both sound and complete.
+ 
+ **Proof.** Given an announcer \(\alpha\), construct a transformer sending a quoted structure \(z\) to a structure that, on probe \(n\), simulates \(\alpha(z)\) for \(n\) steps, produces \(o_1\) if an announcement appears, and otherwise produces \(o_0\). Let \(e^*\) be its fixed point. If \(\alpha\) announces at stage \(N\), \(e^*\) produces \(o_1\) on every sufficiently large probe, making the announcement unsound. If it never announces, \(e^*\) produces \(o_0\) on every probe, making the announcer incomplete. ∎
+ 
+@@ -318,7 +312,7 @@
+ 
+ ### S6. Genesis
+ 
+-**A5 (Genesis, or promotion factorization). `[axiom]`** Every non-seed structure newly promoted into an operative role has a finite promotion certificate with the following faces.
++**A5 (Genesis, or promotion factorization).** Every non-seed structure newly promoted into an operative role has a finite promotion certificate with the following faces.
+ 
+ **G1, construction provenance.** A finite construction ancestry builds the candidate from structures already held at the construction cut, declared seed operators, and finite target or environment records causally available at that cut.
+ 
+@@ -332,15 +326,15 @@
+ 
+ A5 is independently deniable. A transition system with direct oracle writes, identity-only adoption, unevaluated copying, or promotion by fiat is a formal countermodel. A physical case of explanatory knowledge growth that genuinely requires such a transition would attack A5 or the bridge rather than the diagonal core.
+ 
+-A5 is the constitutional keystone, not a theorem smuggled out of computation. Deleting it removes Spark's attribution of non-seed operative novelty, the provenance results of S6, the growth definitions of S8, and the B-Core application, while leaving the diagonal computability results and all Poietic task results standing. That concentration is explicit and is tested through the A5 and bridge protocols rather than disguised as redundancy.
++A5 is the constitutional keystone, not a theorem smuggled out of computation. Deleting it removes Spark's attribution of non-seed operative novelty, the provenance results of S6, the growth definitions of S8, and the B-Core application, while leaving the diagonal computability results and all Poietic task results standing. That concentration is explicit and is tested through the direct A5 and bridge criticism rather than disguised as redundancy.
+ 
+ A structure is **stored** at \(t\) when its code occurs in a storage or event record. It is **held in role \(r\)** when it is a seed occupant of \(r\) or its latest role entry has a valid A5 certificate. Holding is operative standing with provenance. It is not truth and need not imply the Poietic knowledge predicate.
+ 
+-**Proposition S6.1 (Provenance totality). `[elementary from A5 and B2]`** Every non-seed held structure has a finite construction DAG whose leaves are earlier held structures, declared seeds, or finite target and environment records. Its constructor-node count defines a finite provenance distance.
++**Proposition S6.1 (Provenance totality).** Every non-seed held structure has a finite construction DAG whose leaves are earlier held structures, declared seeds, or finite target and environment records. Its constructor-node count defines a finite provenance distance.
+ 
+ **Proof.** Expand every held non-seed leaf by the certificate of its earlier promotion. Time-directed finite ancestry prevents an infinite descending chain. ∎
+ 
+-**Proposition S6.2 (Storage is not holding). `[elementary from A5]`** Appending a code to storage, copying it, or verifying only its identity cannot by itself make the structure held in an operative role.
++**Proposition S6.2 (Storage is not holding).** Appending a code to storage, copying it, or verifying only its identity cannot by itself make the structure held in an operative role.
+ 
+ **Proof.** Those events supply neither G2 consequential exposure nor G3 mediated award. ∎
+ 
+@@ -360,31 +354,31 @@
+ 
+ A candidate return contains the constructed structure and its construction and evaluation ancestries. A problem return contains a first-class problem record and the finite trace locating the failure or inadequacy. Divergence returns no completed result. REDERIVE never promotes its own candidate; construction, appraisal, award, and constitutional role-write remain separately criticisable.
+ 
+-**Conjecture R (Explanatory reconstruction). `[conjecture]`** Across an open-ended class of explanatory targets, no fixed lossless source-to-account decoder transfers explanatory competence to every receiver without receiver-owned construction and consequential appraisal. A universal fixed decoder that did so would refute Conjecture R. It would not refute Proposition S6.2, because operative entry would still require a transition.
++**Conjecture R (Explanatory reconstruction).** Across an open-ended class of explanatory targets, no fixed lossless source-to-account decoder transfers explanatory competence to every receiver without receiver-owned construction and consequential appraisal. A universal fixed decoder that did so would refute Conjecture R. It would not refute Proposition S6.2, because operative entry would still require a transition.
+ 
+ ### S7. Immediate non-inductivist consequences
+ 
+ The next three clauses are constitutional unpackings, not independent discoveries. They hold because A-NJ defines no support or acceptance coordinate and because tentative refutation is a two-account relation.
+ 
+-**T0.1 (Compatible evidence supplies no support). `[elementary from A-NJ]`** Appending a compatible outcome may enlarge the explicanda record, discharge a finite demand, or leave standing unchanged. No transition in the status algebra increases theory-level support because no such coordinate or operator exists.
++**T0.1 (Compatible evidence supplies no support).** Appending a compatible outcome may enlarge the explicanda record, discharge a finite demand, or leave standing unchanged. No transition in the status algebra increases theory-level support because no such coordinate or operator exists.
+ 
+-**T0.2 (A lone adverse result is insufficient for tentative refutation). `[elementary from the definition of TRef]`** A witnessed violation makes the closed account package problematic. Without a currently good rival satisfying the successor relation, \(\operatorname{TRef}\) does not follow.
++**T0.2 (A lone adverse result is insufficient for tentative refutation).** A witnessed violation makes the closed account package problematic. Without a currently good rival satisfying the successor relation, \(\operatorname{TRef}\) does not follow.
+ 
+-**T0.3 (Promotion is not acceptance). `[elementary from A5 G3 and A-NJ]`** An operational award can alter which account, method, criterion, problem, or interface is used. It cannot create a terminal positive epistemic status.
++**T0.3 (Promotion is not acceptance).** An operational award can alter which account, method, criterion, problem, or interface is used. It cannot create a terminal positive epistemic status.
+ 
+-**T1 (Negative-witness asymmetry). `[elementary from A1w, A2, A4, L2, and L4]`** A witnessed violation has a finite certificate, and dovetailing finds every violation that occurs in the universal extension. No total procedure decides in general whether a violation will ever occur, and \(D_0\) has no sound and complete conformity announcer.
++**T1 (Negative-witness asymmetry).** A witnessed violation has a finite certificate, and dovetailing finds every violation that occurs in the universal extension. No total procedure decides in general whether a violation will ever occur, and \(D_0\) has no sound and complete conformity announcer.
+ 
+ A logical universal demand may therefore be refuted by one counterexample event. The epistemic standing of an explanatory account still obeys T0.2.
+ 
+-**T2 (No enumerated universal innocence). `[elementary from T1 and L4]`** No structure enumerates exactly the accounts that will never violate \(D_0\).
++**T2 (No enumerated universal innocence).** No structure enumerates exactly the accounts that will never violate \(D_0\).
+ 
+ **Proof.** Violators are enumerable by finite witnesses. If non-violators were also enumerable, parallel enumeration would decide the partition and yield a sound complete conformity procedure. ∎
+ 
+-**T3 (No complete appraisal by code inspection). `[elementary from L3]`** No total structure decides a non-trivial extensional success property for every candidate from its code.
++**T3 (No complete appraisal by code inspection).** No total structure decides a non-trivial extensional success property for every candidate from its code.
+ 
+ Restricted proofs, types, static analyses, certificates, and heuristic critics remain possible. No one of them is total, sound, and complete for every candidate in a universal behavioural class.
+ 
+-**T4 (Reach and invariants). `[elementary, with clause (c) from A2–A4 and L2]`** For a repertoire \(\Gamma=(L,M)\):
++**T4 (Reach and invariants).** For a repertoire \(\Gamma=(L,M)\):
+ 
+ (a) \(e\notin\operatorname{span}(\Gamma)\) iff some set contains \(L\), is closed under every move in \(M\), and excludes \(e\).
+ 
+@@ -394,21 +388,21 @@
+ 
+ Clause (c) follows by including a universal simulator move that emits a distinguished structure exactly when a selected computation converges. Openness of the method role is neither necessary nor sufficient for universal reach; reach is exactly the current span.
+ 
+-**T5 (Crucial probes for total rivals). `[elementary from B1, A1w, and A4]`** If two total accounts are observationally inequivalent, a dovetailing comparator eventually finds a probe on which they differ. For partial accounts, a finite distinguishing event is required; divergence alone is not a finite certificate.
++**T5 (Crucial probes for total rivals).** If two total accounts are observationally inequivalent, a dovetailing comparator eventually finds a probe on which they differ. For partial accounts, a finite distinguishing event is required; divergence alone is not a finite certificate.
+ 
+-**T6 (Finite-sample underdetermination). `[elementary]`** If a finite sample is compatible with two gauge-inequivalent sources in a reconstruction class, no deterministic decoder whose entire source information is that sample can be guaranteed to reconstruct both sources correctly up to gauge.
++**T6 (Finite-sample underdetermination).** If a finite sample is compatible with two gauge-inequivalent sources in a reconstruction class, no deterministic decoder whose entire source information is that sample can be guaranteed to reconstruct both sources correctly up to gauge.
+ 
+-**T7 (Retreat dynamics). `[conditional]`** Consider a finite active instrument under fair probing, a finite reachable repair graph, recurrent repair-triggering violations, a strict retreat available from every non-minimal survivor, and a policy that always selects a lowest-cost admissible repair while every strict retreat is cheaper than every content-preserving repair. Under a retreat-permitting award rule, each such repair strictly lowers \(\operatorname{cont}(F)\) until a retreat-minimal survivor is reached. An award rule forbidding content-decreasing promotions closes that descent channel.
++**T7 (Retreat dynamics).** Consider a finite active instrument under fair probing, a finite reachable repair graph, recurrent repair-triggering violations, a strict retreat available from every non-minimal survivor, and a policy that always selects a lowest-cost admissible repair while every strict retreat is cheaper than every content-preserving repair. Under a retreat-permitting award rule, each such repair strictly lowers \(\operatorname{cont}(F)\) until a retreat-minimal survivor is reached. An award rule forbidding content-decreasing promotions closes that descent channel.
+ 
+ **Proof.** \(\operatorname{cont}(F)\) is a non-negative integer. The hypotheses force strict descent at every repair-triggering step, so finite descent terminates. ∎
+ 
+-**T8 (Guarded rescue characterization). `[elementary]`** If an award rule admits exactly revisions that restore delivery and do not decrease declared content, its admissible rescues are exactly the success-restoring, content-nondecreasing revisions. Regeneration is one execution-native instance, not the unique one.
++**T8 (Guarded rescue characterization).** If an award rule admits exactly revisions that restore delivery and do not decrease declared content, its admissible rescues are exactly the success-restoring, content-nondecreasing revisions. Regeneration is one execution-native instance, not the unique one.
+ 
+-**T9 (Permanent proxy gap). `[elementary from L3]`** No total decidable test is complete for a non-trivial extensional conformity property. Every total decidable sound proxy accepts an enumerable strict subset of the conformers.
++**T9 (Permanent proxy gap).** No total decidable test is complete for a non-trivial extensional conformity property. Every total decidable sound proxy accepts an enumerable strict subset of the conformers.
+ 
+-**T10 (Conditional attainability, permanent uncertifiability). `[elementary from B1, A4, and L4]`** If a move-set enumerates every structure and a conformer exists, dovetailing eventually emits one. Emission does not identify or promote it, and no sound conformity announcer for \(D_0\) is complete.
++**T10 (Conditional attainability, permanent uncertifiability).** If a move-set enumerates every structure and a conformer exists, dovetailing eventually emits one. Emission does not identify or promote it, and no sound conformity announcer for \(D_0\) is complete.
+ 
+-**Conjecture O (Optimism). `[conjecture]`** Problems not forbidden by physical law admit explanatory resolutions or transformations that can in principle be created by enlarging the relevant repertoire. Existence is the conjectural burden; T10 keeps recognition fallible. A well-specified physically admissible problem for which no possible explanatory resolution or transforming knowledge exists refutes the conjecture.
++**Conjecture O (Optimism).** Problems not forbidden by physical law admit explanatory resolutions or transformations that can in principle be created by enlarging the relevant repertoire. Existence is the conjectural burden; T10 keeps recognition fallible. A well-specified physically admissible problem for which no possible explanatory resolution or transforming knowledge exists refutes the conjecture.
+ 
+ 
+ ### S8. Generator architecture
+@@ -439,7 +433,9 @@
+ 
+ A local edit graph supplies a perturbation instrument. **Local delivery rigidity** is the declared fraction or order of gauge-inequivalent neighbouring edits that cease to deliver the active explanatory work. It is local, repertoire-relative, instrument-relative, and budget-relative. A finite sample **pins** a source relative to a reconstruction class when every matching reconstruction is gauge-equivalent to it. Rigidity and pinning are different objects.
+ 
+-**Conjecture C1 (Assembly–rigidity relation). `[conjecture]`** Within a declared repertoire, transcript class, edit graph, and target family, larger contextual assembly distance tends to accompany greater perturbational rigidity. A preregistered family showing no association, or a stable reversed order, refutes the conjecture on that declared domain.
++**Question C1 (Assembly–rigidity relation).** For which declared repertoires, transcript classes, edit graphs, instruments, and target families does contextual assembly distance predict local delivery rigidity, and in which direction? No general positive association is now assumed.
++
++The positive-direction conjecture in revision 1.2 was tested by F1-AR-BOOL4-001 on every four-input Boolean truth table constructible by a canonical expression of operator distance one through five in the declared basis. The frozen eight-row battery and one-site edit graph yielded 14,451 targets, Spearman \(\rho=-0.0995637588\), rigidity IQR \(0.0899621212\), and median rigidity declining from \(1.0\) at distances one and two to approximately \(0.9355\) at distance five. The preregistered verdict was **REFUTED ON THIS DECLARED DOMAIN**. A clean-process row verifier and a separately implemented full-domain enumeration both reproduced the target set, summary values, and verdict. The result shows that minimum assembly distance and this local rigidity instrument are distinct coordinates; it supplies no replacement directional law.
+ 
+ For C2, coherence and identifiability are separate premises. A **single-battery comparison** uses one preregistered finite instrument \(F^\circ\), or losslessly transported copies of it, both to score local edits and to define the global matching fibres. For a finite reconstruction class \(\mathcal H_R\), put
+ 
+@@ -450,17 +446,17 @@
+ 
+ Reverse inclusion of these fibres is the pinning preorder; a preregistered cardinality order may be used when fibres are incomparable. Let \(\rho_{F^\circ}(a)\) be the full local perturbation-response profile, not merely its scalar rigidity.
+ 
+-**C2-P1 (Single-battery coherence). `[protocol]`** Every local-rigidity and pinning comparison uses \(F^\circ\) or a witnessed lossless transport fixed before outcomes are inspected. A comparison that changes the battery, drops a distinguishing demand, or uses a lossy post-outcome transport refutes C2-P1 for that run.
++**C2-P1 (Single-battery coherence).** Every local-rigidity and pinning comparison uses \(F^\circ\) or a witnessed lossless transport fixed before outcomes are inspected. A comparison that changes the battery, drops a distinguishing demand, or uses a lossy post-outcome transport refutes C2-P1 for that run.
+ 
+-**C2-P2 (Explicit identifiability geometry). `[protocol]`** Before held-out transmission outcomes are observed, the study supplies a non-degenerate, answer-free map \(\iota\) from the declared chart coordinates and \(\rho_{F^\circ}(a)\) to a predicted pinning rank or fibre class. The map may be specified analytically or fixed on a calibration split, but source identifiers, held-out answers, and target-specific decoders may not be inputs. Failure to construct such a map, leakage of those forbidden inputs, or collapse to one predicted rank refutes C2-P2 for that domain.
++**C2-P2 (Explicit identifiability geometry).** Before held-out transmission outcomes are observed, the study supplies a non-degenerate, answer-free map \(\iota\) from the declared chart coordinates and \(\rho_{F^\circ}(a)\) to a predicted pinning rank or fibre class. The map may be specified analytically or fixed on a calibration split, but source identifiers, held-out answers, and target-specific decoders may not be inputs. Failure to construct such a map, leakage of those forbidden inputs, or collapse to one predicted rank refutes C2-P2 for that domain.
+ 
+-**Conjecture C2 (Field geometry–transmission relation). `[conjecture]`** On held-out members of a declared reconstruction domain satisfying C2-P1 and C2-P2, the preregistered predictions of \(\iota\) meet the declared pinning-order agreement threshold and predict transmission-fidelity order under matched closed budgets. Failure to meet either threshold, or a stable reversed order, refutes C2 on that domain. A5 has no inferential edge to C2-P1, C2-P2, or the field conjecture.
++**Conjecture C2 (Field geometry–transmission relation).** On held-out members of a declared reconstruction domain satisfying C2-P1 and C2-P2, the preregistered predictions of \(\iota\) meet the declared pinning-order agreement threshold and predict transmission-fidelity order under matched closed budgets. Failure to meet either threshold, or a stable reversed order, refutes C2 on that domain. A5 has no inferential edge to C2-P1, C2-P2, or the field conjecture.
+ 
+-A protocol can use one battery without the architecture itself being battery-unified. A system is **architecturally battery-unified** on a declared domain when one independently identified endogenous criterion-bearing subsystem \(B\), under fixed lossless transports, supplies both: the outcome distinctions causally used by G2–G3 to mediate the relevant promotions; and the perturbation-response and matching-fibre distinctions used by C2. Both uses must intervention-depend on \(B\) in the declared frame. An experimenter's post-outcome choice to score both with the same \(F^\circ\) does not establish architectural unity. C2-P1 is protocol coherence; architectural battery-unity is a causal architecture claim. Neither entails the other.
++A study can use one battery without the architecture itself being battery-unified. A system is **architecturally battery-unified** on a declared domain when one independently identified endogenous criterion-bearing subsystem \(B\), under fixed lossless transports, supplies both: the outcome distinctions causally used by G2–G3 to mediate the relevant promotions; and the perturbation-response and matching-fibre distinctions used by C2. Both uses must intervention-depend on \(B\) in the declared frame. An experimenter's post-outcome choice to score both with the same \(F^\circ\) does not establish architectural unity. C2-P1 is study coherence; architectural battery-unity is a causal architecture claim. Neither entails the other.
+ 
+ The **one-operation reading** is the interpretation that the same endogenous criticism architecture both mediates operative promotion and supplies the geometry by which live alternatives are narrowed.
+ 
+-**Residue \(R_{\mathrm{AB}}\) (architectural battery-unity coupling). `[residue]`** Fix an A5-compliant system class, an independently established architectural battery-unity witness, C2-P1 and C2-P2, a valid physical application witness \(\alpha\), W3–W5, and matched W4-closed budgets. On that restricted class, the one-operation reading predicts the held-out C2 pinning and transmission thresholds. A stable held-out failure while every displayed antecedent survives refutes \(R_{\mathrm{AB}}\) and C2 on that domain, and strikes the one-operation reading. It does not refute A5, protocol battery coherence, or C2 outside the coupled domain. Until the architectural witness and Protocol F8-C are supplied, the residue is **UNTESTED**.
++**Conjecture \(R_{\mathrm{AB}}\) (architectural battery-unity coupling).** Fix an A5-compliant system class, an independently established architectural battery-unity witness, C2-P1 and C2-P2, a valid physical application witness \(\alpha\), W3–W5, and matched W4-closed budgets. On that restricted class, the one-operation reading predicts the held-out C2 pinning and transmission thresholds. A stable held-out failure while every displayed antecedent survives refutes \(R_{\mathrm{AB}}\) and C2 on that domain, and strikes the one-operation reading. It does not refute A5, single-battery study coherence, or C2 outside the coupled domain.
+ 
+ A finite **operative comparison frame** \(\Lambda\) selects the predecessor role marks and obligations or continuation conditions whose preservation is claimed, the admissible transports between cuts, and the gauge under which merely notational or carrier changes are ignored. The frame must include every predecessor mark invoked by the continuity or cumulative-growth claim and must be fixed before appraisal, or connected to the earlier frame by a witnessed lossless transport. Deleting a predecessor mark changes the claim. An empty frame can establish new acquisition from an empty predecessor cut, but cannot establish cumulative growth of a non-empty operative system.
+ 
+@@ -488,7 +484,7 @@
+ 
+ Capacity is architecture. Role-completeness is reachable revisability. Regime is current dynamics. Career is history. None entails the next.
+ 
+-**Corollary 8.1 (Finite behavioural underdetermination). `[elementary from B1]`** No finite input-output test entails creative capacity or reflective role-completeness in an unrestricted model class.
++**Corollary 8.1 (Finite behavioural underdetermination).** No finite input-output test entails creative capacity or reflective role-completeness in an unrestricted model class.
+ 
+ **Proof.** A terminating test has a finite interaction tree. A finite lookup transducer can reproduce every accepting branch while lacking construction provenance, problem ownership, appraisal, or role revision. ∎
+ 
+@@ -496,7 +492,7 @@
+ 
+ A creator-characterization study fixes before inspecting the Spark fit: a declared comparison domain \(\mathcal D\); an independently specified case predicate \(J\) that does not use the S8 labels or their definientia; matched negative controls; and an admissible boundary-and-frame family \(\mathcal B(x)\) for each case.
+ 
+-**Residue \(R_{\mathrm{CG}}\) (creative-generator characterization adequacy). `[residue]`** On the declared domain,
++**Conjecture \(R_{\mathrm{CG}}\) (creative-generator characterization adequacy).** On the declared domain,
+ 
+ \[
+ R_{\mathrm{CG}}(\mathcal D,J,\mathcal B):
+@@ -509,39 +505,37 @@
+ \operatorname{CreativeGenerator}(\mathcal K_x^b),
+ \]
+ 
+-where every physical attribution additionally supplies the relevant realization package and identification map. The left-to-right direction is refuted on the declared domain by an independently selected positive case for which the complete admissible boundary-and-frame family yields no creative-generator realization. The right-to-left direction is refuted by a matched negative control that satisfies every S8 constitutive face under an admissible realization while failing the independently fixed target predicate. A finite behavioural match alone reaches neither direction. Until \(J\), \(\mathcal D\), and \(\mathcal B\) are fixed and Protocol F8-A is run, the residue is **UNTESTED**.
++where every physical attribution additionally supplies the relevant realization package and identification map. The left-to-right direction is refuted on the declared domain by an independently selected positive case for which the complete admissible boundary-and-frame family yields no creative-generator realization. The right-to-left direction is refuted by a matched negative control that satisfies every S8 constitutive face under an admissible realization while failing the independently fixed target predicate. A finite behavioural match alone reaches neither direction.
+ 
+-**Fragility Proposition. `[elementary]`** If a content-retreating award rule is constructible, an A5-admissible path promotes it into \(C\), and the scheduler selects that path, exit from the growing regime is reachable. Permission-openness of \(C\) alone is insufficient.
++**Fragility Proposition.** If a content-retreating award rule is constructible, an A5-admissible path promotes it into \(C\), and the scheduler selects that path, exit from the growing regime is reachable. Permission-openness of \(C\) alone is insufficient.
+ 
+ ### S9. Concentrated consequences and constitutional barriers
+ 
+-The former N-series is not restored. Under the expansion-normalized deletion test, its pre-execution, retreat, reach, A5, and constraint clauses are aliases of T3 and T9, T7, T4, A5, and Proposition 9.1; restoring them would inflate theorem count without restoring subject matter. The unsupported physical-resource extrapolation in former N2 also remains deleted: its exact computability content survives in the cutoff note, while the priced generator-scaling question is now \(R_G\). The non-redundant creator burdens receive independent addresses instead: characterization adequacy is \(R_{\mathrm{CG}}\), role-obstruction coverage is \(R_{\mathrm{RO}}\), bounded-prophet exclusion is \(R_\Pi\), and the former A5–C2 architectural reading is \(R_{\mathrm{AB}}\).
++**Diagonal cutoff note.** For any total computable cutoff assignment \(B(e)\), a fixed-point candidate can be constructed whose first declared success occurs after \(B(e)\). This blocks an infallible universal choice of safe finite cutoffs. It does not, without a physical resource model and a search policy, prove a theorem about energy, memory, or total expenditure.
+ 
+-**Diagonal cutoff note. `[conditional from L1, L2, A4, and an explicit delay construction]`** For any total computable cutoff assignment \(B(e)\), a fixed-point candidate can be constructed whose first declared success occurs after \(B(e)\). This blocks an infallible universal choice of safe finite cutoffs. It does not, without a physical resource model and a search policy, prove a theorem about energy, memory, or total expenditure.
+-
+-**Proposition 9.1 (Constraint-barrier decomposition). `[elementary conditional]`** Let \(K\) be a non-vacuous decidable constraint on emitted outputs. If a violating output structure is constructible, a reachable admissible path installs the required criterion and interface changes, the scheduler may select it, and the output channel is available, then \(K\) is not guaranteed on every reachable trajectory.
++**Proposition 9.1 (Constraint-barrier decomposition).** Let \(K\) be a non-vacuous decidable constraint on emitted outputs. If a violating output structure is constructible, a reachable admissible path installs the required criterion and interface changes, the scheduler may select it, and the output channel is available, then \(K\) is not guaranteed on every reachable trajectory.
+ 
+ A constitutional guarantee therefore requires at least one barrier in the path: reach restriction, channel closure, invariant inadmissibility, policy exclusion, or interface filtering. Those barriers spend different forms of freedom. No theorem says every output restraint destroys internal creativity.
+ 
+-**Residue \(R_\Pi\) (bounded-prophet exclusion). `[residue]`** For A5-compliant systems with reachable criterion revision, adversarially variable evaluated environments, the same observation channel as the predictor, and a fixed positive lead-time requirement, no predictor of bounded description length is uniformly correct across the declared environment class. A bounded predictor satisfying every displayed condition and succeeding uniformly refutes \(R_\Pi\) on that class without refuting L2. Instance-level unpredictability does not follow merely from revisability. The residue is **UNTESTED** wherever F5 has not run on the declared class.
++**Conjecture \(R_\Pi\) (bounded-prophet exclusion).** For A5-compliant systems with reachable criterion revision, adversarially variable evaluated environments, the same observation channel as the predictor, and a fixed positive lead-time requirement, no predictor of bounded description length is uniformly correct across the declared environment class. A bounded predictor satisfying every displayed condition and succeeding uniformly refutes \(R_\Pi\) on that class without refuting L2. Instance-level unpredictability does not follow merely from revisability.
+ 
+ ### S10. Composition and finite-coordinate bookkeeping
+ 
+-**Lemma 10.1 (Acyclic feed-line closure). `[elementary]`** An acyclic composition of systems whose targets are all supplied externally, and in which no evaluation trace returns to a constructor or target-selector, remains externally targeted at the composite boundary.
++**Lemma 10.1 (Acyclic feed-line closure).** An acyclic composition of systems whose targets are all supplied externally, and in which no evaluation trace returns to a constructor or target-selector, remains externally targeted at the composite boundary.
+ 
+ **Proof.** Topologically order the components. Every target entering a component is external or emitted by an earlier component. Without a feedback path from evaluation to construction or selection, no stage converts its own inadequacy into a later problem. ∎
+ 
+-**Proposition 10.2 (Emergent problem ownership). `[elementary]`** A cyclic composition of components that are not individually problem-owning can be problem-owning at the composite boundary when evaluation traces are retained and returned to a constructor or target-selector. Attribution is therefore boundary-relative and composition-sensitive.
++**Proposition 10.2 (Emergent problem ownership).** A cyclic composition of components that are not individually problem-owning can be problem-owning at the composite boundary when evaluation traces are retained and returned to a constructor or target-selector. Attribution is therefore boundary-relative and composition-sensitive.
+ 
+-**Lemma 10.3 (Finite-instrument bound). `[elementary]`** Against a fixed finite active instrument \(F\), the delivered-content coordinate is bounded by \(\operatorname{cont}(F)\). Unbounded growth of that coordinate requires new demands, expanded slices of a law-family, or changing instruments.
++**Lemma 10.3 (Finite-instrument bound).** Against a fixed finite active instrument \(F\), the delivered-content coordinate is bounded by \(\operatorname{cont}(F)\). Unbounded growth of that coordinate requires new demands, expanded slices of a law-family, or changing instruments.
+ 
+ This bounds a measurement coordinate, not the explanatory reach or meaning of a theory. A single finite problem may motivate arbitrarily many accounts.
+ 
+-**Corollary 10.4 (Unbounded delivered-content bookkeeping). `[conditional from Lemma 10.3 and T7]`** Let a system use a fixed declared readout rule and suppose its delivered-content coordinate grows without a fixed bound. Then the active demand stream, the exposed slices of a law-family, or the instrument family is unbounded at some component or composite level; otherwise Lemma 10.3 supplies a fixed bound. Under all of T7's retreat-favouring hypotheses, sustained residence in the growing regime additionally requires a content guard or equivalent retreat blocker.
++**Corollary 10.4 (Unbounded delivered-content bookkeeping).** Let a system use a fixed declared readout rule and suppose its delivered-content coordinate grows without a fixed bound. Then the active demand stream, the exposed slices of a law-family, or the instrument family is unbounded at some component or composite level; otherwise Lemma 10.3 supplies a fixed bound. Under all of T7's retreat-favouring hypotheses, sustained residence in the growing regime additionally requires a content guard or equivalent retreat blocker.
+ 
+ For a role \(r\), call an environment \(E_r\) a **role-separating \(r\)-obstruction environment** relative to a declared readout \(\Lambda\) when its admissible histories have unbounded \(\Lambda\)-delivered content over the declared scaling family, yet there is a finite bound \(B_r\) on every admissible history that keeps \(r\) fixed. The first clause prevents a globally barren or finitely capped environment from manufacturing an obstruction witness.
+ 
+-**Residue \(R_{\mathrm{RO}}\) (role-obstruction coverage). `[residue]`** Fix a declared environment class \(\mathcal E\), admissible-history relation, and delivered-content readout \(\Lambda\). The residue is
++**Conjecture \(R_{\mathrm{RO}}\) (role-obstruction coverage).** Fix a declared environment class \(\mathcal E\), admissible-history relation, and delivered-content readout \(\Lambda\). The conjecture is
+ 
+ \[
+ R_{\mathrm{RO}}(\mathcal E,\Lambda):
+@@ -565,9 +559,9 @@
+ \right].
+ \]
+ 
+-Conditional on this residue, robust unbounded growth across \(\mathcal E\) requires a reachable revision path for every role: a history permanently fixing \(r\) fails in its nominated obstruction environment. Exceeding \(B_r\) on a valid fixed-\(r\) history refutes that nominated witness; failure of the unrestricted histories to exceed every declared finite scale invalidates it as role-separating. On a finite or exhaustively reduced environment class, showing that one role has no obstruction witness refutes the residue on the declared class; failure to find a witness in an open class is **INCONCLUSIVE**. The residue is **UNTESTED** until Protocol F8-B fixes \(\mathcal E\), its scaling family, \(\Lambda\), role-fixing interventions, matched revisable controls, candidate bounds, and the exhaustion or sampling rule. Reachable revision is not a guarantee of escape, and A5 mediation follows only when A5 is separately assumed.
++Conditional on this conjecture, robust unbounded growth across \(\mathcal E\) requires a reachable revision path for every role: a history permanently fixing \(r\) fails in its nominated obstruction environment. Exceeding \(B_r\) on a valid fixed-\(r\) history refutes that nominated witness; failure of the unrestricted histories to exceed every declared finite scale invalidates it as role-separating. On a finite or exhaustively reduced environment class, showing that one role has no obstruction witness refutes the conjecture on the declared class; failure to find a witness in an open class does not decide the conjecture. An application must fix the environment class, scaling family, readout, interventions, controls, and bounds. Reachable revision is not a guarantee of escape, and A5 mediation follows only when A5 is separately assumed.
+ 
+-**Fertility Conjecture. `[conjecture]`** Among matched-budget systems with A5-mediated promotion, universal reach, a content guard, and an unbounded evaluated problem source, policies that convert informative failure fringes into construction targets achieve greater long-run delivered content or lower assembly cost than library-local, promotion-shy, or directionless policies, except where the fringe carries no useful localization.
++**Fertility Conjecture.** Among matched-budget systems with A5-mediated promotion, universal reach, a content guard, and an unbounded evaluated problem source, policies that convert informative failure fringes into construction targets achieve greater long-run delivered content or lower assembly cost than library-local, promotion-shy, or directionless policies, except where the fringe carries no useful localization.
+ 
+ The bookkeeping corollary and Fertility Conjecture are not a biconditional. Architecture never certifies fertility.
+ 
+@@ -575,7 +569,7 @@
+ 
+ Let \(A^-\) and \(A^+\) be current represented explanatory accounts and let \(C(A^-,A^+)\) be a finite comparison record. Suppose it identifies a recovery region \(D_R\), on which \(A^+\) recovers genuine or apparent successes of \(A^-\), and a difference region \(D_\Delta\), on which \(A^-\) is defective, undefined, or displaced by additional content in \(A^+\).
+ 
+-**Proposition 11.1 (Successor-record compiler). `[conditional from A4 or an explicit compiler in the current move-set]`** Whenever the current repertoire can enact the displayed finite template compilation, it can construct at most the following non-duplicate candidate records:
++**Proposition 11.1 (Successor-record compiler).** Whenever the current repertoire can enact the displayed finite template compilation, it can construct at most the following non-duplicate candidate records:
+ 
+ \[
+ q_R:\text{ account for the represented recovery relation on }D_R,
+@@ -615,9 +609,9 @@
+ 
+ Let \(\overline{\mathfrak O}_t\) be the current classes of non-vacuous open problems generated from explicit provenance records and not currently mastered by a good operative account. Let \(\overline{\mathfrak Q}^{\Phi}_{\mathrm{good}}\) be the classes that admit a physically possible good resolution, after quotienting by lossless target transports.
+ 
+-The source-level open-endedness burden factors into three independent residues. None is proved by Spark.
++The source-level open-endedness burden factors into three independent open assumptions. None is proved by Spark.
+ 
+-**Residue \(R_{P,0}\) (problem bootstrap). `[residue]`**
++**Open assumption \(R_{P,0}\) (problem bootstrap).**
+ 
+ \[
+ R_{P,0}:
+@@ -627,9 +621,9 @@
+ \overline{\mathfrak O}_0\neq\varnothing,
+ \]
+ 
+-with an explicit initial provenance channel. A creative-capacity state with no inherited or constructed non-vacuous problem refutes this residue.
++with an explicit initial provenance channel. A creative-capacity state with no inherited or constructed non-vacuous problem refutes this assumption.
+ 
+-**Residue \(R_{P,+}\) (problem recurrence). `[residue]`**
++**Open assumption \(R_{P,+}\) (problem recurrence).**
+ 
+ \[
+ R_{P,+}:
+@@ -639,9 +633,9 @@
+ \overline{\mathfrak O}_{t+1}\neq\varnothing,
+ \]
+ 
+-where the witness is a transported undischarged problem or a non-vacuous output of an explicit problem-construction channel. A selected resolution after which every problem is discharged and no new one is constructed refutes this residue.
++where the witness is a transported undischarged problem or a non-vacuous output of an explicit problem-construction channel. A selected resolution after which every problem is discharged and no new one is constructed refutes this assumption.
+ 
+-**Residue \(R_S\) (stage-local solubility). `[residue]`**
++**Open assumption \(R_S\) (stage-local solubility).**
+ 
+ \[
+ R_{S}:
+@@ -654,7 +648,7 @@
+ \neq\varnothing.
+ \]
+ 
+-These are exposed source and world-facing residues. Open problems with no physically possible good member refute \(R_S\). The successor compiler can witness one propagation route after growth begins. It does not prove bootstrap, recurrence, or solubility. Every capstone application must test the three residues separately under Protocol F6.
++These are exposed source and world-facing assumptions. Open problems with no physically possible good member refute \(R_S\). The successor compiler can witness one propagation route after growth begins. It does not prove bootstrap, recurrence, or solubility. Every capstone application must supply the three open assumptions separately.
+ 
+ 
+ ### S12. Criticism geometry and acquisition
+@@ -734,7 +728,7 @@
+ \sup_{q\in\mathcal A(V)}\eta(q,V).
+ \]
+ 
+-**Imported Theorem 12.1 (Closed-cost criticism-compression bounds). `[imported]`** If \(|\mathcal H|=N>1\) and
++**Imported Theorem 12.1 (Closed-cost criticism-compression bounds).** If \(|\mathcal H|=N>1\) and
+ 
+ \[
+ 0<\underline\eta(\mathcal M)\le\overline\eta(\mathcal M)<\infty,
+@@ -760,7 +754,7 @@
+ c(q,V)\le c_0.
+ \]
+ 
+-**Corollary 12.2. `[elementary]`** Exact acquisition then needs at most
++**Corollary 12.2.** Exact acquisition then needs at most
+ 
+ \[
+ \left\lceil\log_{1/\lambda}N\right\rceil
+@@ -774,7 +768,7 @@
+ 
+ Outcome sensitivity alone is insufficient. Cheap acquisition depends on physically available partition structure whose worst outcome contracts the live class at favourable closed cost.
+ 
+-**Imported Proposition 12.3 (Bounded independent binary-noise lift). `[imported]`** Suppose logical tests are binary and repeatable, and every reachable non-singleton version space has an available logical test with \(\sigma(q,V)\le\lambda<1\). Conditional on the target and decoded history, repeated physical outcomes are independent and wrong with probability at most \(\nu<1/2\). Let each repetition cost at most \(c_{\mathrm{rep}}\), let majority aggregation cost \(c_{\mathrm{maj}}(r)\), and put
++**Imported Proposition 12.3 (Bounded independent binary-noise lift).** Suppose logical tests are binary and repeatable, and every reachable non-singleton version space has an available logical test with \(\sigma(q,V)\le\lambda<1\). Conditional on the target and decoded history, repeated physical outcomes are independent and wrong with probability at most \(\nu<1/2\). Let each repetition cost at most \(c_{\mathrm{rep}}\), let majority aggregation cost \(c_{\mathrm{maj}}(r)\), and put
+ 
+ \[
+ m=\left\lceil\log_{1/\lambda}N\right\rceil.
+@@ -794,7 +788,7 @@
+ 
+ This is physical noise bookkeeping, not a probability of theory truth or a support increment.
+ 
+-**Reduction Lemma 12.4 (Finite tolerance quotient). `[elementary]`** If a possibly infinite candidate class has a declared tolerance equivalence with finite quotient, every query outcome, availability relation, closed cost, and terminal condition descends to that quotient, then the quotient defines a finite exact model and Theorem 12.1 applies there. The existence and physical appropriateness of the quotient remain application obligations.
++**Reduction Lemma 12.4 (Finite tolerance quotient).** If a possibly infinite candidate class has a declared tolerance equivalence with finite quotient, every query outcome, availability relation, closed cost, and terminal condition descends to that quotient, then the quotient defines a finite exact model and Theorem 12.1 applies there. The existence and physical appropriateness of the quotient remain application obligations.
+ 
+ A factorization
+ 
+@@ -822,7 +816,7 @@
+ 
+ A **generator-scaling trial** fixes before outcomes are inspected: one architecture \(G\) and seed schema; a scaling target family \((\mathcal T_n)_{n\in I}\); an answer-free boundary; a matched answer-free whole-account benchmark \(C_{\mathrm{whole}}(n)\) under the same boundary and cost convention; a W4-closed cost \(C_G(n)\) charging representation, test, operator, instrument, training, interpretation, acquisition, failed construction, and retained-background costs; and exactly one primary success mode. The efficiency mode fixes \(\epsilon>0\) and asks for \(\underline\eta(\mathcal M_n)\ge\epsilon\). The comparative mode fixes \(\gamma>0\) and asks for \(C_G(n)\le(1-\gamma)C_{\mathrm{whole}}(n)\). Switching modes after seeing outcomes is a new trial.
+ 
+-**Residue \(R_G\) (answer-generic jump construction). `[residue]`** For a declared scaling family and one preregistered success mode,
++**Conjecture \(R_G\) (answer-generic jump construction).** For a declared scaling family and one preregistered success mode,
+ 
+ \[
+ R_G:
+@@ -840,27 +834,27 @@
+ \operatorname{SuccessMode}_n(G,\mathcal M_n),
+ \]
+ 
+-where \(G\Downarrow_n(\mathcal M_n,\alpha_n)\) means that the fixed architecture constructs the stagewise acquisition model and its physical application witness inside the declared closed account. A cut with an invalid application witness, an answer-indexed specialist, target leakage, an omitted terminal-relevant cost, or a missed preregistered threshold refutes the universal claim on that declared family. Failure merely to nominate such a \(G\) is **INCONCLUSIVE** unless the architecture class is exhaustively reduced. No admissible F8-D run is supplied here, so \(R_G\) is **UNTESTED**. It is not a premise of the finite-prefix capstone unless an application explicitly adds it.
++where \(G\Downarrow_n(\mathcal M_n,\alpha_n)\) means that the fixed architecture constructs the stagewise acquisition model and its physical application witness inside the declared closed account. A cut with an invalid application witness, an answer-indexed specialist, target leakage, an omitted terminal-relevant cost, or a missed preregistered threshold refutes the universal claim on that declared family. Failure merely to nominate such a \(G\) is **INCONCLUSIVE** unless the architecture class is exhaustively reduced. It is not a premise of the finite-prefix capstone unless an application explicitly adds it.
+ 
+ ### S13. The physical bridge obligations
+ 
+ Spark applies to the world only through a typed realization map. The following obligations are abstract and are discharged conditionally by Book II.
+ 
+-**R1 (Record realization). `[interface obligation]`** Declared physical attributes and encoding tasks realize every finite Spark record distinction used at the active cut, including syntax, quotation, pairing, role tags, explicanda, outcomes, and event identifiers.
++**R1 (Record realization).** Declared physical attributes and encoding tasks realize every finite Spark record distinction used at the active cut, including syntax, quotation, pairing, role tags, explicanda, outcomes, and event identifiers.
+ 
+-**R2 (Persistence realization). `[interface obligation]`** Every record or role occupant used by a later construction, evaluation, comparison, award, or promotion persists or is reconstructibly available with the reliability claimed. A full internal append-only archive is required only when A1i or deterministic replay is claimed.
++**R2 (Persistence realization).** Every record or role occupant used by a later construction, evaluation, comparison, award, or promotion persists or is reconstructibly available with the reliability claimed. A full internal append-only archive is required only when A1i or deterministic replay is claimed.
+ 
+-**R3 (Transition realization). `[interface obligation]`** Physical task tokens and causal order realize the distinctions among construction, consequential exposure, outcome registration, comparison, operational award, promotion, and direct exogenous insertion. Every claimed A5 role write has a physically realized no-bypass path through G1–G3, and no answer-bearing external content reaches the role in violation of G4.
++**R3 (Transition realization).** Physical task tokens and causal order realize the distinctions among construction, consequential exposure, outcome registration, comparison, operational award, promotion, and direct exogenous insertion. Every claimed A5 role write has a physically realized no-bypass path through G1–G3, and no answer-bearing external content reaches the role in violation of G4.
+ 
+-**R4 (Resource realization). `[interface obligation]`** Formal budgets map to finite physical resource bounds over the terminal-relevant causal cone. No external constructor, computation, memory, training history, instrument, or storage operation on which success depends is left unpriced.
++**R4 (Resource realization).** Formal budgets map to finite physical resource bounds over the terminal-relevant causal cone. No external constructor, computation, memory, training history, instrument, or storage operation on which success depends is left unpriced.
+ 
+-**R5 (Boundary realization). `[interface obligation]`** The declared system boundary accounts for target authors, record stores, interfaces, energy, matter, information flows, external constructors, and role mutations relevant to the claim. Every cross-boundary causal edge is typed.
++**R5 (Boundary realization).** The declared system boundary accounts for target authors, record stores, interfaces, energy, matter, information flows, external constructors, and role mutations relevant to the claim. Every cross-boundary causal edge is typed.
+ 
+ Book II proves that concrete Poietic witness conditions \(W_1\)–\(W_5\) imply R1–R5. It also proves a non-empty constructor-theoretic model of the interface. Those theorems do not prove that every physical creator supplies the witnesses.
+ 
+-**Conjecture B-Core (Physical knowledge-growth bridge). `[conjecture]`** Every independently identified Poietic knowledge-bearing physical extension has some declared boundary and frame under which its new operative mark realizes a core Spark growth step satisfying A1w, A5, and R1–R5. Whenever the stronger claim is that the process creates explanatory knowledge, the Spark description must additionally realize the account, problem, comparative appraisal, successor, and standing relations of S3 and obey A-NJ. Unrepresented variation and selection may therefore instantiate the core transition constitution without being redescribed as reflective criticism or tentative refutation.
++**Conjecture B-Core (Physical knowledge-growth bridge).** Every independently identified Poietic knowledge-bearing physical extension has some declared boundary and frame under which its new operative mark realizes a core Spark growth step satisfying A1w, A5, and R1–R5. Whenever the stronger claim is that the process creates explanatory knowledge, the Spark description must additionally realize the account, problem, comparative appraisal, successor, and standing relations of S3 and obey A-NJ. Unrepresented variation and selection may therefore instantiate the core transition constitution without being redescribed as reflective criticism or tentative refutation.
+ 
+-**Conjecture B-Universal. `[conjecture]`** Every physical universal explainer with reflective role-completeness additionally admits a realization of A2–A4 for the structures and transitions to which the universal diagonal results are applied. A1i is required only for the stronger claim that the system itself can audit or deterministically replay the relevant reports.
++**Conjecture B-Universal.** Every physical universal explainer with reflective role-completeness additionally admits a realization of A2–A4 for the structures and transitions to which the universal diagonal results are applied. A1i is required only for the stronger claim that the system itself can audit or deterministically replay the relevant reports.
+ 
+ The split is deliberate. B-Core does not force every lineage or selection process to contain represented problems, a universal interpreter, self-specializer, or replayable internal log. Explanatory attributions carry the additional source-aligned relations, and B-Universal carries the computational burdens exactly where Spark uses them.
+ 
+@@ -868,21 +862,21 @@
+ 
+ ### S14. Exposed interpretations
+ 
+-**E1 (One transition constitution). `[interpretation]`** Discovery, learning, criticism, reflection, institutional revision, and selection-like retention are proposed realizations of A5 with different target sources, degrees of representation, and promoted roles. A stable process requiring direct operative insertion or lacking any construction–consequence–award factorization refutes this interpretation and may refute B-Core.
++**E1 (One transition constitution).** Discovery, learning, criticism, reflection, institutional revision, and selection-like retention are proposed realizations of A5 with different target sources, degrees of representation, and promoted roles. A stable process requiring direct operative insertion or lacking any construction–consequence–award factorization refutes this interpretation and may refute B-Core.
+ 
+-**E2 (Transmission by re-creation). `[interpretation from A5, Proposition S6.2, and Conjecture R]`** Syntax transfer alone is insufficient for explanatory competence. High-fidelity transmission requires the receiving system to construct operative integration and survive consequence tests not exhausted by identity. A universal fixed decoder that transfers open-ended competence without receiver-owned construction refutes Conjecture R.
++**E2 (Transmission by re-creation).** Syntax transfer alone is insufficient for explanatory competence. High-fidelity transmission requires the receiving system to construct operative integration and survive consequence tests not exhausted by identity. A universal fixed decoder that transfers open-ended competence without receiver-owned construction refutes Conjecture R.
+ 
+-**E3 (Failure fringe as aim). `[interpretation from the problem definition and Fertility Conjecture]`** Failure and inadequacy traces do more than enlarge a target stream; they may localize where current accounts stop delivering and thereby aim construction. Matched-budget domination by a non-fringe policy strikes this interpretation.
++**E3 (Failure fringe as aim).** Failure and inadequacy traces do more than enlarge a target stream; they may localize where current accounts stop delivering and thereby aim construction. Matched-budget domination by a non-fringe policy strikes this interpretation.
+ 
+-**E4 (Persons and institutions). `[interpretation]`** A person or scientific institution is a candidate realization of a reflectively role-complete creative generator at a boundary containing the operative archives, interfaces, instruments, and loop-partners on which its role revision depends. No finite behavioural sample certifies that attribution.
++**E4 (Persons and institutions).** A person or scientific institution is a candidate realization of a reflectively role-complete creative generator at a boundary containing the operative archives, interfaces, instruments, and loop-partners on which its role revision depends. No finite behavioural sample certifies that attribution.
+ 
+-**E5 (Deployed predictive systems). `[interpretation]`** A deployed language model or other predictor may construct non-seed candidates and pass consequential checks while its problem stream remains externally authored and its \(C\) and \(P\) roles lack reachable revision. Such a system can realize partial A5 transitions without thereby qualifying as a creative generator. A boundary-local cycle that retains failures, converts them into first-class problems, and revises both problem generation and appraisal without an external author refutes this reading on that system.
++**E5 (Deployed predictive systems).** A deployed language model or other predictor may construct non-seed candidates and pass consequential checks while its problem stream remains externally authored and its \(C\) and \(P\) roles lack reachable revision. Such a system can realize partial A5 transitions without thereby qualifying as a creative generator. A boundary-local cycle that retains failures, converts them into first-class problems, and revises both problem generation and appraisal without an external author refutes this reading on that system.
+ 
+-**E6 (Static societies as closed revision channels). `[interpretation]`** A static society is modelled as one in which promotion into \(C\) and \(P\) is permission-closed, invariantly inadmissible, or reachable only through an external regime exit, **and** the declared environment carries a joint \((C,P)\)-obstruction witness: every history holding both roles fixed has delivered content bounded by a declared constant. Bounded internally generated explanatory growth then follows while the obstruction and closures remain. Opening a revision path is only a regime-exit condition; it does not guarantee growth. Sustained internally generated explanatory growth while the fixed-role obstruction hypotheses genuinely hold refutes this reading; absence of an obstruction witness leaves it unlicensed.
++**E6 (Static societies as closed revision channels).** A static society is modelled as one in which promotion into \(C\) and \(P\) is permission-closed, invariantly inadmissible, or reachable only through an external regime exit, **and** the declared environment carries a joint \((C,P)\)-obstruction witness: every history holding both roles fixed has delivered content bounded by a declared constant. Bounded internally generated explanatory growth then follows while the obstruction and closures remain. Opening a revision path is only a regime-exit condition; it does not guarantee growth. Sustained internally generated explanatory growth while the fixed-role obstruction hypotheses genuinely hold refutes this reading; absence of an obstruction witness leaves it unlicensed.
+ 
+-**E7 (Imitator-loop origin reading). `[interpretation from Proposition 10.2]`** Components optimized only for faithful imitation can, at a larger cyclic boundary, become problem-owning when retained mismatch traces feed back into construction or target selection. This supplies an architectural reading of an imitation-to-creativity transition; it does not establish the historical evolutionary claim. A case in which every admissible boundary remains acyclic, or the feedback never changes construction or selection, refutes the reading.
++**E7 (Imitator-loop origin reading).** Components optimized only for faithful imitation can, at a larger cyclic boundary, become problem-owning when retained mismatch traces feed back into construction or target selection. This supplies an architectural reading of an imitation-to-creativity transition; it does not establish the historical evolutionary claim. A case in which every admissible boundary remains acyclic, or the feedback never changes construction or selection, refutes the reading.
+ 
+-**E8 (The generator, read from inside). `[interpretation; non-inferential]`** This module organizes already graded nodes into the document's answer to its founding question. It introduces no theorem, supplies no missing premise, and upgrades no residue. Each clause inherits the displayed parent and its refuter; a failed parent strikes the reading at that clause without travelling into unrelated results.
++**E8 (The generator, read from inside).** This module organizes the preceding claims into the document's answer to its founding question. It introduces no theorem, supplies no missing premise, and upgrades no conjecture or assumption. Each clause inherits the displayed parent and its refuter; a failed parent strikes the reading at that clause without travelling into unrelated results.
+ 
+ **E8.1, what creativity is.** Read A5 together with the core and explanatory growth definitions of S8. Creativity is not output novelty or storage of a new code. It is target-essential construction from held and causally available material, exposure to consequences that can answer differently, mediated operative award, and a cumulative role change not obtained solely by weakening or silently reframing the selected obligations; explanatory creativity additionally involves a first-class problem, a currently good account, and successor recovery where a predecessor is displaced. A stable case credited as creative despite direct answer insertion, identity-only adoption, no consequential exposure, or no cumulative operative gain refutes this Spark attribution and may attack A5 or the bridge.
+ 
+@@ -892,15 +886,15 @@
+ 
+ **E8.4, what a creator cannot guarantee merely by being revisable.** The Fragility Proposition says that a constructible content-retreating rule, an A5-admissible promotion path, and scheduler selection make exit from the growing regime reachable. Proposition 9.1 says that a non-vacuous output guarantee survives only through an explicit barrier in reach, permission, admissibility, policy, or interface. A system in which all displayed premises hold while retreat or violation remains unreachable refutes the respective result; the existence of revision alone guarantees neither growth nor safety.
+ 
+-**E8.5, what cannot yet be promised about foreseeing the creator.** The cutoff note supplies the exact computability limit. The wider claim that no bounded predictor can remain uniformly ahead of an A5-compliant revisable generator in the displayed adversarial setting is \(R_\Pi\), not a theorem. A bounded uniformly correct predictor satisfying every parent condition refutes that residue on the declared class.
++**E8.5, what cannot yet be promised about foreseeing the creator.** The cutoff note supplies the exact computability limit. The wider claim that no bounded predictor can remain uniformly ahead of an A5-compliant revisable generator in the displayed adversarial setting is \(R_\Pi\), not a theorem. A bounded uniformly correct predictor satisfying every parent condition refutes that conjecture on the declared class.
+ 
+ **E8.6, how a creator can arise without a creator at every component.** Proposition 10.2 and E7 permit problem ownership to emerge at a cyclic composite boundary when retained mismatch traces alter later construction or target selection. This is an architectural possibility, not a historical law. If no admissible boundary contains such a feedback path, or the returned trace never changes construction or selection, the reading fails for that case.
+ 
+-**E8.7, how criticism can give construction direction.** S12 says that cheap exact acquisition requires available criticisms whose worst outcomes contract the live alternative class at favourable closed cost; outcome sensitivity by itself is not enough. The Fertility Conjecture asks whether failure-fringe targeting beats declared rival policies. \(R_G\) asks the deeper generator question: whether one fixed answer-generic architecture can construct the representations, tests, application witnesses, and retained background that keep criticism useful across a scaling family after every construction cost is charged. \(R_{\mathrm{AB}}\) asks, only on independently battery-unified architectures, whether the same endogenous criticism subsystem also supplies the geometry that predicts transmission. A matched-budget rival victory, a hidden specialist, an invalid application witness, or a preregistered threshold failure reaches the corresponding conjecture or residue exactly as its protocol states.
++**E8.7, how criticism can give construction direction.** S12 says that cheap exact acquisition requires available criticisms whose worst outcomes contract the live alternative class at favourable closed cost; outcome sensitivity by itself is not enough. The Fertility Conjecture asks whether failure-fringe targeting beats declared rival policies. \(R_G\) asks the deeper generator question: whether one fixed answer-generic architecture can construct the representations, tests, application witnesses, and retained background that keep criticism useful across a scaling family after every construction cost is charged. \(R_{\mathrm{AB}}\) asks, only on independently battery-unified architectures, whether the same endogenous criticism subsystem also supplies the geometry that predicts transmission. A matched-budget rival victory, a hidden specialist, an invalid application witness, or a preregistered threshold failure reaches the corresponding conjecture through its stated countercase.
+ 
+-**E8.8, how the attribution can be made and defeated.** Corollary 8.1 forbids certification of creative capacity or reflective role-completeness from unrestricted finite behaviour alone. A positive physical attribution instead displays the S8 constitutive witnesses, an independently fixed boundary and frame, the I1 realization map, and the relevant W0–W5 package, then exposes them to F7 and F8. A finite behavioural contradiction may refute a claimed consequence; a failed constitutive or physical witness defeats the attribution on that frame. A surviving cut remains a criticisable current attribution, never confirmation of truth, fertility, or an unbounded future.
++**E8.8, how the attribution can be made and defeated.** Corollary 8.1 forbids certification of creative capacity or reflective role-completeness from unrestricted finite behaviour alone. A positive physical attribution instead displays the S8 constitutive witnesses, an independently fixed boundary and frame, the I1 realization map, and the relevant W0–W5 package, then exposes each face to direct intervention and counterexample. A finite behavioural contradiction may refute a claimed consequence; a failed constitutive or physical witness defeats the attribution on that frame. A surviving cut remains a criticisable current attribution, never confirmation of truth, fertility, or an unbounded future.
+ 
+-**E8.9, the open interior.** The programme's organized portrait therefore ends in explicit risk rather than a characterization theorem: \(R_{\mathrm{CG}}\) tests adequacy of the proposed creator predicate, \(R_{\mathrm{RO}}\) tests the route from obstruction to all-role revisability, \(R_\Pi\) tests bounded prophecy, \(R_{\mathrm{AB}}\) tests the one-operation architectural reading, and \(R_G\) tests answer-generic construction of useful criticism geometry. Removing a creativity label while losslessly expanding its definiens and preserving this map has zero cost. Deleting E8 after expansion leaves the layer-local theorems intact but removes the organized answer to the founding question. Under the purpose ledger that is a priced purpose retreat, not an inferential refutation.
++**E8.9, the open interior.** The programme's organized portrait therefore ends in explicit risk rather than a characterization theorem: \(R_{\mathrm{CG}}\) tests adequacy of the proposed creator predicate, \(R_{\mathrm{RO}}\) tests the route from obstruction to all-role revisability, \(R_\Pi\) tests bounded prophecy, \(R_{\mathrm{AB}}\) tests the one-operation architectural reading, and \(R_G\) tests answer-generic construction of useful criticism geometry. Failure of any one revises the corresponding part of the portrait without deciding the unrelated theorems.
+ 
+ ---
+ 
+@@ -1214,9 +1208,9 @@
+ 
+ A tuple counts as one realization package only when its witnesses are **jointly coherent** on every shared bearer, task token, causal edge, resource label, interpretation, temporal cut, and boundary port used by the claim. No load-bearing distinction may lie in the loss set of a transport between witness frames. This coherence condition is definitional, not a consequence of listing W0–W5 side by side.
+ 
+-**W0, role-coupled physical knowledge anchor. `[physical witness]`** The operative organization identified with the Spark system is configured or maintained by at least one current Poietic knowledge attribute. For every role write claimed as a knowledge-growth step, the terminal promoted content, or a losslessly linked control value that identifies and configures its operative use, has a current content-sensitive retention circuit covering the declared perturbation family. An unrelated self-maintaining bit elsewhere in the ecology does not discharge W0, and W0 does not identify every Spark record as Poietic knowledge.
++**W0, role-coupled physical knowledge anchor.** The operative organization identified with the Spark system is configured or maintained by at least one current Poietic knowledge attribute. For every role write claimed as a knowledge-growth step, the terminal promoted content, or a losslessly linked control value that identifies and configures its operative use, has a current content-sensitive retention circuit covering the declared perturbation family. An unrelated self-maintaining bit elsewhere in the ecology does not discharge W0, and W0 does not identify every Spark record as Poietic knowledge.
+ 
+-**W1, extensible record family. `[physical witness]`** For every finite set \(D\subset\mathbb S\) of Spark records used at the cut, closed under the quotation, pairing, projection, role-tag, and outcome-decoding operations actually invoked there, the ecology supplies a jointly informational variable \(X_D\), an injective encoding
++**W1, extensible record family.** For every finite set \(D\subset\mathbb S\) of Spark records used at the cut, closed under the quotation, pairing, projection, role-tag, and outcome-decoding operations actually invoked there, the ecology supplies a jointly informational variable \(X_D\), an injective encoding
+ 
+ \[
+ \eta_D:D\hookrightarrow X_D,
+@@ -1226,11 +1220,11 @@
+ 
+ W1 requires only arbitrarily extensible finite realization, not one actually infinite physical register.
+ 
+-**W2, dependency and role persistence. `[physical witness]`** For every Spark dependency edge from a record's availability to its later use, \(H_\Sigma\) contains a causal transport path preserving the encoded distinction to the use event. Every currently held role occupant whose operative semantics matter to the claim has both a persistent identifier or provenance record and a current physical bearer, task capability, or causal organization linked to that record by an operative interpretation witness. The capability is carried continuously, maintained against the declared perturbations, or reconstructibly recovered before use. Copying the identifier alone is insufficient. If A1i or deterministic replay is claimed, every event needed for replay additionally has a current archival bearer and operative decoder.
++**W2, dependency and role persistence.** For every Spark dependency edge from a record's availability to its later use, \(H_\Sigma\) contains a causal transport path preserving the encoded distinction to the use event. Every currently held role occupant whose operative semantics matter to the claim has both a persistent identifier or provenance record and a current physical bearer, task capability, or causal organization linked to that record by an operative interpretation witness. The capability is carried continuously, maintained against the declared perturbations, or reconstructibly recovered before use. Copying the identifier alone is insufficient. If A1i or deterministic replay is claimed, every event needed for replay additionally has a current archival bearer and operative decoder.
+ 
+-**W3, stage-separated role write. `[physical witness]`** Every physical role mutation identified with a non-seed Spark promotion has a finite causal subgraph with distinguished construction, consequential exposure, outcome-registration, award, and role-write task tokens. Every causal path that carries answer-bearing or occupant-determining content from held, seed, target, or external raw inputs into the new role occupant passes through a construction gate. Typed permission, criterion, and scheduling control paths may enter only their corresponding award or role-write gates and may not supply the occupant's answer-bearing content. Every causal path from the constructed candidate content to role write passes through consequential exposure, outcome registration, and award; every award-relevant path passes through at least one resistant outcome interface; and external syntax can enter an event or raw-record register without a direct content path to an operative role. Whenever the role write records tentative refutation, a physical comparison subgraph carries the rival, defect, common-explicanda, and recovery records that the Spark identification map uses to evaluate its tentative-refutation predicate. Poietic does not itself judge that predicate.
++**W3, stage-separated role write.** Every physical role mutation identified with a non-seed Spark promotion has a finite causal subgraph with distinguished construction, consequential exposure, outcome-registration, award, and role-write task tokens. Every causal path that carries answer-bearing or occupant-determining content from held, seed, target, or external raw inputs into the new role occupant passes through a construction gate. Typed permission, criterion, and scheduling control paths may enter only their corresponding award or role-write gates and may not supply the occupant's answer-bearing content. Every causal path from the constructed candidate content to role write passes through consequential exposure, outcome registration, and award; every award-relevant path passes through at least one resistant outcome interface; and external syntax can enter an event or raw-record register without a direct content path to an operative role. Whenever the role write records tentative refutation, a physical comparison subgraph carries the rival, defect, common-explicanda, and recovery records that the Spark identification map uses to evaluate its tentative-refutation predicate. Poietic does not itself judge that predicate.
+ 
+-**W4, closed resource account. `[physical witness]`** For every completed transition claimed at the active Spark cut, the terminal-relevant physical causal contributors have a declared finite aggregate \(r_\Gamma\in\mathcal R_{\mathrm{fin}}\) in an ordered commutative resource monoid \((\mathcal R,+,\preceq)\). A tokenized account must have finite support or a separately witnessed finite-summation rule, and every charged task token has a resource label participating in the aggregate. The frame supplies a monotone finite coding or projection
++**W4, closed resource account.** For every completed transition claimed at the active Spark cut, the terminal-relevant physical causal contributors have a declared finite aggregate \(r_\Gamma\in\mathcal R_{\mathrm{fin}}\) in an ordered commutative resource monoid \((\mathcal R,+,\preceq)\). A tokenized account must have finite support or a separately witnessed finite-summation rule, and every charged task token has a resource label participating in the aggregate. The frame supplies a monotone finite coding or projection
+ 
+ \[
+ \lambda_\Gamma:\mathcal R_{\mathrm{fin}}\to\mathbb N^k
+@@ -1238,9 +1232,9 @@
+ 
+ used by Spark budgets. Every external constructor, prepared blank, instrument, memory operation, training process, maintenance route, energy or matter input, and interpretation process on which the transition depends crosses a typed boundary port and is included in the account.
+ 
+-**W5, causal boundary closure. `[physical witness]`** The declared boundary is a causal cut. Every cross-boundary edge relevant to the claim is typed as target or record input, resource or energy input, constructor service, observation, output, or control intervention. Every operative role mutation has all causal parents inside the boundary or represented by a typed recorded input. No unlabelled external path changes a role or supplies an answer-shaped constructor.
++**W5, causal boundary closure.** The declared boundary is a causal cut. Every cross-boundary edge relevant to the claim is typed as target or record input, resource or energy input, constructor service, observation, output, or control intervention. Every operative role mutation has all causal parents inside the boundary or represented by a typed recorded input. No unlabelled external path changes a role or supplies an answer-shaped constructor.
+ 
+-**WU, universal execution realization. `[optional physical witness]`** The ecology carries a current information-processing architecture and possible task family realizing universal interpretation, specialization, the finite recipes used by A4, and, when A1i is claimed, internal report extraction. WU is required only for the universal diagonal extension.
++**WU, universal execution realization.** The ecology carries a current information-processing architecture and possible task family realizing universal interpretation, specialization, the finite recipes used by A4, and, when A1i is claimed, internal report extraction. WU is required only for the universal diagonal extension.
+ 
+ ### P5. Discharge of R1–R5
+ 
+@@ -1306,7 +1300,7 @@
+ 
+ ### P6. Non-empty consistency model
+ 
+-**Theorem P6.1 (Finite interface satisfiability). `[elementary model construction]`** For every finitely presented A5-compliant Spark trace fragment, restricted to the record distinctions, role incidences, dependencies, and task tokens used at one finite cut, there exists a law-relative constructor-theoretic task model supplying a coherent W0–W5 package and realizing that fragment. If the fragment uses A2–A4, the model can additionally satisfy WU.
++**Theorem P6.1 (Finite interface satisfiability).** For every finitely presented A5-compliant Spark trace fragment, restricted to the record distinctions, role incidences, dependencies, and task tokens used at one finite cut, there exists a law-relative constructor-theoretic task model supplying a coherent W0–W5 package and realizing that fragment. If the fragment uses A2–A4, the model can additionally satisfy WU.
+ 
+ **Proof.** Let the constructed law-relative model permit arbitrarily many finite classical information registers and receptive blanks, while allocating only the finite family needed by the present trace fragment. Include permutation, cloning, pairing, projection, and finite logic tasks on those registers. For each Spark construction, evaluation, award, and role-write token, introduce a repeatable finite-state constructor with the same typed input and output incidence. Wire them in the trace's acyclic order and place a gate before every role register. External inputs terminate only at raw-record registers. Let a separate environment register or checker task supply the outcome variable used by each consequential appraisal, and exclude any selector-to-outcome bypass.
+ 
+@@ -1332,7 +1326,7 @@
+ 
+ Call \((\Sigma,\beta,A)\) **extension-ready by the declared routes** when \(O_{\mathrm{execute}}\) and \(O_{\mathrm{interface}}\) are false and either the direct-route maintenance witnesses make \(O_{\mathrm{capacity}},O_{\mathrm{retention}},O_{\mathrm{coupling}}\) false, or the reconstructive witnesses make \(O_{\mathrm{joint}},O_{\mathrm{rebuild}},O_{\mathrm{capacity}},O_{\mathrm{coupling}}\) false.
+ 
+-**Proposition P7.1. `[elementary from P3.5]`** Extension-readiness by the declared routes is equivalent to the existence of a marked physical extension witness realized by the direct or reconstructive route.
++**Proposition P7.1.** Extension-readiness by the declared routes is equivalent to the existence of a marked physical extension witness realized by the direct or reconstructive route.
+ 
+ The equivalence is analytical witness assembly. Its only locally eliminative component is Theorem P3.4: finite protection of a jointly informational skeleton need not be separately postulated once clonability, finite blank capacity, and regular information composition hold. Reconstruction, resource compatibility, maintenance, execution, and interface persistence remain substantive physical burdens.
+ 
+@@ -1380,21 +1374,21 @@
+ 
+ ### I2. Separation and non-collapse results
+ 
+-**Separation 1 (Physical knowledge does not imply Spark growth). `[countermodel]`** A content-sensitive chain letter, hereditary control value, or the one-substrate model of P3.6 can satisfy the Poietic knowledge predicate while admitting no good explanatory rival, no first-class Spark problem, no A5-compliant cumulative transition, or no protected extension. Therefore
++**Separation 1 (Physical knowledge does not imply Spark growth).** A content-sensitive chain letter, hereditary control value, or the one-substrate model of P3.6 can satisfy the Poietic knowledge predicate while admitting no good explanatory rival, no first-class Spark problem, no A5-compliant cumulative transition, or no protected extension. Therefore
+ 
+ \[
+ \operatorname{PoiKnowledge}\nRightarrow\operatorname{SparkGrowth}.
+ \]
+ 
+-**Separation 2 (Abstract Spark does not imply physical realization). `[countermodel]`** A formal A5 transition system can be stipulated over strings while no physical law, substrate, record family, persistence route, resource allocation, or closed boundary realizes it. Therefore
++**Separation 2 (Abstract Spark does not imply physical realization).** A formal A5 transition system can be stipulated over strings while no physical law, substrate, record family, persistence route, resource allocation, or closed boundary realizes it. Therefore
+ 
+ \[
+ \operatorname{SparkTrace}\nRightarrow R1\land\cdots\land R5.
+ \]
+ 
+-**Separation 3 (R1–R5 do not imply Genesis). `[countermodel]`** Classical registers, stable memory, stage labels, priced resources, and a closed boundary may coexist with a direct external write into an operative role. Thus the physical realization obligations alone do not entail A5.
++**Separation 3 (R1–R5 do not imply Genesis).** Classical registers, stable memory, stage labels, priced resources, and a closed boundary may coexist with a direct external write into an operative role. Thus the physical realization obligations alone do not entail A5.
+ 
+-**Separation 4 (Genesis does not imply physical knowledge). `[countermodel]`** A finite A5-compliant transition can manipulate transient records that have no content-sensitive self-retention circuit. Thus A5 does not entail W0.
++**Separation 4 (Genesis does not imply physical knowledge).** A finite A5-compliant transition can manipulate transient records that have no content-sensitive self-retention circuit. Thus A5 does not entail W0.
+ 
+ These separations are not defects. They are the reason the interface has two layers rather than one vocabulary smeared across both.
+ 
+@@ -1411,9 +1405,9 @@
+ 
+ be the current open problem classes that admit a physically possible good resolution. A cross-layer target witness selects \([q]\in W_t\), a Spark acquisition or construction trace for a candidate resolution, and a Poietic task \(A_q\) identified with the physical construction of the corresponding new operative capability.
+ 
+-Define the fourth independent residue.
++Define the fourth independent open assumption.
+ 
+-**Residue \(R_X^{\Phi}\) (protected physical extension). `[residue]`**
++**Open assumption \(R_X^{\Phi}\) (protected physical extension).**
+ 
+ \[
+ R_X^{\Phi}(t,\beta):
+@@ -1425,17 +1419,17 @@
+ 
+ for the accumulated finite predecessor cut \(\beta\), with W1–W5 maintained for the resulting role write.
+ 
+-This is the precise seam. Spark supplies the open good problem and A5 provenance. Poietic supplies physical executability, predecessor preservation or reconstruction, resources, coupling, persistence, and boundary closure. No theorem in either book proves this residue. A live problem with no extension-ready good resolution refutes it at that cut.
++This is the precise seam. Spark supplies the open good problem and A5 provenance. Poietic supplies physical executability, predecessor preservation or reconstruction, resources, coupling, persistence, and boundary closure. No theorem in either book proves this assumption. A live problem with no extension-ready good resolution refutes it at that cut.
+ 
+-All open-endedness in the capstone sits in the four residues \(R_{P,0}\), \(R_{P,+}\), \(R_S\), and \(R_X^{\Phi}\). The result below is a composition theorem once they are granted.
++All open-endedness in the capstone sits in the four open assumptions \(R_{P,0}\), \(R_{P,+}\), \(R_S\), and \(R_X^{\Phi}\). The result below is a composition theorem once they are granted.
+ 
+-**Residue-Conditional Layered Finite-Prefix Theorem. `[conditional]`** Assume the initial cut has creative capacity,
++**Layered Finite-Prefix Composition Theorem.** Assume the initial cut has creative capacity,
+ 
+ \[
+ \operatorname{CreativeCapacity}(\mathcal K_0),
+ \]
+ 
+-and assume the three Spark residues
++and assume the three Spark open assumptions
+ 
+ \[
+ R_{P,0},\qquad R_{P,+},\qquad R_S,
+@@ -1451,7 +1445,7 @@
+ 
+ **Proof.** At the initial cut, the creative-capacity premise activates \(R_{P,0}\), which supplies a non-vacuous open problem; \(R_S\) then supplies an open good member. \(R_X^{\Phi}\) selects a physically extension-ready task for the finite predecessor cut. P7.1 supplies a marked physical extension; P5.6 realizes its records, persistence, transition stages, resources, and boundary; and A5 credits the target-essential role write. For the induction step, \(R_{P,+}\) supplies a retained or newly constructed open problem after the previous transition, \(R_S\) supplies an open good member, and \(R_X^{\Phi}\) supplies a physical extension for the now enlarged finite cut. P3.3 composes the marked physical embeddings, while A5, B2, and Proposition S6.1 supply and finitely expand the Spark provenance ancestry. Every finite stage adds finitely many marks and records, so the next cut remains finite. ∎
+ 
+-The proof is finite induction and witness bookkeeping after initial creative capacity and the four residues are assumed. It proves none of problem bootstrap, recurrence, stage-local solubility, or protected extension-readiness. Each application must expose a separate witness or failed-witness record for every residue under Protocol F6.
++The proof is finite induction and witness composition once initial creative capacity and the four open assumptions are granted. It proves none of problem bootstrap, recurrence, stage-local solubility, or protected extension-readiness. Each application must supply a separate witness for every open assumption.
+ 
+ The theorem establishes **unbounded finite extendibility**:
+ 
+@@ -1480,182 +1474,33 @@
+ 
+ The table supplies application schemas, not completed realizations.
+ 
+-### I5. Dependency, concentration, and attack surface
+-
+-| Node | Direct parents | Principal children | Separating refuter or test | Required protocol |
+-|---|---|---|---|---|
+-| A1w finite witnessability | Spark observation semantics | negative-witness results | an outcome claimed to occur with no finite event token | proof audit |
+-| A1i internal auditability | persistent report access | deterministic replay, internal inspection | a claimed replay whose required report is not internally recoverable | replay audit |
+-| B2 finite Spark ancestry | completed Spark event typing | Proposition S6.1 and finite Spark provenance expansion | a completed Spark certificate with no finite acyclic ancestry | trace audit |
+-| A2–A4 universal extension | declared execution basis | L1–L4; T1–T3, T4(c), T5, T9–T10; Proposition 11.1 through A4 when no explicit compiler is held | a claimed universal application lacking interpretation, specialization, or the invoked finite recipe | universal-witness audit |
+-| L1 fixed point | A2–A4 | L2–L4 and their actual downstream impossibility cluster | a model of A2–A4 in which the fixed-point construction fails | proof or model audit |
+-| A5 Genesis | Spark transition constitution | S6 provenance, growth attribution, creative architecture, and B-Core application | direct insertion, identity-only adoption, unevaluated promotion, or oracle role write | F7 |
+-| Residue \(R_{\mathrm{CG}}\) | S8 constitutive predicate; independent case predicate \(J\); declared domain and boundary/frame family; realization package where physical | creator-characterization adequacy and E8.2 | a positive case with no admissible creative-generator realization, or a matched negative control satisfying every constitutive face while failing \(J\) | F8-A |
+-| A-NJ non-justificationist grammar | founding epistemology | T0.1–T0.3 and standing semantics | a specified system in which compatible outcomes create theory support or a lone anomaly itself constitutes explanatory refutation | constitutional comparison |
+-| Tentative-refutation relation | defect trace, rival goodness, successor recovery | explanatory succession and standing | a claimed refutation with no good rival or no recovery of predecessor successes | comparison audit |
+-| Conjecture C1 | repertoire, transcript class, edit graph, target family | assembly–rigidity field claim | absent or reversed preregistered association | F1 |
+-| C2-P1 single-battery coherence | fixed instrument or lossless transport | admissible C2 run | battery substitution, demand deletion, or lossy post-outcome transport | F2 |
+-| C2-P2 identifiability geometry | local response profiles, chart, answer-free map | admissible C2 prediction | no non-degenerate map, target leakage, or held-out answer use | F2 |
+-| Conjecture C2 | C2-P1, C2-P2, held-out matched-budget run | geometry–transmission field claim | failed or stably reversed pinning/transmission order | F2 |
+-| Residue \(R_{\mathrm{AB}}\) | independently witnessed architectural battery-unity; A5; C2-P1 and C2-P2; valid \(\alpha\); W3–W5 and W4-closed budgets | one-operation reading in E8.7 | stable held-out C2 failure while every coupled antecedent survives | F8-C together with F2 |
+-| Conjecture O | source optimism and physical admissibility frame | stage-local solubility interpretation | a physically admissible problem with no possible resolution or transforming knowledge | F6 |
+-| Residue \(R_\Pi\) | A5 class, environment variability, shared observation channel, positive lead time | bounded-prediction field claim and E8.5 | a bounded uniformly correct predictor satisfying every displayed condition | F5 |
+-| T7 retreat dynamics | explicit cost, fairness, recurrence, connectivity hypotheses | growing-regime bookkeeping | a run in which all displayed hypotheses hold but strict descent fails | proof or model audit |
+-| Residue \(R_{\mathrm{RO}}\) | role typing; declared environment class and scaling family; unbounded role-revisable controls; fixed-role histories; delivered-content readout | conditional route from obstruction to all-role revisability and E8.2 | a fixed-role history exceeding a nominated bound; or, on an exhaustive class, one role with no obstruction environment | F8-B |
+-| Successor compiler | finite represented comparison plus A4 or explicit compiler | one problem-propagation channel | every compiled child is vacuous or already discharged | trace audit |
+-| Residue \(R_G\) | fixed answer-generic architecture and seed; scaling family; valid application witnesses; closed cost; preregistered efficiency or benchmark threshold | jump-constructor question and E8.7 | hidden specialist, target leakage, invalid \(\alpha_n\), omitted cost, or one threshold miss on the declared family | F8-D |
+-| Residue \(R_{P,0}\) | source-level bootstrap burden | finite-prefix base step | creative capacity with no inherited or constructed non-vacuous problem | F6 |
+-| Residue \(R_{P,+}\) | source-level recurrence burden | finite-prefix induction | a selected resolution after which every problem is discharged and no new one is constructed | F6 |
+-| Residue \(R_S\) | one live open problem plus physical possibility | finite-prefix induction | open problems remain but none has a physically possible good resolution | F6 |
+-| Residue \(R_X^{\Phi}\) | live soluble problem, predecessor cut, Poietic extension route | finite-prefix induction | no extension-ready task preserving the accumulated cut | F6 |
+-| W0 knowledge anchor | role-coupled information and content-sensitive retention | B-Core domain and cross-layer growth | the only self-retaining information is causally unrelated to the promoted role or capability | F7 |
+-| W1 record family | joint informationality and finite record tasks | R1 and P5.6 | a required Spark distinction has no physical code or lossless transport | F7 |
+-| W2 persistence | carriage, maintenance, or reconstruction | R2 and continued role use | copied syntax survives while the operative capability or decoder does not | F7 |
+-| W3 stage separation | physical task network and resistant outcome | R3 and physical A5 realization | an unmediated content path from external input or candidate to role write | F7 |
+-| W4 resource closure | finite physical aggregate, labels, typed ports | R4 and acquisition-cost claims | omitted pretraining, apparatus, memory, labour, maintenance, or constructor service | F1–F8 as applicable |
+-| W5 boundary closure | causal cut and edge typing | R5 and autonomy claims | an external target author, store, controller, or role mutation outside the declared boundary | F7 |
+-| Package coherence | W1–W5 on one frame with no load-bearing transport loss | P5.6 joint realization | individually valid witnesses refer to incompatible bearers, cuts, interpretations, or boundaries | F7 |
+-| P3.1 task-digital guards | identity protection for every code attribute and non-trivial recovery | protected-interface digitality | a well-formed corrector satisfying the full-code premise whose recovery domain remains inside the code region | proof or model audit |
+-| P3.4 information protection | co-clonability, finite capacity, regular information composition | reconstructive protection | no joint information presentation or insufficient blanks | physical witness audit |
+-| P3.5 capability lift | direct maintenance or reconstructive completeness | \(R_X^{\Phi}\) | one indispensable non-duplicable mastery substrate | F6 |
+-| Conjecture B-Core | A1w, A5, W0, R1–R5; plus A-NJ and S3 relations for explanatory claims | physical application of core Spark | an independently identified Poietic knowledge-bearing extension with no admissible realization | F7 |
+-| Conjecture B-Universal | B-Core plus A2–A4 realization; A1i only for audit/replay | diagonal and universal-generator applications | a universal explainer lacking the required execution architecture | F7 |
+-| Fertility Conjecture | qualifying architecture and realized target source | policy ranking | matched-budget domination of failure-fringe policy by a declared rival | F3 |
+-| Conjecture R | receiver boundary, fixed decoder, explanatory competence criterion | transmission-by-re-creation interpretation | answer-generic fixed decoding that transfers the declared open-ended competence without receiver-owned construction and appraisal | F4 |
+-| E8 inside view | S8 and Corollary 8.1; T3 and T9; Fragility; Proposition 9.1; Proposition 10.2 and Corollary 10.4; S12; I1 and W0–W5; Fertility; \(R_{\mathrm{CG}}\), \(R_{\mathrm{RO}}\), \(R_\Pi\), \(R_{\mathrm{AB}}\), and \(R_G\) | organized founding answer only | a parent refuter strikes its clause; deletion or parent mismatch empties a purpose cell without refuting a theorem | purpose-coverage guard |
+-
+-A claim's **parent cut** contains its displayed premises together with the proof, compiler, identification map, or witness package that carries the inference. A countermodel satisfying every displayed premise and violating a theorem conclusion attacks the theorem or proof node directly; it need not make a true premise false. A missing conditional hypothesis blocks the application and creates a failed-witness record for that hypothesis. It does not count as survival of the application.
+-
+-Conjecture, residue, and interpretation refuters propagate to every child field claim that cites them, but not through a type boundary into a theorem that never used them. A W-witness failure therefore kills the physical application; it does not refute the abstract Spark result. Conversely, a proof defect in Spark cannot be hidden inside a bridge failure. Firebreaks are type guards, not exoneration devices.
+-
+-When failure does not localize uniquely, every member of the minimal parent cut receives an **unlocalized attack debt**. A separating proof, countermodel, or protocol run may discharge the innocent members. No conditional clause may silently absorb a failure by disappearing from the report.
+-
+-The structural concentration is explicit:
+-
+-| Keystone | Actual concentration | What survives deletion |
+-|---|---|---|
+-| L1 | sole fixed-point parent of L2–L4 and thereby T1–T3, T4(c), T9, and T10 | T5, Proposition 11.1 when separately compiled, the A5 core, and all Poietic results |
+-| A5 | sole constitutional parent of non-seed operative credit, Spark growth, and the core bridge attribution | diagonal computability results and all layer-local Poietic theorems |
+-| B2 | Spark provenance only after revision 1.1; P5.4 now rests on W4's finite physical resource aggregate | Poietic resource realization no longer depends on Spark ancestry |
+-| Four capstone residues | all bootstrap, recurrence, solubility, and extension-readiness needed for finite-prefix iteration | the two kernels and the one-step realization theorems remain; the capstone does not |
+-| Five creator residues | the risk-bearing synthetic faces of E8 and the purpose-coverage table | all layer-local theorems and the four-residue capstone remain; the organized generator answer loses the corresponding clauses |
+-
+-#### Purpose-coverage guard
+-
+-Every revision carries the following semantic table in addition to the dependency table. For each founding-answer cell \(p\), \(K_p\) is its expansion-normalized constitutive face, \(S_p\) its risk-bearing synthetic face, \(F_p\) its separating refutation or protocol face, and \(M_p\) its non-inferential organizing map. Reusing a label without preserving its distinctions does not preserve a face; renaming or expanding an abbreviation does.
+-
+-| Founding-answer cell | \(K_p\), constitutive nodes | \(S_p\), exposed synthetic risk | \(F_p\), separating route | \(M_p\), organizing map |
+-|---|---|---|---|---|
+-| What creativity is | A5; core and explanatory growth; A-NJ standing grammar | Conjecture B-Core; adequacy edge of \(R_{\mathrm{CG}}\) | A5 no-bypass audit, comparison audit, F7, F8-A | E8.1 |
+-| What a creator must be | owned evaluated target source; creative capacity; reflective role-completeness; creative generator; regime and career distinctions | \(R_{\mathrm{CG}}\), \(R_{\mathrm{RO}}\), \(R_\Pi\), \(R_{\mathrm{AB}}\), \(R_G\), Fertility, B-Universal | F3, F5, F7, F8-A through F8-D | E8.2 through E8.7 and E8.9 |
+-| How attribution and refutation proceed | Corollary 8.1; I1 identification map; W0–W5; parent-cut and attack-debt rules | B-Core, B-Universal, \(R_{\mathrm{CG}}\), and every application-specific realization claim | finite contrary consequence, failed constitutive witness, F7, F8-A, and failed-witness localization | E8.8 and E8.9 |
+-
+-Let \(\mathcal P\) be the three rows and let \(\mathcal F=\{K,S,F,M\}\). Revision 1.2 fixes \(w_{p,f}=1\) for all twelve faces. The present cell partition and weights are inherited by the next revision; changing either is first scored as a revision under the old guard. The purpose-coverage score is
+-
+-\[
+-\operatorname{pcov}_{w}(D)
+-=
+-\sum_{p\in\mathcal P}
+-\sum_{f\in\mathcal F}
+-w_{p,f}\,
+-\mathbf 1[X_{p,f}(D)\neq\varnothing].
+-\]
+-
+-For the table displayed here, \(\operatorname{pcov}_{1}(D_{1.2})=12\).
+-
+-A revision \(D\to D'\) preserves a face only when it supplies an explicit expansion-normalized transport from every load-bearing distinction in that face to a current node of the same grade or to an honestly weaker grade, together with its refuter. A **purpose retreat** occurs when a face has no such descendant. Its price is the lost weight
+-
+-\[
+-\operatorname{pret}_{w}(D,D')
+-=
+-\sum_{p,f}
+-w_{p,f}\,
+-\mathbf 1[
+-X_{p,f}(D)\neq\varnothing
+-\land
+-T_{D,D'}(X_{p,f})=\varnothing
+-].
+-\]
+-
+-Here \(T_{D,D'}(X_{p,f})=\varnothing\) means that no **total face transport** exists: losing even one load-bearing distinction or its refuter breaks preservation of that face, even when other nodes in the cell survive. A future revision may forbid purpose-retreating promotions, or may permit one only with an explicit purpose-change entry. Deleting a theorem alias after expansion has zero price. Deleting a false or overclaimed node is still mandatory; the guard requires either a valid lower-grade replacement for any surviving question or an explicit priced retreat. The table creates no inference and protects no claim from refutation.
+-
+-Run retroactively under this fixed unit guard on revision 1.0 to revision 1.1, it gives \(\operatorname{pret}_{1}>0\) and returns **FAIL: UNPRICED PURPOSE RETREAT**. The constitutive answer to what creativity is remained in S8, but its organizing face was weakened. The expansion-equivalent N1, N3, N4, N6, and A5 clauses correctly disappeared at zero price, while the non-redundant obstruction, characterization, bounded-prophet, battery-coupling, and jump-constructor burdens received no residue successors. Refutation coverage improved through F1–F7, but it did not reach those missing generator questions. Revision 1.2 restores the missing \(S\), \(F\), and \(M\) faces without reinstating any invalid theorem.
+-
+-### I6. Mandatory refutation programme
+-
+-Countermodels are not a testing programme. Every field conjecture, bridge application, capstone residue, and purpose-load-bearing creator residue therefore carries a protocol with a scheduled occasion to fail.
+-
+-A protocol record fixes before execution the claim and domain, seed and answer boundary, target family, repertoire, battery, frame, gauge, compared policies or architectures, W4-closed resource budget, primary observable, decision threshold, stopping rule, exclusions, and localization rule. Its recorded status is one of **UNTESTED**, **REFUTED on the declared domain**, **SURVIVED THIS CUT**, or **INCONCLUSIVE**. Survival is not support. Statistical error control may govern a finite operational decision, but it is not a probability of theory truth.
++### I5. Principal attack routes
+ 
+-Every applicable protocol runs before the first field use of its claim, after any change to a claim-defining repertoire, battery, geometry, policy, realization map, or boundary, and at every preregistered scaling cut. An omitted or stale run means **UNTESTED**, not survived. All compared arms receive the same terminal-relevant closed resource account unless the protocol's purpose is to compare cost-to-target directly.
++This section records the theory’s main vulnerable seams without creating a revision gate.
+ 
+-**F1, assembly–rigidity challenge. `[protocol for C1]`** Use a preregistered family of gauge-inequivalent targets, one transcript-generation rule, one repertoire accounting convention, one local edit graph, and matched construction and evaluation budgets. Measure contextual assembly distance and local delivery rigidity before examining their association. The run refutes C1 on the declared domain when the preregistered association threshold is missed or a stable reversed order appears. Repertoire changes, censoring of failed constructions, and post-outcome edit-graph changes invalidate rather than rescue the run.
++**Spark.** A5 is attacked by any genuine non-seed operative acquisition that requires direct answer insertion, identity-only adoption, unevaluated copying, or promotion by fiat. A-NJ is attacked by a system for which compatible outcomes create the theory-level support relation that Spark denies, or for which a lone anomaly itself constitutes explanatory refutation. The diagonal results are attacked by proof defects or countermodels satisfying A2–A4 while violating their conclusions.
+ 
+-**F2, single-battery geometry–transmission challenge. `[protocol for C2]`** Split the declared reconstruction family into calibration and held-out members. Fix \(F^\circ\), its lossless transports, the local profile, the identifiability map \(\iota\), pinning order, transmission task, fidelity measure, and matched closed budgets before held-out outcomes are observed. First test C2-P1 and C2-P2 separately. Only a run passing both reaches C2. Failure of held-out pinning-order or transmission-order prediction at the preregistered threshold refutes C2 on that domain; it cannot be blamed on A5.
++**Poietic.** P3.1 is attacked by a well-formed full-code corrector whose recovery domain remains wholly inside the code region. P3.5 is attacked, on its declared routes, by an extension-ready case with no marked extension or by a marked extension lacking either route. Every worldly application is defeated when a required W0–W5 witness, package-coherence face, or identification-map distinction is absent.
+ 
+-**F3, failure-fringe policy tournament. `[protocol for the Fertility Conjecture]`** Compare failure-fringe targeting with library-local, promotion-shy, and directionless policies using the same seed, model architecture, target stream, available operators, appraisal battery, promotion constitution, and W4-closed budget. Predeclare either delivered content at fixed cost or cost to a fixed delivered-content target as the primary measure. Stratify cases in which the fringe contains no usable localization before the result is known. Matched-budget domination by a rival on the preregistered scaling family refutes the Fertility Conjecture on that family.
++**Bridge and capstone.** B-Core is attacked by an independently identified Poietic knowledge-bearing extension for which the admissible boundary and frame family supplies no A5 realization. The finite-prefix result is inapplicable whenever any one of \(R_{P,0}\), \(R_{P,+}\), \(R_S\), or \(R_X^{\Phi}\) fails. The theorem itself is attacked only by a countermodel satisfying all displayed premises while lacking the claimed finite prefix.
+ 
+-**F4, fixed-decoder reconstruction challenge. `[protocol for Conjecture R and E2]`** Freeze one answer-generic source-to-account decoder before exposing the scaling target family. Keep target identities, target-specific representations, later-use transports, specialist prompts, external appraisal, and hidden training examples outside the receiver boundary unless priced and declared. Test whether the receiver acquires the specified explanatory competence without receiver-owned construction and consequential appraisal. A verified fixed decoder that does so refutes Conjecture R on the declared class. A finite family cannot by itself establish or refute the unrestricted universal quantifier unless the class is exhaustively represented by a proved reduction.
++**Generator portrait.** \(R_{\mathrm{CG}}\), \(R_{\mathrm{RO}}\), \(R_\Pi\), \(R_{\mathrm{AB}}\), \(R_G\), the Fertility Conjecture, Conjecture R, and Conjecture O stand or fall by their own countercases. Their failure revises the corresponding explanatory portrait; it does not propagate through a type boundary into unrelated theorems.
+ 
+-**F5, bounded-prophet challenge. `[protocol for residue \(R_\Pi\)]`** Fix predictor description bound, positive lead time, observation channel, system class, and adversarial environment class. For a finite environment class, enumerate it exhaustively; for an open class, preregister the generator and scaling cuts. A bounded predictor that is uniformly correct on the entire declared class while every displayed condition holds refutes \(R_\Pi\) on that class. Failure caused by a shorter lead time, extra observation channel, fixed criteria, or non-adversarial environment does not reach the residue.
++When a failure does not localize, the application has failed to establish its conclusion. Further criticism must determine which premise, map, or witness failed; no administrative rule decides that question.
+ 
+-**F6, residue stress test. `[protocol for the finite-prefix capstone]`** Before the base step, exhibit or fail \(\operatorname{CreativeCapacity}(\mathcal K_0)\) and \(R_{P,0}\) separately. At every successor cut, separately exhibit or fail \(R_{P,+}\), \(R_S\), and \(R_X^{\Phi}\) on the accumulated predecessor cut. No residue may be inferred from the others, from Conjecture O, or from the boxed capstone. A missing witness blocks the next prefix and records exactly which residue failed; the composition theorem remains intact but inapplicable.
++### I6. Experiments are external criticisms
+ 
+-**F7, bridge audit. `[protocol for B-Core and B-Universal]`** Select the candidate Poietic knowledge-bearing extension independently of the Spark fit. Predeclare the admissible boundary and frame family, then audit W0–W5, package coherence, the identification map, A5 no-bypass, and, where claimed, WU and A1i. A failed witness kills that realization. A case satisfying the independently identified antecedent but admitting no realization over the complete preregistered boundary/frame family refutes the corresponding field instance of B-Core or B-Universal. Global refutation requires the stronger universal counterexample, not merely failure of one convenient cut.
++An experiment may freeze a protocol before execution to prevent retrospective repair. That freeze governs the interpretation of that run only. It does not bind later revisions, reserve a permanent role for the protocol, or require the theory to preserve the protocol’s present partition.
+ 
+-**F8, creator-purpose stress battery. `[protocol for \(R_{\mathrm{CG}}\), \(R_{\mathrm{RO}}\), \(R_{\mathrm{AB}}\), and \(R_G\)]`** F8 is one protocol slot with four separately verdict-bearing branches. A pass, failure, or omission in one branch supplies no verdict for another.
++Revision 1.3 carries one executed companion record. **F1-AR-BOOL4-001** tested the former positive assembly–rigidity conjecture on an exhaustive finite Boolean-expression domain. Its frozen preregistration, code, raw target table, verdict, and clean-process replay are kept in the companion experiment package rather than embedded in the kernel.
+ 
+-**F8-A, characterization adequacy.** Before Spark coding, fix the domain \(\mathcal D\), the independent case predicate \(J\), positive cases, matched negative controls, and the admissible boundary-and-frame family \(\mathcal B(x)\). For a physical case, run F7 on every claimed realization. A positive case for which the complete preregistered family yields no creative-generator realization refutes the left-to-right direction of \(R_{\mathrm{CG}}\) on the domain. A negative control that satisfies every constitutive and realization face while failing \(J\) refutes the right-to-left direction. If the case selection or boundary/frame family is incomplete, a failed search is **INCONCLUSIVE**, not a refutation.
++The run exhaustively evaluated 14,451 targets. It returned Spearman \(\rho=-0.0995637588\), rigidity IQR \(0.0899621212\), and the preregistered verdict **REFUTED ON THIS DECLARED DOMAIN**. A clean-process verifier recomputed every saved target’s expression value, neighbourhood, rigidity, summary statistic, and verdict with zero discrepancies. A separately implemented full-domain verifier also re-enumerated all minimum functions through distance five, verified that the saved target set was complete under the declared recurrence, and matched every row. The positive conjecture was therefore removed rather than protected by a status label.
+ 
+-**F8-B, role-obstruction coverage.** Fix \(\mathcal E\), the scaling family, the readout \(\Lambda\), the admissible role-fixing interventions, matched role-revisable controls, candidate obstruction environments, candidate bounds, and the exhaustion or sampling rule. First verify that the unrestricted or role-revisable histories exceed every preregistered finite scale reached by the study; otherwise the candidate is not role-separating. A valid fixed-\(r\) history exceeding its nominated \(B_r\) refutes that witness. On a finite or proved exhaustive reduction, failure to exhibit any obstruction environment for one role refutes \(R_{\mathrm{RO}}\) on the declared class. On an open class, failure to find one is **INCONCLUSIVE**.
++Other experiments may be designed for C2, Fertility, Conjecture R, \(R_\Pi\), the four finite-prefix premises, the bridge, and the creator questions. They become part of the research record only when actually frozen and run. Their absence adds no constitutional machinery and their survival would add no support coordinate.
+ 
+-**F8-C, architectural battery coupling.** Identify the endogenous battery subsystem and its two causal uses before C2 outcomes are inspected. Intervention audits must show that the same subsystem, up to fixed lossless transport, affects both G2–G3 promotion and the C2 perturbation and matching geometry. Then run F2 with a valid \(\alpha\) and W3–W5 package under matched W4-closed budgets. A stable held-out threshold failure while every coupled antecedent survives refutes \(R_{\mathrm{AB}}\) and C2 on that domain, and strikes the one-operation reading. It cannot be charged to A5. Protocol single-battery coherence without the causal witness does not reach this branch.
++### I7. Revision note
+ 
+-**F8-D, answer-generic jump construction.** Freeze \(G\), its seed schema, the scaling family, answer boundary, matched answer-free whole-account benchmark, cost account, stopping rule, and exactly one success mode before target outcomes. At each cut require \(G\) itself to construct \(\mathcal M_n\) and \(\alpha_n\), then audit answer-freedom, W4 cost closure, W5 boundary closure, and the preregistered threshold. One hidden specialist, invalid application witness, omitted terminal-relevant cost, leakage event, or threshold miss refutes \(R_G\) on the declared family. Failure to discover a qualifying architecture is **INCONCLUSIVE** unless the architecture class is exhaustively reduced.
+-
+-The raw protocol traces, preregistrations, exclusions, and failed-witness records from F1–F8 are part of the semantic event ledger whenever the system itself claims auditability. Otherwise they must remain externally available to the evaluator who makes the empirical claim.
+-
+-### I7. Revision and provenance ledger
+-
+-This revision directly verifies the transformation of the supplied revision 1.1 into revision 1.2 and uses the supplied revision 1.0 only for the retroactive purpose audit and N-series adjudication. The source identities are: revision 1.1, SHA-256 `b0ed8e4bb69ef9604bef6554ab3805f95f0f84937a8224744042f3aa0bf2cc1c`; the creativity criticism, SHA-256 `ecd07f5553d1b4e1ae8bb5be4804206c6b4ed1098efab73952543892f20719a8`; and revision 1.0, SHA-256 `f729870e30f825b27b6bbab4322cca9296590b8d44eb301a4e11baedc2c6cbef`. Claims about earlier trunks, source-faithfulness records, or migration history remain unconfirmed unless their artifacts and identities are supplied.
+-
+-| Revision repair | Disposition | Consequence |
+-|---|---|---|
+-| 1.2, deletion-test overreach | Split deletion into an expansion-normalized inferential ledger and a semantic purpose ledger | Pure definitions and aliases are no longer falsely classified as orphans, while aboutness loss is no longer free |
+-| 1.2, creator claims lacked a grade | Added \(R_{\mathrm{CG}}\), \(R_{\mathrm{RO}}\), \(R_\Pi\), \(R_{\mathrm{AB}}\), and \(R_G\) with parent cuts, refuters, protocol addresses, and **UNTESTED** verdicts | Synthetic creator claims return only as exposed burdens, never as restored theorems |
+-| 1.2, no inside view | Added E8, “The generator, read from inside,” with parent-specific risky consequences | The founding answer is organized at zero inferential authority, and deleting it now incurs a visible purpose cost |
+-| 1.2, no purpose guard | Added the weighted purpose-coverage table and expansion-normalized purpose-retreat price | Future revisions must preserve, replace at an honest grade, or explicitly price each founding-answer face |
+-| 1.2, missing protocol addresses | Added F8-A through F8-D and retargeted F5 to \(R_\Pi\) | Characterization, role obstruction, architectural battery coupling, bounded prophecy, and jump construction have scheduled ways to fail |
+-| 1.2, protocol versus architectural battery | Distinguished C2-P1's experiment-level single battery from intervention-witnessed architectural battery-unity | F2 remains insulated from A5, while \(R_{\mathrm{AB}}\) supplies the narrower causal channel needed by the one-operation reading |
+-| 1.2, N-series adjudication | Kept expansion-equivalent N1, N3, N4, N6, and the A5 clause deleted; kept N2's physical extrapolation deleted; regraded only the non-redundant creator burdens | Claim validity and subject coverage are repaired without theorem inflation |
+-| 1.1, P3.1 under-hypothesis | Added identity protection for every attribute of \(X\) in the same correction task | The contradiction now excludes recovery from an unprotected code attribute |
+-| 1.1, S5/S8 role-completeness mismatch | Renamed the S5 closure property permission-openness and reserved reflective role-completeness for permission plus reachable promotion | Removes the sentence-level contradiction |
+-| 1.1, T5 dependency tag | Added B1 | The dovetailed probe enumeration now cites its actual source |
+-| 1.1, B2 cross-layer concentration | Made B2 Spark-only and moved the finite physical resource-aggregate burden into W4 | P5.4 no longer imports a Spark background premise |
+-| 1.1, N-series inflation | Removed N1–N7 as a separate theorem family; retained only the precise cutoff note, barrier proposition, bounded-prophet burden, and point-of-use bookkeeping | The apparent theorem count tracks the actual inferential skeleton |
+-| 1.1, C2 overclaim risk | Added C2-P1 single-battery coherence and C2-P2 explicit identifiability geometry, each with its own refuter; retained C2 only as a held-out field conjecture | No geometry is silently inferred from A5 or from protocol battery discipline alone |
+-| 1.1, capstone depth | Marked all four open-endedness premises as independent residues, added the missing initial creative-capacity antecedent, and renamed the result a residue-conditional composition theorem | The boxed result cannot be read as proving bootstrap, recurrence, solubility, or extension-readiness |
+-| 1.1, notional falsifiability | Added mandatory protocols F1–F7 with matched budgets, schedules, verdict semantics, and failed-witness localization | Field claims acquired occasions on which to die |
+-| 1.1, interpretation losses | Added E5–E7 for deployed predictors, static societies, and the imitator-loop reading | Restored diagnostic reach at zero theorem cost, but not the missing generator portrait |
+-| 1.1, backward-channel weakness | Added proof nodes, failed-witness records, unlocalized attack debt, and no-silent-absorption rules | Fault containment no longer masquerades as exoneration |
+-
+-The following table is retained only as an **inherited migration claim from revision 1.0**. Its current-state descriptions can be inspected in this file; its assertions about earlier locations are not verified here.
+-
+-| Reported earlier location or claim `[unverified history]` | Current disposition | Reason |
+-|---|---|---|
+-| Spark: a witnessed forbidden outcome was called “refuted” | Replaced by **violated/problematic**; tentative explanatory refutation now requires a good rival and successor recovery | Restores the source distinction between anomaly, problematicity, and comparative tentative refutation |
+-| Spark: compatible delivery had no confirmation state but promotion could still read as acceptance | A-NJ and its T0.1–T0.3 constitutional unpackings explicitly separate operational reliance from support, acceptance, or truth | Prevents award from becoming confirmation under another name |
+-| Spark: A2–A4 were imposed on every bridge realization | Stratified into the optional universal diagonal extension and B-Universal | Avoids silently requiring every physical knowledge process to be a universal self-interpreter |
+-| Spark: internal inspectability and an append-only trace were universal physical demands | Split into A1w finite witnessability, optional A1i internal auditability, semantic history, and conditional physical archive | Makes the kernel compatible with histories that are real but not fully stored while preserving replay where claimed |
+-| Poietic §4 reflective inquiry | Moved into Spark S3 and S11 | Explanations, problems, appraisal, and tentative refutation are epistemic relations |
+-| Poietic successor-child compiler | Moved into Spark S11 | It constructs problem candidates and obligations, not physical tasks as such |
+-| Poietic open-endedness residues | Split: problem genesis, propagation, and solubility are Spark; physical extension-readiness is Poietic; the finite-prefix theorem is cross-layer | Removes the former jurisdiction blur while allowing unrepresented selection to realize core rather than explanatory Spark growth |
+-| Poietic acquisition model | Moved into Spark S12; its physical application witness is now I1 | Query geometry concerns appraisal and construction policy; physical test and cost realization remain below |
+-| Poietic person and universal-architecture predicates | Personhood and explanatory universality moved to Spark; \(\operatorname{UC}_\Phi\) remains an optional Poietic physical coverage predicate; their conjunction is an exposed source bridge | Personhood and reflective standing are not task predicates, while universal computation and universal physical construction are distinct burdens |
+-| Poietic knowledge predicate | Retained unchanged in jurisdiction and made W0, the explicit physical anchor of B-Core | Prevents Spark “holding” from replacing the constructor-theoretic notion of knowledge |
+-| Poietic information-protection and one-substrate countermodel | Retained in P3 and connected directly to R2 and physical extension | Shows why copied records do not preserve operative capability |
+-| Spark R1–R5 | Retained as abstract interface obligations and discharged by P5.1–P5.5 | Makes the connection theorem explicit rather than aspirational prose |
+-| Claim that Poietic proves every creator instantiates Spark | Rejected | Poietic proves conditional discharge and non-empty satisfiability; universality remains Conjecture B |
++Revision 1.2 correctly recovered lost subject matter but overcorrected by turning that successful criticism into a standing purpose constitution. Revision 1.3 keeps the recovered generator questions, deletes the guard that protected them, and removes the large protocol and provenance administration from the kernel. The historical audit remains reproducible; it is no longer sovereign.
+ 
+ ### I8. Source alignment
+ 
+@@ -1663,7 +1508,7 @@
+ 
+ Constructor theory enters only below the interface. Tasks are possible or impossible relative to \(\Phi\); information is defined by counterfactual permutation and cloning tasks; and Poietic knowledge is content-sensitive self-retaining information. This predicate anchors the physical domain without turning physical persistence into explanatory merit.
+ 
+-The creator residues added in revision 1.2 are programme-internal exposures, not newly imported source axioms. \(R_{\mathrm{CG}}\) asks whether Spark's proposed creator predicate is adequate to an independently fixed case predicate. \(R_{\mathrm{RO}}\) isolates the environment-existence burden behind the all-role revisability reading. \(R_\Pi\) honestly regrades the bounded-prophet claim. \(R_{\mathrm{AB}}\) and \(R_G\) expose the architecture-specific battery and jump-constructor questions. None receives authority from the source epistemology, and none enters the finite-prefix theorem unless separately assumed.
++The creator conjectures added in revision 1.2 are programme-internal questions, not newly imported source axioms. \(R_{\mathrm{CG}}\) asks whether Spark's proposed creator predicate is adequate to an independently fixed case predicate. \(R_{\mathrm{RO}}\) isolates the environment-existence burden behind the all-role revisability reading. \(R_\Pi\) asks whether bounded prophecy fails under the displayed adversarial conditions. \(R_{\mathrm{AB}}\) and \(R_G\) expose the architecture-specific battery and jump-constructor questions. None receives authority from the source epistemology, and none enters the finite-prefix theorem unless separately assumed.
+ 
+ The source commitments that problems are inevitable, problems are soluble, people are universal explainers, and explanatory creativity is open-ended remain exposed as \(R_{P,0}\), \(R_{P,+}\), \(R_S\), Conjecture O, B-Universal, and the finite-prefix premises. The stronger source claim that persons are also universal constructors is represented only by the exposed bridge schema
+ 
+@@ -1747,13 +1592,13 @@
+ }
+ \]
+ 
+-The cross-layer capstone is conditional on four unproved open-endedness residues. All of its existential force sits in the antecedent:
++The cross-layer capstone is conditional on four unproved open-endedness assumptions. All of its existential force sits in the antecedent:
+ 
+ \[
+ \boxed{
+ \operatorname{CreativeCapacity}(\mathcal K_0)
+ +
+-\underbrace{R_{P,0}+R_{P,+}+R_S+R_X^{\Phi}}_{\text{independent open residues}}
++\underbrace{R_{P,0}+R_{P,+}+R_S+R_X^{\Phi}}_{\text{independent open assumptions}}
+ +
+ \text{joint realization}
+ \Longrightarrow
+@@ -1761,7 +1606,7 @@
+ }
+ \]
+ 
+-The box is a composition rule, not evidence for creative capacity or for any residue. Once the displayed antecedents and realization witnesses are granted, the proof is finite bookkeeping.
++The box is a composition rule, not evidence for creative capacity or for any assumption. Once the displayed antecedents and realization witnesses are granted, the proof is finite witness composition.
+ 
+ The document's answer about the generator is a different kind of object:
+ 
+@@ -1780,7 +1625,7 @@
+ }
+ \]
+ 
+-This arrow is a purpose-ledger map, not a theorem. Refuting a residue removes or revises the corresponding E8 clause; deleting E8 removes the organized answer but leaves its parents standing. The five creator residues do not silently join the four capstone residues.
++This arrow is exposition, not a theorem. Refuting a conjecture removes or revises the corresponding E8 clause; deleting E8 removes the organized answer but leaves its parents standing. The five creator questions do not silently join the four capstone premises.
+ 
+ No layer certifies truth, fertility, safety, personhood, or an infinite future. Spark tells us what an attributed act of knowledge growth must expose. Poietic tells us what the world must physically supply for that attribution to be more than a diagram. The bridge remains conjectural where it should: at the claim that every independently identified Poietic knowledge-bearing extension, and every explanatory creator under its stronger relations, can be cut and typed this way.
+ 
+@@ -1788,18 +1633,20 @@
+ 
+ > **Knowledge grows by re-creation under jeopardy in a resistant physical medium: operative novelty is constructed from what the system holds and what its problems expose, appraised by consequences that can answer back, and promoted only through a criticisable award.**
+ 
+-### I10. Source and import ledger
++### I10. Sources and imports
+ 
+ The following imports are declared rather than hidden.
+ 
+-The source epistemology supplies A-NJ, the explanatory problem and standing grammar, rival-based tentative refutation, successor recovery, and the exposed optimism and problem-propagation burdens \(R_{P,0}\), \(R_{P,+}\), and \(R_S\). A-NJ and those source residues are constitutional or conjectural imports, not discoveries of the string calculus. The creator residues \(R_{\mathrm{CG}}\), \(R_{\mathrm{RO}}\), \(R_\Pi\), \(R_{\mathrm{AB}}\), and \(R_G\) are internal audit regradings introduced by revision 1.2, not source imports. Spark derives none of them from computation.
++The source epistemology supplies A-NJ, the explanatory problem and standing grammar, rival-based tentative refutation, successor recovery, and the exposed optimism and problem-propagation burdens \(R_{P,0}\), \(R_{P,+}\), and \(R_S\). A-NJ and those source open assumptions are constitutional or conjectural imports, not discoveries of the string calculus. The creator conjectures \(R_{\mathrm{CG}}\), \(R_{\mathrm{RO}}\), \(R_\Pi\), \(R_{\mathrm{AB}}\), and \(R_G\) were introduced in revision 1.2 to restore questions lost from revision 1.1; they are not source imports. Spark derives none of them from computation.
+ 
+ Ordinary finitary mathematics supplies B1–B4 and B2's induction over completed Spark ancestry. W4, not B2, supplies the finite terminal-relevant physical resource aggregate. Classical recursion theory supplies the lineage of A2–A4 and L1–L4. These results apply only in the universal diagonal extension.
+ 
+ Constructor theory supplies the possible/impossible task partition, constructor semantics, the information-variable and interoperability principles, and the physical conception of knowledge as information participating content-sensitively in its own continued instantiation. Poietic's frame, retention, protection, and realization machinery are stated as definitions, conditional theorems, or explicit physical witnesses on top of those imports.
+ 
+-Adaptive decision-tree mathematics supplies Theorem 12.1; Hoeffding-style concentration supplies Proposition 12.3 under its displayed independent-noise assumptions. Their mathematical validity does not supply a physical application witness or an epistemic probability of truth. The finite decision thresholds used by F1–F5 and the threshold-bearing branches of F8 are operational error controls only; they create no theory-level support coordinate.
++Adaptive decision-tree mathematics supplies Theorem 12.1; Hoeffding-style concentration supplies Proposition 12.3 under its displayed independent-noise assumptions. Their mathematical validity does not supply a physical application witness or an epistemic probability of truth. Finite decision thresholds used by experiments are operational rules for those runs only; they create no theory-level support coordinate.
+ 
+ ### I11. Version note
+ 
+-Upon publication with repository provenance, revision 1.2 is intended to supersede the supplied revision 1.1 as the coordinated statement of the Spark–Poietic division of labour, interface, generator portrait, and audit discipline. The further historical claim that it supersedes or faithfully retains standalone Spark v1.2 and Poietic v8 is not verified by this file alone. Any future companion, exclusion theorem, or revision must cite this exact interface, state whether it uses B-Core or B-Universal, identify the active W-witnesses, distinguish the four capstone residues from the five creator residues, name the applicable F1–F8 protocols, reproduce or losslessly transport the purpose-coverage table, and re-derive every physical or epistemic consequence from the correct side of the boundary. A revision that deletes or empties a founding-answer face must record and price the purpose retreat; silence is not preservation.
++Revision 1.3 supersedes revision 1.2 as the coordinated statement of the Spark–Poietic division of labour, interface, generator portrait, and current experimental state. It does not claim that the experiment generalizes beyond its declared domain, and it does not convert a negative result into a new universal law.
++
++Future revisions may preserve, alter, or delete any organizing question. They remain responsible for the validity of every surviving inference and for stating plainly what question the resulting document answers. No inherited purpose partition, weight, protocol schedule, or revision ledger has authority over that criticism.

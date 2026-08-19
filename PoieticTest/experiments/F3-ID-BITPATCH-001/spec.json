@@ -1,0 +1,40 @@
+{
+  "experiment_id": "F3-ID-BITPATCH-001",
+  "subject_sha256": "9c5d389afc1f334733604083710f6625638b8933825a6312c7403e7de08dafbc",
+  "subject_lines": [570, 1586, 1588, 1590, 1596],
+  "claim_under_test": "F3's policy labels and failure-fringe conversion rule identify a contrast sufficient to determine a policy ranking",
+  "not_under_test": "Truth of the unrestricted Fertility Conjecture",
+  "family": {
+    "cuts": [4, 8, 16, 32, 64, 128],
+    "candidate_space_at_n": "{0,1}^n",
+    "initial": "0^n",
+    "target": "1^n",
+    "battery": "exact mismatch index set",
+    "operators": ["single-bit write", "held generic batch-patch"],
+    "cost": "one unit per bit read or written",
+    "delivered_content": "number of target-matching bits"
+  },
+  "arms": {
+    "serial_fringe": "initial full appraisal; for each localized mismatch, write it, promote it, and rerun the full battery",
+    "library_batch": "initial full appraisal; pass its exact fringe to the held generic batch-patch constructor; promote once; rerun the full battery"
+  },
+  "predicted_observables": [
+    {"n": 4, "serial_cost": 24, "batch_cost": 12},
+    {"n": 8, "serial_cost": 80, "batch_cost": 24},
+    {"n": 16, "serial_cost": 288, "batch_cost": 48},
+    {"n": 32, "serial_cost": 1088, "batch_cost": 96},
+    {"n": 64, "serial_cost": 4224, "batch_cost": 192},
+    {"n": 128, "serial_cost": 16640, "batch_cost": 384}
+  ],
+  "decision_rule": {
+    "protocol_nonidentifying": "library_batch uses the same failure fringe while also satisfying library-local, and it strictly dominates serial_fringe at equal full delivery at every cut",
+    "fertility_status": "UNTESTED, because the compared policy classes overlap and no causal contrast is identified",
+    "inconclusive": "any formula mismatch, unequal terminal delivery, or failure of strict domination at a registered cut"
+  },
+  "deliberate_mutant": "batch accounting that omits its final n-bit appraisal",
+  "frozen_expected_status": {
+    "protocol": "NON-IDENTIFYING",
+    "fertility": "UNTESTED",
+    "mutant": "KILLED"
+  }
+}

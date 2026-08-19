@@ -1,0 +1,9 @@
+[project]
+name = "testpoietic"
+version = "0.1.0"
+description = "Reproducible stress tests for the Spark-Poietic layered kernel"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.unittest]
+start-directory = "tests"
