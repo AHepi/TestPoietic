@@ -1,6 +1,12 @@
 # These artifacts are verified by raw SHA-256 or byte-for-byte replay.
 # Keep their checked-out text bytes canonical on hosts with core.autocrlf enabled.
 subject/** text eol=lf
-prior-evidence/f1/** text eol=lf
+prior-evidence/f1/verify_f1_ar_bool4_001_full_domain.py text eol=lf
+prior-evidence/f1/verify_f1_ar_bool4_001.py text eol=lf
+prior-evidence/f1/run_f1_ar_bool4_001.py text eol=lf
+prior-evidence/f1/F1-AR-BOOL4-001-preregistration.md text eol=lf
+prior-evidence/f1/F1-AR-BOOL4-001-preregistration-amendment-01.md text eol=lf
+prior-evidence/f1/F1-AR-BOOL4-001-preregistration-amendment-02.md text eol=lf
+prior-evidence/f1/F1-AR-BOOL4-001-freeze-manifest.txt text eol=lf
 evidence/frozen/** text eol=lf
 evidence/runs/** text eol=lf
