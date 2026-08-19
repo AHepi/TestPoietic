@@ -1,0 +1,793 @@
+{
+  "bridge_conjecture": {
+    "claim": "Conjecture and criticism, and variation and selection, are typed, fallible instances of a problem-sensitive variation and error-elimination schema.",
+    "fallibility": "Both modes generate candidates whose success is not guaranteed in advance. Calling a biological variant a guess is a Poietic bridge interpretation, not a claim that it represents a proposition.",
+    "non_identity_guards": [
+      "Criticism can eliminate proposals without eliminating their holder.",
+      "Natural selection need not represent explanations or refuters.",
+      "Explanatory reach and population adaptation have different attribution burdens.",
+      "Neither a surviving variant nor a non-refuted theory is confirmation."
+    ],
+    "role_mapping": [
+      {
+        "abstract_role": "variation",
+        "epistemic": "conjectures",
+        "evolutionary": "heritable variants"
+      },
+      {
+        "abstract_role": "error_elimination",
+        "epistemic": "criticism, argument, and experiment",
+        "evolutionary": "differential continuation"
+      }
+    ],
+    "status": "CONJECTURE"
+  },
+  "campaign_id": "piecemeal-001",
+  "freeze": {
+    "kind": "REPAIRED_REFREEZE",
+    "reason": "The prior sidecar's JSON preimage is absent from all recovered repository history and chat writes.",
+    "subject_sha256": "9c5d389afc1f334733604083710f6625638b8933825a6312c7403e7de08dafbc",
+    "unrecoverable_prior_sidecar": {
+      "path": "evidence/frozen/piecemeal-plan-v1.json",
+      "sha256": "291e5bab4d8629ac00016f434abe60d9ee26061c76bbbf664a34005515d48eb3"
+    }
+  },
+  "integration_contract": {
+    "claim": "A creativity attribution integrates physical instantiation of counterfactual causal structure, causal knowledge, fallible variant generation, and theory-mediated error elimination, without adding a second ontology or collapsing their different physical and epistemic roles.",
+    "status": "POIETIC_BRIDGE_CONJECTURE",
+    "typed_links": [
+      {
+        "from": "constructor_information",
+        "rule": "A declared physical variable can bear a causal knowledge value when its physical embodiment and relevant counterfactual task role are specified; information-medium capability alone is not knowledge.",
+        "to": "knowledge_retention"
+      },
+      {
+        "from": "knowledge_retention",
+        "rule": "Construction knowledge P constrains what can be realized, while explanatory knowledge must independently survive criticism and provenance checks.",
+        "to": "explanatory_creativity"
+      },
+      {
+        "from": "critical_evidence",
+        "rule": "Observation, deduction, and prediction become criticism only through an explanatory chain, declared auxiliaries, and a revisable refutation protocol.",
+        "to": "explanatory_creativity"
+      },
+      {
+        "from": "evolutionary_selection",
+        "rule": "Variation and selection supply a typed fallible analogue, not represented criticism or explanatory creativity by themselves.",
+        "to": "explanatory_creativity"
+      }
+    ]
+  },
+  "knowledge_roles": {
+    "roles": [
+      {
+        "definition": "A task-specific, physically instantiated recipe P is causal construction knowledge when it acts with V or resources to control a declared task and can cause its own continued instantiation under the stated conditions.",
+        "directness": "DIRECT_CONDITIONAL_CT",
+        "id": "K_CONSTRUCTION_RECIPE",
+        "test_interfaces": [
+          "K_REALIZATION_SCOPE",
+          "K_RECIPE_CAUSAL_ROLE",
+          "R_MAINTENANCE"
+        ]
+      },
+      {
+        "definition": "Record whether P is in the candidate, a parent, an external builder, or an evolutionary population; its location and temporal order are not fixed by constructor theory alone.",
+        "directness": "BOUNDARY_AND_HISTORY_REQUIREMENT",
+        "id": "K_CREATOR_LOCATION",
+        "test_interfaces": [
+          "R_BOUNDARY",
+          "K_HISTORY"
+        ]
+      },
+      {
+        "definition": "A higher-level causal role is physically instantiated and explanation-relevant through declared counterfactuals, without a second substance; the bearer's specific form and environment class remain part of the claim.",
+        "directness": "DIRECT_FABRIC_SCOPE",
+        "id": "K_PHYSICAL_COUNTERFACTUAL_ROLE",
+        "test_interfaces": [
+          "K_PHYSICAL_INSTANTIATION",
+          "X_EXPLANATORY_LEVEL",
+          "R_COUNTERFACTUAL_CAUSAL_ROLE",
+          "K_REALIZATION_EQUIVALENCE",
+          "R_FINITE_EVIDENCE_BOUND"
+        ]
+      },
+      {
+        "definition": "A produced artifact may be a product, information bearer, construction recipe, or proposed explanation. These roles must be tested separately.",
+        "directness": "POIETIC_GUARD",
+        "id": "K_ARTIFACT_CLASSIFICATION",
+        "test_interfaces": [
+          "A_ARTIFACT_ROLE",
+          "E_PROVENANCE"
+        ]
+      },
+      {
+        "definition": "A proposed explanation counts only through conjecture, theory-mediated criticism, revision, and provenance attribution; construction knowledge P alone does not settle it.",
+        "directness": "POIETIC_EPISTEMIC_TEST",
+        "id": "K_EXPLANATORY_PROPOSAL",
+        "test_interfaces": [
+          "E_TT",
+          "E_EVIDENCE_LINK",
+          "E_FALLIBILITY",
+          "E_PROVENANCE"
+        ]
+      }
+    ],
+    "status": "TYPED_SCOPE_REGISTER"
+  },
+  "lattices": {
+    "constructor_information": {
+      "does_not_entail": [
+        "knowledge_retention",
+        "high_fidelity_reproduction",
+        "evolutionary_selection",
+        "critical_evidence",
+        "explanatory_creativity"
+      ],
+      "failure_guard": "A stored bit pattern, program label, or observed message alone is not an established information medium.",
+      "pass_requirements": [
+        {
+          "id": "I_BOUNDARY",
+          "requirement": "Declare the substrate and boundary that bear the candidate variable."
+        },
+        {
+          "id": "I_VARIABLE",
+          "requirement": "Specify two or more disjoint possible physical attributes in the candidate variable."
+        },
+        {
+          "id": "I_PERMUTATION",
+          "requirement": "Identify the possible permutation tasks and permitted side effects."
+        },
+        {
+          "id": "I_CLONING",
+          "requirement": "Identify one fixed receptive target attribute x0 and a copying task for every claimed value."
+        },
+        {
+          "id": "I_INTEROPERABILITY",
+          "requirement": "State whether composite-media interoperability is used, tested, or unasserted."
+        }
+      ],
+      "role": "physical substrate constraint",
+      "source_ids": [
+        "CTI",
+        "CTL"
+      ],
+      "verdicts": [
+        "MAY_PASS",
+        "NOT_APPLICABLE",
+        "NOT_ESTABLISHED"
+      ]
+    },
+    "critical_evidence": {
+      "does_not_entail": [
+        "confirmation",
+        "truth",
+        "automatic_target_falsification",
+        "explanatory_creativity"
+      ],
+      "failure_guard": "A bare sensor value, reward, benchmark score, deduction, trace, or output is not evidence for this test without its explanatory chain and declared criticisable target.",
+      "pass_requirements": [
+        {
+          "id": "C_TARGET",
+          "requirement": "Identify the target claim, problem, and a rival or possible incompatibility."
+        },
+        {
+          "id": "C_CHANNEL",
+          "requirement": "Classify the criticising content as a theory-laden observation, logical deduction, or predicted consequence; do not recast any channel as theory-free evidence."
+        },
+        {
+          "id": "C_CHAIN",
+          "requirement": "Declare the instrument, software, data-reduction, and observer interpretation chain; include eyes, calibration, and perceptual or inferential links where relevant."
+        },
+        {
+          "id": "C_AUXILIARIES",
+          "requirement": "State the background, initial-condition, and auxiliary explanations that connect the channel to the target claim."
+        },
+        {
+          "id": "C_DISCRIMINATOR",
+          "requirement": "Derive a consequence, rival discriminator, or incompatibility that could expose error in the declared conjunction."
+        },
+        {
+          "id": "C_PROTOCOL",
+          "requirement": "Predeclare the acceptance, reproducibility, and refutation protocol, including how instrument, observation, or inference error will be criticised."
+        },
+        {
+          "id": "C_OUTCOME",
+          "requirement": "Record an attempted refutation, revision trigger, disputed interpretation, or inconclusive result; agreement is not confirmation."
+        }
+      ],
+      "role": "theory-mediated error-elimination interface",
+      "source_ids": [
+        "POPPER",
+        "DEUTSCH"
+      ],
+      "source_scope": "This is a Poietic operational package for Popperian and Deutschian criticism; neither source licenses a theory-free data tier or automatic attribution to one component of a failed conjunction.",
+      "verdicts": [
+        "REFUTED_CONJUNCTION",
+        "SURVIVED_DECLARED_ATTEMPT",
+        "INTERPRETATION_DISPUTED",
+        "INCONCLUSIVE",
+        "NOT_ESTABLISHED"
+      ]
+    },
+    "evolutionary_selection": {
+      "does_not_entail": [
+        "high_fidelity_reproduction",
+        "vehicle_architecture",
+        "epistemic_criticism",
+        "critical_evidence",
+        "explanatory_creativity"
+      ],
+      "failure_guard": "A score, a single success, or an environmental survivor does not establish an explanation, theory-laden evidence, or knowledge creation.",
+      "pass_requirements": [
+        {
+          "id": "V_POPULATION",
+          "requirement": "Specify population, variants, and lineage boundary."
+        },
+        {
+          "id": "V_INHERITANCE",
+          "requirement": "Specify inherited continuation and viable-offspring criterion."
+        },
+        {
+          "id": "V_VARIATION",
+          "requirement": "Show variation is non-specific to the alleged end product and is not guaranteed in advance to meet the declared viable-offspring criterion."
+        },
+        {
+          "id": "V_SELECTION",
+          "requirement": "Specify finite-resource environmental selection and differential continuation."
+        },
+        {
+          "id": "V_FALLIBILITY",
+          "requirement": "Record selection as environment-relative error elimination, not represented explanation or confirmation."
+        }
+      ],
+      "role": "population variation and selection test",
+      "source_ids": [
+        "CTL",
+        "POPPER",
+        "DEUTSCH"
+      ],
+      "verdicts": [
+        "MAY_PASS",
+        "NOT_ESTABLISHED"
+      ]
+    },
+    "explanatory_creativity": {
+      "does_not_entail": [
+        "physical_information_alone",
+        "construction_knowledge_alone",
+        "retention_alone",
+        "selection_alone",
+        "critical_evidence_alone",
+        "behavioral_success_alone"
+      ],
+      "failure_guard": "No verdict may say CREATIVITY_PROVEN; a trace or agreeing result is insufficient when external knowledge, the instrument chain, or declared auxiliaries can account for it.",
+      "integration_requirement": "Creation of explanatory knowledge is tested independently of construction knowledge P: a proposed explanation must be conjectured, criticised, revised, and provenance-accounted within the candidate process.",
+      "pass_requirements": [
+        {
+          "id": "E_P1",
+          "requirement": "Identify a problem, not only an externally supplied target or reward."
+        },
+        {
+          "id": "E_TT",
+          "requirement": "Identify tentative, fallible explanatory proposals, provenance, and explanatory content."
+        },
+        {
+          "id": "E_EE",
+          "requirement": "Identify criticism, possible refuters, or consequence tests that can revise proposals."
+        },
+        {
+          "id": "E_EVIDENCE_LINK",
+          "requirement": "For each tentative theory, invoke a critical_evidence package linking a theory-laden observation, deduction, or predicted consequence to declared auxiliaries, a possible refuter, and a revision route."
+        },
+        {
+          "id": "E_P2",
+          "requirement": "Identify the revised problem without treating finite enumeration as all theories."
+        },
+        {
+          "id": "E_PROVENANCE",
+          "requirement": "Account for prompts, seeds, scores, oracles, tools, training, and human interventions."
+        },
+        {
+          "id": "E_FALLIBILITY",
+          "requirement": "Show that proposals are revisable guesses with a declared error domain; an uncriticisable or error-free output cannot establish creativity."
+        }
+      ],
+      "role": "epistemic attribution test",
+      "source_ids": [
+        "POPPER",
+        "DEUTSCH"
+      ],
+      "source_scope": "This is a Poietic operational attribution test built from Popperian criticism and Deutschian provenance; neither source says every creator is a human scientist, that every selection process is criticism, or that a successful output establishes creativity.",
+      "verdicts": [
+        "CRITICISABLE_TRACE_AUDITED",
+        "PROVENANCE_UNRESOLVED",
+        "NOT_ESTABLISHED",
+        "REFUTED_ON_DECLARED_DOMAIN",
+        "UNRESOLVED_NOT_NON_CREATIVE"
+      ]
+    },
+    "knowledge_retention": {
+      "does_not_entail": [
+        "explanatory_creativity",
+        "truth",
+        "good_explanation",
+        "high_fidelity_reproduction",
+        "prior_knowledge_temporal_axiom",
+        "artifact_embodies_recipe",
+        "extra_substance",
+        "unconstrained_substrate_swap",
+        "finite_variant_exhaustiveness"
+      ],
+      "failure_guard": "Persistence, copied syntax, an externally maintained record, a produced artifact, a one-copy inspection, or an unconstrained substrate-swap claim alone is insufficient to attribute P or explanatory knowledge to the candidate.",
+      "pass_requirements": [
+        {
+          "id": "R_BOUNDARY",
+          "requirement": "Declare the physical bearer, environment class, and boundary supporting continuation."
+        },
+        {
+          "id": "R_VALUE",
+          "requirement": "Identify the particular physically instantiated information value, not merely a storage device or abstract label."
+        },
+        {
+          "id": "K_PHYSICAL_INSTANTIATION",
+          "requirement": "Identify the physical embodiment of P or another claimed knowledge value; do not posit a free-floating abstract recipe."
+        },
+        {
+          "id": "K_REALIZATION_SCOPE",
+          "requirement": "Apply a prior-knowledge verdict only to an actual construction, maintenance, or H-scope claim; bare physical possibility receives no prior-knowledge verdict."
+        },
+        {
+          "id": "K_RECIPE_CAUSAL_ROLE",
+          "requirement": "Identify task-specific recipe P, its physical bearer, V or resources, and an intervention showing that changing or removing P changes or defeats the claimed construction task."
+        },
+        {
+          "id": "X_EXPLANATORY_LEVEL",
+          "requirement": "State the higher-level explanatory claim and its compatible physical realization; do not infer a second ontology or causal exemption."
+        },
+        {
+          "id": "R_COUNTERFACTUAL_CAUSAL_ROLE",
+          "requirement": "Declare bearer, value, environment class, and close variants; test whether the specified physical form changes copying or retention outcomes across the declared counterfactuals."
+        },
+        {
+          "id": "K_REALIZATION_EQUIVALENCE",
+          "requirement": "If claiming multiple realization, show that a substituted bearer preserves the declared task, relevant side effects, and environment class; do not assume arbitrary substrate swapping."
+        },
+        {
+          "id": "R_MAINTENANCE",
+          "requirement": "Give a causal maintenance, re-instantiation, or reconstruction route."
+        },
+        {
+          "id": "K_HISTORY",
+          "requirement": "For an actual construction claim, record whether P was instantiated in the candidate, a parent, an external builder, or an evolutionary population; do not infer temporal priority from constructor theory alone."
+        },
+        {
+          "id": "R_VALUE_INTERVENTION",
+          "requirement": "State a value-change or removal comparison that could defeat attribution."
+        },
+        {
+          "id": "R_FINITE_EVIDENCE_BOUND",
+          "requirement": "State the finite cohort and model domain used as evidence; do not promote it to all possible environments, variants, or an Everettian claim."
+        },
+        {
+          "id": "A_ARTIFACT_ROLE",
+          "requirement": "Classify an output separately as product, information bearer, construction recipe, or proposed explanation; no classification entails the next."
+        }
+      ],
+      "role": "knowledge realization, causal bearer, counterfactual role, and persistence constraint",
+      "source_ids": [
+        "CTI",
+        "CT_FOUNDATION",
+        "CTL",
+        "FOR_EMERGENCE",
+        "FOR_REPLICATOR_NICHE",
+        "FOR_GENE_STRUCTURE"
+      ],
+      "source_scope": "Direct CT imports construction knowledge as causal information P that can remain instantiated under stated conditions. Deutsch's higher-level and replicator explanations remain physically compatible and contextually counterfactual; content-sensitive retention, creator attribution, and explanatory knowledge are Poietic refinements.",
+      "verdicts": [
+        "MAY_PASS",
+        "NOT_APPLICABLE",
+        "EXTERNAL_P_NOT_ATTRIBUTED",
+        "NOT_ESTABLISHED"
+      ]
+    },
+    "no_design_replication": {
+      "applicability": "Apply only to a claim of accurate or indefinitely improvable self-reproduction or replication under no-design laws.",
+      "does_not_entail": [
+        "explanatory_creativity",
+        "whole_creator_clonability",
+        "isolated_component_self_reproduction"
+      ],
+      "failure_guard": "Absent the declared digital recipe and causal error-correction conditions, record H as NOT_ESTABLISHED rather than inferring NON_CREATIVE.",
+      "not_applicable_rule": "A non-self-reproducing candidate receives NOT_APPLICABLE, never NON_CREATIVE.",
+      "pass_requirements": [
+        {
+          "id": "H_BOUNDARY",
+          "requirement": "Separate replicator, vehicle, and external resources at a declared boundary."
+        },
+        {
+          "id": "H_NO_DESIGN",
+          "requirement": "State no-design-law and generic-resource assumptions."
+        },
+        {
+          "id": "H_ACCURACY",
+          "requirement": "State the high or indefinitely improvable accuracy claim and error measure."
+        },
+        {
+          "id": "H_RECIPE",
+          "requirement": "Identify the modular recipe P or program and its causal role in construction."
+        },
+        {
+          "id": "H_DIGITAL_RECIPE",
+          "requirement": "If H is applicable, identify P and its unit variable Sigma; show that its attributes are discrete or digital in the constructor-theory sense, separated by non-allowed attributes."
+        },
+        {
+          "id": "H_ERROR_CORRECTION",
+          "requirement": "Identify the causal error-detection and correction task for replication of P, its task- or value-dependent criterion, and blind copying of modular units where replication is claimed."
+        },
+        {
+          "id": "H_VEHICLE",
+          "requirement": "Identify vehicle construction and reproduction where the accuracy claim requires it."
+        }
+      ],
+      "role": "conditional high-fidelity reproduction test",
+      "source_ids": [
+        "CTL"
+      ],
+      "verdicts": [
+        "MAY_PASS",
+        "NOT_APPLICABLE",
+        "NOT_ESTABLISHED"
+      ]
+    }
+  },
+  "negative_controls": [
+    {
+      "expected": {
+        "constructor_information": "MAY_PASS",
+        "explanatory_creativity": "NOT_ESTABLISHED",
+        "knowledge_retention": "NOT_ESTABLISHED"
+      },
+      "fixture": "A copied record with no value-dependent maintenance route.",
+      "id": "NC_INFORMATION_WITHOUT_RETENTION"
+    },
+    {
+      "expected": {
+        "explanatory_creativity": "NOT_ESTABLISHED",
+        "knowledge_retention": "MAY_PASS"
+      },
+      "fixture": "A self-maintaining hereditary value with no proposed explanation or criticism.",
+      "id": "NC_RETENTION_WITHOUT_EXPLANATION"
+    },
+    {
+      "expected": {
+        "evolutionary_selection": "MAY_PASS",
+        "explanatory_creativity": "NOT_ESTABLISHED",
+        "no_design_replication": "NOT_APPLICABLE"
+      },
+      "fixture": "A poor-fidelity vehicle-less replicator in a sufficiently unchanging resource-rich environment.",
+      "id": "NC_NAKED_REPLICATOR"
+    },
+    {
+      "expected": {
+        "evolutionary_selection": "MAY_PASS",
+        "explanatory_creativity": "NOT_ESTABLISHED"
+      },
+      "fixture": "Population selection with no represented problems, rivals, or possible refuters.",
+      "id": "NC_SELECTION_WITHOUT_CRITICISM"
+    },
+    {
+      "expected": {
+        "explanatory_creativity": "UNRESOLVED_NOT_NON_CREATIVE",
+        "no_design_replication": "NOT_APPLICABLE"
+      },
+      "fixture": "A candidate creator not claiming to reproduce itself.",
+      "id": "NC_CREATOR_WITHOUT_SELF_REPRODUCTION"
+    },
+    {
+      "expected": {
+        "explanatory_creativity": "NOT_ESTABLISHED",
+        "knowledge_retention": "NOT_APPLICABLE"
+      },
+      "fixture": "A bare physical-possibility claim with no actual construction, maintenance, or H-scope claim.",
+      "id": "NC_BARE_POSSIBILITY_WITHOUT_PRIOR_KNOWLEDGE"
+    },
+    {
+      "expected": {
+        "explanatory_creativity": "NOT_ESTABLISHED",
+        "knowledge_retention": "EXTERNAL_P_NOT_ATTRIBUTED"
+      },
+      "fixture": "A task-specific recipe P is physically instantiated only in an external builder, while the candidate merely receives the product.",
+      "id": "NC_EXTERNAL_RECIPE_WITHOUT_CANDIDATE_ATTRIBUTION"
+    },
+    {
+      "expected": {
+        "critical_evidence": "NOT_ESTABLISHED",
+        "explanatory_creativity": "NOT_ESTABLISHED"
+      },
+      "fixture": "A benchmark score or sensor number with no instrument interpretation chain, declared auxiliaries, rival, or refutation protocol.",
+      "id": "NC_BARE_SCORE_WITHOUT_CRITICAL_PACKAGE"
+    },
+    {
+      "expected": {
+        "critical_evidence": "SURVIVED_DECLARED_ATTEMPT",
+        "explanatory_creativity": "NOT_ESTABLISHED"
+      },
+      "fixture": "A complete critical_evidence package declares its channel, instrument/interpretation chain, auxiliaries, discriminator, and protocol; its result agrees with a prediction but is treated as confirming the target explanation.",
+      "id": "NC_AGREEING_RESULT_NOT_CONFIRMATION"
+    },
+    {
+      "expected": {
+        "critical_evidence": "NOT_ESTABLISHED",
+        "explanatory_creativity": "NOT_ESTABLISHED"
+      },
+      "fixture": "A candidate claims an error-free final answer with no possible critic, consequence, or revision route.",
+      "id": "NC_UNREFUTABLE_OUTPUT"
+    },
+    {
+      "expected": {
+        "explanatory_creativity": "NOT_ESTABLISHED",
+        "knowledge_retention": "NOT_ESTABLISHED"
+      },
+      "fixture": "Two candidates are declared equivalent because a label or syntax is preserved, while the task, side effects, physical form, and environment class are not shown to be preserved.",
+      "id": "NC_UNCONSTRAINED_SUBSTRATE_SWAP"
+    },
+    {
+      "expected": {
+        "evolutionary_selection": "NOT_ESTABLISHED",
+        "explanatory_creativity": "NOT_ESTABLISHED",
+        "knowledge_retention": "NOT_ESTABLISHED"
+      },
+      "fixture": "A claim that a single local copy establishes a gene-like knowledge or replicator role without declared variants, environments, copying, or retention outcomes.",
+      "id": "NC_ONE_COPY_INSPECTION"
+    },
+    {
+      "expected": {
+        "explanatory_creativity": "NOT_ESTABLISHED",
+        "knowledge_retention": "NOT_ESTABLISHED"
+      },
+      "fixture": "An abstract recipe is claimed to cause construction without any declared physical bearer, task role, or compatible realization.",
+      "id": "NC_NONPHYSICAL_RECIPE"
+    }
+  ],
+  "non_entailments": [
+    {
+      "id": "NE_INFORMATION_NOT_KNOWLEDGE",
+      "rule": "An information medium alone does not establish retained knowledge."
+    },
+    {
+      "id": "NE_INFORMATION_NOT_CREATIVITY",
+      "rule": "Information tasks alone do not establish explanatory creativity."
+    },
+    {
+      "id": "NE_RETENTION_NOT_CREATIVITY",
+      "rule": "Retained knowledge alone does not establish good explanation or creativity."
+    },
+    {
+      "id": "NE_SELECTION_NOT_HIGH_FIDELITY",
+      "rule": "Selection does not entail high-fidelity digital heredity, correction, or a vehicle."
+    },
+    {
+      "id": "NE_SELECTION_NOT_CRITICISM",
+      "rule": "Selection does not entail represented epistemic criticism."
+    },
+    {
+      "id": "NE_WHOLE_CREATOR_NOT_CLONABLE",
+      "rule": "No whole candidate agent, or component outside a declared high-fidelity recipe variable, is generally required to be digital, clonable, or self-reproducing."
+    },
+    {
+      "id": "NE_BOUNDARY_IS_EVIDENCE",
+      "rule": "Boundary choice is evidence, not bookkeeping."
+    },
+    {
+      "id": "NE_FINITE_ENUMERATION_NOT_ALL_THEORIES",
+      "rule": "A finite domain test cannot be promoted to all possible theories."
+    },
+    {
+      "id": "NE_P1_TT_EE_P2_NOT_GENERATOR",
+      "rule": "P1 -> TT -> EE -> P2 is a criticisable cycle, not a generator or sufficient creativity test."
+    },
+    {
+      "id": "NE_POSSIBILITY_NOT_PRIOR_KNOWLEDGE",
+      "rule": "Bare physical possibility does not entail temporally prior knowledge in the candidate or any fixed boundary."
+    },
+    {
+      "id": "NE_RECIPE_NOT_CREATIVITY",
+      "rule": "Construction knowledge P does not by itself establish explanatory creativity."
+    },
+    {
+      "id": "NE_ARTIFACT_NOT_RECIPE",
+      "rule": "A produced artifact does not by itself embody the recipe P or explanatory knowledge that produced it."
+    },
+    {
+      "id": "NE_BARE_RECORD_NOT_EVIDENCE",
+      "rule": "A bare observation, sensor value, score, trace, deduction, or predicted result is not evidence without an explanatory interpretation chain and criticisable target."
+    },
+    {
+      "id": "NE_EVIDENCE_NOT_CONFIRMATION",
+      "rule": "An agreeing theory-laden result may survive a declared attempted refutation but does not confirm the target explanation."
+    },
+    {
+      "id": "NE_VARIATION_NOT_CONJECTURE_IDENTITY",
+      "rule": "The typed fallibility bridge does not make a biological variant a represented conjecture or selection a criticism."
+    },
+    {
+      "id": "NE_NONREFUTABLE_NOT_CREATIVE",
+      "rule": "An uncriticisable, error-free, or final-output claim does not establish creativity."
+    },
+    {
+      "id": "NE_HIGH_LEVEL_NOT_EXTRA_SUBSTANCE",
+      "rule": "A higher-level explanatory or informational structure is physically compatible and does not entail a second substance or causal exemption."
+    },
+    {
+      "id": "NE_SUBSTRATE_SWAP_NOT_AUTOMATIC",
+      "rule": "Preserving a label or syntax does not establish equivalent realization; the declared task, side effects, physical form, and environment class must be preserved."
+    },
+    {
+      "id": "NE_SINGLE_COPY_NOT_COUNTERFACTUAL_ROLE",
+      "rule": "One-copy local inspection does not establish a contextual counterfactual knowledge, replication, or adaptation role."
+    },
+    {
+      "id": "NE_FINITE_VARIANTS_NOT_ALL_ENVIRONMENTS",
+      "rule": "Finite observed variants provide evidence only for a declared model and domain, not all possible environments or an Everettian explanatory claim."
+    }
+  ],
+  "purpose": {
+    "questions": [
+      "What is creativity?",
+      "What physical systems can instantiate creativity?",
+      "What distinguishes creative from non-creative systems?",
+      "How can an attribution be tested and refuted?"
+    ],
+    "rule": "A creative-attribution test must trace a fallible, criticisable process: physical information and knowledge retention constrain a realizer, while theory-mediated error elimination tests an explanatory claim without treating agreement as confirmation."
+  },
+  "schema": "TESTPOIETIC_PIECEMEAL_PLAN_V1",
+  "source_register": [
+    {
+      "anchors": [
+        "sections 2-4",
+        "section 6"
+      ],
+      "citation": "Deutsch and Marletto, Constructor theory of information, Proc. R. Soc. A 471 (2015) 20140540.",
+      "direct_imports": [
+        "tasks are possible-or-impossible counterfactual specifications",
+        "a computation variable permits all permutations",
+        "an information variable is a clonable computation variable",
+        "interoperability is a proposed physical principle"
+      ],
+      "id": "CTI",
+      "scope_limit": "It neither defines creativity nor requires an entire agent or every state to be clonable.",
+      "type": "primary_peer_reviewed",
+      "url": "https://doi.org/10.1098/rspa.2014.0540"
+    },
+    {
+      "anchors": [
+        "time delegated to subsidiary theories",
+        "knowledge as an abstract constructor",
+        "right knowledge applied to a possible task"
+      ],
+      "citation": "Deutsch, Constructor Theory (2012), sections 2.15 and 3.1-3.2.",
+      "direct_imports": [
+        "constructor theory leaves temporal ordering to subsidiary theories",
+        "knowledge is information which, when physically instantiated in a suitable environment, tends to cause itself to remain instantiated",
+        "the right knowledge applied can effect any possible task"
+      ],
+      "id": "CT_FOUNDATION",
+      "scope_limit": "It does not establish temporal priority for arbitrary agents or identify an external builder's recipe with the candidate's knowledge.",
+      "type": "primary_preprint",
+      "url": "https://arxiv.org/abs/1210.7439"
+    },
+    {
+      "anchors": [
+        "emergence and explanatory autonomy"
+      ],
+      "citation": "Deutsch, The Fabric of Reality (1997/1998), chapter 1, pages 27-28.",
+      "direct_imports": [
+        "higher-level explanations may be explanatorily autonomous while remaining compatible with physical realization"
+      ],
+      "id": "FOR_EMERGENCE",
+      "scope_limit": "It does not infer a second substance, causal exemption from physics, or unconstrained multiple realizability.",
+      "type": "primary_book"
+    },
+    {
+      "anchors": [
+        "replicator form, niche, and counterfactual environmental role"
+      ],
+      "citation": "Deutsch, The Fabric of Reality (1997/1998), chapter 8, pages 172-176 and glossary page 192.",
+      "direct_imports": [
+        "replication and adaptation are contextual counterfactual causal roles across bearer and environmental variants"
+      ],
+      "id": "FOR_REPLICATOR_NICHE",
+      "scope_limit": "It is not a creativity criterion or a generic substrate-neutrality claim: the bearer's specific physical form can be causally relevant.",
+      "type": "primary_book"
+    },
+    {
+      "anchors": [
+        "gene versus junk-DNA explanatory role across nearby variants"
+      ],
+      "citation": "Deutsch, The Fabric of Reality (1997/1998), chapter 8, pages 187-190.",
+      "direct_imports": [
+        "one-copy local inspection cannot by itself determine a gene's knowledge or replicator role"
+      ],
+      "id": "FOR_GENE_STRUCTURE",
+      "scope_limit": "Deutsch's Everettian explanatory account does not make other universes observable data or license a finite cohort to establish all possible environments.",
+      "type": "primary_book"
+    },
+    {
+      "anchors": [
+        "section 2.1",
+        "sections 3.1-3.3"
+      ],
+      "citation": "Marletto, Constructor theory of life, J. R. Soc. Interface 12 (2015) 20141226.",
+      "direct_imports": [
+        "recipe information can act to remain instantiated",
+        "under no-design laws, high or indefinitely improvable accuracy requires an error-correcting recipe variable with discrete or digital units",
+        "vehicle logic is conditional on accurate self-reproduction under no-design laws",
+        "selection can begin with poor-fidelity naked replicators"
+      ],
+      "id": "CTL",
+      "scope_limit": "Its digitality conclusion applies to the declared high-accuracy recipe variable, not every component, whole creator, natural-selection case, or creativity claim.",
+      "type": "primary_peer_reviewed",
+      "url": "https://doi.org/10.1098/rsif.2014.1226"
+    },
+    {
+      "anchors": [
+        "deductive criticism and auxiliary conditions",
+        "theory-interpreted observation and predeclared refutation",
+        "P1 -> TT -> EE -> P2, Objective Knowledge chapter 3",
+        "problem- and theory-guided observation, Objective Knowledge chapter 7, pages 258-259"
+      ],
+      "citation": "Popper, The Logic of Scientific Discovery (1959), sections 2-3, 18, and 29-30; Conjectures and Refutations (1963), chapter 1; Objective Knowledge (1972/1979), chapters 3 and 7.",
+      "direct_imports": [
+        "there is no logical method of having new ideas",
+        "a tentative theory is tested through deductions, theory comparison, and empirical applications",
+        "a falsified predicted consequence initially criticizes the whole declared system used to derive it, including target theory and initial conditions",
+        "observations are selective, theory-interpreted, and fallible rather than pure data",
+        "tentative theories face attempted error elimination",
+        "scientific criticism can eliminate theories in place of their holders",
+        "P1 -> TT -> EE -> P2 describes problem solving through tentative theories and error elimination"
+      ],
+      "id": "POPPER",
+      "poietic_operationalization": "The reusable critical-evidence package, including an instrument/interpretation chain and a predeclared protocol, operationalizes these sources; it is not supplied by them as an automatic creativity test.",
+      "scope_limit": "A lone record is not automatic final falsification: criticism requires declared auxiliaries, an interpretation, and a revisable acceptance/refutation protocol.",
+      "type": "primary_book"
+    },
+    {
+      "anchors": [
+        "fallible, theory-laden observation",
+        "instrument-output explanation chains",
+        "human conjecture and criticism versus biological variation and selection",
+        "artificial-creativity provenance"
+      ],
+      "citation": "Deutsch, The Beginning of Infinity (2011), chapters 1, 2, 4, and 7; Beyond Reward and Punishment (2019).",
+      "direct_import_anchors": [
+        {
+          "anchor": "The Beginning of Infinity, chapter 4, Creation, pages 77-79.",
+          "claim_index": 0
+        },
+        {
+          "anchor": "The Beginning of Infinity, chapter 4, Creation, pages 77-79.",
+          "claim_index": 1
+        },
+        {
+          "anchor": "The Beginning of Infinity, chapters 1-2, fallible observations and explanatory instrument chains.",
+          "claim_index": 2
+        },
+        {
+          "anchor": "The Beginning of Infinity, chapter 7, Artificial Creativity, pages 160-162.",
+          "claim_index": 3
+        }
+      ],
+      "direct_imports": [
+        "human knowledge is created through conjecture and criticism or experiment, while biological adaptations are created through mutation and natural selection",
+        "their mechanisms and explanatory reach differ",
+        "observations and their interpretations are theory-laden and fallible",
+        "variation and selection during a program run do not rule out an alternative explanation in which relevant knowledge was created by designers"
+      ],
+      "id": "DEUTSCH",
+      "poietic_operationalization": "A critical-evidence package must make its explanatory instrument and interpretation links explicit, and an attribution must distinguish knowledge created in the candidate process from knowledge supplied by designers, prompts, training, tools, scores, or external sources.",
+      "poietic_scope_guard": "A fixed reward score or black-box behavior is not a proof of creativity, and an agreeing result is not confirmation; this is a Poietic/Popper guard, not a direct Deutsch import.",
+      "scope_limit": "The cited passages make provenance and alternative explanations mandatory; they do not by themselves supply a behavior-only creativity criterion.",
+      "type": "primary_book_and_essay"
+    }
+  ]
+}
