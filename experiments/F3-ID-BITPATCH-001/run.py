@@ -7,7 +7,10 @@ import argparse
 import csv
 import json
 from pathlib import Path
+import sys
 
+REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPOSITORY_ROOT))
 from testpoietic.f3_identifiability import run_bitpatch_family
 
 
