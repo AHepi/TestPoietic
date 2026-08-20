@@ -6,7 +6,7 @@
   "status": "REVIEWED_PENDING_OWNER_SEAL",
   "shared_container": false,
   "official_file": "SIGNATURE_FREEZE_HJ_V1.md",
-  "official_sha256": "803d0ce6b78caab92071a589a5e525b456328d219c0592529c19477e099bb2a0",
+  "official_sha256": "525e860206530e521b4d5879838bbcb12db51ccb8b73c3c281e2ea93b218714c",
   "plain_language_file": "SIGNATURE_FREEZE_HJ_V1_PLAIN_LANGUAGE.md",
   "plain_language_sha256": "3fbadc7435163f8e4435399b8999c404178f3d3b63aa2c45c462455bc6b84060",
   "parent_records": [
@@ -24,11 +24,11 @@
     },
     {
       "file": "CAPACITY_UPDATE_TYPING_V1.md",
-      "sha256": "0e2b759b88c9d675a323198a0a3861bc581fb97e25fd42dab68554540e141a44"
+      "sha256": "ecc002ca753c9d54a5143b8919591971a945bf9f974f7598e62be21845f74c3a"
     },
     {
       "file": "SIGNATURE_FREEZE_EPISODE_V1.md",
-      "sha256": "c7ef2b5548f4fde4e9e4c2742dd47fcfc6fb05875169974452e0d10154675442"
+      "sha256": "4ffec8bc8fe6db09a71627943753149434ec7202097a0882f8314fc2548df373"
     },
     {
       "file": "RECORD_PUBLICATION_STANDARD_V1.md",
