@@ -7,6 +7,8 @@ status: REVIEWED_PENDING_OWNER_SEAL
 official_file: SIGNATURE_FREEZE_HJ_V1.md
 plain_language_file: SIGNATURE_FREEZE_HJ_V1_PLAIN_LANGUAGE.md
 digest_manifest: SIGNATURE_FREEZE_HJ_V1_FREEZE.json
+sha256_official: SIGNATURE_FREEZE_HJ_V1_FREEZE.json#official_sha256
+sha256_plain_language: SIGNATURE_FREEZE_HJ_V1_FREEZE.json#plain_language_sha256
 parent_records: DSF-v1 (Section 3.4(1),(4),(5),(6), Section 13 item 4); SPA-v1 (Sections 3, 4.2, 6.1, unchanged); HKEY-v1; CAP-v1; SIG-EPI-v1
 scope: complete displayed signatures for the H-fragment Boolean tables (FPartOf, FCarries, FBlindCopy, FErrorCorrect, FBuildWithResources), the population Eq table, and the interface key/label/Transport maps, implementing part of DSF-v1 Section 13 item 4
 claims: freezes typed signatures and one definitional identification; classifies every addition; names affected cones; records a non-deciding argument
