@@ -7,6 +7,8 @@ status: REVIEWED_PENDING_OWNER_SEAL
 official_file: IDENTITY_FREEZE_V1.md
 plain_language_file: IDENTITY_FREEZE_V1_PLAIN_LANGUAGE.md
 digest_manifest: IDENTITY_FREEZE_V1_FREEZE.json
+sha256_official: IDENTITY_FREEZE_V1_FREEZE.json#official_sha256
+sha256_plain_language: IDENTITY_FREEZE_V1_FREEZE.json#plain_language_sha256
 parent_records: DSF-v1 (Section 10, Section 13 item 4); SPA-v1 (Sections 3--6, unchanged; pinned per ERR-SPA-v1 to the committed bytes a9f62ebb..., the defective pin 40681e6c... retired); ERR-SPA-v1 (governing re-binding erratum); HKEY-v1; CAP-v1; SIG-EPI-v1; SIG-HJ-v1; RPS-v1
 scope: named, classified cross-fragment identity decisions for the still-open identity list of DSF-v1 Section 10, the episode-to-E identification deferred from SIG-EPI-v1, and the two named open items SIG-HJ-OPEN-1 and SIG-HJ-OPEN-2
 claims: freezes carrier identifications and typed embeddings with per-decision classifications; resolves SIG-HJ-OPEN-1 and SIG-HJ-OPEN-2 as disclosed definition readings; records per-cluster non-deciding arguments; names affected dependency cones
