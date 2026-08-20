@@ -32,7 +32,7 @@
     },
     {
       "file": "IDENTITY_FREEZE_V1.md",
-      "sha256": "7b5bf974e75140f15140de56325628901f324dd17681829a470ffe200c764aec"
+      "sha256": "26c44c5cb91f26a6e9f00662c132820d88f600a462f753f928023d033051015e"
     },
     {
       "file": "RECORD_PUBLICATION_STANDARD_V1.md",
@@ -193,6 +193,7 @@
       "status stays DRAFT_PENDING_REVIEW: a review occurred (REVISE) but no verdict on repairs yet; nothing about review completion is claimed",
       "SPA-v1 parent digest pinned per sealed erratum ERR-SPA-v1 to the committed bytes a9f62ebb...; the retired defective pin 40681e6c... is not used",
       "all parent pins copied from the parents' own FREEZE manifests (official_sha256), verified against the ERR-SPA-v1 and IDF-v1 manifests",
+      "IDF-v1 parent pin corrected to current post-remediation bytes 26c44c5c... (was pinned at pre-remediation 7b5bf974... during concurrent pushes)",
       "fragment pin candidates (J-02 label map, FKeyMatch, PORT/ProgramOf(P_Sigma)) referenced as candidates only; no original-fragment identification made",
       "RetainsOrAdapts left OPEN because its pin requires the FOR_REPLICATOR_NICHE source-grade bridge this tranche cannot justify; EverettianUniversalClaim positive semantics left OPEN as guard-rail discipline",
       "N18 pair SameSyntax/RealizationEq explicitly deferred to a joint later record (DSF-v1: DO NOT TEST OR REPAIR)",
