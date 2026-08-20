@@ -1,0 +1,120 @@
+{
+  "schema": "TESTPOIETIC_RECORD_FREEZE_V1",
+  "record_id": "ERR-SPA-v1",
+  "version": "1.0",
+  "date": "2026-08-20",
+  "status": "SEALED_ERRATUM_DISCLOSURE",
+  "shared_container": false,
+  "official_file": "SPA_PIN_ERRATUM_V1.md",
+  "official_sha256": "0e9959de220088adadfcd670520c04a520314e7870d340ea5bf5d0d3dc74f2a1",
+  "plain_language_file": "SPA_PIN_ERRATUM_V1_PLAIN_LANGUAGE.md",
+  "plain_language_sha256": "31f6a5a24cd8fbda211b9178742ba85c0979ef595e213f23c67d11adce4e74a5",
+  "parent_records": [
+    {
+      "file": "PIECEMEAL_SEMANTIC_ANNEX_V1.md",
+      "sha256": "a9f62ebbd086a0499893f57a566f6b769a1b64fc27dfe15dd640a8c1f5e200a0"
+    },
+    {
+      "file": "PIECEMEAL_SEMANTIC_ANNEX_V1_FREEZE.json",
+      "sha256": "181136bbfbca3963516e919c38934d744bb51f06f5ab361b3f62cf343655b0f9"
+    },
+    {
+      "file": "RECORD_PUBLICATION_STANDARD_V1.md",
+      "sha256": "38f37a7b638be960fdd47ce24d95c8cea67bb49ab2d28a9c8af9c667d6f83348"
+    }
+  ],
+  "scope": "disclosure of a freeze-process integrity defect in the SPA-v1 digest manifest and prospective re-binding of SPA-v1 canonical bytes",
+  "claims": [
+    "the sealed SPA-v1 manifest pins official_sha256 40681e6cd79e207fc21cc85e2f698bc161807f42193c4e4bb9214dcb84dffdff, which matches no bytes in retrievable history",
+    "the committed SPA-v1 bytes (blob 6b3b2faea4da707e0558f3f545379b3ee71796ef) hash to a9f62ebbd086a0499893f57a566f6b769a1b64fc27dfe15dd640a8c1f5e200a0",
+    "henceforth SPA-v1 canonical bytes are the committed bytes; all future records must pin a9f62ebb...",
+    "downstream manifests carrying the broken pin are corrected prospectively (CAP-v1, SIG-EPI-v1, SIG-HJ-v1) or covered by this erratum (DSF-v1, TH-v2, HKEY-v1, SPA-v1)"
+  ],
+  "non_claims": [
+    "no sealed record is edited",
+    "no semantic content of SPA-v1 is invalidated; every review of SPA-v1 was of the committed bytes",
+    "no N-row, readiness count, or discharge count changes",
+    "no claim beyond the recorded plausible explanation about how the wrong bytes were produced",
+    "does not test or discharge an original N-row",
+    "does not prove creativity or non-creativity"
+  ],
+  "caveat_crosswalk": [
+    {
+      "official_item_id": "ERRSPA-DEFECT",
+      "type": "claim",
+      "official_location": "Section 1, The defect",
+      "plain_language_location": "What went wrong",
+      "checked": true
+    },
+    {
+      "official_item_id": "ERRSPA-EVIDENCE",
+      "type": "claim",
+      "official_location": "Section 2, Evidence summary",
+      "plain_language_location": "How we know",
+      "checked": true
+    },
+    {
+      "official_item_id": "ERRSPA-NONAFFECTED",
+      "type": "non-claim",
+      "official_location": "Section 3, What is NOT affected",
+      "plain_language_location": "What this does NOT mean",
+      "checked": true
+    },
+    {
+      "official_item_id": "ERRSPA-REBIND",
+      "type": "claim",
+      "official_location": "Section 4, Corrective binding",
+      "plain_language_location": "What happens now",
+      "checked": true
+    },
+    {
+      "official_item_id": "ERRSPA-DOWNSTREAM",
+      "type": "condition",
+      "official_location": "Section 5, Affected downstream manifests and their disposition",
+      "plain_language_location": "What happens now",
+      "checked": true
+    },
+    {
+      "official_item_id": "ERRSPA-LESSON",
+      "type": "condition",
+      "official_location": "Section 6, Process lesson and standing rule",
+      "plain_language_location": "The lesson",
+      "checked": true
+    },
+    {
+      "official_item_id": "ERRSPA-RESIDUAL",
+      "type": "result status",
+      "official_location": "Section 7, Residual status",
+      "plain_language_location": "What happens next",
+      "checked": true
+    }
+  ],
+  "verification": {
+    "independent_mathematical_review": "NOT_APPLICABLE_FACT_DISCLOSURE; audit evidence verified against repository history",
+    "publication_review": "SEALED_ON_PUBLICATION",
+    "audit_evidence": {
+      "defective_manifest": "docs/PIECEMEAL_SEMANTIC_ANNEX_V1_FREEZE.json",
+      "pinned_but_unmatched_sha256": "40681e6cd79e207fc21cc85e2f698bc161807f42193c4e4bb9214dcb84dffdff",
+      "committed_sha256": "a9f62ebbd086a0499893f57a566f6b769a1b64fc27dfe15dd640a8c1f5e200a0",
+      "committed_blob": "6b3b2faea4da707e0558f3f545379b3ee71796ef",
+      "single_adding_commit": "61ff58d6d4ee2a2558cb181cbeef24fd2dd25e4d",
+      "adding_commit_date": "2026-08-20",
+      "branches_checked": ["agent/stress-test-continuation", "agent/hkey-v1-binding"],
+      "post_freeze_in_place_edit": false,
+      "ruled_out_normalizations": ["CRLF", "UTF-8 BOM", "trailing-newline variants"],
+      "other_pins_in_same_manifest": "all verify correctly (plain-language e2bea959..., all parents)"
+    },
+    "original_n_row_readiness": {
+      "PINNED": 0,
+      "PARTIAL": 2,
+      "OPEN": 18
+    },
+    "original_n_rows_discharged": 0,
+    "testing_status": "PROHIBITED",
+    "notes": [
+      "no sealed record edited; defective manifest retained as immutable history",
+      "all pins in this manifest computed from committed repository bytes per the new standing rule",
+      "pending-seal records CAP-v1, SIG-EPI-v1, SIG-HJ-v1 to be re-pinned to a9f62ebb... before owner seal"
+    ]
+  }
+}
