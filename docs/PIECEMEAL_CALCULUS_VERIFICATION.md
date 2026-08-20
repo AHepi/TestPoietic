@@ -1,0 +1,219 @@
+# Piecemeal Calculus Verification Ledger
+
+## Scope and status
+
+This ledger is a **verification specification and final qualification record** for
+[PIECEMEAL_PREMISE_CALCULUS.md](PIECEMEAL_PREMISE_CALCULUS.md) against the
+frozen premise plan.  Final document qualification was completed on
+2026-08-20 (Australia/Brisbane) for each row marked **PASS** below, with the
+recorded command/result evidence. It does **not** claim an empirical
+demonstration that any particular system is creative. Its status terms are:
+
+- **PASS** — the stated finite/documentary check was actually performed and
+  passed; its command, total, and result must be recorded.
+- **REGISTERED \([\mathsf N]\)** — a typed countermodel obligation is present;
+  it is not silently upgraded to a universal physical fact.
+- **NOT APPLICABLE** — a deliberately conditional branch was not invoked.
+- **PENDING FINAL QUALIFICATION** — a required check has not yet received the
+  final command/result record and independent read-only acceptance pass.
+
+Final document qualification is limited to the calculus, source register, and
+this ledger: frozen-plan representation, document/formal consistency,
+declared control vectors, countermodel registration, and source-scope
+labelling.  It excludes empirical creativity attribution, factual validation
+of every historical source claim, legal advice or a blanket copyright
+clearance, live-link availability, and the older campaign/replay machinery.
+
+## Frozen authority
+
+| item | value |
+|---|---|
+| Campaign | piecemeal-001 |
+| Plan | [evidence/frozen/piecemeal-plan-v1.json](../evidence/frozen/piecemeal-plan-v1.json) |
+| Plan SHA-256 | 7569d32fd0c41066f6023b411c8a06ec2d3e9e316e5213be9539d41f62dcbb9f |
+| Pinned subject SHA-256 | 9c5d389afc1f334733604083710f6625638b8933825a6312c7403e7de08dafbc |
+| Frozen requirement count | 44 = \(5+13+7+5+7+7\) |
+| Negative-control count | 13 |
+| Non-entailment count | 20 |
+| Typed-link count | 4 |
+| Scope restriction | A finite premise/consequence calculus; no candidate classifier, no universal creativity verdict |
+
+## What is tested
+
+### Qualification boundary
+
+The checks below test the finite artefact, not the world.  In scope are the
+frozen hash/counts, occurrence and link checks, equation/tag checks, the
+declared six-coordinate control-vector calculations, the presence and typing
+of \(\mathsf N\)-obligations, and whether a \(\mathsf P\)/\(\mathsf B\) edge
+has a source/bridge record in the
+[source register](PIECEMEAL_SOURCE_REGISTER.md).  Out of scope are an
+independent re-reading of every cited page, empirical instantiation of a
+countermodel, all possible mathematical models, and a verdict on a candidate
+agent.
+
+### Formal construction checks
+
+| check | result | evidence |
+|---|---:|---|
+| Finite signed provision space | PASS | Every material certificate is supplied or withheld; withholding is explicitly not semantic negation. |
+| Finite closure | PASS | \(\mathcal F_{\eta,\theta}(v;\varpi)=\bigcup_{0\le n\le|\mathcal Q|}\operatorname{Cl}_n(D(v);\varpi)\cap\mathcal Q\). |
+| Typed no-splicing | PASS | \(\theta\), selected witnesses, \(J\)-arrows, joins, ports, and PE alignment must share the declared cut/boundary/task/bearer. |
+| Information / knowledge separation | PASS | \(\widehat I\) does not by itself derive \(\widehat{\mathrm{PK}}\), recipe knowledge, a physical explanatory episode, or capacity. |
+| Conditional \(H\) branch | PASS | Digitality and error correction are scoped to a selected high-accuracy no-design self-reproduction route, not the whole creator. |
+| Typed variation–selection bridge | PASS | The bridge derives an analogue only; it never identifies variation with conjecture or selection with criticism. |
+| Critical evidence | PASS | Observation, deduction, and prediction require a target, chain, auxiliaries, discriminator, and protocol; survival never yields confirmation. |
+| Episode versus capacity | PASS | \(P_1\to TT\to EE\to P_2\) is not a generator/capacity theorem. |
+| Finite-domain guard | PASS | A finite suite cannot be promoted to all theories, variants, environments, or an Everettian universal claim. |
+| Source/bridge provenance | PASS | Every substantive edge has a source grade \(\mathsf D,\mathsf T,\mathsf P,\mathsf B,\mathsf N\); provenance is closed transitively. |
+
+### Static document checks
+
+| check | result | final value |
+|---|---:|---|
+| No control characters in the calculus source | PASS | 0 |
+| Balanced display-math delimiters | PASS | 84 opening / 84 closing |
+| Unique displayed equation tags | PASS | 0 duplicate tags |
+| Both ledgers linked from the calculus | PASS | Source register and verification ledger links present |
+| All 44 frozen IDs represented | PASS | 44 / 44 in the calculus |
+| All 13 control IDs represented | PASS | 13 / 13 in the calculus and ledger |
+| All 20 non-entailment IDs represented | PASS | 20 / 20 in the calculus and ledger |
+| Frozen-plan author/check command | PASS | Exit 0; frozen bytes/hash reproduced |
+| Focused mathematical/read-only review | PASS | Independent formal and finite-matrix reviews: ACCEPT |
+
+### Final-qualification test-result table
+
+The following command and review records were entered after the final document pass. The full repository discovery suite is supplementary context; it is not a substitute for the bounded document qualification.
+
+| check / command | qualification scope | status | result record |
+|---|---|---:|---|
+| **git diff --cached --check** | Whitespace/error scan of the intended staged artefact set. | PASS | Exit 0; no diagnostics. |
+| **py -3.11 -B scripts/author_piecemeal_plan.py --check** | Frozen-plan reconstruction/hash check. | PASS | Exit 0; no output; frozen bytes/authentication accepted. |
+| **py -3.11 -B -m unittest tests.test_piecemeal_plan -v** | Focused plan/authority/lattice/control checks. | PASS | 6 tests; 0 failures; 0.056 s. |
+| Static source/calculus/ledger inspection | 44 IDs, 13 controls, 20 non-entailments, four typed links, tags, links, and source-map completeness. | PASS | 0 control characters; 84/84 displays; 0 duplicate tags; 44/13/20/4 coverage; both companion links present. |
+| Independent read-only mathematical/source review | Formal typing, scope, bridge grades, route/support claims, quotation/access labelling. | PASS | Formal typing/source review ACCEPT; finite-matrix review ACCEPT; paper review ACCEPT. |
+| **py -3.11 -B -m unittest discover -s tests -v** | Supplementary repository-level context, reported separately from document-only acceptance. | PASS | 121 tests; 0 failures; 4.321 s. |
+
+## Control calculations
+
+Each row is a full provision state plus a typed model fixture, as defined in
+the calculus. The expected cells below are exactly the frozen-plan
+requirements. “Derived vector” is the six-coordinate output that final
+qualification must mechanically recompute from the stated finite closure.
+It is not a result about an empirical candidate.  Extra \(I^\otimes\) and
+multiple-realisation diagnostics remain separate from the frozen six cells.
+
+| control | frozen expected result | derived vector | result |
+|---|---|---|---:|
+| NC_INFORMATION_WITHOUT_RETENTION | \(I=\mathrm{MAY\_PASS};R=\mathrm{NOT\_ESTABLISHED};E=\mathrm{NOT\_ESTABLISHED}\) | \((\mathrm{MAY\_PASS},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_APPLICABLE},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED})\) | PASS |
+| NC_RETENTION_WITHOUT_EXPLANATION | \(R=\mathrm{MAY\_PASS};E=\mathrm{NOT\_ESTABLISHED}\) | \((\mathrm{MAY\_PASS},\mathrm{MAY\_PASS},\mathrm{NOT\_APPLICABLE},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED})\) | PASS |
+| NC_NAKED_REPLICATOR | \(V=\mathrm{MAY\_PASS};H=\mathrm{NOT\_APPLICABLE};E=\mathrm{NOT\_ESTABLISHED}\) | \((\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_APPLICABLE},\mathrm{MAY\_PASS},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED})\) | PASS |
+| NC_SELECTION_WITHOUT_CRITICISM | \(V=\mathrm{MAY\_PASS};E=\mathrm{NOT\_ESTABLISHED}\) | \((\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_APPLICABLE},\mathrm{MAY\_PASS},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED})\) | PASS |
+| NC_CREATOR_WITHOUT_SELF_REPRODUCTION | \(H=\mathrm{NOT\_APPLICABLE};E=\mathrm{UNRESOLVED\_NOT\_NON\_CREATIVE}\) | \((\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_APPLICABLE},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED},\mathrm{UNRESOLVED\_NOT\_NON\_CREATIVE})\) | PASS |
+| NC_BARE_POSSIBILITY_WITHOUT_PRIOR_KNOWLEDGE | \(R=\mathrm{NOT\_APPLICABLE};E=\mathrm{NOT\_ESTABLISHED}\) | \((\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_APPLICABLE},\mathrm{NOT\_APPLICABLE},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED})\) | PASS |
+| NC_EXTERNAL_RECIPE_WITHOUT_CANDIDATE_ATTRIBUTION | \(R=\mathrm{EXTERNAL\_P\_NOT\_ATTRIBUTED};E=\mathrm{NOT\_ESTABLISHED}\) | \((\mathrm{NOT\_ESTABLISHED},\mathrm{EXTERNAL\_P\_NOT\_ATTRIBUTED},\mathrm{NOT\_APPLICABLE},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED})\) | PASS |
+| NC_BARE_SCORE_WITHOUT_CRITICAL_PACKAGE | \(C=\mathrm{NOT\_ESTABLISHED};E=\mathrm{NOT\_ESTABLISHED}\) | \((\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_APPLICABLE},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED})\) | PASS |
+| NC_AGREEING_RESULT_NOT_CONFIRMATION | \(C=\mathrm{SURVIVED\_DECLARED\_ATTEMPT};E=\mathrm{NOT\_ESTABLISHED}\) | \((\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_APPLICABLE},\mathrm{NOT\_ESTABLISHED},\mathrm{SURVIVED\_DECLARED\_ATTEMPT},\mathrm{NOT\_ESTABLISHED})\) | PASS |
+| NC_UNREFUTABLE_OUTPUT | \(C=\mathrm{NOT\_ESTABLISHED};E=\mathrm{NOT\_ESTABLISHED}\) | \((\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_APPLICABLE},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED})\) | PASS |
+| NC_UNCONSTRAINED_SUBSTRATE_SWAP | \(R=\mathrm{NOT\_ESTABLISHED};E=\mathrm{NOT\_ESTABLISHED}\) | \((\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_APPLICABLE},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED})\) | PASS |
+| NC_ONE_COPY_INSPECTION | \(R=V=E=\mathrm{NOT\_ESTABLISHED}\) | \((\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_APPLICABLE},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED})\) | PASS |
+| NC_NONPHYSICAL_RECIPE | \(R=\mathrm{NOT\_ESTABLISHED};E=\mathrm{NOT\_ESTABLISHED}\) | \((\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_APPLICABLE},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED},\mathrm{NOT\_ESTABLISHED})\) | PASS |
+
+## Support precision and recording boundary
+
+The calculus has two distinct support claims, and this ledger must not
+collapse them.
+
+| Claim | Present status | Meaning |
+|---|---:|---|
+| Route-exact closure support | PASS | Equation (57) was checked against the finite rule register, activation conditions, and independent formal review. It is exact only in that limited hatted audit-route sense. |
+| Source-semantic minimality | UNCLAIMED IN THIS VERSION | No source-core family \(S_q^{\rm src}\) and no corresponding independence models have been enumerated/discharged for every route.  Equation (58) gives the additional criterion; it is not recorded as proved merely because a route support is exact. |
+| Control-row head trace | NOT RECORDED AS A SEPARATE ARTEFACT | The control table records the displayed six-coordinate vectors and their frozen expected cells.  It does not purport to store every individual derived/non-derived head for every row. |
+
+Thus a route condition that is exact for this finite audit closure is not
+thereby a physically necessary condition, and an absent semantic-minimality
+proof is not silently replaced by a claim of minimality.
+
+## Non-entailment verification register
+
+The following are not positive rules. Each is a named \(\mathsf N\)
+obligation: the calculus records a model family with the antecedent but not
+the prohibited conclusion. This is the right test for a claimed
+non-entailment; merely failing to derive a conclusion would prove only
+non-establishment.
+
+| ID | countermodel family / denied promotion | result |
+|---|---|---:|
+| NE_INFORMATION_NOT_KNOWLEDGE | transient clonable register; no retention role | REGISTERED [N] |
+| NE_INFORMATION_NOT_CREATIVITY | information medium with no capability architecture | REGISTERED [N] |
+| NE_RETENTION_NOT_CREATIVITY | retained recipe/value with no explanation/capacity | REGISTERED [N] |
+| NE_SELECTION_NOT_HIGH_FIDELITY | naked or poor-fidelity selection lineage; no \(H\) package | REGISTERED [N] |
+| NE_SELECTION_NOT_CRITICISM | blind population with no represented criticisable package | REGISTERED [N] |
+| NE_WHOLE_CREATOR_NOT_CLONABLE | creative-capacity model without whole-agent cloning, digitality, or self-reproduction | REGISTERED [N] |
+| NE_BOUNDARY_IS_EVIDENCE | boundary move destroys the typed link | REGISTERED [N] |
+| NE_FINITE_ENUMERATION_NOT_ALL_THEORIES | finite passing suite extended by untested failing theory | REGISTERED [N] |
+| NE_P1_TT_EE_P2_NOT_GENERATOR | one externally sequenced criticisable episode | REGISTERED [N] |
+| NE_POSSIBILITY_NOT_PRIOR_KNOWLEDGE | possible task without a current candidate bearer | REGISTERED [N] |
+| NE_RECIPE_NOT_CREATIVITY | causal recipe knowledge without explanatory capacity | REGISTERED [N] |
+| NE_ARTIFACT_NOT_RECIPE | product without recipe or explanation role | REGISTERED [N] |
+| NE_BARE_RECORD_NOT_EVIDENCE | record/deduction/prediction missing package chain | REGISTERED [N] |
+| NE_EVIDENCE_NOT_CONFIRMATION | surviving declared attempt with further alternatives | REGISTERED [N] |
+| NE_VARIATION_NOT_CONJECTURE_IDENTITY | typed analogue without represented conjecture/criticism | REGISTERED [N] |
+| NE_NONREFUTABLE_NOT_CREATIVE | uncriticisable final output does not establish attribution | REGISTERED [N] |
+| NE_HIGH_LEVEL_NOT_EXTRA_SUBSTANCE | physical role equivalence without a second substance | REGISTERED [N] |
+| NE_SUBSTRATE_SWAP_NOT_AUTOMATIC | same label/syntax without task/side-effect/environment preservation | REGISTERED [N] |
+| NE_SINGLE_COPY_NOT_COUNTERFACTUAL_ROLE | one local copy without variants/interventions/role history | REGISTERED [N] |
+| NE_FINITE_VARIANTS_NOT_ALL_ENVIRONMENTS | conservative extension containing a failing new variant/environment | REGISTERED [N] |
+
+## Independent review history
+
+| review gate | result | resolved finding |
+|---|---:|---|
+| Source-scope review | PASS | Keep constructor information, retention, and high-fidelity no-design replication as distinct lattices; restrict digital/error-correction conclusion to the recipe variable. |
+| Popper/Deutsch review | PASS | Encode theory-laden critical packages; split typed analogy from identity; survival is not confirmation. |
+| Formal typing review | PASS | Make boundaries, cuts, bearers, code ports, witness selections, and episode links explicit so unrelated witnesses cannot splice. |
+| Finite-matrix review | PASS | Use finite signed provision states, a finite closure, full 13-control vectors, and 20 explicit countermodel obligations. |
+| Source/verification-ledger review | PASS | Ensure every \(\mathsf P\) / \(\mathsf B\) claim has a live source record, lawful short quotation, access/licence note, scope limit, and testing result. |
+
+## Reproduction commands
+
+Run these from the repository root:
+
+    git diff --cached --check
+    py -3.11 -B scripts/author_piecemeal_plan.py --check
+    py -3.11 -B -m unittest tests.test_piecemeal_plan -v
+    py -3.11 -B -m unittest discover -s tests -v
+
+The formal/document checks are reproduced by reading the three documents and
+the frozen plan together:
+
+1. Verify the frozen SHA-256 above.
+2. Count the 44 frozen requirement IDs, 13 controls, 20 non-entailments, and
+   four typed links in the plan.
+3. Check that the calculus has a typed representation for each ID and each
+   control/countermodel row.
+4. For each control, substitute its supplied state into the finite closure
+   and then apply \(\operatorname{Display}\).
+5. For each non-entailment, inspect the stated model family; it must retain
+   the antecedent while denying only the prohibited promotion.
+6. Inspect the source ledger before accepting any \(\mathsf P\) or
+   \(\mathsf B\) edge as direct source content.
+
+## Limitations recorded by the verification
+
+- The finite closure is a calculus of declared premises. It does not
+  enumerate all theories, environments, possible interventions, or future
+  explanations.
+
+- \(\mathsf N\)-rows are formal countermodel obligations and conservative
+  extensions. They do not replace empirical tests of a real candidate.
+
+- An audit pass is not a creativity proof. The calculus has no
+  \(\mathrm{CONFIRMED}\) or \(\mathrm{CREATIVITY\_PROVEN}\) output.
+
+- Citation links make the source trail inspectable. They do not transfer
+  book copyright, provide legal advice, or supply a universal reuse licence.
+
+- A route-exact closure check is not a source-semantic minimality theorem.
+  Semantic minimality remains unclaimed unless its separately specified
+  source-core and independence obligations are discharged.
