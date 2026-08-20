@@ -1,0 +1,147 @@
+{
+  "schema": "TESTPOIETIC_RECORD_FREEZE_V1",
+  "record_id": "HKEY-v1",
+  "version": "1.0",
+  "date": "2026-08-20",
+  "status": "SEALED_HKEY_BINDING_PINNED_TESTING_PROHIBITED",
+  "shared_container": false,
+  "official_file": "HKEY_BINDING_V1.md",
+  "official_sha256": "01a5bf4f8f6a84d5cd7d67554ed1e1aededafced4a7a767728445f40a504d57f",
+  "plain_language_file": "HKEY_BINDING_V1_PLAIN_LANGUAGE.md",
+  "plain_language_sha256": "b31c5e74fa4d88f2803faa4125655c326ed6cf511e7fbce72af0bd9e4531c362",
+  "parent_records": [
+    {
+      "file": "DOWNSTREAM_SEMANTIC_FREEZE_V1.md",
+      "sha256": "961e2b476f7bd93d208f19ad0e6b964a2db4495c00b8731b43ba732b076198a1"
+    },
+    {
+      "file": "TRANCHE_HANDOFF_V2.md",
+      "sha256": "8cb1548b650155a01070bdbe901837bdb8f0e49359db7fd6ed8762916ca59673"
+    },
+    {
+      "file": "PIECEMEAL_SEMANTIC_ANNEX_V1.md",
+      "sha256": "40681e6cd79e207fc21cc85e2f698bc161807f42193c4e4bb9214dcb84dffdff"
+    },
+    {
+      "file": "RECORD_PUBLICATION_STANDARD_V1.md",
+      "sha256": "38f37a7b638be960fdd47ce24d95c8cea67bb49ab2d28a9c8af9c667d6f83348"
+    }
+  ],
+  "scope": "typed relations binding hkey(w)=(F,T,R) to the checked vehicle w.Vveh and the task implemented by w.CSigma, implementing TH-v2 Section 5 items 1-5",
+  "claims": [
+    "defines the candidate pins (SysBind, HKEY-A1, tau, HKEY-A2, extended hkey admissibility)",
+    "classifies each addition as primitive data, acceptance axiom, or definition change",
+    "names affected heads, rows, families, and definition sites",
+    "records non-deciding and non-redundancy checks on the TH2-D1 singleton reduct"
+  ],
+  "non_claims": [
+    "does not test or change an original N-row",
+    "does not construct or run a fixture",
+    "does not edit SPA-v1 in place",
+    "does not claim a source-level bridge or validate HRep",
+    "does not prove creativity or non-creativity"
+  ],
+  "caveat_crosswalk": [
+    {
+      "official_item_id": "HKEY-DEFECT",
+      "type": "condition",
+      "official_location": "Section 1, Defect addressed",
+      "plain_language_location": "What problem this solves",
+      "checked": true
+    },
+    {
+      "official_item_id": "HKEY-SYSBIND",
+      "type": "claim",
+      "official_location": "Section 3, System binding - selected option S2",
+      "plain_language_location": "What was added, paragraph 2",
+      "checked": true
+    },
+    {
+      "official_item_id": "HKEY-TAU",
+      "type": "claim",
+      "official_location": "Section 4, Task binding - selected option T1",
+      "plain_language_location": "What was added, paragraph 3",
+      "checked": true
+    },
+    {
+      "official_item_id": "HKEY-KEYCHECK",
+      "type": "claim",
+      "official_location": "Section 5, Extended key check - definition change",
+      "plain_language_location": "What was added, paragraph 4",
+      "checked": true
+    },
+    {
+      "official_item_id": "HKEY-CIRCULARITY",
+      "type": "condition",
+      "official_location": "Section 4, note on benign circularity",
+      "plain_language_location": "What was added, paragraph 3",
+      "checked": true
+    },
+    {
+      "official_item_id": "HKEY-CONES",
+      "type": "uncertainty",
+      "official_location": "Section 6, Affected dependency cones, manual-trace caveat",
+      "plain_language_location": "What changed and what did not, paragraph 1",
+      "checked": true
+    },
+    {
+      "official_item_id": "HKEY-CHECK1",
+      "type": "result status",
+      "official_location": "Section 7, Check 1",
+      "plain_language_location": "How we know the new pieces are not rigged, paragraph 2",
+      "checked": true
+    },
+    {
+      "official_item_id": "HKEY-CHECK2",
+      "type": "result status",
+      "official_location": "Section 7, Check 2, unique-key premise",
+      "plain_language_location": "How we know the new pieces are not rigged, paragraph 3",
+      "checked": true
+    },
+    {
+      "official_item_id": "HKEY-CHECK3",
+      "type": "limitation",
+      "official_location": "Section 7, Check 3, downgraded steering defense",
+      "plain_language_location": "How we know the new pieces are not rigged, paragraph 4",
+      "checked": true
+    },
+    {
+      "official_item_id": "HKEY-RESIDUAL",
+      "type": "result status",
+      "official_location": "Section 10, Residual status",
+      "plain_language_location": "What changed and what did not, paragraph 2",
+      "checked": true
+    },
+    {
+      "official_item_id": "HKEY-FORBIDDEN",
+      "type": "non-claim",
+      "official_location": "Section 9, Forbidden items",
+      "plain_language_location": "What happens next",
+      "checked": true
+    }
+  ],
+  "verification": {
+    "independent_mathematical_review": "REVISE (10 findings), all repaired in v1",
+    "publication_review": "OWNER_ACCEPTED_2026-08-20",
+    "owner_resolved_options": {
+      "Q1_functionality": "AT_MOST_ONE",
+      "Q2_tau": "PARTIAL",
+      "Q3_placement": "HKEY_ADMISSIBILITY_LEVEL"
+    },
+    "two_sided_non_deciding": "PASS (Check 1)",
+    "non_redundancy": "PASS (Check 2, under stated unique-key premise)",
+    "steering_defense": "RATIONALE_BASED_ONLY (Check 3, downgraded)",
+    "original_n_row_readiness": {
+      "PINNED": 0,
+      "PARTIAL": 2,
+      "OPEN": 18
+    },
+    "original_n_rows_discharged": 0,
+    "testing_status": "PROHIBITED",
+    "notes": [
+      "SPA-v1, SPA-H-THRESH-v1, DSF-v1, and the calculus were not edited",
+      "supersedes only the key-binding portion of DSF-F2",
+      "cone completeness rests on a manual trace; mechanical re-derivation is future work"
+    ]
+  }
+}
