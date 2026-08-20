@@ -42,7 +42,7 @@ identity — these are real carrier identifications, not name-matching.
 - Episodes are interface tokens. The interface's episode, package,
   evidence, trace, problem, and account carriers ARE the agent fragment's
   episode/package/evidence/trace/problem/account records, field by field.
-  This is the identification the episode record deferred. Three repairs are
+  This is the identification the episode record deferred. Four repairs are
   disclosed inside it. First, the typing of "the episode's target is its
   account" was wrong (targets live in the problem carrier, accounts in the
   account carrier); the fix declares an explicit embedding of accounts into
