@@ -8,7 +8,7 @@
   "official_file": "IDENTITY_FREEZE_V1.md",
   "official_sha256": "7b5bf974e75140f15140de56325628901f324dd17681829a470ffe200c764aec",
   "plain_language_file": "IDENTITY_FREEZE_V1_PLAIN_LANGUAGE.md",
-  "plain_language_sha256": "b1c30fe88904025d1f04c53b4c25149e4bea01bd7ed24854bf96181cfda3ccc9",
+  "plain_language_sha256": "893163a7f4e51db3bd29ac62eb2e9997a4e66cf1d617f708ae20fc4c5abb2027",
   "parent_records": [
     {
       "file": "DOWNSTREAM_SEMANTIC_FREEZE_V1.md",
