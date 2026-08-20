@@ -7,6 +7,8 @@ status: REVIEWED_PENDING_OWNER_SEAL
 official_file: ADM_RECHECK_V1.md
 plain_language_file: ADM_RECHECK_V1_PLAIN_LANGUAGE.md
 digest_manifest: ADM_RECHECK_V1_FREEZE.json
+sha256_official: ADM_RECHECK_V1_FREEZE.json#official_sha256
+sha256_plain_language: ADM_RECHECK_V1_FREEZE.json#plain_language_sha256
 parent_records: ADM-v1 (Theorem ADM-T1); DSF-v1 (Finding DSF-F1, Section 13 item 2); CAP-v1 (SPA-CAP-v1, dependency)
 scope: re-derivation of the two-sided independence of the finite admissibility restriction under the repaired capacity typing, implementing DSF-v1 Section 13 item 2
 claims: supplies an explicit witness pair showing the ADM-D1/ADM-A2 restriction entails neither FCreativeCap nor its negation under SPA-CAP-v1
