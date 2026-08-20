@@ -1,0 +1,140 @@
+{
+  "schema": "TESTPOIETIC_RECORD_FREEZE_V1",
+  "record_id": "CAP-v1",
+  "version": "1.0",
+  "date": "2026-08-20",
+  "status": "REVIEWED_PENDING_OWNER_SEAL",
+  "shared_container": false,
+  "official_file": "CAPACITY_UPDATE_TYPING_V1.md",
+  "official_sha256": "832b07da77735c1f01637734dcdb5a05e4815798fd5311e7e19c1e81724175ad",
+  "plain_language_file": "CAPACITY_UPDATE_TYPING_V1_PLAIN_LANGUAGE.md",
+  "plain_language_sha256": "02455e86566c9456e6b8fa7016a105b6b7772c7a09beac6e296ffdd710e69c44",
+  "parent_records": [
+    {
+      "file": "DOWNSTREAM_SEMANTIC_FREEZE_V1.md",
+      "sha256": "961e2b476f7bd93d208f19ad0e6b964a2db4495c00b8731b43ba732b076198a1"
+    },
+    {
+      "file": "PIECEMEAL_SEMANTIC_ANNEX_V1.md",
+      "sha256": "40681e6cd79e207fc21cc85e2f698bc161807f42193c4e4bb9214dcb84dffdff"
+    },
+    {
+      "file": "TRANCHE_HANDOFF_V2.md",
+      "sha256": "8cb1548b650155a01070bdbe901837bdb8f0e49359db7fd6ed8762916ca59673"
+    },
+    {
+      "file": "HKEY_BINDING_V1.md",
+      "sha256": "01a5bf4f8f6a84d5cd7d67554ed1e1aededafced4a7a767728445f40a504d57f"
+    },
+    {
+      "file": "RECORD_PUBLICATION_STANDARD_V1.md",
+      "sha256": "38f37a7b638be960fdd47ce24d95c8cea67bb49ab2d28a9c8af9c667d6f83348"
+    }
+  ],
+  "scope": "a well-typed repair of the Update call sites in the two capacity clauses of SPA-v1 Section 5.2, implementing DSF-v1 Section 13 item 1",
+  "claims": [
+    "freezes candidate typings U1/U2/U3 and selects U1 with per-clause rationale",
+    "adds CAP-A1 endpoint coherence of selection, partially closing DSF-v1 3.4(7)",
+    "classifies every change under the TH-v1/DSF-v1 four-bucket taxonomy",
+    "records a two-sided non-deciding check at the FCreativeCap level in a unique-context reduct"
+  ],
+  "non_claims": [
+    "does not edit SPA-v1 in place",
+    "does not re-derive ADM-T1 or restore any B2 status",
+    "does not test or discharge an original N-row",
+    "does not construct a fixture",
+    "does not prove creativity or non-creativity",
+    "is not sealed until owner review completes"
+  ],
+  "caveat_crosswalk": [
+    {
+      "official_item_id": "CAP-DEFECT",
+      "type": "condition",
+      "official_location": "Section 1, Defect addressed",
+      "plain_language_location": "What problem this solves",
+      "checked": true
+    },
+    {
+      "official_item_id": "CAP-A1",
+      "type": "claim",
+      "official_location": "Section 2, Reachability side condition and CAP-A1",
+      "plain_language_location": "The repair, paragraph 2",
+      "checked": true
+    },
+    {
+      "official_item_id": "CAP-U1-SELECTION",
+      "type": "claim",
+      "official_location": "Section 3, Candidate typings",
+      "plain_language_location": "The repair, paragraphs 1 and 3",
+      "checked": true
+    },
+    {
+      "official_item_id": "CAP-LOADBEARING",
+      "type": "uncertainty",
+      "official_location": "Section 4, The choice is load-bearing",
+      "plain_language_location": "The repair, paragraph 3",
+      "checked": true
+    },
+    {
+      "official_item_id": "CAP-NONDECIDING",
+      "type": "result status",
+      "official_location": "Section 5, Two-sided non-deciding check",
+      "plain_language_location": "How we know the repair is not rigged",
+      "checked": true
+    },
+    {
+      "official_item_id": "CAP-CONES",
+      "type": "uncertainty",
+      "official_location": "Section 6, Affected dependency cones, manual-trace caveat",
+      "plain_language_location": "What changed and what did not",
+      "checked": true
+    },
+    {
+      "official_item_id": "CAP-ADM-UNCHANGED",
+      "type": "result status",
+      "official_location": "Section 6, ADM-v1 item",
+      "plain_language_location": "What changed and what did not",
+      "checked": true
+    },
+    {
+      "official_item_id": "CAP-RESIDUAL",
+      "type": "result status",
+      "official_location": "Section 9, Residual status and next checkpoint",
+      "plain_language_location": "What happens next",
+      "checked": true
+    },
+    {
+      "official_item_id": "CAP-FORBIDDEN",
+      "type": "non-claim",
+      "official_location": "Section 8, Forbidden items",
+      "plain_language_location": "What happens next",
+      "checked": true
+    }
+  ],
+  "verification": {
+    "independent_mathematical_review": "REVISE (7 findings), all repaired in v1",
+    "publication_review": "PENDING_OWNER_SEAL",
+    "selected_typing": "U1 pointwise evaluation at successor state",
+    "two_sided_non_deciding": "PASS at FCreativeCap level in unique-context reduct (singleton Policy/Selector carriers)",
+    "steering_defense": "RATIONALE_BASED_ONLY",
+    "adm_counts": {
+      "B1": 0,
+      "B2": 0,
+      "B3": 3,
+      "note": "unchanged; ADM-T1 not re-derived"
+    },
+    "original_n_row_readiness": {
+      "PINNED": 0,
+      "PARTIAL": 2,
+      "OPEN": 18
+    },
+    "original_n_rows_discharged": 0,
+    "testing_status": "PROHIBITED",
+    "notes": [
+      "SPA-v1, SPA-H-THRESH-v1, SPA-HKEY-v1, DSF-v1, and ADM-v1 were not edited",
+      "SPA-CAP-v1 is a prospective supersession fragment for the two clause bodies plus CAP-A1",
+      "supersedes only the call-site typing portion of DSF-F1 and the first half of DSF-v1 3.4(7)",
+      "cone completeness rests on a manual trace with stated exclusions"
+    ]
+  }
+}
