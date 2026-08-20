@@ -140,7 +140,7 @@ collapse them.
 |---|---:|---|
 | Route-exact closure support | PASS | Equation (57) was checked against the finite rule register, activation conditions, and independent formal review. It is exact only in that limited hatted audit-route sense. |
 | Source-semantic minimality | UNCLAIMED IN THIS VERSION | No source-core family \(S_q^{\rm src}\) and no corresponding independence models have been enumerated/discharged for every route. Equation (58) gives the additional criterion; it is not recorded as proved merely because a route support is exact. |
-| Semantic countermodel pinning | PARTIAL [SPA-v1] | SPA-v1 operationally pins population/FPT-H proxy, finite episode/capacity, and interface composition classes. It does not fully pin any original frozen \(\mathsf N\)-row's source-level claim. |
+| Semantic countermodel pinning | PARTIAL [SPA-v1; + SPA-H-THRESH-v1; + SPA-HKEY-v1] | SPA-v1 operationally pins population/FPT-H proxy, finite episode/capacity, and interface composition classes. TH2-D1 (TH-v2) types the finite H-route error threshold; HKEY-v1 binds hkey(w)=(F,T,R) to the checked vehicle and implemented task in the prospective fragment SPA-HKEY-v1. Neither fully pins any original frozen \(\mathsf N\)-row's source-level claim. |
 | Annex-relative semantic discharge | NONE | No named model certificate has been independently checked against SPA-v1. Document PASS records closure/document qualification only. |
 | Control-row head trace | NOT RECORDED AS A SEPARATE ARTEFACT | The control table records the displayed six-coordinate vectors and their frozen expected cells. It does not purport to store every individual derived/non-derived head for every row. |
 
@@ -162,9 +162,9 @@ failing to derive a conclusion proves only non-establishment.
 | NE_INFORMATION_NOT_KNOWLEDGE | transient clonable register; no retention role | REGISTERED_SCHEMA [N] | SEMANTIC PINNING ABSENT | NOT DISCHARGED |
 | NE_INFORMATION_NOT_CREATIVITY | information medium with no capability architecture | REGISTERED_SCHEMA [N] | SEMANTIC PINNING ABSENT | NOT DISCHARGED |
 | NE_RETENTION_NOT_CREATIVITY | retained recipe/value with no explanation/capacity | REGISTERED_SCHEMA [N] | SEMANTIC PINNING ABSENT | NOT DISCHARGED |
-| NE_SELECTION_NOT_HIGH_FIDELITY | naked or poor-fidelity selection lineage; no \(H\) package | REGISTERED_SCHEMA [N] | PARTIALLY PINNED [SPA-v1: population/FPT-H proxy] | NOT DISCHARGED |
+| NE_SELECTION_NOT_HIGH_FIDELITY | naked or poor-fidelity selection lineage; no \(H\) package | REGISTERED_SCHEMA [N] | PARTIALLY PINNED [SPA-v1: population/FPT-H proxy; + TH2-D1 threshold typing via TH-v2; + HKEY-v1 key binding (SPA-HKEY-v1)] | NOT DISCHARGED |
 | NE_SELECTION_NOT_CRITICISM | blind population with no represented criticisable package | REGISTERED_SCHEMA [N] | SEMANTIC PINNING ABSENT | NOT DISCHARGED |
-| NE_WHOLE_CREATOR_NOT_CLONABLE | creative-capacity model without whole-agent cloning, digitality, or self-reproduction | REGISTERED_SCHEMA [N] | SEMANTIC PINNING ABSENT | NOT DISCHARGED |
+| NE_WHOLE_CREATOR_NOT_CLONABLE | creative-capacity model without whole-agent cloning, digitality, or self-reproduction | REGISTERED_SCHEMA [N] | SEMANTIC PINNING ABSENT [H-family threshold/key pins via TH2-D1 and HKEY-v1 touch its D4 cone only] | NOT DISCHARGED |
 | NE_BOUNDARY_IS_EVIDENCE | boundary move destroys the typed link | REGISTERED_SCHEMA [N] | PARTIALLY PINNED [SPA-v1: interface composition] | NOT DISCHARGED |
 | NE_FINITE_ENUMERATION_NOT_ALL_THEORIES | finite passing suite extended by untested failing theory | REGISTERED_SCHEMA [N] | SEMANTIC PINNING ABSENT | NOT DISCHARGED |
 | NE_P1_TT_EE_P2_NOT_GENERATOR | one externally sequenced criticisable episode | REGISTERED_SCHEMA [N] | PARTIALLY PINNED [SPA-v1: finite episode/capacity] | NOT DISCHARGED |
@@ -189,6 +189,22 @@ failing to derive a conclusion proves only non-establishment.
 | Formal typing review | PASS | Make boundaries, cuts, bearers, code ports, witness selections, and episode links explicit so unrelated witnesses cannot splice. |
 | Finite-matrix review | PASS | Use finite signed provision states, a finite closure, full 13-control vectors, and 20 explicit countermodel obligations. |
 | Source/verification-ledger review | PASS | Ensure every \(\mathsf P\) / \(\mathsf B\) claim has a live source record, lawful short quotation, access/licence note, scope limit, and testing result. |
+| H-key binding review (HKEY-v1, 2026-08-20) | PASS after REVISE | Ten findings repaired: unique-key premise for Check 2; anti-steering claim downgraded to rationale-based; w.CSigma fixed as a Code element; extended key check classified as a definition change; T2 rejection recharacterized as a determinacy defect; HKEY-A1 restated per structure; hkey/FPT-HRoute definition sites named in the cone; HKEY-A2 vacuity stated; reduct citation corrected; M\_fail error entries specified. |
+
+## Post-qualification record log (2026-08-20)
+
+Records sealed after final document qualification. None changes a frozen
+calculus byte, an N-row, or a discharge count; each is versioned separately
+and hash-pinned by its own digest manifest.
+
+| record | scope | hashes (official / plain-language) | review |
+|---|---|---|---|
+| DSF-v1 (`DOWNSTREAM_SEMANTIC_FREEZE_V1.md`) | Complete dependency inventory: 25 unary heads, 1 binary head, 8 reports, 20 N-rows. Readiness: 0 PINNED / 2 PARTIAL / 18 OPEN; testing prohibited. | `961e2b476f7bd93d208f19ad0e6b964a2db4495c00b8731b43ba732b076198a1` / `09686a1405452ca949eb6a66e1bf86964f2564ad3ea2ead6f5abe22394565148` | recorded in DSF-v1 manifest |
+| TH-v2 / TH2-D1 (`TRANCHE_HANDOFF_V2.md`) | Types finite H-route error threshold epsilon in [0,1] intersect Q (prospective fragment SPA-H-THRESH-v1); conservative two-sided check PASS. | `8cb1548b650155a01070bdbe901837bdb8f0e49359db7fd6ed8762916ca59673` / `85fcba35bd6d749465de71e78c868959571062fab47d7b89d92352a4c9cd4310` | mathematical ACCEPT; publication ACCEPT |
+| HKEY-v1 (`HKEY_BINDING_V1.md`) | Binds hkey(w)=(F,T,R) to checked vehicle and implemented task (prospective fragment SPA-HKEY-v1): SysBind + HKEY-A1 (at-most-one functionality), partial tau: Code -> Task + HKEY-A2 (definedness), extended hkey admissibility (definition change). Non-deciding (Check 1) and non-redundant (Check 2) on the TH2-D1 reduct; steering defense rationale-based only. DSF-F2 key-binding portion superseded. | `01a5bf4f8f6a84d5cd7d67554ed1e1aededafced4a7a767728445f40a504d57f` / `b31c5e74fa4d88f2803faa4125655c326ed6cf511e7fbce72af0bd9e4531c362` | independent mathematical REVISE then repaired (10 findings); owner accepted and sealed 2026-08-20 |
+
+Row readiness after all three records: PINNED=0, PARTIAL=2, OPEN=18;
+original N-rows discharged: 0; testing status: PROHIBITED.
 
 ## Reproduction commands
 
