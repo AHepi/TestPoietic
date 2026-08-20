@@ -1,0 +1,124 @@
+{
+  "schema": "TESTPOIETIC_RECORD_FREEZE_V1",
+  "record_id": "ADM-RECHECK-v1",
+  "version": "1.0",
+  "date": "2026-08-20",
+  "status": "REVIEWED_PENDING_OWNER_SEAL",
+  "shared_container": false,
+  "official_file": "ADM_RECHECK_V1.md",
+  "official_sha256": "907480bdf97ba01aabc306d8329c53a950fbdd341bf0d760c19c03e5aa9e19ad",
+  "plain_language_file": "ADM_RECHECK_V1_PLAIN_LANGUAGE.md",
+  "plain_language_sha256": "2abb9842affd92f2a46a87a1e3d453ff46192c296255a48d9a4fbca2134f55c0",
+  "parent_records": [
+    {
+      "file": "ADMISSIBILITY_GATE_AUDIT_V1.md",
+      "sha256": "b1733651ee05df2fcc65b787bcf0dbb1d9f78654566819164fbadf6728703133"
+    },
+    {
+      "file": "DOWNSTREAM_SEMANTIC_FREEZE_V1.md",
+      "sha256": "961e2b476f7bd93d208f19ad0e6b964a2db4495c00b8731b43ba732b076198a1"
+    },
+    {
+      "file": "CAPACITY_UPDATE_TYPING_V1.md",
+      "sha256": "0e2b759b88c9d675a323198a0a3861bc581fb97e25fd42dab68554540e141a44"
+    },
+    {
+      "file": "RECORD_PUBLICATION_STANDARD_V1.md",
+      "sha256": "38f37a7b638be960fdd47ce24d95c8cea67bb49ab2d28a9c8af9c667d6f83348"
+    }
+  ],
+  "scope": "re-derivation of the two-sided independence of the finite admissibility restriction under the repaired capacity typing, implementing DSF-v1 Section 13 item 2",
+  "claims": [
+    "supplies witness pair M_minus/M_plus showing ADM-D1/ADM-A2 entail neither FCreativeCap nor its negation under SPA-CAP-v1 (ADM-T1-R)",
+    "records exact deltas from the withdrawn ADM-T1 proof",
+    "restores ADM-U3 to B2 conditional on acceptance and the CAP-v1 seal"
+  ],
+  "non_claims": [
+    "does not edit ADM-v1, DSF-v1, SPA-v1, or CAP-v1",
+    "does not define source-level admissibility; DSF-F3 untouched",
+    "does not test or discharge an original N-row",
+    "is conditional on the owner seal of CAP-v1",
+    "is not sealed until owner review completes"
+  ],
+  "caveat_crosswalk": [
+    {
+      "official_item_id": "ADMREC-PURPOSE",
+      "type": "condition",
+      "official_location": "Section 1",
+      "plain_language_location": "What this is",
+      "checked": true
+    },
+    {
+      "official_item_id": "ADMREC-WITNESSES",
+      "type": "result status",
+      "official_location": "Section 3, Witness pair",
+      "plain_language_location": "The rebuilt proof",
+      "checked": true
+    },
+    {
+      "official_item_id": "ADMREC-DELTAS",
+      "type": "claim",
+      "official_location": "Section 4, What changed relative to ADM-T1",
+      "plain_language_location": "The rebuilt proof",
+      "checked": true
+    },
+    {
+      "official_item_id": "ADMREC-COUNTS",
+      "type": "result status",
+      "official_location": "Section 5, Effect on counts and statuses",
+      "plain_language_location": "What changes",
+      "checked": true
+    },
+    {
+      "official_item_id": "ADMREC-WEAKNESS",
+      "type": "limitation",
+      "official_location": "Section 6, Failure disclosure obligation",
+      "plain_language_location": "Honest limits",
+      "checked": true
+    },
+    {
+      "official_item_id": "ADMREC-CONDITIONALITY",
+      "type": "condition",
+      "official_location": "Sections 1 and 5, dependence on CAP-v1 seal",
+      "plain_language_location": "Honest limits, first item",
+      "checked": true
+    },
+    {
+      "official_item_id": "ADMREC-FORBIDDEN",
+      "type": "non-claim",
+      "official_location": "Section 7, Forbidden items",
+      "plain_language_location": "Honest limits, third item",
+      "checked": true
+    },
+    {
+      "official_item_id": "ADMREC-NEXT",
+      "type": "condition",
+      "official_location": "Section 8, Next checkpoint",
+      "plain_language_location": "What happens next",
+      "checked": true
+    }
+  ],
+  "verification": {
+    "independent_mathematical_review": "REVISE (5 findings), all repaired in v1",
+    "publication_review": "PENDING_OWNER_SEAL",
+    "two_sided_independence": "ADM-T1-R witness pair recorded (M_minus uniform clause failure; M_plus single-context satisfaction)",
+    "adm_counts_if_accepted": {
+      "B1": 0,
+      "B2": 1,
+      "B3": 2,
+      "note": "conditional on acceptance and CAP-v1 seal; source-level rows remain OPEN_ADMISSIBILITY_B3"
+    },
+    "original_n_row_readiness": {
+      "PINNED": 0,
+      "PARTIAL": 2,
+      "OPEN": 18
+    },
+    "original_n_rows_discharged": 0,
+    "testing_status": "PROHIBITED",
+    "notes": [
+      "no sealed record was edited",
+      "supersedes only DSF-v1's present-tense stripping of ADM-T1, scope-limited to the finite fragment under SPA-CAP-v1",
+      "the restriction proved independent is weak (reachability plus non-filtering); disclosed in Section 6"
+    ]
+  }
+}
