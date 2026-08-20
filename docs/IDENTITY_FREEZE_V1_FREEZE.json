@@ -1,0 +1,190 @@
+{
+  "schema": "TESTPOIETIC_RECORD_FREEZE_V1",
+  "record_id": "IDF-v1",
+  "version": "1.0",
+  "date": "2026-08-20",
+  "status": "REVIEWED_PENDING_OWNER_SEAL",
+  "shared_container": false,
+  "official_file": "IDENTITY_FREEZE_V1.md",
+  "official_sha256": "7b5bf974e75140f15140de56325628901f324dd17681829a470ffe200c764aec",
+  "plain_language_file": "IDENTITY_FREEZE_V1_PLAIN_LANGUAGE.md",
+  "plain_language_sha256": "b1c30fe88904025d1f04c53b4c25149e4bea01bd7ed24854bf96181cfda3ccc9",
+  "parent_records": [
+    {
+      "file": "DOWNSTREAM_SEMANTIC_FREEZE_V1.md",
+      "sha256": "961e2b476f7bd93d208f19ad0e6b964a2db4495c00b8731b43ba732b076198a1"
+    },
+    {
+      "file": "PIECEMEAL_SEMANTIC_ANNEX_V1.md",
+      "sha256": "a9f62ebbd086a0499893f57a566f6b769a1b64fc27dfe15dd640a8c1f5e200a0"
+    },
+    {
+      "file": "SPA_PIN_ERRATUM_V1.md",
+      "sha256": "0e9959de220088adadfcd670520c04a520314e7870d340ea5bf5d0d3dc74f2a1"
+    },
+    {
+      "file": "HKEY_BINDING_V1.md",
+      "sha256": "01a5bf4f8f6a84d5cd7d67554ed1e1aededafced4a7a767728445f40a504d57f"
+    },
+    {
+      "file": "CAPACITY_UPDATE_TYPING_V1.md",
+      "sha256": "0e2b759b88c9d675a323198a0a3861bc581fb97e25fd42dab68554540e141a44"
+    },
+    {
+      "file": "SIGNATURE_FREEZE_EPISODE_V1.md",
+      "sha256": "c7ef2b5548f4fde4e9e4c2742dd47fcfc6fb05875169974452e0d10154675442"
+    },
+    {
+      "file": "SIGNATURE_FREEZE_HJ_V1.md",
+      "sha256": "803d0ce6b78caab92071a589a5e525b456328d219c0592529c19477e099bb2a0"
+    },
+    {
+      "file": "RECORD_PUBLICATION_STANDARD_V1.md",
+      "sha256": "38f37a7b638be960fdd47ce24d95c8cea67bb49ab2d28a9c8af9c667d6f83348"
+    }
+  ],
+  "scope": "named, classified cross-fragment identity decisions for the still-open identity list of DSF-v1 Section 10, the episode-to-E identification deferred from SIG-EPI-v1, and the two named open items SIG-HJ-OPEN-1 and SIG-HJ-OPEN-2",
+  "claims": [
+    "IDENT-D1: one task carrier across K, H, and J (definition)",
+    "IDENT-D2: H code families embedded into K states via typed embedding iota (definition)",
+    "IDENT-D3: population Boundary = J Boundary (definition)",
+    "IDENT-D4: one environment carrier across P, H (EnvH), and J (definition)",
+    "IDENT-D5 + IDENT-A1: partial vehicle map veh: U -> Vehicle and joint-certificate lineage-to-route tie (primitive data plus acceptance axiom); flagged as potentially outcome-forcing for mixed certificates; negation scope pinned: A1 applies to joint invocations of either polarity, including N4-shaped failure invocations",
+    "IDENT-D6: J episode/package/evidence/trace carriers identified with SIG-EPI-v1 EpiRec/PkgRec/Evidence/Tau, with field-coherence equalities (definition); discharges the SIG-EPI-v1 deferral; REPAIRED: IDENT-D6d embeds Account into Problem via acc2prob so target_E(e)=acc2prob(h) is well-typed for FPEALIGN; IDENT-D6e supplies ProvFrame as a frame record over the provenance-DAG carrier with prov_E as primitive data; the omega: Chi -> Omega reading is reclassified as primitive data plus acceptance axiom IDENT-A3 (omega(chi) agrees with the episode's Evid field); IDENT-D6c' (definition, second cycle) declares the episode trace tau an element of Tau so trace_E(e)=tau is well-typed, grounded by SPA-v1 5.1's implicit InputNodes/Rev uses",
+    "IDENT-D7: plain (non-injective) rho: R -> W, injectivity downgraded as an unforced strengthening (second cycle); Program carrier defined as protocol-chain records; program_R(r) defined via rho (primitive data plus definition)",
+    "IDENT-D8: FPEALIGN's key/frame equalities in ObligationFrame kept verbatim (the interposed obLower equation withdrawn as ill-typed); ObligationFrame internal two-field structure with NEW projection names obLower/obUpper projecting OUT of ObligationFrame; D_Lambda/D_Lambda' not re-typed; original T/Lambda/Lambda-prime tie refused as IDENT-OPEN-1",
+    "IDENT-D9/IDENT-A2: rigid eta/theta/varpi across all fragments (acceptance axiom); supplies the rigid-frame half of DSF-A6",
+    "IDENT-D10: Transport interaction resolved by the carrier identifications alone; no new axiom (definition reading)",
+    "IDENT-D11: SIG-HJ-OPEN-1 resolved — error correction keys on the code (definition reading; load-bearing)",
+    "IDENT-D12: SIG-HJ-OPEN-2 resolved — tasks total on declared domain (definition reading; load-bearing; disclosed consequence that FDG_K forces domain coverage of error sets)"
+  ],
+  "non_claims": [
+    "does not edit SPA-v1 or any sealed record in place",
+    "does not test, discharge, or change any original N-row",
+    "does not construct or run a fixture; IC-SP-001/002 remain unrun",
+    "does not claim any source-level bridge; the obligation-frame-to-original tie is refused as IDENT-OPEN-1",
+    "does not prove creativity or non-creativity",
+    "is not sealed until owner review completes"
+  ],
+  "caveat_crosswalk": [
+    {
+      "official_item_id": "IDENT-SCOPE",
+      "type": "condition",
+      "official_location": "Section 1, Scope and method",
+      "plain_language_location": "What this is",
+      "checked": true
+    },
+    {
+      "official_item_id": "IDENT-CARRIERS",
+      "type": "claim",
+      "official_location": "Sections 2-4, IDENT-D1 through IDENT-D4",
+      "plain_language_location": "The identifications, in plain terms",
+      "checked": true
+    },
+    {
+      "official_item_id": "IDENT-LINEAGE-TIE",
+      "type": "uncertainty",
+      "official_location": "Section 5, IDENT-D5/IDENT-A1 with forced-outcome flag; Section 13 Cluster 2",
+      "plain_language_location": "The identifications, in plain terms (lineage meets the route)",
+      "checked": true
+    },
+    {
+      "official_item_id": "IDENT-EPISODE-E",
+      "type": "claim",
+      "official_location": "Section 6, IDENT-D6 episode-to-E identification",
+      "plain_language_location": "The identifications, in plain terms (episodes are interface tokens)",
+      "checked": true
+    },
+    {
+      "official_item_id": "IDENT-REALIZATION",
+      "type": "claim",
+      "official_location": "Section 7, IDENT-D7 witness/realization/program tie",
+      "plain_language_location": "The identifications, in plain terms (realizations are witnesses)",
+      "checked": true
+    },
+    {
+      "official_item_id": "IDENT-OBLIGATION-REFUSAL",
+      "type": "non-claim",
+      "official_location": "Section 8, IDENT-D8 and IDENT-OPEN-1 refusal",
+      "plain_language_location": "The identifications, in plain terms (obligation frames: half decided, half refused)",
+      "checked": true
+    },
+    {
+      "official_item_id": "IDENT-RIGID-TRANSPORT",
+      "type": "claim",
+      "official_location": "Sections 9-10, IDENT-A2 and IDENT-D10",
+      "plain_language_location": "The identifications, in plain terms (rigid frame; Transport)",
+      "checked": true
+    },
+    {
+      "official_item_id": "IDENT-OPEN-ITEMS",
+      "type": "uncertainty",
+      "official_location": "Sections 11-12, IDENT-D11 and IDENT-D12, both marked load-bearing",
+      "plain_language_location": "The two inherited open items, decided",
+      "checked": true
+    },
+    {
+      "official_item_id": "IDENT-NONDECIDING",
+      "type": "result status",
+      "official_location": "Section 13, Non-deciding arguments, clusters 1-5 and steering defense",
+      "plain_language_location": "How we know it is not rigged",
+      "checked": true
+    },
+    {
+      "official_item_id": "IDENT-CONES",
+      "type": "uncertainty",
+      "official_location": "Section 14, Affected dependency cones, with manual-trace caveat",
+      "plain_language_location": "What changed and what did not",
+      "checked": true
+    },
+    {
+      "official_item_id": "IDENT-FORBIDDEN",
+      "type": "non-claim",
+      "official_location": "Section 15, Forbidden items",
+      "plain_language_location": "What changed and what did not",
+      "checked": true
+    },
+    {
+      "official_item_id": "IDENT-RESIDUAL",
+      "type": "result status",
+      "official_location": "Section 16, Residual status and next checkpoint",
+      "plain_language_location": "What happens next",
+      "checked": true
+    }
+  ],
+  "verification": {
+    "independent_mathematical_review": "REVISE (5 findings), all repaired in v1",
+    "publication_review": "PENDING_OWNER_SEAL",
+    "decisions_made": [
+      "IDENT-D1", "IDENT-D2", "IDENT-D3", "IDENT-D4", "IDENT-D5",
+      "IDENT-D6", "IDENT-D7", "IDENT-D8", "IDENT-D9", "IDENT-D10",
+      "IDENT-D11", "IDENT-D12"
+    ],
+    "acceptance_axioms_added": ["IDENT-A1", "IDENT-A2", "IDENT-A3"],
+    "open_items_recorded": ["IDENT-OPEN-1"],
+    "open_items_resolved": ["SIG-HJ-OPEN-1", "SIG-HJ-OPEN-2"],
+    "load_bearing_choices": [
+      "IDENT-D5/IDENT-A1 (excludes mixed unrelated-vehicle certificates; flagged prominently)",
+      "IDENT-D11 (code vs task keying of error correction)",
+      "IDENT-D12 (totality on declared domain; domain must cover error sets)"
+    ],
+    "non_deciding": "PASS (cluster-wise: carrier identifications truth-invariant; lineage tie non-deciding per conjunct with disclosed mixed-certificate exclusion; rho plain map value-free; rigidity excludes only cross-frame reindexing; both inherited open items resolved as readings that change well-typedness margins, not verdicts)",
+    "steering_defense": "RATIONALE_BASED_ONLY",
+    "original_n_row_readiness": {
+      "PINNED": 0,
+      "PARTIAL": 2,
+      "OPEN": 18
+    },
+    "original_n_rows_discharged": 0,
+    "testing_status": "PROHIBITED",
+    "notes": [
+      "SPA-v1 and all prior records were not edited; all changes live in prospective fragment SPA-IDENT-v1",
+      "label equality is never identity; all identifications are carrier identifications or typed embeddings",
+      "IC-SP-001/002 named as consumers of the Transport/key interaction without any run obligation",
+      "cone completeness rests on a manual trace with stated exclusions",
+      "no source bridge claim; IDENT-OPEN-1 carries the obligation-frame-to-original tie into the expansion/bridge tranche",
+      "SPA-v1 parent digest re-bound per sealed erratum ERR-SPA-v1: pins the committed SPA-v1 bytes a9f62ebb..., retiring the defective pin 40681e6c...; compliance, not disclosure — this manifest was amended prospectively before owner seal as the erratum mandates",
+      "repaired per independent review (5 findings): (1) IDENT-D8 restated — FPEALIGN's val(key,Lambda)=frameLower(frame(...)) equality in ObligationFrame kept verbatim, the ill-typed interposed obLower equation withdrawn, obLower/obUpper now project OUT of ObligationFrame as internal structure only, D_Lambda not re-typed; (2) IDENT-D6c' added (definition) declaring the episode trace tau an element of Tau, grounded by SPA-v1 5.1's InputNodes/Rev uses; (3) SPA-v1 parent pin re-bound per ERR-SPA-v1 (see note above); (4) rho downgraded to a plain map — injectivity was unforced by any SPA-v1 clause, the acceptance-axiom alternative recorded as rejected, justification in Section 7; (5) Cluster 1 scope condition corrected — admitting iota depends only on Q's cardinality accommodating n pairwise disjoint nonempty cells; the error-sets-outside-cells condition withdrawn as over-strong because E_i minus the cell union being nonempty is derived by SPA-v1 3.2's lemma, not hypothesized. Earlier cycle retained: D6 carrier typing (acc2prob embedding, IDENT-D6d), omega reclassified as primitive data plus IDENT-A3, ProvFrame supplied as primitive data (IDENT-D6e), IDENT-A1 negation scope pinned to all joint invocations including failure rows, D12 coverage requirement reattributed to FFace, D11 R-task noted as foreclosed by SIG-HJ-v1's frozen FErrorCorrect signature, cone list extended with K-02 and P-05, DSF-A6 readiness unchanged (PARTIAL on unrun IC-SP-001/002)"
+    ]
+  }
+}
