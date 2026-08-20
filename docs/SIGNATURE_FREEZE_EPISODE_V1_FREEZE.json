@@ -16,7 +16,7 @@
     },
     {
       "file": "PIECEMEAL_SEMANTIC_ANNEX_V1.md",
-      "sha256": "40681e6cd79e207fc21cc85e2f698bc161807f42193c4e4bb9214dcb84dffdff"
+      "sha256": "a9f62ebbd086a0499893f57a566f6b769a1b64fc27dfe15dd640a8c1f5e200a0"
     },
     {
       "file": "CAPACITY_UPDATE_TYPING_V1.md",
@@ -122,7 +122,8 @@
       "SPA-v1 and all prior sealed records were not edited",
       "SIG-EPI-v1 is a prospective fragment adding signatures and two axioms",
       "discriminator/domain misreading in the first draft was caught by independent review and repaired",
-      "episode-to-interface identification deferred to the cross-fragment identity record"
+      "episode-to-interface identification deferred to the cross-fragment identity record",
+      "SPA-v1 parent pin re-bound to committed bytes per ERR-SPA-v1 (the sealed SPA-v1 manifest pinned bytes that were never committed)"
     ]
   }
 }
