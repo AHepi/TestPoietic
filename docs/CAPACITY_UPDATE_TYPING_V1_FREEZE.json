@@ -16,7 +16,7 @@
     },
     {
       "file": "PIECEMEAL_SEMANTIC_ANNEX_V1.md",
-      "sha256": "40681e6cd79e207fc21cc85e2f698bc161807f42193c4e4bb9214dcb84dffdff"
+      "sha256": "a9f62ebbd086a0499893f57a566f6b769a1b64fc27dfe15dd640a8c1f5e200a0"
     },
     {
       "file": "TRANCHE_HANDOFF_V2.md",
@@ -134,7 +134,8 @@
       "SPA-v1, SPA-H-THRESH-v1, SPA-HKEY-v1, DSF-v1, and ADM-v1 were not edited",
       "SPA-CAP-v1 is a prospective supersession fragment for the two clause bodies plus CAP-A1",
       "supersedes only the call-site typing portion of DSF-F1 and the first half of DSF-v1 3.4(7)",
-      "cone completeness rests on a manual trace with stated exclusions"
+      "cone completeness rests on a manual trace with stated exclusions",
+      "SPA-v1 parent pin re-bound to committed bytes per ERR-SPA-v1 (the sealed SPA-v1 manifest pinned bytes that were never committed)"
     ]
   }
 }
