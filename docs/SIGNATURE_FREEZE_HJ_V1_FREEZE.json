@@ -16,7 +16,7 @@
     },
     {
       "file": "PIECEMEAL_SEMANTIC_ANNEX_V1.md",
-      "sha256": "40681e6cd79e207fc21cc85e2f698bc161807f42193c4e4bb9214dcb84dffdff"
+      "sha256": "a9f62ebbd086a0499893f57a566f6b769a1b64fc27dfe15dd640a8c1f5e200a0"
     },
     {
       "file": "HKEY_BINDING_V1.md",
@@ -135,7 +135,8 @@
       "SPA-v1 and all prior sealed records were not edited",
       "w.C_Sigma is read as Code with FDG_K receiving tau(w.C_Sigma), disclosed as a definition reading",
       "IC-SP-001/002 named as consumers of the key/ell/Transport schema without any run obligation",
-      "cone completeness rests on a manual trace with stated exclusions"
+      "cone completeness rests on a manual trace with stated exclusions",
+      "SPA-v1 parent pin re-bound to committed bytes per ERR-SPA-v1 (the sealed SPA-v1 manifest pinned bytes that were never committed)"
     ]
   }
 }
