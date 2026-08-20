@@ -1,0 +1,205 @@
+{
+  "schema": "TESTPOIETIC_RECORD_FREEZE_V1",
+  "record_id": "PIN-CONS-v1",
+  "version": "1.0",
+  "date": "2026-08-21",
+  "status": "DRAFT_PENDING_REVIEW",
+  "shared_container": false,
+  "official_file": "PIN_CONS_V1.md",
+  "official_sha256": "3c5c17e98e69f0de6e22dfbce14b18c2fc1093066c5475f99c43a749d0df0d3a",
+  "plain_language_file": "PIN_CONS_V1_PLAIN_LANGUAGE.md",
+  "plain_language_sha256": "6e0ecd77d0d09ebc790bcf89eed9400a0fc1c0ae91b38ec71b7121c689da7f5e",
+  "parent_records": [
+    {
+      "file": "PIECEMEAL_PREMISE_CALCULUS.md",
+      "sha256": "0984453690cd1f9ebcb01bf694cb3ad72f587ad5610e11222a3e0893ddbce055"
+    },
+    {
+      "file": "ORIGINAL_TERMS_INVENTORY.md",
+      "sha256": "fe4e1f9a8c08a5179d45b1167ca23437085213695ba77d85a53e0a26e8c575bb"
+    },
+    {
+      "file": "PIECEMEAL_SEMANTIC_ANNEX_V1.md",
+      "sha256": "a9f62ebbd086a0499893f57a566f6b769a1b64fc27dfe15dd640a8c1f5e200a0"
+    },
+    {
+      "file": "SPA_PIN_ERRATUM_V1.md",
+      "sha256": "0e9959de220088adadfcd670520c04a520314e7870d340ea5bf5d0d3dc74f2a1"
+    },
+    {
+      "file": "DOWNSTREAM_SEMANTIC_FREEZE_V1.md",
+      "sha256": "961e2b476f7bd93d208f19ad0e6b964a2db4495c00b8731b43ba732b076198a1"
+    },
+    {
+      "file": "IDENTITY_FREEZE_V1.md",
+      "sha256": "7b5bf974e75140f15140de56325628901f324dd17681829a470ffe200c764aec"
+    },
+    {
+      "file": "RECORD_PUBLICATION_STANDARD_V1.md",
+      "sha256": "38f37a7b638be960fdd47ce24d95c8cea67bb49ab2d28a9c8af9c667d6f83348"
+    }
+  ],
+  "scope": "original-side semantic pins for the ConservativeExtension / boundary-move cluster of DSF-v1 Section 13 item 5 (ConservativeExtension, SameObservableLabel, MovedConstructorPort, the BoundaryMove complex of calculus (63), FiniteVariantSuite reading, RetainsOrAdapts OPEN, EverettianUniversalClaim guard-rail), feeding N-rows N7 and N20, with ConservativeExtension gating all M'-class rows via D0/DSF-A1",
+  "claims": [
+    "PIN-CONS-D1: ConservativeExtension pinned as model-level truth preservation of old-language formulas under named typed embeddings (the model-level analogue of the standard proof-theoretic notion of conservative extension — no new old-language theorems — stated as such, not as the standard reading itself); new-context vocabulary unconstrained (definition; load-bearing; CE-weak and CE-elementary rejected with structural rationale)",
+    "PIN-CONS-D2: SameObservableLabel pinned as label equality under the D1 embeddings, label-level only, never identity (definition; load-bearing; identity and free-string readings rejected)",
+    "PIN-CONS-D2a: observable-label map ObsLabel per context declared as NEW PRIMITIVE DATA (definition bucket), per the IDF-v1 IDENT-D6e/D7a precedent — the label datum D2 presupposes exists nowhere in the frozen calculus vocabulary; D2's dependence on it is explicit",
+    "PIN-CONS-D3: MovedConstructorPort pinned as the declared program port P_Sigma tracked across B->B' with program triple (r,p_code,S_Sigma) preserved, use-preservation explicitly not asserted (definition; load-bearing; vacuous reading rejected as collapsing; use-preserved reading rejected on the weakest-reading rule alone — the stronger claim that it would pre-decide N7 is unproven because Linked does not invoke Uses/PORT)",
+    "PIN-CONS-A2: EverettianUniversalClaim negative guard-rail RECLASSIFIED as ACCEPTANCE AXIOM (was definition): constrains admissible derivations — never established by data finite over U — rather than giving a meaning; positive semantics left open as PIN-CONS-OPEN-2",
+    "PIN-CONS-D5: FiniteVariantSuite adopted as disclosed definition reading: fixes finiteness and suite membership only, per calculus (63) and DSF-v1 Section 12; no new constraint",
+    "PIN-CONS-A1: extension no-splicing acceptance axiom — one named embedding package witnesses conservativity, label, and port conjuncts of any BoundaryMove/ConservativeExtension invocation",
+    "BoundaryMove itself is a frozen definition of calculus (63); no new decision made about it; under D1-D3 its three conjuncts are mutually independent",
+    "non-deciding two-structure argument given for PIN-CONS-D1 (structures S1/S2 differ only in Linked at the new context while satisfying all pins); cluster non-deciding arguments given for D2, D3, D5, A1, A2",
+    "D0/A1 gating stated carefully: D1 is not an expansion, bridge, or existence axiom; zero accepted total expansions and zero row bridges stand; D1 constrains which structures may serve as M' without supplying or forbidding one"
+  ],
+  "non_claims": [
+    "does not test, discharge, or change any original N-row",
+    "does not move any readiness count (PINNED=0, PARTIAL=2, OPEN=18 stand)",
+    "does not construct or run a fixture",
+    "does not add a row bridge or total expansion; D0/DSF-A1 remain OPEN",
+    "does not edit the frozen calculus, SPA-v1, or any sealed record",
+    "does not claim any source-level bridge; RetainsOrAdapts's FOR_REPLICATOR_NICHE constraint is recorded OPEN, not imported",
+    "does not identify any original predicate with an F-prefixed fragment predicate; label equality is never identity",
+    "does not prove creativity or non-creativity",
+    "is not sealed; status DRAFT_PENDING_REVIEW: independent review returned REVISE (6 findings), repairs applied, awaiting review verdict on repairs"
+  ],
+  "caveat_crosswalk": [
+    {
+      "official_item_id": "PIN-CONS-SCOPE",
+      "type": "condition",
+      "official_location": "Section 1, Scope and method",
+      "plain_language_location": "What this is",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-CONS-ANCHORS",
+      "type": "condition",
+      "official_location": "Section 2, Exact anchors (calculus (3), (46), (63); N7 and N20 rows; PORT/PEALIGN; DSF-v1 Sections 6, 12; DSF-A1)",
+      "plain_language_location": "What this is",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-CONS-D1",
+      "type": "claim",
+      "official_location": "Section 3, PIN-CONS-D1 with options CE-strong/CE-weak/CE-elementary and S1/S2 two-structure non-deciding argument",
+      "plain_language_location": "What was decided (first bullet)",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-CONS-D2",
+      "type": "claim",
+      "official_location": "Section 4, PIN-CONS-D2 with three options stated, on the declared primitive datum PIN-CONS-D2a (observable-label map)",
+      "plain_language_location": "What was decided (second bullet)",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-CONS-D3",
+      "type": "claim",
+      "official_location": "Section 5, PIN-CONS-D3 with three options stated",
+      "plain_language_location": "What was decided (third bullet)",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-CONS-A1-NOSPLICING",
+      "type": "condition",
+      "official_location": "Section 6, BoundaryMove complex and PIN-CONS-A1",
+      "plain_language_location": "What was decided (no mixing of witnesses)",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-CONS-N20-ITEMS",
+      "type": "uncertainty",
+      "official_location": "Section 7, PIN-CONS-D5, PIN-CONS-OPEN-1 (RetainsOrAdapts), PIN-CONS-A2 and PIN-CONS-OPEN-2 (EverettianUniversalClaim)",
+      "plain_language_location": "What was decided (FiniteVariantSuite; Everettian guard-rail); What was left open, on purpose",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-CONS-D0-GATE",
+      "type": "condition",
+      "official_location": "Section 9, The D0/A1 gating statement (careful form)",
+      "plain_language_location": "What did NOT change",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-CONS-NONDECIDING",
+      "type": "result status",
+      "official_location": "Section 10, Cluster non-deciding summary and steering defense RATIONALE_BASED_ONLY",
+      "plain_language_location": "How we know it is not rigged",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-CONS-CONES",
+      "type": "result status",
+      "official_location": "Section 11, Affected dependency cones (no readiness change)",
+      "plain_language_location": "What did NOT change",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-CONS-FORBIDDEN",
+      "type": "non-claim",
+      "official_location": "Section 12, Forbidden items",
+      "plain_language_location": "What did NOT change",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-CONS-RESIDUAL",
+      "type": "result status",
+      "official_location": "Section 13, Residual status and next checkpoint",
+      "plain_language_location": "What happens next",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-CONS-N18-DEFERRAL",
+      "type": "uncertainty",
+      "official_location": "Section 8, What this record deliberately does NOT pin — N18 SameSyntax/RealizationEq pair deferred to a joint later record (DSF-v1: DO NOT TEST OR REPAIR)",
+      "plain_language_location": "What happens next (delicate SameSyntax/RealizationEq pair must be pinned together)",
+      "checked": true
+    }
+  ],
+  "verification": {
+    "independent_mathematical_review": "REVISE (6 findings), repaired; awaiting review verdict on repairs",
+    "publication_review": "PENDING",
+    "decisions_made": [
+      "PIN-CONS-D1",
+      "PIN-CONS-D2",
+      "PIN-CONS-D2a",
+      "PIN-CONS-D3",
+      "PIN-CONS-D5"
+    ],
+    "acceptance_axioms_added": [
+      "PIN-CONS-A1",
+      "PIN-CONS-A2"
+    ],
+    "open_items_recorded": [
+      "PIN-CONS-OPEN-1",
+      "PIN-CONS-OPEN-2"
+    ],
+    "open_items_resolved": [],
+    "load_bearing_choices": [
+      "PIN-CONS-D1 (CE-strong selected; changes which structures may serve as M' in N7/N20)",
+      "PIN-CONS-D2 (label-under-embedding selected; identity vs string readings change row manufacturability)",
+      "PIN-CONS-D3 (program-preserved selected; vacuous reading collapses N7; use-preserved reading rejected on the weakest-reading rule alone — formal pre-decision of N7 unproven since Linked does not invoke Uses/PORT)"
+    ],
+    "non_deciding": "PASS claimed, rationale-supported: D1 non-deciding by exhibited two-structure pair S1/S2 (Linked at the new context flips while all pins hold); D2/D3 label/port conjuncts flippable across pin-satisfying structures; D5 and A1 add no table constraint; A2 forbids a derivation nobody performs",
+    "steering_defense": "RATIONALE_BASED_ONLY",
+    "original_n_row_readiness": {
+      "PINNED": 0,
+      "PARTIAL": 2,
+      "OPEN": 18
+    },
+    "original_n_rows_discharged": 0,
+    "testing_status": "PROHIBITED",
+    "notes": [
+      "status stays DRAFT_PENDING_REVIEW: a review occurred (REVISE) but no verdict on repairs yet; nothing about review completion is claimed",
+      "SPA-v1 parent digest pinned per sealed erratum ERR-SPA-v1 to the committed bytes a9f62ebb...; the retired defective pin 40681e6c... is not used",
+      "all parent pins copied from the parents' own FREEZE manifests (official_sha256), verified against the ERR-SPA-v1 and IDF-v1 manifests",
+      "fragment pin candidates (J-02 label map, FKeyMatch, PORT/ProgramOf(P_Sigma)) referenced as candidates only; no original-fragment identification made",
+      "RetainsOrAdapts left OPEN because its pin requires the FOR_REPLICATOR_NICHE source-grade bridge this tranche cannot justify; EverettianUniversalClaim positive semantics left OPEN as guard-rail discipline",
+      "N18 pair SameSyntax/RealizationEq explicitly deferred to a joint later record (DSF-v1: DO NOT TEST OR REPAIR)",
+      "calculus (46) quoted for cluster boundary completeness only; nothing pinned about WholeClone/WholeDigital",
+      "ORIGINAL_TERMS_INVENTORY.md catalog is now pinned: committed at docs/ORIGINAL_TERMS_INVENTORY.md, pushed-bytes sha256 fe4e1f9a8c08a5179d45b1167ca23437085213695ba77d85a53e0a26e8c575bb added to parent_records; catalog citations unchanged",
+      "IDF-v1 (format-template parent) is currently REVIEWED_PENDING_OWNER_SEAL — reviewed, not yet owner-sealed; recorded for transparency",
+      "repairs applied per independent review REVISE (6 findings): D2a primitive-data declaration (finding 1); D4 reclassified to acceptance axiom PIN-CONS-A2 (finding 2); catalog pinned as parent (finding 3); MCP-use-preserved rejection restated on weakest-reading rule alone, pre-decision channel unproven (finding 4); CE-strong rationale restated as model-level truth preservation, not 'the standard reading' (finding 5); N18 deferral crosswalk entry added and IDF-v1 status noted (finding 6)"
+    ]
+  }
+}
