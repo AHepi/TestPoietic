@@ -7,6 +7,8 @@ status: REVIEWED_PENDING_OWNER_SEAL
 official_file: CAPACITY_UPDATE_TYPING_V1.md
 plain_language_file: CAPACITY_UPDATE_TYPING_V1_PLAIN_LANGUAGE.md
 digest_manifest: CAPACITY_UPDATE_TYPING_V1_FREEZE.json
+sha256_official: CAPACITY_UPDATE_TYPING_V1_FREEZE.json#official_sha256
+sha256_plain_language: CAPACITY_UPDATE_TYPING_V1_FREEZE.json#plain_language_sha256
 parent_records: DSF-v1 (Finding DSF-F1, Section 13 item 1); SPA-v1 (Section 5.2, unchanged); TH-v2; HKEY-v1
 scope: a well-typed repair of the Update call sites in the two capacity clauses of SPA-v1 Section 5.2, implementing DSF-v1 Section 13 item 1
 claims: freezes candidate typings, selects one with stated rationale, classifies every change, names affected cones, and records a two-sided non-deciding check
