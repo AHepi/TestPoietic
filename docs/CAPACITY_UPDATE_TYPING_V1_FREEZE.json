@@ -6,7 +6,7 @@
   "status": "REVIEWED_PENDING_OWNER_SEAL",
   "shared_container": false,
   "official_file": "CAPACITY_UPDATE_TYPING_V1.md",
-  "official_sha256": "832b07da77735c1f01637734dcdb5a05e4815798fd5311e7e19c1e81724175ad",
+  "official_sha256": "0e2b759b88c9d675a323198a0a3861bc581fb97e25fd42dab68554540e141a44",
   "plain_language_file": "CAPACITY_UPDATE_TYPING_V1_PLAIN_LANGUAGE.md",
   "plain_language_sha256": "02455e86566c9456e6b8fa7016a105b6b7772c7a09beac6e296ffdd710e69c44",
   "parent_records": [
