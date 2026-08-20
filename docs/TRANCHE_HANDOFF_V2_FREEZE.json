@@ -1,0 +1,110 @@
+{
+  "schema": "TESTPOIETIC_RECORD_FREEZE_V1",
+  "record_id": "TH-v2",
+  "version": "2.0",
+  "date": "2026-08-20",
+  "status": "SEALED_HANDOFF_ONE_MINOR_SEMANTIC_PIN_TESTING_PROHIBITED",
+  "shared_container": false,
+  "official_file": "TRANCHE_HANDOFF_V2.md",
+  "official_sha256": "8cb1548b650155a01070bdbe901837bdb8f0e49359db7fd6ed8762916ca59673",
+  "plain_language_file": "TRANCHE_HANDOFF_V2_PLAIN_LANGUAGE.md",
+  "plain_language_sha256": "85fcba35bd6d749465de71e78c868959571062fab47d7b89d92352a4c9cd4310",
+  "parent_records": [
+    {
+      "file": "TRANCHE_HANDOFF_V1.md",
+      "sha256": "d0a2bbae4114fdffb985bcf98656c7571140258d4fbe9b2ca83e91a4d45ac70c"
+    },
+    {
+      "file": "DOWNSTREAM_SEMANTIC_FREEZE_V1.md",
+      "sha256": "961e2b476f7bd93d208f19ad0e6b964a2db4495c00b8731b43ba732b076198a1"
+    },
+    {
+      "file": "PIECEMEAL_SEMANTIC_ANNEX_V1.md",
+      "sha256": "40681e6cd79e207fc21cc85e2f698bc161807f42193c4e4bb9214dcb84dffdff"
+    },
+    {
+      "file": "RECORD_PUBLICATION_STANDARD_V1.md",
+      "sha256": "38f37a7b638be960fdd47ce24d95c8cea67bb49ab2d28a9c8af9c667d6f83348"
+    }
+  ],
+  "scope": "repository handoff after DSF-v1 and one minor semantic checkpoint fixing only the carrier of the finite H-route error threshold",
+  "claims": [
+    "records the verified GitHub checkpoint",
+    "freezes TH2-D1 as a prospective finite-fragment type definition",
+    "records its conservative two-sided check",
+    "preserves the semantics-first stop rule"
+  ],
+  "non_claims": [
+    "does not modify SPA-v1 or the calculus",
+    "does not bind an H witness to its named system or task",
+    "does not validate HRep",
+    "does not test or discharge an original N-row",
+    "does not prove creativity or non-creativity"
+  ],
+  "caveat_crosswalk": [
+    {
+      "official_item_id": "TH2-CHECKPOINT",
+      "type": "result status",
+      "official_location": "Section 1, Repository checkpoint",
+      "plain_language_location": "Where the project is now",
+      "checked": true
+    },
+    {
+      "official_item_id": "TH2-D1",
+      "type": "condition",
+      "official_location": "Section 2, finite H-threshold carrier",
+      "plain_language_location": "The one small meaning we fixed",
+      "checked": true
+    },
+    {
+      "official_item_id": "TH2-CONSERVATIVITY",
+      "type": "result status",
+      "official_location": "Section 3, Conservative two-sided check",
+      "plain_language_location": "Why the definition does not contain the answer",
+      "checked": true
+    },
+    {
+      "official_item_id": "TH2-REMAINING-H-GAPS",
+      "type": "limitation",
+      "official_location": "Section 4, Resulting status",
+      "plain_language_location": "What is still missing",
+      "checked": true
+    },
+    {
+      "official_item_id": "TH2-NO-DISCHARGE",
+      "type": "non-claim",
+      "official_location": "Sections 3--4",
+      "plain_language_location": "Why the definition does not contain the answer; What is still missing",
+      "checked": true
+    },
+    {
+      "official_item_id": "TH2-NEXT",
+      "type": "condition",
+      "official_location": "Section 5, Handover for the next tranche",
+      "plain_language_location": "Instructions for the next worker",
+      "checked": true
+    },
+    {
+      "official_item_id": "TH2-STOP",
+      "type": "limitation",
+      "official_location": "Section 6, Stop condition",
+      "plain_language_location": "Stop here",
+      "checked": true
+    }
+  ],
+  "verification": {
+    "mathematical_review": "ACCEPT",
+    "publication_review": "ACCEPT",
+    "header_match": "PASS",
+    "control_character_scan": "PASS",
+    "threshold_type_checkpoint": "COMPLETE_RELATIVE_TO_SPA-H-THRESH-v1",
+    "two_sided_conservativity": "PASS",
+    "original_n_row_readiness": {
+      "PINNED": 0,
+      "PARTIAL": 2,
+      "OPEN": 18
+    },
+    "original_n_rows_discharged": 0,
+    "testing_status": "PROHIBITED"
+  }
+}
