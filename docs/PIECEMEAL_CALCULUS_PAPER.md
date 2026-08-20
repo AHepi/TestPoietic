@@ -431,8 +431,8 @@ labels, and non-entailments; and read-only review of typing, scope, bridge
 grading, non-splicing conditions, and route exactness. The
 [Verification Ledger](PIECEMEAL_CALCULUS_VERIFICATION.md) is the sole
 authoritative place for current command outputs, review verdicts, and
-qualification statuses. This paper intentionally does not claim that any
-final check has passed.
+qualification statuses. It records the dated final document-qualification
+results; this paper does not duplicate them.
 
 A fully qualified document artefact would establish only the stated
 properties of this finite construction. It would not establish that every
