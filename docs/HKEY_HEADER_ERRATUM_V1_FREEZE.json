@@ -1,0 +1,91 @@
+{
+  "schema": "TESTPOIETIC_RECORD_FREEZE_V1",
+  "record_id": "ERR-HKEY-HDR-v1",
+  "version": "1.0",
+  "date": "2026-08-20",
+  "status": "REVIEWED_PENDING_OWNER_SEAL",
+  "shared_container": false,
+  "official_file": "HKEY_HEADER_ERRATUM_V1.md",
+  "official_sha256": "3c8dfad63a227689aa0a19a14395ba2d1629fbb25c18cdcf3202848b8b16bf66",
+  "plain_language_file": "HKEY_HEADER_ERRATUM_V1_PLAIN_LANGUAGE.md",
+  "plain_language_sha256": "8f94ad2ad9476631fb0e4214e236dbd7f57305eb97800768f67d18d090e3583c",
+  "parent_records": [
+    {
+      "file": "HKEY_BINDING_V1.md",
+      "sha256": "01a5bf4f8f6a84d5cd7d67554ed1e1aededafced4a7a767728445f40a504d57f"
+    },
+    {
+      "file": "RECORD_PUBLICATION_STANDARD_V1.md",
+      "sha256": "38f37a7b638be960fdd47ce24d95c8cea67bb49ab2d28a9c8af9c667d6f83348"
+    }
+  ],
+  "scope": "disclosure that the sealed HKEY-v1 official bytes omit the sha256_official/sha256_plain_language header pointer lines, and confirmation that the omission is cosmetic",
+  "claims": [
+    "the sealed HKEY-v1 official file omits the sha256_official/sha256_plain_language header pointer lines carried by other sealed records (e.g. TH-v2)",
+    "the authoritative hashes live in the sealed manifest: official_sha256 01a5bf4f8f6a84d5cd7d67554ed1e1aededafced4a7a767728445f40a504d57f, plain_language_sha256 b31c5e74fa4d88f2803faa4125655c326ed6cf511e7fbce72af0bd9e4531c362, both verified against the committed bytes",
+    "the omission is cosmetic: no hash, pin, parent_record entry, or semantic content is affected",
+    "the sealed bytes of HKEY-v1 are unchanged and remain canonical"
+  ],
+  "non_claims": [
+    "does not edit HKEY-v1 or any sealed record",
+    "does not change any hash, pin, N-row, readiness count, or discharge count",
+    "does not seal this erratum",
+    "does not test or discharge an original N-row",
+    "does not prove creativity or non-creativity"
+  ],
+  "caveat_crosswalk": [
+    {
+      "official_item_id": "ERRHKEYHDR-OBSERVATION",
+      "type": "claim",
+      "official_location": "Section 1, The observation",
+      "plain_language_location": "What this is about",
+      "checked": true
+    },
+    {
+      "official_item_id": "ERRHKEYHDR-HASHES",
+      "type": "claim",
+      "official_location": "Section 2, Authoritative hashes",
+      "plain_language_location": "Why it does not matter much",
+      "checked": true
+    },
+    {
+      "official_item_id": "ERRHKEYHDR-ASSESSMENT",
+      "type": "result status",
+      "official_location": "Section 3, Assessment",
+      "plain_language_location": "Why it does not matter much",
+      "checked": true
+    },
+    {
+      "official_item_id": "ERRHKEYHDR-DISPOSITION",
+      "type": "condition",
+      "official_location": "Section 4, Disposition",
+      "plain_language_location": "What is being done",
+      "checked": true
+    }
+  ],
+  "verification": {
+    "independent_mathematical_review": "NOT_APPLICABLE_FACT_DISCLOSURE; header convention audited against sealed records",
+    "publication_review": "PENDING_OWNER_SEAL",
+    "audit_evidence": {
+      "subject_record": "docs/HKEY_BINDING_V1.md",
+      "subject_manifest": "docs/HKEY_BINDING_V1_FREEZE.json",
+      "official_sha256": "01a5bf4f8f6a84d5cd7d67554ed1e1aededafced4a7a767728445f40a504d57f",
+      "plain_language_sha256": "b31c5e74fa4d88f2803faa4125655c326ed6cf511e7fbce72af0bd9e4531c362",
+      "manifest_pins_verified_against_committed_bytes": true,
+      "downstream_manifests_pinning_hkey_v1": ["CAP-v1", "SIG-EPI-v1", "SIG-HJ-v1", "IDF-v1"],
+      "sealed_bytes_edited": false
+    },
+    "original_n_row_readiness": {
+      "PINNED": 0,
+      "PARTIAL": 2,
+      "OPEN": 18
+    },
+    "original_n_rows_discharged": 0,
+    "testing_status": "PROHIBITED",
+    "notes": [
+      "no sealed record edited; HKEY-v1's sealed bytes stand unchanged",
+      "the five pending-seal records with the same omission (CAP-v1, ADM-RECHECK-v1, SIG-EPI-v1, SIG-HJ-v1, IDF-v1) were corrected in place and their manifests re-pinned",
+      "all pins in this manifest computed from committed repository bytes per the ERR-SPA-v1 standing rule"
+    ]
+  }
+}
