@@ -1,0 +1,162 @@
+{
+  "schema": "TESTPOIETIC_RECORD_FREEZE_V1",
+  "record_id": "DSF-v1",
+  "version": "1.0",
+  "date": "2026-08-20",
+  "status": "SEALED_DEPENDENCY_INVENTORY_TESTING_PROHIBITED",
+  "shared_container": false,
+  "official_file": "DOWNSTREAM_SEMANTIC_FREEZE_V1.md",
+  "official_sha256": "961e2b476f7bd93d208f19ad0e6b964a2db4495c00b8731b43ba732b076198a1",
+  "plain_language_file": "DOWNSTREAM_SEMANTIC_FREEZE_V1_PLAIN_LANGUAGE.md",
+  "plain_language_sha256": "09686a1405452ca949eb6a66e1bf86964f2564ad3ea2ead6f5abe22394565148",
+  "parent_records": [
+    {
+      "file": "PIECEMEAL_PREMISE_CALCULUS.md",
+      "sha256": "0984453690cd1f9ebcb01bf694cb3ad72f587ad5610e11222a3e0893ddbce055"
+    },
+    {
+      "file": "PIECEMEAL_SEMANTIC_ANNEX_V1.md",
+      "sha256": "40681e6cd79e207fc21cc85e2f698bc161807f42193c4e4bb9214dcb84dffdff"
+    },
+    {
+      "file": "ADMISSIBILITY_GATE_AUDIT_V1.md",
+      "sha256": "b1733651ee05df2fcc65b787bcf0dbb1d9f78654566819164fbadf6728703133"
+    },
+    {
+      "file": "TRANCHE_HANDOFF_V1.md",
+      "sha256": "d0a2bbae4114fdffb985bcf98656c7571140258d4fbe9b2ca83e91a4d45ac70c"
+    },
+    {
+      "file": "RECORD_PUBLICATION_STANDARD_V1.md",
+      "sha256": "38f37a7b638be960fdd47ce24d95c8cea67bb49ab2d28a9c8af9c667d6f83348"
+    }
+  ],
+  "scope": "complete dependency inventory for all 25 unary audit heads, the binary information head, eight report projections, and all 20 original N-rows",
+  "claims": [
+    "freezes the current typed dependencies and pinning status",
+    "records newly discovered semantic defects",
+    "prohibits original-row testing while any transitive cone is PARTIAL or OPEN"
+  ],
+  "non_claims": [
+    "does not repair a definition",
+    "does not add a row bridge",
+    "does not construct a fixture or discharge an N-row",
+    "does not validate an imported principle or project bridge",
+    "does not prove creativity or non-creativity"
+  ],
+  "caveat_crosswalk": [
+    {
+      "official_item_id": "DSF-COUNTS",
+      "type": "result status",
+      "official_location": "Section 1, Freeze result",
+      "plain_language_location": "The counts",
+      "checked": true
+    },
+    {
+      "official_item_id": "DSF-NO-TEST",
+      "type": "limitation",
+      "official_location": "Sections 1, 8, and 13",
+      "plain_language_location": "The result in one sentence; What happens next",
+      "checked": true
+    },
+    {
+      "official_item_id": "DSF-LAYERS",
+      "type": "condition",
+      "official_location": "Section 2, Normative layers and model classes",
+      "plain_language_location": "Three different layers",
+      "checked": true
+    },
+    {
+      "official_item_id": "DSF-UPDATE-TYPE",
+      "type": "result status",
+      "official_location": "Section 3.1, Capacity update is ill-typed",
+      "plain_language_location": "The most important new problem",
+      "checked": true
+    },
+    {
+      "official_item_id": "DSF-ADM-SUPERSESSION",
+      "type": "result status",
+      "official_location": "Section 3.1, effects 2--5",
+      "plain_language_location": "Correction to the earlier admissibility status",
+      "checked": true
+    },
+    {
+      "official_item_id": "DSF-H-KEY",
+      "type": "uncertainty",
+      "official_location": "Section 3.2",
+      "plain_language_location": "The second major problem",
+      "checked": true
+    },
+    {
+      "official_item_id": "DSF-OTHER-GAPS",
+      "type": "uncertainty",
+      "official_location": "Sections 3.3--3.5 and 10",
+      "plain_language_location": "Other missing or weak meanings; Rules against mixing unrelated witnesses",
+      "checked": true
+    },
+    {
+      "official_item_id": "DSF-DEFINITIONS-AXIOMS-BRIDGES",
+      "type": "condition",
+      "official_location": "Section 4",
+      "plain_language_location": "What is fixed and what is not; The four project bridges",
+      "checked": true
+    },
+    {
+      "official_item_id": "DSF-PRIMITIVE-COVERAGE",
+      "type": "claim",
+      "official_location": "Sections 5--7, 11--12",
+      "plain_language_location": "What is fixed and what is not",
+      "checked": true
+    },
+    {
+      "official_item_id": "DSF-N-ROWS",
+      "type": "result status",
+      "official_location": "Section 8",
+      "plain_language_location": "Which three rows are partial",
+      "checked": true
+    },
+    {
+      "official_item_id": "DSF-REPORT-LIMIT",
+      "type": "non-claim",
+      "official_location": "Section 9",
+      "plain_language_location": "Report labels do not change this result",
+      "checked": true
+    },
+    {
+      "official_item_id": "DSF-NEXT",
+      "type": "condition",
+      "official_location": "Section 13",
+      "plain_language_location": "What happens next",
+      "checked": true
+    }
+  ],
+  "verification": {
+    "unary_head_inventory": "25/25",
+    "binary_head_inventory": "1/1",
+    "report_projection_inventory": "8/8",
+    "original_n_row_inventory": "20/20",
+    "original_n_rows_discharged": "0/20",
+    "admissibility_current_counts": {
+      "B1": 0,
+      "B2": 0,
+      "B3": 3
+    },
+    "testing_status": "PROHIBITED",
+    "notes": [
+      "ADM-v1 is preserved as history; DSF-v1 supersedes its current B2/readiness claim",
+      "SPA-v1 and the calculus were not edited",
+      "no fixture or row test was run",
+      "transitive affected-row sets are recorded for all 25 unary heads, the binary head, and semantic families D0-D21"
+    ],
+    "unary_head_readiness": {
+      "PINNED": 0,
+      "PARTIAL": 12,
+      "OPEN": 13
+    },
+    "original_n_row_readiness": {
+      "PINNED": 0,
+      "PARTIAL": 2,
+      "OPEN": 18
+    }
+  }
+}
