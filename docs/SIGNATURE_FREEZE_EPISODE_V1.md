@@ -7,6 +7,8 @@ status: REVIEWED_PENDING_OWNER_SEAL
 official_file: SIGNATURE_FREEZE_EPISODE_V1.md
 plain_language_file: SIGNATURE_FREEZE_EPISODE_V1_PLAIN_LANGUAGE.md
 digest_manifest: SIGNATURE_FREEZE_EPISODE_V1_FREEZE.json
+sha256_official: SIGNATURE_FREEZE_EPISODE_V1_FREEZE.json#official_sha256
+sha256_plain_language: SIGNATURE_FREEZE_EPISODE_V1_FREEZE.json#plain_language_sha256
 parent_records: DSF-v1 (Section 3.4(3), Section 3.4(7) second half, Section 13 item 4); SPA-v1 (Section 5.1, unchanged); CAP-v1 (SPA-CAP-v1); HKEY-v1
 scope: complete displayed signatures for the episode-cluster primitives of SPA-v1 Section 5.1 (Kind, Pkg, Evid, FDerives, FInterprets, OutcomeSpace, FSuitable, FIncompatible, NonSeed) and the Time_A half of DSF-v1 3.4(7), implementing part of DSF-v1 Section 13 item 4
 claims: freezes typed signatures and two acceptance axioms; classifies every addition; names affected cones; records a non-deciding argument
