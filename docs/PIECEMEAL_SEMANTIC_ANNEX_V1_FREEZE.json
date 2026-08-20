@@ -1,0 +1,95 @@
+{
+  "schema": "TESTPOIETIC_RECORD_FREEZE_V1",
+  "record_id": "SPA-v1",
+  "version": "1.0",
+  "date": "2026-08-20",
+  "status": "SEALED_SEMANTIC_PINNING_SPECIFICATION_NO_N_DISCHARGE",
+  "shared_container": false,
+  "official_file": "PIECEMEAL_SEMANTIC_ANNEX_V1.md",
+  "official_sha256": "40681e6cd79e207fc21cc85e2f698bc161807f42193c4e4bb9214dcb84dffdff",
+  "plain_language_file": "PIECEMEAL_SEMANTIC_ANNEX_V1_PLAIN_LANGUAGE.md",
+  "plain_language_sha256": "e2bea95907906765c8f7b9a459c18f3283c86111ae8093a3057330d476766cf1",
+  "parent_records": [
+    {
+      "file": "PIECEMEAL_PREMISE_CALCULUS.md",
+      "sha256": "0984453690cd1f9ebcb01bf694cb3ad72f587ad5610e11222a3e0893ddbce055"
+    },
+    {
+      "file": "../evidence/frozen/piecemeal-plan-v1.json",
+      "sha256": "7569d32fd0c41066f6023b411c8a06ec2d3e9e316e5213be9539d41f62dcbb9f"
+    },
+    {
+      "file": "RECORD_PUBLICATION_STANDARD_V1.md",
+      "sha256": "38f37a7b638be960fdd47ce24d95c8cea67bb49ab2d28a9c8af9c667d6f83348"
+    }
+  ],
+  "scope": "finite, named semantic fragment classes for future countermodels",
+  "claims": [
+    "fixes operational meanings for selected finite fragments",
+    "requires class-relative reporting"
+  ],
+  "non_claims": [
+    "does not discharge an original N-row",
+    "does not prove a source import or bridge",
+    "does not identify creativity in a real system",
+    "does not claim adequacy or physical universality for the finite fragment classes"
+  ],
+  "caveat_crosswalk": [
+    {
+      "official_item_id": "SPA-STATUS",
+      "type": "result status",
+      "official_location": "Section 1, Two-axis status",
+      "plain_language_location": "Two separate questions",
+      "checked": true
+    },
+    {
+      "official_item_id": "SPA-SCOPE",
+      "type": "condition",
+      "official_location": "Status, purpose, and non-claims; Section 2",
+      "plain_language_location": "What problem this fixes; The three kinds of model",
+      "checked": true
+    },
+    {
+      "official_item_id": "SPA-NC-ROW",
+      "type": "non-claim",
+      "official_location": "Status, purpose, and non-claims; Section 7.2",
+      "plain_language_location": "Important limits, first paragraph",
+      "checked": true
+    },
+    {
+      "official_item_id": "SPA-H-FINITE",
+      "type": "limitation",
+      "official_location": "Section 4.2",
+      "plain_language_location": "Important limits, second paragraph",
+      "checked": true
+    },
+    {
+      "official_item_id": "SPA-MUTATION",
+      "type": "uncertainty",
+      "official_location": "Section 7.3",
+      "plain_language_location": "Important limits, third paragraph",
+      "checked": true
+    },
+    {
+      "official_item_id": "SPA-SOURCE",
+      "type": "non-claim",
+      "official_location": "Status, purpose, and non-claims",
+      "plain_language_location": "What this does not say",
+      "checked": true
+    },
+    {
+      "official_item_id": "SPA-CREATIVITY",
+      "type": "non-claim",
+      "official_location": "Status, purpose, and non-claims; Section 6.4",
+      "plain_language_location": "What this does not say; Interface model",
+      "checked": true
+    }
+  ],
+  "verification": {
+    "formal_review": "ACCEPT",
+    "publication_review": "ACCEPT",
+    "n_rows_discharged": 0,
+    "model_fixtures_executed": 0,
+    "note": "This manifest seals a semantic-pinning specification only, not a countermodel result."
+  }
+}

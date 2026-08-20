@@ -1380,7 +1380,13 @@ judgments (11).  Define the fixed model class by
 \tag{54b}
 \]
 Thus the frame, boundary, selected witnesses, and raw-certificate meanings are
-held fixed in every model comparison below.  Then the finite rule register satisfies
+held fixed in every model comparison below. This is a thin relative class for
+closure soundness; it does not by itself operationally interpret every
+nonlogical primitive or discharge any \(\mathsf N\)-row. The stricter,
+class-relative semantic-pinning contract is
+[SPA-v1](PIECEMEAL_SEMANTIC_ANNEX_V1.md). It leaves the frozen closure and all
+source grades unchanged, and records no original \(\mathsf N\)-row as
+semantically discharged. Then the finite rule register satisfies
 
 \[
 q\in\mathcal F_{\eta,\theta}(v;\varpi)

@@ -16,9 +16,10 @@ physically instantiated, role-coupled knowledge (\(R\)); a conditional
 high-accuracy no-design replication route (\(H\)); variation and selection
 (\(V\)); critical evidence (\(C\)); and the Popperian explanatory episode
 (\(E\)). A finite signed premise package is closed under a finite rule
-register. A countermodel register prevents familiar but invalid promotions:
-information to knowledge, selection to criticism, survival of a test to
-confirmation, or one historical episode to creative capacity. Missing
+register. A non-entailment register records familiar proposed promotions for
+separate semantic testing: information to knowledge, selection to criticism,
+survival of a test to confirmation, or one historical episode to creative
+capacity. Missing
 certificates yield non-establishment, not falsity or non-creativity.
 
 The formal specification, source and licence record, and qualification ledger
@@ -95,7 +96,7 @@ The calculus uses five distinct kinds of assertion.
 | \(\mathsf P\) | Scoped import | Add a one-way result licensed by a named source or project kernel. |
 | \(\mathsf B\) | Poietic bridge | Connect independently typed layers with extra assumptions exposed. |
 | \(\mathsf T\) | Local theorem | State a consequence proved from the fixed calculus. |
-| \(\mathsf N\) | Countermodel obligation | Require a model of an antecedent together with denial of a prohibited promotion. |
+| \(\mathsf N\) | Countermodel schema | Register the antecedent-and-denial condition that a later pinned model must satisfy. |
 
 A claim is a definition when it fixes the domain over which later
 propositions range, or when removing it changes the typed model class,
@@ -127,8 +128,9 @@ The full bibliographic and reuse information is in the
 [external primary sources table](PIECEMEAL_SOURCE_REGISTER.md#external-primary-sources)
 and the
 [evaluation and rule authority map](PIECEMEAL_SOURCE_REGISTER.md#equation-and-rule-authority-map).
-A quotation is never used as a proof: the formal rule, grade, scope, and
-countermodel obligation carry the mathematical burden.
+A quotation is never used as a proof: the formal rule, grade, and scope state
+the claim, while each \(\mathsf N\)-row records any remaining countermodel
+burden.
 
 ## 3. Typed frame and six-lattice architecture
 
@@ -150,8 +152,7 @@ witness families.
 The distinction matters. A selected witness is fixed typing data, not a
 certificate that may be borrowed from an unrelated boundary, task, or
 history. Typed arrows and joins link information to its bearer, bearer to
-evidence, and criticism to evidence. They block a superficially successful
-conclusion assembled from incompatible tokens.
+evidence, and criticism to evidence. Within the finite closure, they reject an attempted conclusion assembled from incompatible tokens; this is not a semantic non-entailment theorem.
 
 | Lattice | Requirements | Function |
 |---|---:|---|
@@ -162,10 +163,12 @@ conclusion assembled from incompatible tokens.
 | \(C\) | 7 | Target, evidence channel, interpretation chain, auxiliaries, discriminator, protocol, and outcome. |
 | \(E\) | 7 | \(P_1\), tentative theory, error elimination, revised problem, provenance, and fallibility. |
 
-The separation is not cosmetic. An information medium is not thereby a
-knowledge bearer; retained knowledge is not thereby explanatory creativity;
-selection is not thereby theory-mediated criticism; and an explanatory
-episode is not thereby general creative capacity.
+The separation is not cosmetic. Within the finite closure, information-medium
+status alone does not derive a knowledge-bearer head; retained knowledge alone
+does not derive explanatory capacity; selection alone does not derive
+theory-mediated criticism; and one episode alone does not derive general
+capacity. The corresponding semantic non-entailment claims require a
+separately pinned \(\mathsf N\)-model.
 
 ### 3.1 Constructor-theoretic layers
 
@@ -382,17 +385,24 @@ audit may report a physically realised criticisable or refutational episode.
 Creative capacity remains separate. It is a modal joint-capability predicate,
 not the conclusion of one historical event. Thus a self-reproduction route,
 selection history, retained recipe, or
-\(P_1\to TT\to EE\to P_2\) episode does not by itself entail creative
-capacity. This is enforced both by the rule register and by countermodels.
+\(P_1\to TT\to EE\to P_2\) episode does not by itself derive creative
+capacity in the declared closure. The rule register blocks that route; the
+corresponding semantic non-entailment remains a registered \(\mathsf N\)-schema.
 
 ## 6. Countermodels and controls
 
-Failure to derive a head says only that the current certificate package is
-insufficient. To show an inference invalid, the calculus requires a model
-family in which the alleged antecedent holds and the prohibited promotion
-fails. This is the role of the 20 \(\mathsf N\)-obligations.
+Failure to derive a hatted head is a **closure-blocked** result: for the
+specified provision state, no declared audit route derives that head. It is
+neither a semantic negation nor a countermodel. Each of the 20 \(\mathsf N\)-rows
+is presently a **registered countermodel schema**: it states the antecedent
+and denial that a later pinned model would have to satisfy.
 
-They include separations between:
+The [Semantic Pinning Annex v1](PIECEMEAL_SEMANTIC_ANNEX_V1.md) begins the
+separate task of fixing the relevant operational model classes. Until an
+annex version pins all of a row's load-bearing vocabulary and records a
+checked witness model, the row is not semantically discharged.
+
+They register obligations to establish separations between:
 
 - information and current physical knowledge;
 - retained or recipe knowledge and explanatory capacity;
@@ -409,7 +419,7 @@ They include separations between:
   theories, variants, or environments.
 
 The 13 negative controls are full signed provision states paired with typed
-model fixtures. A transient information register, for example, can return
+closure fixtures. A transient information register, for example, can return
 \(I=\mathsf{MAY\_PASS}\) while retention and epistemic coordinates remain
 \(\mathsf{NOT\_ESTABLISHED}\). A complete critical package with an agreeing
 outcome returns only
@@ -419,9 +429,10 @@ thirteen vectors and the twenty model obligations are in the
 and the
 [formal calculus](PIECEMEAL_PREMISE_CALCULUS.md#6-countermodels-non-entailments-and-limits).
 
-The controls are mathematical checks on the rule register, not empirical
-refutations of real agents. They show that the calculus lacks an illicit
-route to a stronger conclusion.
+The controls are finite-closure calculations, not empirical refutations of
+real agents. A PASS result recomputes a displayed vector; it neither pins a
+semantic model nor discharges an \(\mathsf N\)-row. It tests whether the
+calculus contains an illicit route to a stronger conclusion.
 
 ## 7. Verification boundary and reproduction
 
@@ -432,13 +443,15 @@ grading, non-splicing conditions, and route exactness. The
 [Verification Ledger](PIECEMEAL_CALCULUS_VERIFICATION.md) is the sole
 authoritative place for current command outputs, review verdicts, and
 qualification statuses. It records the dated final document-qualification
-results; this paper does not duplicate them.
+results and the separate semantic-pinning status of each \(\mathsf N\)-row;
+this paper does not duplicate them.
 
-A fully qualified document artefact would establish only the stated
-properties of this finite construction. It would not establish that every
-source interpretation is historically correct, that every possible model has
-been considered, that a particular real-world agent is creative, or that
-cited works carry a blanket reuse licence.
+A fully qualified document artefact establishes only the stated properties of
+this finite construction. It does not itself supply semantic pinning or
+discharge any \(\mathsf N\)-row. It would not establish that every source
+interpretation is historically correct, that every possible model has been
+considered, that a particular real-world agent is creative, or that cited
+works carry a blanket reuse licence.
 
 To reproduce a calculation:
 
@@ -450,9 +463,9 @@ To reproduce a calculation:
    derived head.
 5. Consult the source register for every \(\mathsf P\) and \(\mathsf B\)
    edge.
-6. For a necessity or non-entailment claim, provide the independent
-   source-core or countermodel obligation instead of relying on a failed
-   route.
+6. For a necessity or non-entailment claim, provide and discharge the
+   independent source-core or countermodel requirement relative to a named
+   semantic annex, rather than relying on a failed route.
 
 ## 8. Conclusion
 
@@ -467,8 +480,9 @@ That separation makes integration explicit rather than assumed. Physical
 bearers, counterfactual roles, critical packages, explanatory episodes, and
 provenance chains can be joined only by named, typed bridges. The finite
 closure then shows what follows from adding or removing each audit
-certificate, while countermodels prevent a missing route from being mistaken
-for a negative verdict.
+certificate, while registered countermodel schemas mark the additional
+semantic work required before a missing route could be treated as a negative
+verdict.
 
 ## References and companion records
 
@@ -494,6 +508,7 @@ conditions, and licence information are in the
 Companion artefacts:
 
 - [Formal calculus](PIECEMEAL_PREMISE_CALCULUS.md)
+- [Semantic pinning annex v1](PIECEMEAL_SEMANTIC_ANNEX_V1.md)
 - [Source and licence register](PIECEMEAL_SOURCE_REGISTER.md)
 - [Verification ledger](PIECEMEAL_CALCULUS_VERIFICATION.md)
 - [Frozen premise plan](../evidence/frozen/piecemeal-plan-v1.json)

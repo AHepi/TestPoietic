@@ -4,9 +4,12 @@
 
 **PROPOSED — NOT YET RUN.**
 
-This is the next test after the present formal qualification. It is designed
-for human inspection before any new rule, source claim, or test fixture is
-added.
+This protocol follows the semantic-pinning prerequisite in
+[SPA-v1](PIECEMEAL_SEMANTIC_ANNEX_V1.md). No semantic countermodel check may
+be reported as discharged until the relevant annex class, hash, model
+certificate, and independent replay are recorded. The present document is
+designed for human inspection before any new rule, source claim, or test
+fixture is added.
 
 ## Why this is a two-stage test
 
@@ -21,11 +24,17 @@ useful “surprises” are instead one of the following:
 - a source statement requires a premise or a scope condition the calculus
   does not currently express.
 
-Therefore the proposed test has two distinct stages.
+Therefore the proposed test has three distinct stages.
+
+0. **Semantic-pinning and model-class audit.** Freeze the annex, inspect
+   whether every primitive used by a proposed countermodel has an operational
+   interpretation, and reject vacuous valuation-only witnesses. This tests
+   whether a later semantic countermodel would mean anything in its named
+   class.
 
 1. **Consequence sweep.** Derive all hatted closure heads and their
    one-premise-deletion consequences from the frozen register. This tests the
-   mathematics of the construction itself.
+   mathematics and independent implementation of the construction itself.
 
 2. **Authority calibration.** Pre-register a finite list of source claims,
    encode only their stated premises, and compare the resulting closure with
@@ -33,9 +42,10 @@ Therefore the proposed test has two distinct stages.
    not creativity in the world.
 
 Because CTI, CTL, Popper, Deutsch, and the project kernel informed the
-construction, this first authority calibration is **not blind**. A genuinely
-held-out test must use an authority selected after this calculus is frozen and
-must not be used to rewrite the rules until the result is recorded.
+construction, the first authority calibration is **not blind**. A genuinely
+held-out test must use an authority selected from a pre-registered eligible
+corpus after this calculus is frozen, and must not be used to rewrite the
+rules until the result is recorded.
 
 ## Gate 0: freeze the test
 
@@ -46,6 +56,7 @@ Before running the test, record:
 | calculus version | SHA-256 of **PIECEMEAL_PREMISE_CALCULUS.md** |
 | frozen plan | **piecemeal-plan-v1.json** and its pinned SHA-256 |
 | source register | SHA-256 of **PIECEMEAL_SOURCE_REGISTER.md** |
+| semantic annex | SHA-256 of **PIECEMEAL_SEMANTIC_ANNEX_V1.md**, target model class, and intended \(\mathsf N\)-row scope |
 | test sheet | this document plus a dated result sheet |
 | rule-change policy | no rule, support, source grade, or expected result may change during a run |
 | mismatch policy | record **CHALLENGE**, **UNDER-SPECIFIED**, or **PROHIBITED-PROMOTION**; do not repair the calculus before the mismatch is reviewed |
@@ -115,7 +126,7 @@ removed?” while preserving the calculus’s rule that a missing route means
 
 No result may be described as “creativity proven.”
 
-## Stage 2: source-led calibration suite
+## Stage 2: source-led conformance suite
 
 The first calibration suite has seven deliberately different test cases.
 Each is a source-led downstream consequence check. The source formulation,
@@ -167,24 +178,28 @@ For each case, fill this table before accepting it:
 | required result | the “must derive” entry above |
 | prohibited closure head | hatted head that must be absent from \(\mathcal F\), if applicable |
 | semantic non-entailment check | named frozen \(\mathsf N\) obligation or explicitly pre-registered case-specific countermodel required for any non-head claim |
-| human finding | **MATCH**, **CHALLENGE**, **UNDER-SPECIFIED**, or **PROHIBITED-PROMOTION** |
+| test-independence class | construction-source, held-out authority, or empirical; only the second is out-of-sample source conformance |
+| human finding | **SOURCE-LED CONFORMANCE MATCH**, **HELD-OUT CONFORMANCE MATCH**, **CHALLENGE**, **UNDER-SPECIFIED**, or **PROHIBITED-PROMOTION** |
 | rationale | concise explanation, including any source-scope mismatch |
 
 ## Pass/fail semantics
 
-A case passes only if all of the following hold:
+A source-led conformance case passes only if all of the following hold:
 
 \[
 \text{required hatted head derived}
 \;\land\;
 \text{prohibited hatted head absent}
 \;\land\;
-\text{each semantic prohibition has its named \(\mathsf N\) or case-specific countermodel check}
-\;\land\;
 \text{source scope preserved}
 \;\land\;
 \text{no unregistered bridge used}.
 \]
+
+A semantic prohibition is reported separately. It is `REGISTERED_SCHEMA` until
+an annex-relative model certificate has been independently replayed; only then
+may it be reported as `DISCHARGED_RELATIVE`. A source-led match never
+confirms the import, source interpretation, or real-world creativity claim.
 
 A mismatch is informative:
 
@@ -198,29 +213,49 @@ A mismatch is informative:
 
 ## Proposed genuinely held-out authority test
 
-After the seven source-led calibrations, select **one authority that did not
-help construct or revise this version**. The selection must be recorded before
-reading it for rule changes. The test then has the same fields as A1–A7 but
-adds one rule:
+After the source-led suite, pre-register an eligible corpus, exclusions, and
+selection procedure before the comparison passages are read. Exclusions must
+cover every source, commentary, derivative note, and prior reading that
+informed the construction. Select a stratified or random sample from that
+corpus, record the selection, and keep the calculus, source register, annex,
+and mapping grammar frozen during the comparison.
 
-\[
-\text{the calculus is frozen during the comparison.}
-\]
+Use two independent roles:
 
-If the held-out authority exposes a gap, first record the gap and its
-counterexample. Only then decide whether a new versioned calculus may be
-proposed. Do not silently tune a rule to make the authority pass.
+1. a neutral extractor produces a typed semantic pin from each passage—its
+   antecedent, consequent, modality, quantifier, boundary, task/environment,
+   temporal/counterfactual conditions, and explicit exceptions—without seeing
+   an expected calculus head; and
+2. a separate mapper translates that pin to the fixed certificate vocabulary.
+   If no faithful map exists, record `UNDER-SPECIFIED` rather than inventing a
+   bridge.
+
+The held-out suite must also be run against deliberately flawed copy-registers
+that weaken an enumerated guard. It demonstrates discriminatory power only if
+it accepts the frozen register while rejecting the appropriate mutants. This
+still tests only the enumerated mutation catalogue; it does not substitute for
+semantic pinning.
+
+If the held-out authority exposes a gap, first record the gap, pin, mapping,
+closure trace, and any model/counterexample. Only then decide whether a new
+versioned calculus may be proposed. Do not silently tune a rule to make the
+authority pass.
 
 ## Recommended next action
 
-I recommend that you first review and either approve or alter the seven
-pre-registered A1–A7 cases. Once approved, the next run should produce:
+I recommend that you first review and either approve or alter SPA-v1 and the
+scope of its first three finite certificates: population/FPT-H, externally
+sequenced episode/capacity, and interface splicing. Only after those semantic
+pins are frozen should the source-led A1–A7 cases run. The completed run should
+produce:
 
 1. a machine-readable premise/result table;
 2. a human-readable derivation report for every case;
-3. one deletion matrix for each derived head; and
-4. a separate mismatch register, even if it is empty.
+3. one deletion matrix for each derived head;
+4. annex-relative model certificates and independent replay results; and
+5. a separate mismatch register, even if it is empty.
 
-That sequence gives us exactly what you suggested: derive a substantial set of
-downstream consequences first, then inspect what the structure does and does
-not permit before choosing a truly held-out authority.
+That sequence derives a substantial set of downstream consequences while
+keeping three questions distinct: whether the closure is implemented
+correctly, whether a finite semantic countermodel is meaningful in its named
+class, and whether a held-out authority pressures the frozen register.

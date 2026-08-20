@@ -1,0 +1,56 @@
+{
+  "schema": "TESTPOIETIC_RECORD_FREEZE_V1",
+  "record_id": "RPS-v1",
+  "version": "1.0",
+  "date": "2026-08-20",
+  "status": "SEALED_COMMUNICATION_REQUIREMENT",
+  "shared_container": true,
+  "official_file": "RECORD_PUBLICATION_STANDARD_V1.md",
+  "official_anchor": "Official version",
+  "official_sha256": "38f37a7b638be960fdd47ce24d95c8cea67bb49ab2d28a9c8af9c667d6f83348",
+  "plain_language_file": "RECORD_PUBLICATION_STANDARD_V1.md",
+  "plain_language_anchor": "Plain-language version",
+  "plain_language_sha256": "38f37a7b638be960fdd47ce24d95c8cea67bb49ab2d28a9c8af9c667d6f83348",
+  "parent_records": [],
+  "scope": "substantive records created after this standard is sealed",
+  "claims": [
+    "every substantive record has an official and faithful plain-language form"
+  ],
+  "non_claims": [
+    "this communication rule changes no mathematical, scientific, or philosophical result"
+  ],
+  "caveat_crosswalk": [
+    {
+      "official_item_id": "RPS-PAIR",
+      "type": "claim",
+      "official_location": "Official version, Requirement",
+      "plain_language_location": "Plain-language version, first two paragraphs",
+      "checked": true
+    },
+    {
+      "official_item_id": "RPS-HASH",
+      "type": "condition",
+      "official_location": "Official version, Required header and manifest",
+      "plain_language_location": "Plain-language version, third paragraph",
+      "checked": true
+    },
+    {
+      "official_item_id": "RPS-PENDING",
+      "type": "limitation",
+      "official_location": "Official version, Requirement and Required header",
+      "plain_language_location": "Plain-language version, final paragraph",
+      "checked": true
+    },
+    {
+      "official_item_id": "RPS-NO-TRUTH",
+      "type": "non-claim",
+      "official_location": "Official version, final paragraph",
+      "plain_language_location": "Plain-language version, final paragraph",
+      "checked": true
+    }
+  ],
+  "verification": {
+    "publication_review": "ACCEPT",
+    "note": "One-container record: both forms use section anchors and share the container digest."
+  }
+}

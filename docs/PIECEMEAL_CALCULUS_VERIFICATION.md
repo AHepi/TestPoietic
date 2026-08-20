@@ -11,18 +11,28 @@ demonstration that any particular system is creative. Its status terms are:
 
 - **PASS** — the stated finite/documentary check was actually performed and
   passed; its command, total, and result must be recorded.
-- **REGISTERED \([\mathsf N]\)** — a typed countermodel obligation is present;
-  it is not silently upgraded to a universal physical fact.
+- **CLOSURE-BLOCKED** — for a specified provision state and hatted head, no
+  declared audit route derives that head. It is not semantic negation.
+- **REGISTERED_SCHEMA \([\mathsf N]\)** — a typed antecedent-and-denial
+  schema is present; it is not yet a witness model or semantic non-entailment
+  result.
+- **SEMANTIC PINNING ABSENT / PARTIAL** — the relevant nonlogical vocabulary
+  has not, or has only partly, been fixed by a named semantic annex.
+- **DISCHARGED_RELATIVE** — an explicit model certificate has passed the
+  stated checks for a named annex version and finite model class. It is not a
+  universal physical claim.
 - **NOT APPLICABLE** — a deliberately conditional branch was not invoked.
 - **PENDING FINAL QUALIFICATION** — a required check has not yet received the
   final command/result record and independent read-only acceptance pass.
 
 Final document qualification is limited to the calculus, source register, and
 this ledger: frozen-plan representation, document/formal consistency,
-declared control vectors, countermodel registration, and source-scope
-labelling.  It excludes empirical creativity attribution, factual validation
-of every historical source claim, legal advice or a blanket copyright
-clearance, live-link availability, and the older campaign/replay machinery.
+declared control vectors, countermodel-schema registration, semantic-pinning
+status, and source-scope labelling. It excludes empirical creativity
+attribution, factual validation of every historical source claim, legal
+advice or a blanket copyright clearance, live-link availability, and the
+older campaign/replay machinery. No annex-relative model discharge is claimed
+unless its witness and independent check are recorded here.
 
 ## Frozen authority
 
@@ -36,6 +46,7 @@ clearance, live-link availability, and the older campaign/replay machinery.
 | Negative-control count | 13 |
 | Non-entailment count | 20 |
 | Typed-link count | 4 |
+| Semantic annex | [SPA-v1](PIECEMEAL_SEMANTIC_ANNEX_V1.md), initially partial and with no discharged \(\mathsf N\)-row |
 | Scope restriction | A finite premise/consequence calculus; no candidate classifier, no universal creativity verdict |
 
 ## What is tested
@@ -47,10 +58,11 @@ frozen hash/counts, occurrence and link checks, equation/tag checks, the
 declared six-coordinate control-vector calculations, the presence and typing
 of \(\mathsf N\)-obligations, and whether a \(\mathsf P\)/\(\mathsf B\) edge
 has a source/bridge record in the
-[source register](PIECEMEAL_SOURCE_REGISTER.md).  Out of scope are an
-independent re-reading of every cited page, empirical instantiation of a
-countermodel, all possible mathematical models, and a verdict on a candidate
-agent.
+[source register](PIECEMEAL_SOURCE_REGISTER.md). The semantic annex is in
+scope only as a versioned pinning contract; it is not yet a checked model
+certificate. Out of scope are an independent re-reading of every cited page,
+empirical instantiation of a countermodel, all possible mathematical models,
+and a verdict on a candidate agent.
 
 ### Formal construction checks
 
@@ -127,8 +139,10 @@ collapse them.
 | Claim | Present status | Meaning |
 |---|---:|---|
 | Route-exact closure support | PASS | Equation (57) was checked against the finite rule register, activation conditions, and independent formal review. It is exact only in that limited hatted audit-route sense. |
-| Source-semantic minimality | UNCLAIMED IN THIS VERSION | No source-core family \(S_q^{\rm src}\) and no corresponding independence models have been enumerated/discharged for every route.  Equation (58) gives the additional criterion; it is not recorded as proved merely because a route support is exact. |
-| Control-row head trace | NOT RECORDED AS A SEPARATE ARTEFACT | The control table records the displayed six-coordinate vectors and their frozen expected cells.  It does not purport to store every individual derived/non-derived head for every row. |
+| Source-semantic minimality | UNCLAIMED IN THIS VERSION | No source-core family \(S_q^{\rm src}\) and no corresponding independence models have been enumerated/discharged for every route. Equation (58) gives the additional criterion; it is not recorded as proved merely because a route support is exact. |
+| Semantic countermodel pinning | PARTIAL [SPA-v1] | SPA-v1 operationally pins population/FPT-H proxy, finite episode/capacity, and interface composition classes. It does not fully pin any original frozen \(\mathsf N\)-row's source-level claim. |
+| Annex-relative semantic discharge | NONE | No named model certificate has been independently checked against SPA-v1. Document PASS records closure/document qualification only. |
+| Control-row head trace | NOT RECORDED AS A SEPARATE ARTEFACT | The control table records the displayed six-coordinate vectors and their frozen expected cells. It does not purport to store every individual derived/non-derived head for every row. |
 
 Thus a route condition that is exact for this finite audit closure is not
 thereby a physically necessary condition, and an absent semantic-minimality
@@ -136,34 +150,35 @@ proof is not silently replaced by a claim of minimality.
 
 ## Non-entailment verification register
 
-The following are not positive rules. Each is a named \(\mathsf N\)
-obligation: the calculus records a model family with the antecedent but not
-the prohibited conclusion. This is the right test for a claimed
-non-entailment; merely failing to derive a conclusion would prove only
-non-establishment.
+The following are not positive rules. Each is a named \(\mathsf N\) schema:
+it records the antecedent-and-denial condition that a future model must
+satisfy. `REGISTERED_SCHEMA [N]` means the typed schema is present; it does
+not mean that a model family has been constructed, its vocabulary has been
+fully pinned, or the semantic non-entailment has been discharged. Merely
+failing to derive a conclusion proves only non-establishment.
 
-| ID | countermodel family / denied promotion | result |
-|---|---|---:|
-| NE_INFORMATION_NOT_KNOWLEDGE | transient clonable register; no retention role | REGISTERED [N] |
-| NE_INFORMATION_NOT_CREATIVITY | information medium with no capability architecture | REGISTERED [N] |
-| NE_RETENTION_NOT_CREATIVITY | retained recipe/value with no explanation/capacity | REGISTERED [N] |
-| NE_SELECTION_NOT_HIGH_FIDELITY | naked or poor-fidelity selection lineage; no \(H\) package | REGISTERED [N] |
-| NE_SELECTION_NOT_CRITICISM | blind population with no represented criticisable package | REGISTERED [N] |
-| NE_WHOLE_CREATOR_NOT_CLONABLE | creative-capacity model without whole-agent cloning, digitality, or self-reproduction | REGISTERED [N] |
-| NE_BOUNDARY_IS_EVIDENCE | boundary move destroys the typed link | REGISTERED [N] |
-| NE_FINITE_ENUMERATION_NOT_ALL_THEORIES | finite passing suite extended by untested failing theory | REGISTERED [N] |
-| NE_P1_TT_EE_P2_NOT_GENERATOR | one externally sequenced criticisable episode | REGISTERED [N] |
-| NE_POSSIBILITY_NOT_PRIOR_KNOWLEDGE | possible task without a current candidate bearer | REGISTERED [N] |
-| NE_RECIPE_NOT_CREATIVITY | causal recipe knowledge without explanatory capacity | REGISTERED [N] |
-| NE_ARTIFACT_NOT_RECIPE | product without recipe or explanation role | REGISTERED [N] |
-| NE_BARE_RECORD_NOT_EVIDENCE | record/deduction/prediction missing package chain | REGISTERED [N] |
-| NE_EVIDENCE_NOT_CONFIRMATION | surviving declared attempt with further alternatives | REGISTERED [N] |
-| NE_VARIATION_NOT_CONJECTURE_IDENTITY | typed analogue without represented conjecture/criticism | REGISTERED [N] |
-| NE_NONREFUTABLE_NOT_CREATIVE | uncriticisable final output does not establish attribution | REGISTERED [N] |
-| NE_HIGH_LEVEL_NOT_EXTRA_SUBSTANCE | physical role equivalence without a second substance | REGISTERED [N] |
-| NE_SUBSTRATE_SWAP_NOT_AUTOMATIC | same label/syntax without task/side-effect/environment preservation | REGISTERED [N] |
-| NE_SINGLE_COPY_NOT_COUNTERFACTUAL_ROLE | one local copy without variants/interventions/role history | REGISTERED [N] |
-| NE_FINITE_VARIANTS_NOT_ALL_ENVIRONMENTS | conservative extension containing a failing new variant/environment | REGISTERED [N] |
+| ID | countermodel schema / denied promotion | obligation | semantic pinning | discharge |
+|---|---|---:|---:|---:|
+| NE_INFORMATION_NOT_KNOWLEDGE | transient clonable register; no retention role | REGISTERED_SCHEMA [N] | SEMANTIC PINNING ABSENT | NOT DISCHARGED |
+| NE_INFORMATION_NOT_CREATIVITY | information medium with no capability architecture | REGISTERED_SCHEMA [N] | SEMANTIC PINNING ABSENT | NOT DISCHARGED |
+| NE_RETENTION_NOT_CREATIVITY | retained recipe/value with no explanation/capacity | REGISTERED_SCHEMA [N] | SEMANTIC PINNING ABSENT | NOT DISCHARGED |
+| NE_SELECTION_NOT_HIGH_FIDELITY | naked or poor-fidelity selection lineage; no \(H\) package | REGISTERED_SCHEMA [N] | PARTIALLY PINNED [SPA-v1: population/FPT-H proxy] | NOT DISCHARGED |
+| NE_SELECTION_NOT_CRITICISM | blind population with no represented criticisable package | REGISTERED_SCHEMA [N] | SEMANTIC PINNING ABSENT | NOT DISCHARGED |
+| NE_WHOLE_CREATOR_NOT_CLONABLE | creative-capacity model without whole-agent cloning, digitality, or self-reproduction | REGISTERED_SCHEMA [N] | SEMANTIC PINNING ABSENT | NOT DISCHARGED |
+| NE_BOUNDARY_IS_EVIDENCE | boundary move destroys the typed link | REGISTERED_SCHEMA [N] | PARTIALLY PINNED [SPA-v1: interface composition] | NOT DISCHARGED |
+| NE_FINITE_ENUMERATION_NOT_ALL_THEORIES | finite passing suite extended by untested failing theory | REGISTERED_SCHEMA [N] | SEMANTIC PINNING ABSENT | NOT DISCHARGED |
+| NE_P1_TT_EE_P2_NOT_GENERATOR | one externally sequenced criticisable episode | REGISTERED_SCHEMA [N] | PARTIALLY PINNED [SPA-v1: finite episode/capacity] | NOT DISCHARGED |
+| NE_POSSIBILITY_NOT_PRIOR_KNOWLEDGE | possible task without a current candidate bearer | REGISTERED_SCHEMA [N] | SEMANTIC PINNING ABSENT | NOT DISCHARGED |
+| NE_RECIPE_NOT_CREATIVITY | causal recipe knowledge without explanatory capacity | REGISTERED_SCHEMA [N] | SEMANTIC PINNING ABSENT | NOT DISCHARGED |
+| NE_ARTIFACT_NOT_RECIPE | product without recipe or explanation role | REGISTERED_SCHEMA [N] | SEMANTIC PINNING ABSENT | NOT DISCHARGED |
+| NE_BARE_RECORD_NOT_EVIDENCE | record/deduction/prediction missing package chain | REGISTERED_SCHEMA [N] | SEMANTIC PINNING ABSENT | NOT DISCHARGED |
+| NE_EVIDENCE_NOT_CONFIRMATION | surviving declared attempt with further alternatives | REGISTERED_SCHEMA [N] | SEMANTIC PINNING ABSENT | NOT DISCHARGED |
+| NE_VARIATION_NOT_CONJECTURE_IDENTITY | typed analogue without represented conjecture/criticism | REGISTERED_SCHEMA [N] | SEMANTIC PINNING ABSENT | NOT DISCHARGED |
+| NE_NONREFUTABLE_NOT_CREATIVE | uncriticisable final output does not establish attribution | REGISTERED_SCHEMA [N] | SEMANTIC PINNING ABSENT | NOT DISCHARGED |
+| NE_HIGH_LEVEL_NOT_EXTRA_SUBSTANCE | physical role equivalence without a second substance | REGISTERED_SCHEMA [N] | SEMANTIC PINNING ABSENT | NOT DISCHARGED |
+| NE_SUBSTRATE_SWAP_NOT_AUTOMATIC | same label/syntax without task/side-effect/environment preservation | REGISTERED_SCHEMA [N] | SEMANTIC PINNING ABSENT | NOT DISCHARGED |
+| NE_SINGLE_COPY_NOT_COUNTERFACTUAL_ROLE | one local copy without variants/interventions/role history | REGISTERED_SCHEMA [N] | SEMANTIC PINNING ABSENT | NOT DISCHARGED |
+| NE_FINITE_VARIANTS_NOT_ALL_ENVIRONMENTS | conservative extension containing a failing new variant/environment | REGISTERED_SCHEMA [N] | SEMANTIC PINNING ABSENT | NOT DISCHARGED |
 
 ## Independent review history
 
@@ -194,8 +209,9 @@ the frozen plan together:
    control/countermodel row.
 4. For each control, substitute its supplied state into the finite closure
    and then apply \(\operatorname{Display}\).
-5. For each non-entailment, inspect the stated model family; it must retain
-   the antecedent while denying only the prohibited promotion.
+5. For each non-entailment, inspect the registered schema and its semantic
+   pinning status. A future discharge must retain the antecedent while denying
+   only the prohibited promotion in a named annex-relative model class.
 6. Inspect the source ledger before accepting any \(\mathsf P\) or
    \(\mathsf B\) edge as direct source content.
 
@@ -205,8 +221,10 @@ the frozen plan together:
   enumerate all theories, environments, possible interventions, or future
   explanations.
 
-- \(\mathsf N\)-rows are formal countermodel obligations and conservative
-  extensions. They do not replace empirical tests of a real candidate.
+- \(\mathsf N\)-rows are registered countermodel schemas and conservative
+  extensions. They do not replace empirical tests of a real candidate, and
+  they are not discharged until a named semantic annex and explicit model
+  certificate are independently checked.
 
 - An audit pass is not a creativity proof. The calculus has no
   \(\mathrm{CONFIRMED}\) or \(\mathrm{CREATIVITY\_PROVEN}\) output.
