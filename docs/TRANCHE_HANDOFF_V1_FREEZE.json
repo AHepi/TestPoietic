@@ -1,0 +1,111 @@
+{
+  "schema": "TESTPOIETIC_RECORD_FREEZE_V1",
+  "record_id": "TH-v1",
+  "version": "1.0",
+  "date": "2026-08-20",
+  "status": "SEALED_REPOSITORY_HANDOFF_SEMANTICS_FIRST",
+  "shared_container": false,
+  "official_file": "TRANCHE_HANDOFF_V1.md",
+  "official_sha256": "d0a2bbae4114fdffb985bcf98656c7571140258d4fbe9b2ca83e91a4d45ac70c",
+  "plain_language_file": "TRANCHE_HANDOFF_V1_PLAIN_LANGUAGE.md",
+  "plain_language_sha256": "a4646a12e97ddf0a81bb24e83aa6b5189e12ac1761920e220af3aaf923e612cf",
+  "parent_records": [
+    {
+      "file": "PIECEMEAL_PREMISE_CALCULUS.md",
+      "sha256": "0984453690cd1f9ebcb01bf694cb3ad72f587ad5610e11222a3e0893ddbce055"
+    },
+    {
+      "file": "PIECEMEAL_SEMANTIC_ANNEX_V1.md",
+      "sha256": "40681e6cd79e207fc21cc85e2f698bc161807f42193c4e4bb9214dcb84dffdff"
+    },
+    {
+      "file": "ADMISSIBILITY_GATE_AUDIT_V1.md",
+      "sha256": "b1733651ee05df2fcc65b787bcf0dbb1d9f78654566819164fbadf6728703133"
+    },
+    {
+      "file": "RECORD_PUBLICATION_STANDARD_V1.md",
+      "sha256": "38f37a7b638be960fdd47ce24d95c8cea67bb49ab2d28a9c8af9c667d6f83348"
+    }
+  ],
+  "scope": "PoieticTest repository checkpoint and the protocol for future bounded tranches",
+  "claims": [
+    "records the current project state and unresolved obligations",
+    "places complete downstream semantic freeze before fixture or row testing",
+    "records the ordered future tranches and publication controls"
+  ],
+  "non_claims": [
+    "does not back up the whole computer",
+    "does not discharge an original N-row",
+    "does not prove creativity or non-creativity",
+    "does not expose private key material",
+    "does not claim that an SSH agent is available"
+  ],
+  "caveat_crosswalk": [
+    {
+      "official_item_id": "TH-SCOPE",
+      "type": "condition",
+      "official_location": "Section 1, Purpose and scope boundary",
+      "plain_language_location": "Where the project is now",
+      "checked": true
+    },
+    {
+      "official_item_id": "TH-SSH",
+      "type": "result status",
+      "official_location": "Section 2, Repository checkpoint",
+      "plain_language_location": "About the SSH key you supplied",
+      "checked": true
+    },
+    {
+      "official_item_id": "TH-QUALIFICATION",
+      "type": "result status",
+      "official_location": "Section 3, What has been completed",
+      "plain_language_location": "What has actually been achieved",
+      "checked": true
+    },
+    {
+      "official_item_id": "TH-REPLAY",
+      "type": "uncertainty",
+      "official_location": "Section 3, broader pre-push qualification",
+      "plain_language_location": "What has actually been achieved, older campaign replay",
+      "checked": true
+    },
+    {
+      "official_item_id": "TH-NO-DISCHARGE",
+      "type": "non-claim",
+      "official_location": "Section 4, Current epistemic status",
+      "plain_language_location": "What has not been proved",
+      "checked": true
+    },
+    {
+      "official_item_id": "TH-SEMANTICS-FIRST",
+      "type": "condition",
+      "official_location": "Section 5, Tranche 2",
+      "plain_language_location": "Batch 2 — Freeze every meaning used later",
+      "checked": true
+    },
+    {
+      "official_item_id": "TH-NO-TEST-BEFORE-FREEZE",
+      "type": "limitation",
+      "official_location": "Section 5, Tranche 2; Section 7",
+      "plain_language_location": "Batch 2; final resumption paragraph",
+      "checked": true
+    },
+    {
+      "official_item_id": "TH-FUTURE-CONTROLS",
+      "type": "claim",
+      "official_location": "Section 6, Rules for every future tranche",
+      "plain_language_location": "How every future batch must work",
+      "checked": true
+    }
+  ],
+  "verification": {
+    "factual_review": "ACCEPT",
+    "publication_review": "ACCEPT",
+    "mathematical_review": "ACCEPT",
+    "offline_unit_tests_before_record": "121/121 PASS",
+    "focused_plan_calculus_tests_before_record": "20/20 PASS",
+    "historical_replay": "8/11 byte-identical; internal manifest green",
+    "original_n_rows_discharged": 0,
+    "note": "Testing remains prohibited until downstream semantics are completely frozen for the tested dependency cone."
+  }
+}

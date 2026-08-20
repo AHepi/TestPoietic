@@ -1,0 +1,102 @@
+{
+  "schema": "TESTPOIETIC_RECORD_FREEZE_V1",
+  "record_id": "ADM-v1",
+  "version": "1.0",
+  "date": "2026-08-20",
+  "status": "SEALED_ADMISSIBILITY_CLASSIFICATION_NO_N_DISCHARGE",
+  "shared_container": false,
+  "official_file": "ADMISSIBILITY_GATE_AUDIT_V1.md",
+  "official_sha256": "b1733651ee05df2fcc65b787bcf0dbb1d9f78654566819164fbadf6728703133",
+  "plain_language_file": "ADMISSIBILITY_GATE_AUDIT_V1_PLAIN_LANGUAGE.md",
+  "plain_language_sha256": "40a51f6fa99108f3325689fbb8506d34eb0b19e804d91394c80a3aadf817b4bd",
+  "parent_records": [
+    {
+      "file": "PIECEMEAL_PREMISE_CALCULUS.md",
+      "sha256": "0984453690cd1f9ebcb01bf694cb3ad72f587ad5610e11222a3e0893ddbce055"
+    },
+    {
+      "file": "PIECEMEAL_SEMANTIC_ANNEX_V1.md",
+      "sha256": "40681e6cd79e207fc21cc85e2f698bc161807f42193c4e4bb9214dcb84dffdff"
+    },
+    {
+      "file": "RECORD_PUBLICATION_STANDARD_V1.md",
+      "sha256": "38f37a7b638be960fdd47ce24d95c8cea67bb49ab2d28a9c8af9c667d6f83348"
+    }
+  ],
+  "scope": "the three downstream formula sites that invoke Admissible_eta or FAdmissible",
+  "claims": [
+    "classifies all three sites as B1=0, B2=1, B3=2",
+    "makes the bucket-2 fixture restriction explicit as a numbered acceptance axiom",
+    "proves local two-sided independence of that restriction in a named finite subclass"
+  ],
+  "non_claims": [
+    "does not define source-level admissibility",
+    "does not discharge an original N-row",
+    "does not prove an annex-to-source bridge",
+    "does not validate creativity or non-creativity",
+    "does not establish adequacy of the finite fragment"
+  ],
+  "caveat_crosswalk": [
+    {
+      "official_item_id": "ADM-COUNT",
+      "type": "result status",
+      "official_location": "Section 2, Complete classification and counts",
+      "plain_language_location": "The question",
+      "checked": true
+    },
+    {
+      "official_item_id": "ADM-B2",
+      "type": "condition",
+      "official_location": "Section 3, Definition ADM-D1 and Acceptance Axiom ADM-A2",
+      "plain_language_location": "The numbered rules for bucket 2",
+      "checked": true
+    },
+    {
+      "official_item_id": "ADM-INDEPENDENCE",
+      "type": "claim",
+      "official_location": "Section 4, Theorem ADM-T1",
+      "plain_language_location": "Why those rules do not contain the answer",
+      "checked": true
+    },
+    {
+      "official_item_id": "ADM-B3-OPEN",
+      "type": "result status",
+      "official_location": "Section 5, Bucket-3 consequences",
+      "plain_language_location": "What remains open in bucket 3",
+      "checked": true
+    },
+    {
+      "official_item_id": "ADM-WEAKNESS",
+      "type": "limitation",
+      "official_location": "Section 3, paragraph after ADM-D1",
+      "plain_language_location": "The numbered rules for bucket 2, ADM-D1",
+      "checked": true
+    },
+    {
+      "official_item_id": "ADM-SEPARATE-BLOCKERS",
+      "type": "uncertainty",
+      "official_location": "Section 6, Separate findings",
+      "plain_language_location": "Two other open problems found during this check",
+      "checked": true
+    },
+    {
+      "official_item_id": "ADM-NO-DISCHARGE",
+      "type": "non-claim",
+      "official_location": "Sections 4, 5, and 7",
+      "plain_language_location": "Why those rules do not contain the answer; Bottom line",
+      "checked": true
+    }
+  ],
+  "verification": {
+    "mathematical_review": "ACCEPT",
+    "publication_review": "ACCEPT",
+    "downstream_gate_counts": {
+      "B1": 0,
+      "B2": 1,
+      "B3": 2
+    },
+    "affected_original_rows_open": 5,
+    "original_n_rows_discharged": 0,
+    "note": "This manifest seals a classification and local independence result only."
+  }
+}
