@@ -1,0 +1,7 @@
+{
+  "config": {
+    "require_remote": "auto",
+    "wip_limit": 2
+  },
+  "tasks": {}
+}
