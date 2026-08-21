@@ -1,0 +1,152 @@
+{
+  "schema": "TESTPOIETIC_RECORD_FREEZE_V1",
+  "record_id": "PIN-SUB-v1",
+  "version": "1.0",
+  "date": "2026-08-21",
+  "status": "DRAFT_PENDING_REVIEW",
+  "shared_container": false,
+  "official_file": "PIN_SUB_V1.md",
+  "official_sha256": "5338ffa35f5248219cc748f274be8e59ca32a944e5f0bd1762ae78fa6af1b136",
+  "plain_language_file": "PIN_SUB_V1_PLAIN_LANGUAGE.md",
+  "plain_language_sha256": "7f1f21c2c67c95e40dc9b623573211fea6f769688b8e5adbc38e232b8d0e4c43",
+  "parent_records": [
+    {
+      "file": "PIECEMEAL_PREMISE_CALCULUS.md",
+      "sha256": "0984453690cd1f9ebcb01bf694cb3ad72f587ad5610e11222a3e0893ddbce055"
+    },
+    {
+      "file": "ORIGINAL_TERMS_INVENTORY.md",
+      "sha256": "fe4e1f9a8c08a5179d45b1167ca23437085213695ba77d85a53e0a26e8c575bb"
+    },
+    {
+      "file": "PIECEMEAL_SEMANTIC_ANNEX_V1.md",
+      "sha256": "a9f62ebbd086a0499893f57a566f6b769a1b64fc27dfe15dd640a8c1f5e200a0"
+    },
+    {
+      "file": "SPA_PIN_ERRATUM_V1.md",
+      "sha256": "0e9959de220088adadfcd670520c04a520314e7870d340ea5bf5d0d3dc74f2a1"
+    },
+    {
+      "file": "DOWNSTREAM_SEMANTIC_FREEZE_V1.md",
+      "sha256": "961e2b476f7bd93d208f19ad0e6b964a2db4495c00b8731b43ba732b076198a1"
+    },
+    {
+      "file": "PIN_CONS_V1.md",
+      "sha256": "3c5c17e98e69f0de6e22dfbce14b18c2fc1093066c5475f99c43a749d0df0d3a"
+    },
+    {
+      "file": "PIN_VE_V1.md",
+      "sha256": "1c074cf7eef9ad473e63a4fe50621985282b2a018f1fea33da30218fa6c493aa"
+    },
+    {
+      "file": "RECORD_PUBLICATION_STANDARD_V1.md",
+      "sha256": "38f37a7b638be960fdd47ce24d95c8cea67bb49ab2d28a9c8af9c667d6f83348"
+    }
+  ],
+  "scope": "joint original-side pins for SameSyntax and RealizationEq (DSF-v1 family D19), the two conjuncts of the SameLabelSwap abbreviation at calculus (63), feeding N-row N18 and the K_REALIZATION_EQUIVALENCE certificate row with its pi_{R_eq} report",
+  "claims": [
+    "PIN-SUB-D1: SameSyntax pinned as equality of declared syntactic presentation tokens, with no task/role/environment/content condition (definition; load-bearing)",
+    "PIN-SUB-D2: RealizationEq pinned as equality of the counterfactual causal role profile relative to the declared task and environment (definition; load-bearing; output-match and substrate-independent readings rejected)",
+    "PIN-SUB-A1: joint independence acceptance axiom — both the swap-exists and no-swap combinations remain satisfiable after pinning (structures M1/M2 exhibited)",
+    "the joint pin neither forces nor forbids a SameLabelSwap witness and leaves the K_REALIZATION_EQUIVALENCE existential undecided"
+  ],
+  "non_claims": [
+    "does not test, discharge, repair, or change N-row N18 (marked DO NOT TEST OR REPAIR in DSF-v1; this record pins vocabulary only)",
+    "does not move any readiness count (PINNED=0, PARTIAL=2, OPEN=18 stand)",
+    "does not edit the frozen calculus, SPA-v1, or any sealed record",
+    "does not decide the K_REALIZATION_EQUIVALENCE existential",
+    "does not prove creativity or non-creativity",
+    "is not sealed; status DRAFT_PENDING_REVIEW"
+  ],
+  "caveat_crosswalk": [
+    {
+      "official_item_id": "PIN-SUB-SCOPE",
+      "type": "condition",
+      "official_location": "Section 1, Scope, method, and why this pair is joint",
+      "plain_language_location": "What this is; Why they had to be pinned together",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-SUB-ANCHORS",
+      "type": "condition",
+      "official_location": "Section 2, Exact anchors ((63), K_REALIZATION_EQUIVALENCE row, R_EQ_APP/NA, pi_{R_eq} (62a), N18 row, control surface) — display-form transcriptions labeled as such",
+      "plain_language_location": "What this is",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-SUB-D1",
+      "type": "claim",
+      "official_location": "Section 3, PIN-SUB-D1 with three options stated",
+      "plain_language_location": "Why they had to be pinned together",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-SUB-D2",
+      "type": "claim",
+      "official_location": "Section 4, PIN-SUB-D2 with three options stated",
+      "plain_language_location": "The role reading, and why",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-SUB-A1-JOINT",
+      "type": "result status",
+      "official_location": "Section 5, Joint independence requirement (M1/M2)",
+      "plain_language_location": "Why they had to be pinned together",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-SUB-OPEN1",
+      "type": "uncertainty",
+      "official_location": "Section 6, PIN-SUB-OPEN-1 (degenerate-structure variant family)",
+      "plain_language_location": "What did NOT change (open item)",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-SUB-NO-TEST",
+      "type": "non-claim",
+      "official_location": "Sections 1 and 7, N18 DO NOT TEST OR REPAIR preserved",
+      "plain_language_location": "What did NOT change",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-SUB-CONES",
+      "type": "result status",
+      "official_location": "Section 7, Affected dependency cones",
+      "plain_language_location": "What did NOT change",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-SUB-RESIDUAL",
+      "type": "result status",
+      "official_location": "Section 9, Residual status and next checkpoint",
+      "plain_language_location": "What happens next",
+      "checked": true
+    }
+  ],
+  "verification": {
+    "independent_mathematical_review": "NONE AVAILABLE — orchestrator hand-review only (subagent reviewer pool withdrawn mid-session); independence downgraded and disclosed",
+    "publication_review": "PENDING",
+    "decisions_made": ["PIN-SUB-D1", "PIN-SUB-D2"],
+    "acceptance_axioms_added": ["PIN-SUB-A1"],
+    "open_items_recorded": ["PIN-SUB-OPEN-1"],
+    "load_bearing_choices": [
+      "PIN-SUB-D1 (SS-presentation selected; task-invariant reading would destroy conjunct independence; physical reading would decide N18 negatively)",
+      "PIN-SUB-D2 (RE-role selected; output-match and substrate-independent readings would destroy or contradict SameLabelSwap)"
+    ],
+    "non_deciding": "PASS claimed via M1 (swap exists: equal syntax, role-distinguished idle-metadata pair) and M2 (no swap: only exact duplicates); both satisfy all pins; K_REALIZATION_EQUIVALENCE existential shown undecided",
+    "steering_defense": "RATIONALE_BASED_ONLY",
+    "original_n_row_readiness": {
+      "PINNED": 0,
+      "PARTIAL": 2,
+      "OPEN": 18
+    },
+    "original_n_rows_discharged": 0,
+    "testing_status": "PROHIBITED",
+    "notes": [
+      "anchors transcribed from display/math form and labeled as transcriptions, not byte quotes",
+      "SPA-v1 parent digest pinned per ERR-SPA-v1 to a9f62ebb...; retired 40681e6c... not used",
+      "N18 remains marked DO NOT TEST OR REPAIR; this record pins vocabulary only and Section 5 exists precisely to keep that marking meaningful",
+      "the target-essentiality seam from the stress-test campaign is the stated motivation for the RE-role reading"
+    ]
+  }
+}
