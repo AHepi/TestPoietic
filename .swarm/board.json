@@ -15,10 +15,12 @@
       "notes": [],
       "out_of_scope": "no pins, no record edits, no manifest changes",
       "reviewer": "",
-      "shas": [],
-      "state": "READY",
-      "state_ts": 1787317289.3076835,
-      "worker": ""
+      "shas": [
+        "c019a030827d92aaf5fc04e4c9eae0a47904b560"
+      ],
+      "state": "COMMITTED",
+      "state_ts": 1787320982.7366486,
+      "worker": "treadle"
     }
   }
 }
