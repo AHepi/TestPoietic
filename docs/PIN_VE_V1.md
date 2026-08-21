@@ -3,7 +3,7 @@
 record_id: PIN-VE-v1
 version: 1.0
 date: 2026-08-21
-status: DRAFT_PENDING_REVIEW
+status: REVIEWED_PENDING_OWNER_SEAL
 official_file: PIN_VE_V1.md
 plain_language_file: PIN_VE_V1_PLAIN_LANGUAGE.md
 digest_manifest: PIN_VE_V1_FREEZE.json
@@ -207,7 +207,9 @@ claim about creativity in any real system.
 
 ## 9. Residual status and next checkpoint
 
-Frozen: PIN-VE-D1 (RepresentedConjecture, representation reading),
+Frozen as candidate definitions over newly declared free primitives — the
+primitives themselves remain unpinned per DSF-v1 Section 1: PIN-VE-D1
+(RepresentedConjecture, representation reading),
 PIN-VE-D2 (TheoryMediatedCriticism, account-mediated reading). Open:
 PIN-VE-OPEN-1 (V_FALLIBILITY satisfiability review under any future TMC
 tightening). Next checkpoint per the catalog order: the remaining T5

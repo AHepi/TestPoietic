@@ -1,8 +1,8 @@
 # PIN-VE-v1 in Plain Language
 
 record: PIN-VE-v1 (official file: PIN_VE_V1.md)
-status: DRAFT_PENDING_REVIEW — reviewed by the orchestrator's hand-review
-only; no independent reviewer was available
+status: REVIEWED_PENDING_OWNER_SEAL — independent review complete (REVISE, two minor
+findings, both confirmed by an independent arbiter, both repaired)
 
 ## What this is
 
@@ -42,7 +42,12 @@ defense: rationale-based only).
 
 ## What did NOT change
 
-No N-row was tested or discharged. The readiness counts stand: 0 pinned,
+The two demonstration structures are consistency evidence only, not a
+countermodel certificate: no total expansion and no row bridge exists
+(D0/DSF-A1 remain open with zero accepted expansions). Also, the two
+"pins" are candidate meanings built on newly declared primitives; those
+primitives themselves stay unpinned. No N-row was tested or discharged.
+The readiness counts stand: 0 pinned,
 2 partial, 18 open; zero discharged; testing PROHIBITED. The calculus,
 SPA-v1, and all sealed records are unedited. The bridge rule (36) keeps
 its grade B and its own warning — analogue, not identity — which this

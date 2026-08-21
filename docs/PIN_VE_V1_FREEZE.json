@@ -3,12 +3,12 @@
   "record_id": "PIN-VE-v1",
   "version": "1.0",
   "date": "2026-08-21",
-  "status": "DRAFT_PENDING_REVIEW",
+  "status": "REVIEWED_PENDING_OWNER_SEAL",
   "shared_container": false,
   "official_file": "PIN_VE_V1.md",
-  "official_sha256": "1c074cf7eef9ad473e63a4fe50621985282b2a018f1fea33da30218fa6c493aa",
+  "official_sha256": "0042a219cd74848a2709d1e03fa2090ca46dcb81002f0a2c0dd1b335e9a06d72",
   "plain_language_file": "PIN_VE_V1_PLAIN_LANGUAGE.md",
-  "plain_language_sha256": "d1b13c5c05f5bf54ce4a9fa3c72e5f9a345f77ecbe1bd3f94753685cf19d3696",
+  "plain_language_sha256": "83d008dd5163a6da5a811886ec55c05ba31150403f54ac6a814e451538cf65cd",
   "parent_records": [
     {
       "file": "PIECEMEAL_PREMISE_CALCULUS.md",
@@ -41,8 +41,9 @@
   ],
   "scope": "original-side candidate pins for RepresentedConjecture and TheoryMediatedCriticism (DSF-v1 family D16), feeding N-row N15 and touching the V_FALLIBILITY certificate row",
   "claims": [
-    "PIN-VE-D1: RepresentedConjecture pinned as declared content tokens (problem, answer) with a derives-link in the lineage's own records (definition; load-bearing; behavioral and source-literal readings rejected)",
-    "PIN-VE-D2: TheoryMediatedCriticism pinned as elimination mediated by an account-derived discriminator (definition; load-bearing; any-selection and full-package readings rejected)",
+    "PIN-VE-D1: RepresentedConjecture given a frozen candidate meaning as declared content tokens (problem, answer) with a derives-link in the lineage's own records (definition; load-bearing; behavioral and source-literal readings rejected)",
+    "PIN-VE-D2: TheoryMediatedCriticism given a frozen candidate meaning as elimination mediated by an account-derived discriminator (definition; load-bearing; any-selection and full-package readings rejected)",
+    "both candidate definitions range over newly declared free primitives, which remain unpinned per DSF-v1 Section 1",
     "non-deciding two-structure argument for both N15 denial limbs (S1 analogue without representation/theory-mediation, S2 with both, identical on all premises of bridge rule (36))",
     "D2 selection keeps the frozen V_FALLIBILITY certificate row coherent in both directions"
   ],
@@ -53,7 +54,7 @@
     "does not strengthen the B-grade bridge (36) into an identity",
     "does not identify any original predicate with an F-prefixed fragment predicate",
     "does not prove creativity or non-creativity",
-    "is not sealed; status DRAFT_PENDING_REVIEW"
+    "is not sealed; sealing is owner-only; status REVIEWED_PENDING_OWNER_SEAL"
   ],
   "caveat_crosswalk": [
     {
@@ -121,11 +122,16 @@
     }
   ],
   "verification": {
-    "independent_mathematical_review": "NONE AVAILABLE — orchestrator hand-review only (subagent reviewer pool withdrawn mid-session); independence downgraded and disclosed",
+    "independent_mathematical_review": "REVISE (2 MINOR findings) by independent external reviewer, both CONFIRMED by independent arbiter (different model family), both repaired in v1; supersedes the disclosed orchestrator hand-review",
     "publication_review": "PENDING",
-    "decisions_made": ["PIN-VE-D1", "PIN-VE-D2"],
+    "decisions_made": [
+      "PIN-VE-D1",
+      "PIN-VE-D2"
+    ],
     "acceptance_axioms_added": [],
-    "open_items_recorded": ["PIN-VE-OPEN-1"],
+    "open_items_recorded": [
+      "PIN-VE-OPEN-1"
+    ],
     "load_bearing_choices": [
       "PIN-VE-D1 (RC-representation selected; behavioral reading would collapse N15, source-literal would manufacture its witness)",
       "PIN-VE-D2 (TMC-account-mediated selected; any-selection breaks V_FALLIBILITY, full-package trivializes its negation)"
