@@ -1,0 +1,3 @@
+{"action":"map","actor":"treadle","detail":{"tree_sha":"5017d960922866b3cce1a58a4d5f98bb39030167"},"prev":"0000000000000000000000000000000000000000000000000000000000000000","task":"-","ts":"2026-08-21T14:00:35Z"}
+{"action":"claim","actor":"treadle","detail":{"cone":["zoo/batteries/same_observable_label/*"]},"prev":"35a1775760cfbf3bf53f83ac888f71f724aa54db0887259ff7c286c064b87431","task":"BAT-SameObservableLabel","ts":"2026-08-21T14:00:35Z"}
+{"action":"done","actor":"treadle","detail":{"shas":["c019a030827d92aaf5fc04e4c9eae0a47904b560"]},"prev":"38133355d640e934bba69e8be16a54c0e90250ae34da8779bb6cee0bc37f0647","task":"BAT-SameObservableLabel","ts":"2026-08-21T14:03:02Z"}
