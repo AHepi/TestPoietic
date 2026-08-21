@@ -1,0 +1,120 @@
+{
+  "schema": "TESTPOIETIC_RECORD_FREEZE_V1",
+  "record_id": "BRV-v1",
+  "version": "1.0",
+  "date": "2026-08-21",
+  "status": "DRAFT_PENDING_REVIEW",
+  "shared_container": false,
+  "official_file": "BRIDGE_REVIEW_V1.md",
+  "official_sha256": "6b2c9bfa6228d756fd4c0e3fa8ab9d8bd0d0693184cf3230a4805f793c66fbf3",
+  "plain_language_file": "BRIDGE_REVIEW_V1_PLAIN_LANGUAGE.md",
+  "plain_language_sha256": "69ba63d3c4c9b34432d712674ad7cddae968d5b2872c9f9eab7efaa33dbb547c",
+  "parent_records": [
+    {
+      "file": "PIECEMEAL_PREMISE_CALCULUS.md",
+      "sha256": "0984453690cd1f9ebcb01bf694cb3ad72f587ad5610e11222a3e0893ddbce055"
+    },
+    {
+      "file": "DOWNSTREAM_SEMANTIC_FREEZE_V1.md",
+      "sha256": "961e2b476f7bd93d208f19ad0e6b964a2db4495c00b8731b43ba732b076198a1"
+    },
+    {
+      "file": "PIECEMEAL_SEMANTIC_ANNEX_V1.md",
+      "sha256": "a9f62ebbd086a0499893f57a566f6b769a1b64fc27dfe15dd640a8c1f5e200a0"
+    },
+    {
+      "file": "SPA_PIN_ERRATUM_V1.md",
+      "sha256": "0e9959de220088adadfcd670520c04a520314e7870d340ea5bf5d0d3dc74f2a1"
+    },
+    {
+      "file": "PIECEMEAL_SOURCE_REGISTER.md",
+      "sha256": "d1bf4ae64133da79ccd0b2865c88e429a49877455c189f7d9900c1ad6457a4fb"
+    },
+    {
+      "file": "RECORD_PUBLICATION_STANDARD_V1.md",
+      "sha256": "38f37a7b638be960fdd47ce24d95c8cea67bb49ab2d28a9c8af9c667d6f83348"
+    }
+  ],
+  "scope": "review of every project bridge for grade, adequacy, circularity, and no-splicing, implementing DSF-v1 Section 13 item 6",
+  "claims": [
+    "complete bridge inventory: DSF-B1..B4 plus the four typed links; closed (no later record added or reclassified a bridge)",
+    "DSF-B1: adequate for its declared analogue use; unclaimed downstream; head terminal",
+    "DSF-B2: shared-map adequacy condition now expressible post-IDF-v1/SIG-HJ-v1; OPEN until a fixture exhibits it",
+    "DSF-B3: OPEN; adequacy unverified pending IC-SP-001/002 or an equivalent exhibited alignment structure",
+    "DSF-B4: OPEN; inherits B3; rigid-frame condition pinned by IDF-v1",
+    "no live circularity found; splicing resistance typed but untested"
+  ],
+  "non_claims": [
+    "does not strengthen any bridge into a theorem",
+    "does not edit the frozen calculus, SPA-v1, or any sealed record",
+    "does not test or discharge any original N-row",
+    "does not move any readiness count (PINNED=0, PARTIAL=2, OPEN=18 stand)",
+    "does not prove creativity or non-creativity",
+    "is not sealed; status DRAFT_PENDING_REVIEW"
+  ],
+  "caveat_crosswalk": [
+    {
+      "official_item_id": "BRV-INVENTORY",
+      "type": "result status",
+      "official_location": "Section 1, Complete bridge inventory (closed)",
+      "plain_language_location": "What this is",
+      "checked": true
+    },
+    {
+      "official_item_id": "BRV-VERDICTS",
+      "type": "result status",
+      "official_location": "Section 2, Per-bridge verdicts",
+      "plain_language_location": "What the review found",
+      "checked": true
+    },
+    {
+      "official_item_id": "BRV-CIRC-SPLICING",
+      "type": "result status",
+      "official_location": "Section 3, Circularity and splicing scan (typed but untested)",
+      "plain_language_location": "What the review found",
+      "checked": true
+    },
+    {
+      "official_item_id": "BRV-GRADES",
+      "type": "non-claim",
+      "official_location": "Section 4, Grade review (nothing promoted)",
+      "plain_language_location": "What did NOT change",
+      "checked": true
+    },
+    {
+      "official_item_id": "BRV-COMPLETION",
+      "type": "condition",
+      "official_location": "Section 6, What this completes (semantics stage complete; Tranche 3 gated on seals and independent audit)",
+      "plain_language_location": "What this completes",
+      "checked": true
+    },
+    {
+      "official_item_id": "BRV-REVIEW-LIMIT",
+      "type": "limitation",
+      "official_location": "header status DRAFT_PENDING_REVIEW; manifest review field",
+      "plain_language_location": "Who reviewed this",
+      "checked": true
+    }
+  ],
+  "verification": {
+    "independent_mathematical_review": "NONE AVAILABLE — orchestrator hand-review only (subagent reviewer pool withdrawn mid-session); independence downgraded and disclosed",
+    "publication_review": "PENDING",
+    "bridges_reviewed": ["DSF-B1", "DSF-B2", "DSF-B3", "DSF-B4"],
+    "bridges_promoted": 0,
+    "bridges_reclassified": 0,
+    "original_n_row_readiness": {
+      "PINNED": 0,
+      "PARTIAL": 2,
+      "OPEN": 18
+    },
+    "original_n_rows_discharged": 0,
+    "testing_status": "PROHIBITED",
+    "notes": [
+      "SPA-v1 parent digest pinned per ERR-SPA-v1 to a9f62ebb...; retired 40681e6c... not used",
+      "source register parent pin recomputed from committed bytes (d1bf4ae6...)",
+      "an unverified placeholder hash for the source register was inserted in the first manifest draft, caught by the orchestrator before push, and replaced with the recomputed value; logged in .swarm/log.jsonl",
+      "completes DSF-v1 Section 13 item 6, the last item of the semantics-first frozen order",
+      "Tranche 3 (fixtures) is gated on owner seals and a genuinely independent audit; four records currently carry orchestrator-only hand-review"
+    ]
+  }
+}
