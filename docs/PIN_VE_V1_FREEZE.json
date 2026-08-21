@@ -32,7 +32,7 @@
     },
     {
       "file": "PIN_CONS_V1.md",
-      "sha256": "3c5c17e98e69f0de6e22dfbce14b18c2fc1093066c5475f99c43a749d0df0d3a"
+      "sha256": "39b9f7b51d86eb2961a16b05ead159b1daaffb5b9510f99722095fd5690d1ce5"
     },
     {
       "file": "RECORD_PUBLICATION_STANDARD_V1.md",
@@ -67,7 +67,7 @@
     {
       "official_item_id": "PIN-VE-ANCHORS",
       "type": "condition",
-      "official_location": "Section 2, Exact anchors (bridge (36), PAT_VE (35a), FallSel (27a), V_FALLIBILITY row, N15 row) \u2014 display-form transcriptions labeled as such",
+      "official_location": "Section 2, Exact anchors (bridge (36), PAT_VE (35a), FallSel (27a), V_FALLIBILITY row, N15 row) — display-form transcriptions labeled as such",
       "plain_language_location": "What this is",
       "checked": true
     },
@@ -148,7 +148,7 @@
     "notes": [
       "anchors transcribed from display/math form and labeled as transcriptions, not byte quotes",
       "SPA-v1 parent digest pinned per ERR-SPA-v1 to a9f62ebb...; retired 40681e6c... not used",
-      "the frozen V_FALLIBILITY row's \u00acTMC conjunct constrained the D2 selection; disclosed in Section 4",
+      "the frozen V_FALLIBILITY row's ¬TMC conjunct constrained the D2 selection; disclosed in Section 4",
       "DSF-B1 bridge (36) keeps grade B, unclaimed; no head-report change"
     ]
   }
