@@ -1,1 +1,57 @@
-placeholder
+# treadle configuration — lives at the target repo root.
+# Stages name the model, the skill whose PROMPT-CORE becomes the system
+# prompt, and the budget. Routing maps task-id prefixes to stages.
+
+[driver]
+base_url = "http://localhost:11434/v1"   # local Ollama proxies :cloud tags; or https://ollama.com/v1
+worker = "treadle"
+seed = 17
+
+[stage.pinning]                 # Reed W1: term pins fitted to batteries
+model = "glm-5.2:cloud"
+escalate_model = "deepseek-v4-pro:cloud"
+skill = "skills/term-pinning/SKILL.md"
+candidates = 2
+max_refinements = 2
+max_tokens = 6000
+
+[stage.battery]                 # Reed 1: example batteries
+model = "glm-5.2:cloud"
+escalate_model = "deepseek-v4-pro:cloud"
+skill = "skills/example-battery/SKILL.md"
+candidates = 3
+max_refinements = 1
+max_tokens = 6000
+
+[stage.refutation]              # Warp W3: countermodel attack
+model = "deepseek-v4-pro:cloud"
+skill = "skills/refutation-first/SKILL.md"
+max_refinements = 1
+max_tokens = 8000
+
+[stage.review]                  # adversarial review of committed work
+kind = "review"
+model = "deepseek-v4-pro:cloud"
+skill = "skills/minimal-pair-review/SKILL.md"
+max_tokens = 4000
+
+[stage.smoke]                   # cheap floor / control arm
+model = "gpt-oss:120b-cloud"
+skill = "skills/discharge-typing/SKILL.md"
+max_refinements = 0
+
+[[routing]]
+prefix = "PIN-"
+stage = "pinning"
+[[routing]]
+prefix = "BAT-"
+stage = "battery"
+[[routing]]
+prefix = "REF-"
+stage = "refutation"
+[[routing]]
+prefix = "REV-"
+stage = "review"
+[[routing]]
+prefix = "SMK-"
+stage = "smoke"
