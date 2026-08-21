@@ -3,5 +3,22 @@
     "require_remote": "auto",
     "wip_limit": 2
   },
-  "tasks": {}
+  "tasks": {
+    "BAT-SameObservableLabel": {
+      "accept": "test -s zoo/batteries/same_observable_label/BATTERY.md",
+      "base": "eab1b20b837c76edd99a2afec9d46bd4d164b7fe",
+      "cone": [
+        "zoo/batteries/same_observable_label/*"
+      ],
+      "depends_on": [],
+      "goal": "Build the Reed example battery for SameObservableLabel per the terms inventory risk corridor",
+      "notes": [],
+      "out_of_scope": "no pins, no record edits, no manifest changes",
+      "reviewer": "",
+      "shas": [],
+      "state": "READY",
+      "state_ts": 1787317289.3076835,
+      "worker": ""
+    }
+  }
 }
