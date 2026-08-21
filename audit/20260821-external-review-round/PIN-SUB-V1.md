@@ -1,0 +1,10 @@
+# Independent review: PIN-SUB-V1
+reviewer_model: glm-5.2
+date: 2026-08-21
+
+VERDICT: PASS
+FINDINGS:
+- [MINOR] PIN_SUB_V1.md Section 2: The record states "Section 12 lists SameSyntax and RealizationEq among the uninterpreted N-only leaves, and RealizationEq among the open load-bearing originals." DSF-v1 Section 12 places SameSyntax in the "Uninterpreted N-only leaves" list but places RealizationEq only in the separate "Also open and load-bearing" list. The phrasing implies both appear in the first list, which is inaccurate for RealizationEq.
+- [MINOR] PIN_SUB_V1_FREEZE.json scope field: The manifest scope string omits the parenthetical "(NE_SUBSTRATE_SWAP_NOT_AUTOMATIC)" that appears in the official record header's scope field. RPS-v1 requires these fields to agree; the omission is cosmetic but technically a mismatch.
+- [MINOR] PIN_SUB_V1_FREEZE.json caveat_crosswalk: The non-claim "does not prove creativity or non-creativity" from the official record has no dedicated crosswalk row. It is implicitly covered by PIN-SUB-NO-TEST and PIN-SUB-CONES, but RPS-v1's required types include "non-claim" and this specific item is not separately mapped.
+NOTES: I attacked hardest the two-structure non-deciding argument (M1/M2), verifying that SS-presentation plus RE-role genuinely leaves both the swap-exists and no-swap cases satisfiable without rigging N18's existential, and that the K_REALIZATION_EQUIVALENCE existential remains undecided. The mechanism is structurally sound: M1 provides equal-presentation/different-role pairs (SameLabelSwap holds), M2 provides only role-duplicate same-presentation pairs (SameLabelSwap fails), and both satisfy all pins. I also verified classification discipline (two definitions correctly bucketed, one acceptance axiom correctly bucketed, no bridge or import mislabeled), status consistency (DRAFT_PENDING_REVIEW with no independent review claimed, readiness counts matching DSF-v1's PINNED=0/PARTIAL=2/OPEN=18), and companion faithfulness (the plain-language file retains every material caveat including the do-not-test marking, the undecided existential, and the
