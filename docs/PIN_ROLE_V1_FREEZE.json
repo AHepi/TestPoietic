@@ -1,0 +1,155 @@
+{
+  "schema": "TESTPOIETIC_RECORD_FREEZE_V1",
+  "record_id": "PIN-ROLE-v1",
+  "version": "1.0",
+  "date": "2026-08-21",
+  "status": "DRAFT_PENDING_REVIEW",
+  "shared_container": false,
+  "official_file": "PIN_ROLE_V1.md",
+  "official_sha256": "4285beaf2bbc852f858408ccf73e774e1fd6ee53e2f940c8f62527e6e8572dbf",
+  "plain_language_file": "PIN_ROLE_V1_PLAIN_LANGUAGE.md",
+  "plain_language_sha256": "07ec7c33b5a58e8af87aa0d3df8e260695276b0c1bf14ce8991769a3eef82bd6",
+  "parent_records": [
+    {
+      "file": "PIECEMEAL_PREMISE_CALCULUS.md",
+      "sha256": "0984453690cd1f9ebcb01bf694cb3ad72f587ad5610e11222a3e0893ddbce055"
+    },
+    {
+      "file": "ORIGINAL_TERMS_INVENTORY.md",
+      "sha256": "fe4e1f9a8c08a5179d45b1167ca23437085213695ba77d85a53e0a26e8c575bb"
+    },
+    {
+      "file": "PIECEMEAL_SEMANTIC_ANNEX_V1.md",
+      "sha256": "a9f62ebbd086a0499893f57a566f6b769a1b64fc27dfe15dd640a8c1f5e200a0"
+    },
+    {
+      "file": "SPA_PIN_ERRATUM_V1.md",
+      "sha256": "0e9959de220088adadfcd670520c04a520314e7870d340ea5bf5d0d3dc74f2a1"
+    },
+    {
+      "file": "DOWNSTREAM_SEMANTIC_FREEZE_V1.md",
+      "sha256": "961e2b476f7bd93d208f19ad0e6b964a2db4495c00b8731b43ba732b076198a1"
+    },
+    {
+      "file": "PIN_CONS_V1.md",
+      "sha256": "3c5c17e98e69f0de6e22dfbce14b18c2fc1093066c5475f99c43a749d0df0d3a"
+    },
+    {
+      "file": "PIN_VE_V1.md",
+      "sha256": "1c074cf7eef9ad473e63a4fe50621985282b2a018f1fea33da30218fa6c493aa"
+    },
+    {
+      "file": "PIN_SUB_V1.md",
+      "sha256": "5338ffa35f5248219cc748f274be8e59ca32a944e5f0bd1762ae78fa6af1b136"
+    },
+    {
+      "file": "RECORD_PUBLICATION_STANDARD_V1.md",
+      "sha256": "38f37a7b638be960fdd47ce24d95c8cea67bb49ab2d28a9c8af9c667d6f83348"
+    }
+  ],
+  "scope": "original-side candidate pins for the role cluster: RoleEq, SecondSubstance, CausalExemption (N17); OneObservedToken, CounterfactualFamilyObserved, ReplicationRole (N19); and RetainsOrAdapts (N20 limb, resolving PIN-CONS-OPEN-1)",
+  "claims": [
+    "PIN-ROLE-D1: RoleEq as autonomy-with-realization (higher-level account and realization answer the same declared task)",
+    "PIN-ROLE-D2: SecondSubstance as an ontologically independent extra entity in the declared ontology",
+    "PIN-ROLE-D3: CausalExemption as a declared exemption claim",
+    "PIN-ROLE-D4: OneObservedToken as exactly one observed token in the declared evidence",
+    "PIN-ROLE-D5: CounterfactualFamilyObserved as a declared variant family with observed outcomes",
+    "PIN-ROLE-D6: ReplicationRole as preserved counterfactual role across a declared variant family in the niche class",
+    "PIN-ROLE-D7: RetainsOrAdapts as role-profile preservation/adaptation in the extension environment, resolving PIN-CONS-OPEN-1 (conditional on PIN-SUB-v1's seal)",
+    "two-sided independence checks for the N17, N19, and N20 limbs (M-hi/M-lo, M-one/M-fam, M-ret/M-noret)"
+  ],
+  "non_claims": [
+    "does not test, discharge, or change any original N-row",
+    "does not move any readiness count (PINNED=0, PARTIAL=2, OPEN=18 stand)",
+    "does not edit the frozen calculus, SPA-v1, or any sealed record",
+    "does not import any source as a theorem; register constraints shape the pins only",
+    "does not identify any original predicate with an F-prefixed fragment predicate",
+    "does not prove creativity or non-creativity",
+    "is not sealed; status DRAFT_PENDING_REVIEW; conditional on the pending seals of PIN-CONS-v1 and PIN-SUB-v1"
+  ],
+  "caveat_crosswalk": [
+    {
+      "official_item_id": "PIN-ROLE-SCOPE",
+      "type": "condition",
+      "official_location": "Section 1, Scope and method (conditionality on pending seals)",
+      "plain_language_location": "What this is; Honest dependencies",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-ROLE-ANCHORS",
+      "type": "condition",
+      "official_location": "Section 2, Exact anchors (N17, N19, N20 limb, (63) OneCopyOnly, register constraints) — display-form transcriptions",
+      "plain_language_location": "What this is",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-ROLE-N17",
+      "type": "claim",
+      "official_location": "Section 3, PIN-ROLE-D1..D3 with M-hi/M-lo check",
+      "plain_language_location": "What this is (first group); Why the readings are shaped this way",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-ROLE-N19",
+      "type": "claim",
+      "official_location": "Section 4, PIN-ROLE-D4..D6 with M-one/M-fam check",
+      "plain_language_location": "What this is (second group)",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-ROLE-D7",
+      "type": "claim",
+      "official_location": "Section 5, RetainsOrAdapts resolution with M-ret/M-noret check and conditionality",
+      "plain_language_location": "What this is (RetainsOrAdapts); Honest dependencies",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-ROLE-CONES",
+      "type": "result status",
+      "official_location": "Section 7, Affected dependency cones",
+      "plain_language_location": "What did NOT change",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-ROLE-FORBIDDEN",
+      "type": "non-claim",
+      "official_location": "Section 8, Forbidden items",
+      "plain_language_location": "What did NOT change",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-ROLE-RESIDUAL",
+      "type": "result status",
+      "official_location": "Section 9, Residual status and next checkpoint",
+      "plain_language_location": "What happens next",
+      "checked": true
+    }
+  ],
+  "verification": {
+    "independent_mathematical_review": "NONE AVAILABLE — orchestrator hand-review only (subagent reviewer pool withdrawn mid-session); independence downgraded and disclosed",
+    "publication_review": "PENDING",
+    "decisions_made": ["PIN-ROLE-D1", "PIN-ROLE-D2", "PIN-ROLE-D3", "PIN-ROLE-D4", "PIN-ROLE-D5", "PIN-ROLE-D6", "PIN-ROLE-D7"],
+    "acceptance_axioms_added": [],
+    "open_items_recorded": [],
+    "open_items_resolved": ["PIN-CONS-OPEN-1 (resolved by PIN-ROLE-D7, conditional on PIN-SUB-v1 seal)"],
+    "load_bearing_choices": [
+      "PIN-ROLE-D2/D3 (declaration-level readings keep N17 winnable and losable)",
+      "PIN-ROLE-D7 (role-profile reading rigs N20 in neither direction; requires PIN-SUB-v1's RE-role machinery)"
+    ],
+    "non_deciding": "PASS claimed via M-hi/M-lo (N17), M-one/M-fam (N19), M-ret/M-noret (N20 limb)",
+    "steering_defense": "RATIONALE_BASED_ONLY",
+    "original_n_row_readiness": {
+      "PINNED": 0,
+      "PARTIAL": 2,
+      "OPEN": 18
+    },
+    "original_n_rows_discharged": 0,
+    "testing_status": "PROHIBITED",
+    "notes": [
+      "anchors transcribed from display/math form and labeled as transcriptions, not byte quotes",
+      "SPA-v1 parent digest pinned per ERR-SPA-v1 to a9f62ebb...; retired 40681e6c... not used",
+      "conditional on pending seals of PIN-CONS-v1 and PIN-SUB-v1; amendment of either triggers re-check",
+      "an identifier numbering defect in the first draft (D6b) was corrected to D7 before push; a Section 7 bullet accidentally deleted during editing was restored"
+    ]
+  }
+}
