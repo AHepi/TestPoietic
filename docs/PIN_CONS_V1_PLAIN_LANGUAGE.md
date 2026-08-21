@@ -1,7 +1,9 @@
 # PIN-CONS-v1 in Plain Language
 
 record: PIN-CONS-v1 (official file: PIN_CONS_V1.md)
-status: DRAFT_PENDING_REVIEW — nobody has reviewed this yet
+status: REVIEWED_PENDING_OWNER_SEAL — two independent review rounds are
+complete (first REVISE with six findings, all repaired; second REVISE with
+five findings, all confirmed by an independent arbiter, all repaired)
 
 ## What this is
 

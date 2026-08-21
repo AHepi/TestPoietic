@@ -3,7 +3,7 @@
 record_id: PIN-CONS-v1
 version: 1.0
 date: 2026-08-21
-status: DRAFT_PENDING_REVIEW
+status: REVIEWED_PENDING_OWNER_SEAL
 official_file: PIN_CONS_V1.md
 plain_language_file: PIN_CONS_V1_PLAIN_LANGUAGE.md
 digest_manifest: PIN_CONS_V1_FREEZE.json
@@ -51,13 +51,13 @@ recorded with the structural reason for rejection.
 
 ## 2. Exact anchors
 
-Calculus (3), the frozen identification discipline (quoted verbatim):
+Calculus (3), the frozen identification discipline (display form — rendered notation, not byte-level LaTeX; meaning preserved):
 
 > "Within a θ-indexed formula, an un-subscripted symbol is an abbreviation
 > for its θ-projection. No formula may identify parts of θ and θ′ without
 > a named equality, port, or conservative-extension relation."
 
-Calculus (46), the whole-agent definitions (quoted verbatim; included for
+Calculus (46), the whole-agent definitions (display form — rendered notation, not byte-level LaTeX; included for
 the D11 family boundary of this cluster; no pin is made here):
 
 > "WholeClone_B(A) ⟺ a declared task clones the complete bounded state of
@@ -65,7 +65,7 @@ the D11 family boundary of this cluster; no pin is made here):
 > bounded state of A is a digital code variable."
 
 Calculus (63), the N-only abbreviations, heading and the two conjuncts
-load-bearing for this record (quoted verbatim):
+load-bearing for this record (display form — rendered notation, not byte-level LaTeX; meaning preserved):
 
 > "For a conservative extension (η′,θ′) define the closed abbreviations
 >
@@ -74,12 +74,12 @@ load-bearing for this record (quoted verbatim):
 > FiniteTheorySuite_{η,θ}(L) ⟺ L ⊆ Theory_η ∧ |L|<∞,
 > FiniteVariantSuite_{η,θ}(U) ⟺ U ⊆ V_θ × E_η ∧ |U|<∞, ..."
 
-N7 row (NE_BOUNDARY_IS_EVIDENCE), quoted verbatim:
+N7 row (NE_BOUNDARY_IS_EVIDENCE), display form (rendered notation, not byte-level LaTeX; meaning preserved):
 
 > "M′ ⊨ Linked_{η,θ} ∧ BoundaryMove_{η,θ}^{η′,θ′} ∧
 > ¬Linked_{η′,θ′}"
 
-N20 row (NE_FINITE_VARIANTS_NOT_ALL_ENVIRONMENTS), quoted verbatim:
+N20 row (NE_FINITE_VARIANTS_NOT_ALL_ENVIRONMENTS), display form (rendered notation, not byte-level LaTeX; meaning preserved):
 
 > "M′ ⊨ ConservativeExtension_{η,θ}^{η′,θ′} ∧
 > FiniteVariantSuite_{η,θ}(U) ∧ ∃(ν*,E*)[(ν*,E*) ∈
@@ -128,7 +128,8 @@ Options stated:
   declared typed embeddings ι (named per context pair, satisfying calculus
   (3)'s named-relation discipline), and for every formula φ in the OLD
   language of (η,θ) — the vocabulary of Table 1.1 and (12)–(13) over
-  θ-projections — M ⊨ φ at (η,θ) iff M′ ⊨ ι(φ) at (η′,θ′). No new
+  θ-projections, closed under the frozen calculus definitions built from
+  them (e.g. Linked_{η,θ} of (41)) — M ⊨ φ at (η,θ) iff M′ ⊨ ι(φ) at (η′,θ′). No new
   old-language truths arise in the extension; old-language falsehoods are
   likewise preserved. New vocabulary (θ′-projections with no
   θ-counterpart, e.g. Linked_{η′,θ′}, V_{θ′}, E_{η′}) is unconstrained by
@@ -326,8 +327,10 @@ suite U and no finite audit over (η′,θ′) entails it. This pins the
 guard-rail direction the source register requires ("The Everettian
 explanatory discussion does not turn other universes into observed data
 or make a finite cohort exhaustive") and keeps the N20 denial limb
-¬EverettianUniversalClaim_{η′,θ′}(U) available in every finite
-countermodel. The POSITIVE semantics of the claim (what would establish
+¬EverettianUniversalClaim_{η′,θ′}(U) satisfiable — "available" here means
+a derivation-level constraint only (nothing entails the claim); it does
+NOT force the negation true in any structure, so no part of N20 is
+pre-decided. The POSITIVE semantics of the claim (what would establish
 it) is left OPEN as PIN-CONS-OPEN-2: a positive pin is not needed for any
 frozen row (the term occurs only negated) and an accidental positive pin
 is the catalog's stated hazard for this term. Non-deciding: the negative
