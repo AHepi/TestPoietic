@@ -1,7 +1,9 @@
 # PIN-ROLE-v1 in Plain Language
 
 record: PIN-ROLE-v1 (official file: PIN_ROLE_V1.md)
-status: DRAFT_PENDING_REVIEW — orchestrator hand-review only; no
+status: REVIEWED_PENDING_OWNER_SEAL — independent review complete (REVISE,
+one finding, confirmed by an independent arbiter, repaired).
+Previously: orchestrator hand-review only; no
 independent reviewer was available
 
 ## What this is
@@ -37,9 +39,9 @@ equality, copy-equals-role) with their reasons.
 This record reuses two earlier drafts that you have not sealed yet —
 PIN-CONS-v1 (which had left RetainsOrAdapts open) and PIN-SUB-v1 (whose
 role machinery the new reading uses). The record says so on its face: if
-either is amended, this record must be re-checked. The orchestrator
-reviewed this record by hand; no independent reviewer exists right now,
-and the manifest says that too.
+either is amended, this record must be re-checked. (History: it was
+first hand-reviewed by the orchestrator; it has since had a full
+independent review — one finding, since repaired.)
 
 ## What did NOT change
 
@@ -47,7 +49,9 @@ No N-row was tested or discharged. Counts stand: 0 pinned, 2 partial, 18
 open; zero discharged; testing PROHIBITED. The calculus, SPA-v1, and all
 sealed records are unedited. Nothing was imported from the source
 literature as a theorem — the register's constraints shaped the readings
-only.
+only. No original predicate was identified with any F-prefixed fragment
+predicate, and nothing was proved about creativity or non-creativity in
+any real system.
 
 ## What happens next
 

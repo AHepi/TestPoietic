@@ -3,7 +3,7 @@
 record_id: PIN-ROLE-v1
 version: 1.0
 date: 2026-08-21
-status: DRAFT_PENDING_REVIEW
+status: REVIEWED_PENDING_OWNER_SEAL
 official_file: PIN_ROLE_V1.md
 plain_language_file: PIN_ROLE_V1_PLAIN_LANGUAGE.md
 digest_manifest: PIN_ROLE_V1_FREEZE.json
@@ -24,9 +24,10 @@ Per DSF-v1 Section 13 item 5 and the pinned catalog's order, this record
 covers the remaining role-side leaves: the N17 triple, the N19 pair plus
 ReplicationRole, and RetainsOrAdapts, which PIN-CONS-v1 left open
 (PIN-CONS-OPEN-1) pending a non-rigging reading. That reading is now
-available from PIN-SUB-v1's role machinery. Because both predecessors are
-DRAFT_PENDING_REVIEW, this record is explicitly CONDITIONAL on their
-eventual seal; if either is amended, this record must be re-checked.
+available from PIN-SUB-v1's role machinery. Because both predecessors remain
+unsealed (REVIEWED_PENDING_OWNER_SEAL), this record is explicitly
+CONDITIONAL on their eventual seal; if either is amended, this record
+must be re-checked.
 
 Method rule: weakest meaning making the frozen occurrences well-typed;
 for each row, the pins must leave the row's full antecedent-and-denial

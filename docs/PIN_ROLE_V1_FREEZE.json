@@ -3,12 +3,12 @@
   "record_id": "PIN-ROLE-v1",
   "version": "1.0",
   "date": "2026-08-21",
-  "status": "DRAFT_PENDING_REVIEW",
+  "status": "REVIEWED_PENDING_OWNER_SEAL",
   "shared_container": false,
   "official_file": "PIN_ROLE_V1.md",
-  "official_sha256": "4285beaf2bbc852f858408ccf73e774e1fd6ee53e2f940c8f62527e6e8572dbf",
+  "official_sha256": "c6cb5e78466d2bad08986cbf2e32f4aecbe07b5ae809bc4d201e3ab8e4fd8e3e",
   "plain_language_file": "PIN_ROLE_V1_PLAIN_LANGUAGE.md",
-  "plain_language_sha256": "07ec7c33b5a58e8af87aa0d3df8e260695276b0c1bf14ce8991769a3eef82bd6",
+  "plain_language_sha256": "57f948328142c2983290020003a5125fd9d2434865991c6d70d56ea59e7bd1c0",
   "parent_records": [
     {
       "file": "PIECEMEAL_PREMISE_CALCULUS.md",
@@ -32,15 +32,15 @@
     },
     {
       "file": "PIN_CONS_V1.md",
-      "sha256": "3c5c17e98e69f0de6e22dfbce14b18c2fc1093066c5475f99c43a749d0df0d3a"
+      "sha256": "39b9f7b51d86eb2961a16b05ead159b1daaffb5b9510f99722095fd5690d1ce5"
     },
     {
       "file": "PIN_VE_V1.md",
-      "sha256": "1c074cf7eef9ad473e63a4fe50621985282b2a018f1fea33da30218fa6c493aa"
+      "sha256": "0042a219cd74848a2709d1e03fa2090ca46dcb81002f0a2c0dd1b335e9a06d72"
     },
     {
       "file": "PIN_SUB_V1.md",
-      "sha256": "5338ffa35f5248219cc748f274be8e59ca32a944e5f0bd1762ae78fa6af1b136"
+      "sha256": "50c4725e2c158fdaa105c475c2d628d2ca24961b775252934567370b258e8686"
     },
     {
       "file": "RECORD_PUBLICATION_STANDARD_V1.md",
@@ -65,7 +65,7 @@
     "does not import any source as a theorem; register constraints shape the pins only",
     "does not identify any original predicate with an F-prefixed fragment predicate",
     "does not prove creativity or non-creativity",
-    "is not sealed; status DRAFT_PENDING_REVIEW; conditional on the pending seals of PIN-CONS-v1 and PIN-SUB-v1"
+    "is not sealed; sealing is owner-only; status REVIEWED_PENDING_OWNER_SEAL; conditional on the pending seals of PIN-CONS-v1 and PIN-SUB-v1"
   ],
   "caveat_crosswalk": [
     {
@@ -78,7 +78,7 @@
     {
       "official_item_id": "PIN-ROLE-ANCHORS",
       "type": "condition",
-      "official_location": "Section 2, Exact anchors (N17, N19, N20 limb, (63) OneCopyOnly, register constraints) — display-form transcriptions",
+      "official_location": "Section 2, Exact anchors (N17, N19, N20 limb, (63) OneCopyOnly, register constraints) \u2014 display-form transcriptions",
       "plain_language_location": "What this is",
       "checked": true
     },
@@ -126,12 +126,22 @@
     }
   ],
   "verification": {
-    "independent_mathematical_review": "NONE AVAILABLE — orchestrator hand-review only (subagent reviewer pool withdrawn mid-session); independence downgraded and disclosed",
+    "independent_mathematical_review": "REVISE (1 MAJOR finding) by independent external reviewer, CONFIRMED by independent arbiter (different model family), repaired in v1; supersedes the disclosed orchestrator hand-review",
     "publication_review": "PENDING",
-    "decisions_made": ["PIN-ROLE-D1", "PIN-ROLE-D2", "PIN-ROLE-D3", "PIN-ROLE-D4", "PIN-ROLE-D5", "PIN-ROLE-D6", "PIN-ROLE-D7"],
+    "decisions_made": [
+      "PIN-ROLE-D1",
+      "PIN-ROLE-D2",
+      "PIN-ROLE-D3",
+      "PIN-ROLE-D4",
+      "PIN-ROLE-D5",
+      "PIN-ROLE-D6",
+      "PIN-ROLE-D7"
+    ],
     "acceptance_axioms_added": [],
     "open_items_recorded": [],
-    "open_items_resolved": ["PIN-CONS-OPEN-1 (resolved by PIN-ROLE-D7, conditional on PIN-SUB-v1 seal)"],
+    "open_items_resolved": [
+      "PIN-CONS-OPEN-1 (resolved by PIN-ROLE-D7, conditional on PIN-SUB-v1 seal)"
+    ],
     "load_bearing_choices": [
       "PIN-ROLE-D2/D3 (declaration-level readings keep N17 winnable and losable)",
       "PIN-ROLE-D7 (role-profile reading rigs N20 in neither direction; requires PIN-SUB-v1's RE-role machinery)"
