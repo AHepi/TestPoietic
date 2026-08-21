@@ -39,12 +39,15 @@ acceptance axiom — so the inventory is closed. Readiness counts stand:
 This closes the frozen semantics-first order: capacity typing, the
 admissibility re-check, the H-route binding, the signature and identity
 sweeps, the original-term pinning, and now the bridge review. Everything
-produced awaits the owner's seal, and four records reviewed only by the
-orchestrator's hand are flagged for a genuine independent pass. What
+produced awaits the owner's seal. The independent pass has since happened
+for all of them: the external review round of 2026-08-21, with every
+finding adjudicated by a second model family. What
 remains is Tranche 3 — building fixtures — which may not start until the
 semantics are sealed and a genuinely independent audit exists.
 
 ## Who reviewed this
 
-The orchestrator hand-reviewed this record; no independent reviewer was
-available. The manifest records that downgrade openly.
+This record was first hand-reviewed by the orchestrator (that downgrade
+is on the record), and has since had a full independent review: three
+findings (one major, two minor), all confirmed by an independent arbiter
+and all repaired. It now awaits only the owner's seal.

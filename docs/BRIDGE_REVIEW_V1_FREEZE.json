@@ -3,12 +3,12 @@
   "record_id": "BRV-v1",
   "version": "1.0",
   "date": "2026-08-21",
-  "status": "DRAFT_PENDING_REVIEW",
+  "status": "REVIEWED_PENDING_OWNER_SEAL",
   "shared_container": false,
   "official_file": "BRIDGE_REVIEW_V1.md",
-  "official_sha256": "5ddd3fd08169d54d7473b8c1fe9f866acc690edd44c1a93679b2e7c871eb2715",
+  "official_sha256": "d5e96a07fc9c6992a645c3d028ad451c8b32b08400a5838ed075d7cd7f00d560",
   "plain_language_file": "BRIDGE_REVIEW_V1_PLAIN_LANGUAGE.md",
-  "plain_language_sha256": "69ba63d3c4c9b34432d712674ad7cddae968d5b2872c9f9eab7efaa33dbb547c",
+  "plain_language_sha256": "f2a39ca1ab8bccbbaf0cb6e6e9b31125224b809ead263943a38181a911d93ab5",
   "parent_records": [
     {
       "file": "PIECEMEAL_PREMISE_CALCULUS.md",
@@ -33,11 +33,31 @@
     {
       "file": "RECORD_PUBLICATION_STANDARD_V1.md",
       "sha256": "38f37a7b638be960fdd47ce24d95c8cea67bb49ab2d28a9c8af9c667d6f83348"
+    },
+    {
+      "file": "PIN_CONS_V1.md",
+      "sha256": "39b9f7b51d86eb2961a16b05ead159b1daaffb5b9510f99722095fd5690d1ce5"
+    },
+    {
+      "file": "PIN_VE_V1.md",
+      "sha256": "0042a219cd74848a2709d1e03fa2090ca46dcb81002f0a2c0dd1b335e9a06d72"
+    },
+    {
+      "file": "PIN_SUB_V1.md",
+      "sha256": "50c4725e2c158fdaa105c475c2d628d2ca24961b775252934567370b258e8686"
+    },
+    {
+      "file": "PIN_ROLE_V1.md",
+      "sha256": "c6cb5e78466d2bad08986cbf2e32f4aecbe07b5ae809bc4d201e3ab8e4fd8e3e"
+    },
+    {
+      "file": "PIN_EPIST_V1.md",
+      "sha256": "d32a8dc7a884f784de8d6131d29ae8aaaa359811d6f8d9d13d421f00013b6fbf"
     }
   ],
   "scope": "review of every project bridge for grade, adequacy, circularity, and no-splicing, implementing DSF-v1 Section 13 item 6",
   "claims": [
-    "complete bridge inventory: DSF-B1..B4 plus the four typed links; closed (no later record added or reclassified a bridge)",
+    "complete bridge inventory: DSF-B1..B4 plus the five typed links of the frozen plan (J_IR, J_RE, J_CE, JOIN_CE, JOIN_IRRE — the latter two counted separately, per review); closed (no later record added or reclassified a bridge)",
     "DSF-B1: adequate for its declared analogue use; unclaimed downstream; head terminal",
     "DSF-B2: shared-map adequacy condition now expressible post-IDF-v1/SIG-HJ-v1; OPEN until a fixture exhibits it",
     "DSF-B3: OPEN; adequacy unverified pending IC-SP-001/002 or an equivalent exhibited alignment structure",
@@ -50,7 +70,7 @@
     "does not test or discharge any original N-row",
     "does not move any readiness count (PINNED=0, PARTIAL=2, OPEN=18 stand)",
     "does not prove creativity or non-creativity",
-    "is not sealed; status DRAFT_PENDING_REVIEW"
+    "is not sealed; sealing is owner-only; status REVIEWED_PENDING_OWNER_SEAL"
   ],
   "caveat_crosswalk": [
     {
@@ -91,15 +111,20 @@
     {
       "official_item_id": "BRV-REVIEW-LIMIT",
       "type": "limitation",
-      "official_location": "header status DRAFT_PENDING_REVIEW; manifest review field",
+      "official_location": "review limitations disclosed in manifest verification field and companion 'Who reviewed this'",
       "plain_language_location": "Who reviewed this",
       "checked": true
     }
   ],
   "verification": {
-    "independent_mathematical_review": "NONE AVAILABLE — orchestrator hand-review only (subagent reviewer pool withdrawn mid-session); independence downgraded and disclosed",
+    "independent_mathematical_review": "REVISE (1 MAJOR, 2 MINOR findings) by independent external reviewer, all 3 CONFIRMED by independent arbiter (different model family), all repaired in v1; supersedes the disclosed orchestrator hand-review",
     "publication_review": "PENDING",
-    "bridges_reviewed": ["DSF-B1", "DSF-B2", "DSF-B3", "DSF-B4"],
+    "bridges_reviewed": [
+      "DSF-B1",
+      "DSF-B2",
+      "DSF-B3",
+      "DSF-B4"
+    ],
     "bridges_promoted": 0,
     "bridges_reclassified": 0,
     "original_n_row_readiness": {
@@ -112,9 +137,9 @@
     "notes": [
       "SPA-v1 parent digest pinned per ERR-SPA-v1 to a9f62ebb...; retired 40681e6c... not used",
       "source register parent pin recomputed from committed bytes (d1bf4ae6...)",
-      "an unverified placeholder hash for the source register was inserted in the first manifest draft, caught by the orchestrator before push, and replaced with the recomputed value; logged in .swarm/log.jsonl",
+      "an unverified placeholder hash for the source register was inserted in the first manifest draft, caught by the orchestrator before push, and replaced with the recomputed value; logged in .swarm/manual-log-rule9.jsonl",
       "completes DSF-v1 Section 13 item 6, the last item of the semantics-first frozen order",
-      "Tranche 3 (fixtures) is gated on owner seals and a genuinely independent audit; four records currently carry orchestrator-only hand-review"
+      "Tranche 3 (fixtures) is gated on owner seals and a genuinely independent audit; the orchestrator-only hand-review flag on the item-5 records was discharged by the 2026-08-21 external review round (audit/20260821-external-review-round/)"
     ]
   }
 }

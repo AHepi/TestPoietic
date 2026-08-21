@@ -3,7 +3,7 @@
 record_id: BRV-v1
 version: 1.0
 date: 2026-08-21
-status: DRAFT_PENDING_REVIEW
+status: REVIEWED_PENDING_OWNER_SEAL
 official_file: BRIDGE_REVIEW_V1.md
 plain_language_file: BRIDGE_REVIEW_V1_PLAIN_LANGUAGE.md
 digest_manifest: BRIDGE_REVIEW_V1_FREEZE.json
@@ -11,7 +11,7 @@ sha256_official: BRIDGE_REVIEW_V1_FREEZE.json#official_sha256
 sha256_plain_language: BRIDGE_REVIEW_V1_FREEZE.json#plain_language_sha256
 parent_records: PIECEMEAL_PREMISE_CALCULUS.md (frozen calculus); DOWNSTREAM_SEMANTIC_FREEZE_V1.md (DSF-v1, Section 4.4 bridge register, Section 13 item 6); PIECEMEAL_SEMANTIC_ANNEX_V1.md (SPA-v1, pinned per ERR-SPA-v1 to a9f62ebb...); SPA_PIN_ERRATUM_V1.md; PIECEMEAL_SOURCE_REGISTER.md (source grades); PIN_CONS_V1.md; PIN_VE_V1.md; PIN_SUB_V1.md; PIN_ROLE_V1.md; PIN_EPIST_V1.md; RECORD_PUBLICATION_STANDARD_V1.md (RPS-v1)
 scope: review of every project bridge for grade, adequacy, circularity, and no-splicing, implementing DSF-v1 Section 13 item 6
-claims: enumerates the complete bridge inventory (DSF-B1..B4 plus the four typed links); issues a per-bridge adequacy/circularity/no-splicing verdict; confirms no bridge was added or reclassified by any later record
+claims: enumerates the complete bridge inventory (DSF-B1..B4 plus the five typed links); issues a per-bridge adequacy/circularity/no-splicing verdict; confirms no bridge was added or reclassified by any later record
 non_claims: does not strengthen any bridge into a theorem; does not edit the frozen calculus, SPA-v1, or any sealed record; does not test or discharge any original N-row; does not move any readiness count; does not prove creativity or non-creativity
 
 Review method: every bridge is checked against its exact anchor in the
@@ -35,8 +35,9 @@ The four registered bridges of DSF-v1 Section 4.4:
 - DSF-B4: PhysExpEpisode and TRef imply PhysRefExpEpisode (44); grade B;
   consumer pi_E; no direct row.
 
-The four typed links of the frozen plan (J_IR, J_RE, J_CE, and the CE/IRRE
-join family) are definitions within the frozen calculus, not bridges;
+The five typed links of the frozen plan (J_IR, J_RE, J_CE, JOIN_CE, and
+JOIN_IRRE — the latter two counted separately, per review) are
+definitions within the frozen calculus, not bridges;
 recorded here for completeness and not reclassified. Verification against
 the post-DSF record series: no record in HKEY-v1, CAP-v1, ADM-RECHECK-v1,
 SIG-EPI-v1, SIG-HJ-v1, IDF-v1, PIN-CONS-v1, PIN-VE-v1, PIN-SUB-v1,
@@ -62,7 +63,9 @@ selection identity: the selected P56 map must be THE SAME map across
 KMAP_BIND and PORT, with shared trace and program port. Under IDF-v1's
 witness-realization map and SIG-HJ-v1's KeyRec/Transport typing, the
 shared-map condition is now expressible; it was not when DSF-v1 wrote
-"partial". Verdict upgraded to: adequacy condition is now EXPRESSIBLE, but
+"partial". Review commentary (not a reclassification — grade B stands and
+DSF-v1's recorded PARTIAL adequacy stands): the adequacy condition is now
+EXPRESSIBLE, but
 no structure has been checked against it; the bridge remains OPEN for use
 until a fixture exhibits the shared map. Circularity: none found.
 No-splicing: the condition is the no-splicing condition; it is now typed.
@@ -106,8 +109,9 @@ T. This record reclassifies nothing and promotes nothing.
 
 - DSF-B1: ADEQUATE for its declared analogue use; unclaimed downstream;
   head terminal.
-- DSF-B2: adequacy condition now expressible post-IDF-v1/SIG-HJ-v1;
-  OPEN until a fixture exhibits the shared map.
+- DSF-B2: adequacy condition now expressible post-IDF-v1/SIG-HJ-v1
+  (commentary only; grade and recorded status unchanged); OPEN until a
+  fixture exhibits the shared map.
 - DSF-B3: OPEN; adequacy unverified pending IC-SP-001/002 or an
   equivalent exhibited alignment structure.
 - DSF-B4: OPEN; inherits B3; its rigid-frame condition is pinned by
@@ -125,9 +129,11 @@ frozen order. After this record: item 1 (capacity typing, CAP-v1), item 2
 item 4 (signature and identity sweep: SIG-EPI-v1, SIG-HJ-v1, IDF-v1),
 item 5 (original terms: PIN-CONS-v1, PIN-VE-v1, PIN-SUB-v1, PIN-ROLE-v1,
 PIN-EPIST-v1), item 6 (this record). The semantics stage is COMPLETE as
-pinned; every record it produced awaits the owner's seal; the four
-records reviewed only by orchestrator hand-review (PIN-VE, PIN-SUB,
-PIN-ROLE, PIN-EPIST) are flagged for a genuine independent pass. What
+pinned; every record it produced awaits the owner's seal. All six
+item-5 records and this one have since completed the independent
+external review round of 2026-08-21 with cross-family arbitration
+(audit/20260821-external-review-round/); the hand-review flag is
+discharged. What
 remains is TH-v1's Tranche 3 — fixtures — which requires sealed semantics
 and a genuinely independent audit before any fixture is constructed.
 
