@@ -40,8 +40,8 @@
       "depends_on": [],
       "worker": "treadle",
       "shas": [
-        "8c357becbe4d13a1b7a4f15b8a3a2c24bb7b3e2f",
-        "eb8f602d3f2c6a0a2b9d0f2e2a2a0d0f00000000"
+        "8c357becbefd13e7bea36409ceede320c2101462",
+        "eb8f602241e6508ec5f976d530d38c5f71e42fa0"
       ]
     }
   }
