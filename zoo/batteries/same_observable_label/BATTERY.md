@@ -161,15 +161,15 @@ valueOf = {(o10,23.0), (o11,23.0)}
 
 | ID | Type | Hash (content digest) |
 |----|------|-----------------------|
-| P1 | positive | a1b2c3 |
-| P2 | positive | d4e5f6 |
-| P3 | positive | g7h8i9 |
-| N1 | near-miss (paired with P1) | j0k1l2 |
-| N2 | near-miss (paired with P2) | m3n4o5 |
-| N3 | near-miss (paired with P3) | p6q7r8 |
-| WALL-WEAK | corridor wall (too-weak) | s9t0u1 |
-| WALL-STRONG | corridor wall (too-strong) | v2w3x4 |
-| B1 | boundary (OPEN) | y5z6a7 |
+| P1 | positive | 56fd5d5a6807 |
+| P2 | positive | 93b762c5cef5 |
+| P3 | positive | 3b9c7d783b1a |
+| N1 | near-miss (paired with P1) | 086069914da9 |
+| N2 | near-miss (paired with P2) | a2336ef30226 |
+| N3 | near-miss (paired with P3) | bc073b3d2140 |
+| WALL-WEAK | corridor wall (too-weak) | 0765ce69bf68 |
+| WALL-STRONG | corridor wall (too-strong) | bf5bfe3e7890 |
+| B1 | boundary (OPEN) | 59684054ea58 |
 
 ## Minimal-pair summary
 
