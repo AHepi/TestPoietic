@@ -4,6 +4,22 @@
     "wip_limit": 2
   },
   "tasks": {
+    "BAT-DigestHardenedAccept": {
+      "accept": "python3 scripts/battery_digest.py zoo/batteries/same_observable_label/BATTERY.md --verify",
+      "base": "3c696eb123dc44d8762333f6bf2ff4dbc27db3f7",
+      "cone": [
+        "zoo/batteries/*"
+      ],
+      "depends_on": [],
+      "goal": "Adopt scripts/battery_digest.py --verify as the standard acceptance command for all future battery tasks (proposal for owner approval; do not run)",
+      "notes": [],
+      "out_of_scope": "no pins, no record edits, no manifest changes, no runs without owner approval",
+      "reviewer": "",
+      "shas": [],
+      "state": "DRAFT",
+      "state_ts": 1787321907.3916643,
+      "worker": ""
+    },
     "BAT-SameObservableLabel": {
       "accept": "test -s zoo/batteries/same_observable_label/BATTERY.md",
       "base": "eab1b20b837c76edd99a2afec9d46bd4d164b7fe",
