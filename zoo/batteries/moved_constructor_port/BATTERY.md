@@ -3,10 +3,11 @@
 **Term:** MovedConstructorPort (inventory section 2, N7 row, D12 family)
 
 **Intended meaning:** A structural configuration in which a constructor C,
-originally hosted on port p of boundary B, is hosted on port p' of boundary
-B' after a boundary move, with the move relation linking (B, p) to (B', p').
-
-**BoundaryMove conjunction:** B'!=B AND SameObservableLabel AND MovedConstructorPort.
+originally hosted at port P_from, has been relocated to a different port
+P_to (P_from != P_to), such that (i) C is now hosted at P_to, (ii) P_from
+no longer hosts C, and (iii) an explicit move relation records the
+relocation from P_from to P_to. The moved entity must be a constructor,
+not a plain value or arbitrary function.
 
 ---
 
@@ -14,75 +15,77 @@ B' after a boundary move, with the move relation linking (B, p) to (B', p').
 
 ### P1 - Simple move with explicit vacatur
 
-```text
-boundary B  : port p  hosts constructor C
-boundary B' : port p' hosts constructor C
-move M      : (B, p) -> (B', p')
-vacated     : (B, p) after M
 ```
-
-MovedConstructorPort holds: C moved from (B, p) to (B', p'), and the source
-port is explicitly vacated.
+sorts: Port = {p0, p1}; Constructor = {mk_A}
+is_constructor: {mk_A}
+hosts: {(p1, mk_A)}
+moved: {(mk_A, p0, p1)}
+vacated: {p0}
+```
 
 ### P2 - Move with redirect from old port
 
-```text
-boundary B  : port p  hosted constructor C
-boundary B' : port p' hosts constructor C
-move M      : (B, p) -> (B', p')
-redirect    : requests to (B, p) forward to (B', p')
 ```
-
-MovedConstructorPort holds even though (B, p) is not vacated; the redirect
-is move-evidence, not continued hosting.
+sorts: Port = {q0, q2}; Constructor = {init_B}
+is_constructor: {init_B}
+hosts: {(q2, init_B)}
+moved: {(init_B, q0, q2)}
+vacated: {q0}
+redirects: {(q0, q2)}
+```
 
 ### P3 - Move with provenance record of origin
 
-```text
-boundary B' : port p' hosts constructor C
-provenance  : C.origin = (B, p)
-move M      : (B, p) -> (B', p') recorded at t
 ```
-
-MovedConstructorPort holds on provenance alone; no live observation of the
-source port is required.
+sorts: Port = {r1, r3}; Constructor = {build_C}
+is_constructor: {build_C}
+hosts: {(r3, build_C)}
+moved: {(build_C, r1, r3)}
+vacated: {r1}
+provenance: {(build_C, r1)}
+```
 
 ---
 
-## Near-miss minimal pairs
+## Near-miss negatives (minimal pairs)
 
 ### N1 - Copy, not move (pair with P1)
 
-```text
-boundary B  : port p  hosts constructor C
-boundary B' : port p' hosts constructor C
-copy K      : (B, p) -> (B', p')
+```
+sorts: Port = {p0, p1}; Constructor = {mk_A}
+is_constructor: {mk_A}
+hosts: {(p0, mk_A), (p1, mk_A)}
+moved: {(mk_A, p0, p1)}
+vacated: {}
 ```
 
-Differs from P1 only in the relation label: copy, not move. C is still
-hosted at the source. MovedConstructorPort FAILS.
+**Single difference from P1:** `hosts(p0, mk_A)` is present and `vacated(p0)` is absent - the source port retains the constructor, so this is a copy, not a move.
 
 ### N2 - Different constructor at destination (pair with P2)
 
-```text
-boundary B  : port p  hosted constructor C
-boundary B' : port p' hosts constructor D
-move M      : (B, p) -> (B', p')
-redirect    : requests to (B, p) forward to (B', p')
+```
+sorts: Port = {q0, q2}; Constructor = {init_B, init_B_prime}
+is_constructor: {init_B, init_B_prime}
+hosts: {(q2, init_B_prime)}
+moved: {(init_B, q0, q2)}
+vacated: {q0}
+redirects: {(q0, q2)}
 ```
 
-Differs from P2 only in the destination constructor identity (D != C).
-MovedConstructorPort FAILS: nothing moved.
+**Single difference from P2:** `hosts(q2, init_B_prime)` replaces `hosts(q2, init_B)` - the constructor at the destination is not the one recorded as moved.
 
 ### N3 - No move relation linking source and destination (pair with P3)
 
-```text
-boundary B  : port p  hosts constructor C
-boundary B' : port p' hosts constructor C
+```
+sorts: Port = {r1, r3}; Constructor = {build_C}
+is_constructor: {build_C}
+hosts: {(r3, build_C)}
+moved: {}
+vacated: {r1}
+provenance: {(build_C, r1)}
 ```
 
-Differs from P3 only in the absence of any move/provenance record. Two
-ports hosting C with no linking move relation. MovedConstructorPort FAILS.
+**Single difference from P3:** `moved(build_C, r1, r3)` is absent - the constructor appears at r3 and r1 is vacated, but no explicit move relation connects them.
 
 ---
 
@@ -90,42 +93,45 @@ ports hosting C with no linking move relation. MovedConstructorPort FAILS.
 
 ### W-WEAK - Too-weak reading wrongly admits: non-constructor moved between ports
 
-```text
-boundary B  : port p  holds value v
-boundary B' : port p' holds value v
-move M      : (B, p) -> (B', p') of value v
+```
+sorts: Port = {s0, s1}; Constructor = {}; Value = {val_X}
+is_constructor: {}
+is_value: {val_X}
+hosts: {(s1, val_X)}
+moved: {(val_X, s0, s1)}
+vacated: {s0}
 ```
 
-A too-weak reading (anything relocated between ports counts) wrongly admits
-this. v is a value, not a constructor. MovedConstructorPort must FAIL here.
+**Why the too-weak reading admits it:** The weak reading only checks "something moved from one port to another with vacatur" and ignores the constructor requirement. `val_X` is a plain value, not a constructor, so the intended meaning must exclude this.
 
 ### W-STRONG - Too-strong reading wrongly excludes: implicit vacatur (no explicit vacated relation)
 
-```text
-boundary B  : port p  hosted constructor C
-boundary B' : port p' hosts constructor C
-move M      : (B, p) -> (B', p')
+```
+sorts: Port = {t0, t1}; Constructor = {mk_D}
+is_constructor: {mk_D}
+hosts: {(t1, mk_D)}
+moved: {(mk_D, t0, t1)}
+vacated: {}
 ```
 
-A too-strong reading (explicit vacatur required) wrongly excludes this.
-Vacatur may be implicit in the move. MovedConstructorPort must HOLD here.
+**Why the too-strong reading excludes it:** The strong reading requires an explicit `vacated(t0)` relation. Here `hosts(t0, mk_D)` is absent, so t0 is implicitly vacated, but no explicit vacated relation is recorded. The intended meaning should admit this because the constructor is genuinely gone from t0.
 
 ---
 
-## Boundary questions
+## Boundary case
 
 ### B1 - OPEN: Destination port aliased back to source port
 
-```text
-boundary B  : port p  hosted constructor C
-boundary B' : port p' hosts constructor C
-move M      : (B, p) -> (B', p')
-alias       : (B', p') resolves to (B, p)
+```
+sorts: Port = {u0, u1}; Constructor = {mk_E}
+is_constructor: {mk_E}
+hosts: {(u1, mk_E)}
+moved: {(mk_E, u0, u1)}
+vacated: {u0}
+alias: {(u0, u1)}
 ```
 
-If the destination port is aliased back to the source, did the constructor
-port move? OPEN - needs an owner decision on whether alias-resolved identity
-collapses the move.
+**Question:** If the destination port u1 is aliased back to the source port u0, does the move collapse to a no-op (the constructor is effectively still at the same logical port), or does the physical relocation to u1 still constitute a genuine MovedConstructorPort? The aliasing relation makes u0 and u1 referentially equivalent, but the `moved` and `hosts` relations distinguish them as distinct ports.
 
 ---
 
@@ -133,12 +139,12 @@ collapses the move.
 
 | id | digest |
 |----|--------|
-| P1 | 59b3835581b3 |
-| P2 | 9ab4d08e1c6f |
-| P3 | 92bfc3a503ba |
-| N1 | 80cef63c387a |
-| N2 | 762d194fa3a5 |
-| N3 | e7e8769d3e16 |
-| W-WEAK | d4bd04dd1b63 |
-| W-STRONG | e7f0b4b5b598 |
-| B1 | 15db59b249cd |
+| P1 | 2aef486d3494 |
+| P2 | d9f075e5363a |
+| P3 | 11e68ce004c3 |
+| N1 | a80b0264b036 |
+| N2 | c0de96c9fa2e |
+| N3 | 756994d89d04 |
+| W-WEAK | 929652f0415e |
+| W-STRONG | 58b0d18b6dac |
+| B1 | 6098f4792066 |
