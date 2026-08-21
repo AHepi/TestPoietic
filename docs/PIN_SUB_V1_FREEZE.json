@@ -3,12 +3,12 @@
   "record_id": "PIN-SUB-v1",
   "version": "1.0",
   "date": "2026-08-21",
-  "status": "DRAFT_PENDING_REVIEW",
+  "status": "REVIEWED_PENDING_OWNER_SEAL",
   "shared_container": false,
   "official_file": "PIN_SUB_V1.md",
-  "official_sha256": "5338ffa35f5248219cc748f274be8e59ca32a944e5f0bd1762ae78fa6af1b136",
+  "official_sha256": "50c4725e2c158fdaa105c475c2d628d2ca24961b775252934567370b258e8686",
   "plain_language_file": "PIN_SUB_V1_PLAIN_LANGUAGE.md",
-  "plain_language_sha256": "7f1f21c2c67c95e40dc9b623573211fea6f769688b8e5adbc38e232b8d0e4c43",
+  "plain_language_sha256": "f42ce0bf9025e1dab403b01dc2f9eb40c00a48d05cd7b35f273ea08819e7a6c9",
   "parent_records": [
     {
       "file": "PIECEMEAL_PREMISE_CALCULUS.md",
@@ -32,22 +32,22 @@
     },
     {
       "file": "PIN_CONS_V1.md",
-      "sha256": "3c5c17e98e69f0de6e22dfbce14b18c2fc1093066c5475f99c43a749d0df0d3a"
+      "sha256": "39b9f7b51d86eb2961a16b05ead159b1daaffb5b9510f99722095fd5690d1ce5"
     },
     {
       "file": "PIN_VE_V1.md",
-      "sha256": "1c074cf7eef9ad473e63a4fe50621985282b2a018f1fea33da30218fa6c493aa"
+      "sha256": "0042a219cd74848a2709d1e03fa2090ca46dcb81002f0a2c0dd1b335e9a06d72"
     },
     {
       "file": "RECORD_PUBLICATION_STANDARD_V1.md",
       "sha256": "38f37a7b638be960fdd47ce24d95c8cea67bb49ab2d28a9c8af9c667d6f83348"
     }
   ],
-  "scope": "joint original-side pins for SameSyntax and RealizationEq (DSF-v1 family D19), the two conjuncts of the SameLabelSwap abbreviation at calculus (63), feeding N-row N18 and the K_REALIZATION_EQUIVALENCE certificate row with its pi_{R_eq} report",
+  "scope": "joint original-side pins for SameSyntax and RealizationEq (DSF-v1 family D19), the two conjuncts of the SameLabelSwap abbreviation at calculus (63), feeding N-row N18 (NE_SUBSTRATE_SWAP_NOT_AUTOMATIC) and the K_REALIZATION_EQUIVALENCE certificate row with its pi_{R_eq} report",
   "claims": [
     "PIN-SUB-D1: SameSyntax pinned as equality of declared syntactic presentation tokens, with no task/role/environment/content condition (definition; load-bearing)",
     "PIN-SUB-D2: RealizationEq pinned as equality of the counterfactual causal role profile relative to the declared task and environment (definition; load-bearing; output-match and substrate-independent readings rejected)",
-    "PIN-SUB-A1: joint independence acceptance axiom — both the swap-exists and no-swap combinations remain satisfiable after pinning (structures M1/M2 exhibited)",
+    "PIN-SUB-A1: joint independence acceptance axiom \u2014 both the swap-exists and no-swap combinations remain satisfiable after pinning (structures M1/M2 exhibited)",
     "the joint pin neither forces nor forbids a SameLabelSwap witness and leaves the K_REALIZATION_EQUIVALENCE existential undecided"
   ],
   "non_claims": [
@@ -56,7 +56,7 @@
     "does not edit the frozen calculus, SPA-v1, or any sealed record",
     "does not decide the K_REALIZATION_EQUIVALENCE existential",
     "does not prove creativity or non-creativity",
-    "is not sealed; status DRAFT_PENDING_REVIEW"
+    "is not sealed; sealing is owner-only; status REVIEWED_PENDING_OWNER_SEAL"
   ],
   "caveat_crosswalk": [
     {
@@ -69,7 +69,7 @@
     {
       "official_item_id": "PIN-SUB-ANCHORS",
       "type": "condition",
-      "official_location": "Section 2, Exact anchors ((63), K_REALIZATION_EQUIVALENCE row, R_EQ_APP/NA, pi_{R_eq} (62a), N18 row, control surface) — display-form transcriptions labeled as such",
+      "official_location": "Section 2, Exact anchors ((63), K_REALIZATION_EQUIVALENCE row, R_EQ_APP/NA, pi_{R_eq} (62a), N18 row, control surface) \u2014 display-form transcriptions labeled as such",
       "plain_language_location": "What this is",
       "checked": true
     },
@@ -121,14 +121,28 @@
       "official_location": "Section 9, Residual status and next checkpoint",
       "plain_language_location": "What happens next",
       "checked": true
+    },
+    {
+      "official_item_id": "PIN-SUB-NO-CREATIVITY",
+      "type": "non-claim",
+      "official_statement": "does not identify any original predicate with an F-prefixed fragment predicate; does not prove creativity or non-creativity",
+      "plain_language_location": "What did NOT change",
+      "checked": true
     }
   ],
   "verification": {
-    "independent_mathematical_review": "NONE AVAILABLE — orchestrator hand-review only (subagent reviewer pool withdrawn mid-session); independence downgraded and disclosed",
+    "independent_mathematical_review": "PASS with 3 MINOR findings by independent external reviewer, all 3 CONFIRMED by independent arbiter (different model family), all repaired in v1; supersedes the disclosed orchestrator hand-review",
     "publication_review": "PENDING",
-    "decisions_made": ["PIN-SUB-D1", "PIN-SUB-D2"],
-    "acceptance_axioms_added": ["PIN-SUB-A1"],
-    "open_items_recorded": ["PIN-SUB-OPEN-1"],
+    "decisions_made": [
+      "PIN-SUB-D1",
+      "PIN-SUB-D2"
+    ],
+    "acceptance_axioms_added": [
+      "PIN-SUB-A1"
+    ],
+    "open_items_recorded": [
+      "PIN-SUB-OPEN-1"
+    ],
     "load_bearing_choices": [
       "PIN-SUB-D1 (SS-presentation selected; task-invariant reading would destroy conjunct independence; physical reading would decide N18 negatively)",
       "PIN-SUB-D2 (RE-role selected; output-match and substrate-independent readings would destroy or contradict SameLabelSwap)"

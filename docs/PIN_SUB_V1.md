@@ -3,7 +3,7 @@
 record_id: PIN-SUB-v1
 version: 1.0
 date: 2026-08-21
-status: DRAFT_PENDING_REVIEW
+status: REVIEWED_PENDING_OWNER_SEAL
 official_file: PIN_SUB_V1.md
 plain_language_file: PIN_SUB_V1_PLAIN_LANGUAGE.md
 digest_manifest: PIN_SUB_V1_FREEZE.json
@@ -67,8 +67,8 @@ NC_UNCONSTRAINED_SUBSTRATE_SWAP consumes it; that control's six-coordinate
 vector is recorded in the ledger and is unchanged by this record.
 
 DSF-v1 anchors: Section 6 family D19 — "SameLabelSwap (63), SameSyntax,
-RealizationEq | Rfull | N18 | OPEN"; Section 12 lists SameSyntax and
-RealizationEq among the uninterpreted N-only leaves, and RealizationEq
+RealizationEq | Rfull | N18 | OPEN"; Section 12 lists SameSyntax
+among the uninterpreted N-only leaves, and RealizationEq
 among the open load-bearing originals; Section 8 row N18 is OPEN with DO
 NOT TEST OR REPAIR. The stress-test campaign's target-essentiality finding
 ("target variation changes only idle metadata while the operative program

@@ -1,8 +1,9 @@
 # PIN-SUB-v1 in Plain Language
 
 record: PIN-SUB-v1 (official file: PIN_SUB_V1.md)
-status: DRAFT_PENDING_REVIEW — orchestrator hand-review only; no
-independent reviewer was available
+status: REVIEWED_PENDING_OWNER_SEAL — independent review complete (PASS
+with three minor findings, all confirmed by an independent arbiter, all
+repaired). Previously: orchestrator hand-review only.
 
 ## What this is
 
@@ -44,7 +45,9 @@ the row; both are recorded with reasons.
 Nothing was tested, repaired, or discharged; N18 keeps its do-not-test
 marking and stays open. Counts stand at 0 pinned, 2 partial, 18 open;
 zero discharged; testing PROHIBITED. The calculus, SPA-v1, and all sealed
-records are unedited. The report pipeline that reads the
+records are unedited. No original predicate was identified with any
+F-prefixed fragment predicate, and nothing was proved about creativity
+or non-creativity in any real system. The report pipeline that reads the
 realization-equivalence certificate row is untouched, and that
 certificate's own existential stays undecided by these pins. One open
 item is recorded: whether the role profile needs a minimum variant family
