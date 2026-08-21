@@ -3,7 +3,7 @@
 record_id: PIN-EPIST-v1
 version: 1.0
 date: 2026-08-21
-status: DRAFT_PENDING_REVIEW
+status: REVIEWED_PENDING_OWNER_SEAL
 official_file: PIN_EPIST_V1.md
 plain_language_file: PIN_EPIST_V1_PLAIN_LANGUAGE.md
 digest_manifest: PIN_EPIST_V1_FREEZE.json

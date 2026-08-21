@@ -1,8 +1,10 @@
 # PIN-EPIST-v1 in Plain Language
 
 record: PIN-EPIST-v1 (official file: PIN_EPIST_V1.md)
-status: DRAFT_PENDING_REVIEW — orchestrator hand-review only; no
-independent reviewer was available
+status: REVIEWED_PENDING_OWNER_SEAL — independent review complete (five
+findings raised; independent arbiter refuted all five with quoted
+evidence; record stands as drafted). Previously: orchestrator
+hand-review only at first.
 
 ## What this is
 
