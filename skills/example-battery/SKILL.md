@@ -27,7 +27,12 @@ Before any clause about a term's meaning is written, build its battery.
 5. If you cannot construct three positives, the term is not understood
    well enough to pin: record what blocks each attempted instance and
    stop. That record is the deliverable.
-6. Battery instances carry ids and hashes; they are proto-members of the
-   model zoo and feed the denotation tests. Never delete a battery
+6. Battery instances carry ids and content digests; they are proto-members
+   of the model zoo and feed the denotation tests. You NEVER compute a
+   digest yourself: write PENDING-DIGEST in the registry's digest column.
+   Digests are computed and verified by scripts/battery_digest.py
+   (sha256 over the instance's fenced structure blocks), which the task's
+   acceptance command runs in --verify mode; a self-invented hash is a
+   fabrication and fails acceptance. Never delete a battery
    instance a pin fails on; a failed instance is evidence, not clutter.
 <!-- PROMPT-CORE-END -->
