@@ -35,4 +35,20 @@ Before any clause about a term's meaning is written, build its battery.
    acceptance command runs in --verify mode; a self-invented hash is a
    fabrication and fails acceptance. Never delete a battery
    instance a pin fails on; a failed instance is evidence, not clutter.
+7. STRICT FILE GRAMMAR (the acceptance script parses this mechanically):
+   - Write ONLY ASCII characters: no em-dashes, arrows, or math symbols;
+     use "-", "->", "!=".
+   - Every instance heading is exactly "### <ID> - <title>" where ID
+     matches [A-Za-z0-9_-]+ (for example "### P1 - Simple move"). Use no
+     other "###" headings: do not write "### Pair 1", and put no
+     parenthetical between the ID and the dash.
+   - Each instance contains at least one fenced code block (three
+     backticks) holding the explicit structure; the content digest is
+     computed over exactly those blocks.
+   - End with one section whose heading contains the word "Registry"
+     (for example "## Instance registry") holding a two-column table:
+     | id | digest |
+     |----|--------|
+     | P1 | PENDING-DIGEST |
+     with one row per instance and ids exactly matching the headings.
 <!-- PROMPT-CORE-END -->
