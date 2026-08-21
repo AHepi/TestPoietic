@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Compute and verify per-instance content digests in a battery file.
 
-Battery instances are '### <ID> — <title>' sections each containing at
+Battery instances are '### <ID> - <title>' sections each containing at
 least one fenced code block (the explicit structure). The digest of an
 instance is sha256 over the concatenated contents of its fenced blocks
 (in the order they appear), UTF-8, with trailing whitespace stripped per
@@ -19,7 +19,7 @@ import hashlib
 import re
 import sys
 
-HEAD = re.compile(r"^###\s+([A-Za-z0-9_-]+)\s+[—\-]")
+HEAD = re.compile(r"^###\s+([A-Za-z0-9_-]+)\s+[-\u2014]")
 FENCE = re.compile(r"^```")
 ROW = re.compile(r"^(\|\s*([A-Za-z0-9_-]+)\s*\|[^|]*\|)\s*[^|]*\|")
 PENDING = "PENDING-DIGEST"
@@ -68,14 +68,19 @@ def rewrite(text: str, digests: dict[str, str]) -> tuple[str, list[str]]:
     missing = []
     in_registry = False
     for line in text.splitlines():
-        if line.strip().lower().startswith("## instance registry"):
+        h = line.strip().lower()
+        if h.startswith("##") and "registry" in h:
             in_registry = True
         elif line.startswith("## ") and in_registry:
             in_registry = False
-        if in_registry:
-            m = ROW.match(line)
-            if m and m.group(2) in digests:
-                line = f"{m.group(1)} {digests[m.group(2)][:12]} |"
+        if in_registry and line.lstrip().startswith("|"):
+            cells = [c.strip() for c in line.split("|")]
+            # cells: ['', id, ..., '']; replace last content cell with digest
+            if (len(cells) >= 4 and cells[1] in digests
+                    and not set(cells[1]) <= set("-: ")
+                    and cells[2] and not set(cells[2]) <= set("-: ")):
+                cells[-2] = digests[cells[1]][:12]
+                line = "| " + " | ".join(c for c in cells[1:-1]) + " |"
         out.append(line)
     for iid in digests:
         if not any(f"| {iid} " in l or f"|{iid} " in l or f"| {iid} " in l
@@ -108,6 +113,9 @@ def main() -> int:
         print(f"OK: wrote {len(digests)} digests into {path}")
         return 0
     # --verify
+    if PENDING in text:
+        print("FAIL: PENDING-DIGEST markers remain; run --write first")
+        return 1
     if new_text != text:
         bad = [iid for iid, d in digests.items()
                if f"| {d[:12]} |" not in text]
