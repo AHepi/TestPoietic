@@ -6,7 +6,7 @@
   "status": "DRAFT_PENDING_REVIEW",
   "shared_container": false,
   "official_file": "BRIDGE_REVIEW_V1.md",
-  "official_sha256": "6b2c9bfa6228d756fd4c0e3fa8ab9d8bd0d0693184cf3230a4805f793c66fbf3",
+  "official_sha256": "5ddd3fd08169d54d7473b8c1fe9f866acc690edd44c1a93679b2e7c871eb2715",
   "plain_language_file": "BRIDGE_REVIEW_V1_PLAIN_LANGUAGE.md",
   "plain_language_sha256": "69ba63d3c4c9b34432d712674ad7cddae968d5b2872c9f9eab7efaa33dbb547c",
   "parent_records": [
