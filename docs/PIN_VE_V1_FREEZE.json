@@ -1,0 +1,149 @@
+{
+  "schema": "TESTPOIETIC_RECORD_FREEZE_V1",
+  "record_id": "PIN-VE-v1",
+  "version": "1.0",
+  "date": "2026-08-21",
+  "status": "DRAFT_PENDING_REVIEW",
+  "shared_container": false,
+  "official_file": "PIN_VE_V1.md",
+  "official_sha256": "1c074cf7eef9ad473e63a4fe50621985282b2a018f1fea33da30218fa6c493aa",
+  "plain_language_file": "PIN_VE_V1_PLAIN_LANGUAGE.md",
+  "plain_language_sha256": "d1b13c5c05f5bf54ce4a9fa3c72e5f9a345f77ecbe1bd3f94753685cf19d3696",
+  "parent_records": [
+    {
+      "file": "PIECEMEAL_PREMISE_CALCULUS.md",
+      "sha256": "0984453690cd1f9ebcb01bf694cb3ad72f587ad5610e11222a3e0893ddbce055"
+    },
+    {
+      "file": "ORIGINAL_TERMS_INVENTORY.md",
+      "sha256": "fe4e1f9a8c08a5179d45b1167ca23437085213695ba77d85a53e0a26e8c575bb"
+    },
+    {
+      "file": "PIECEMEAL_SEMANTIC_ANNEX_V1.md",
+      "sha256": "a9f62ebbd086a0499893f57a566f6b769a1b64fc27dfe15dd640a8c1f5e200a0"
+    },
+    {
+      "file": "SPA_PIN_ERRATUM_V1.md",
+      "sha256": "0e9959de220088adadfcd670520c04a520314e7870d340ea5bf5d0d3dc74f2a1"
+    },
+    {
+      "file": "DOWNSTREAM_SEMANTIC_FREEZE_V1.md",
+      "sha256": "961e2b476f7bd93d208f19ad0e6b964a2db4495c00b8731b43ba732b076198a1"
+    },
+    {
+      "file": "PIN_CONS_V1.md",
+      "sha256": "3c5c17e98e69f0de6e22dfbce14b18c2fc1093066c5475f99c43a749d0df0d3a"
+    },
+    {
+      "file": "RECORD_PUBLICATION_STANDARD_V1.md",
+      "sha256": "38f37a7b638be960fdd47ce24d95c8cea67bb49ab2d28a9c8af9c667d6f83348"
+    }
+  ],
+  "scope": "original-side candidate pins for RepresentedConjecture and TheoryMediatedCriticism (DSF-v1 family D16), feeding N-row N15 and touching the V_FALLIBILITY certificate row",
+  "claims": [
+    "PIN-VE-D1: RepresentedConjecture pinned as declared content tokens (problem, answer) with a derives-link in the lineage's own records (definition; load-bearing; behavioral and source-literal readings rejected)",
+    "PIN-VE-D2: TheoryMediatedCriticism pinned as elimination mediated by an account-derived discriminator (definition; load-bearing; any-selection and full-package readings rejected)",
+    "non-deciding two-structure argument for both N15 denial limbs (S1 analogue without representation/theory-mediation, S2 with both, identical on all premises of bridge rule (36))",
+    "D2 selection keeps the frozen V_FALLIBILITY certificate row coherent in both directions"
+  ],
+  "non_claims": [
+    "does not test, discharge, or change any original N-row",
+    "does not move any readiness count (PINNED=0, PARTIAL=2, OPEN=18 stand)",
+    "does not edit the frozen calculus, SPA-v1, or any sealed record",
+    "does not strengthen the B-grade bridge (36) into an identity",
+    "does not identify any original predicate with an F-prefixed fragment predicate",
+    "does not prove creativity or non-creativity",
+    "is not sealed; status DRAFT_PENDING_REVIEW"
+  ],
+  "caveat_crosswalk": [
+    {
+      "official_item_id": "PIN-VE-SCOPE",
+      "type": "condition",
+      "official_location": "Section 1, Scope and method",
+      "plain_language_location": "What this is",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-VE-ANCHORS",
+      "type": "condition",
+      "official_location": "Section 2, Exact anchors (bridge (36), PAT_VE (35a), FallSel (27a), V_FALLIBILITY row, N15 row) — display-form transcriptions labeled as such",
+      "plain_language_location": "What this is",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-VE-D1",
+      "type": "claim",
+      "official_location": "Section 3, PIN-VE-D1 with three options stated",
+      "plain_language_location": "Why the definitions are careful; What was rejected",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-VE-D2",
+      "type": "claim",
+      "official_location": "Section 4, PIN-VE-D2 with three options stated and V_FALLIBILITY coherence constraint",
+      "plain_language_location": "Why the definitions are careful (second trap)",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-VE-NONDECIDING",
+      "type": "result status",
+      "official_location": "Section 5, Non-deciding argument (S1/S2)",
+      "plain_language_location": "Why the definitions are careful",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-VE-OPEN1",
+      "type": "uncertainty",
+      "official_location": "Section 6, PIN-VE-OPEN-1 (V_FALLIBILITY satisfiability review obligation on future TMC tightening)",
+      "plain_language_location": "What did NOT change (open item)",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-VE-CONES",
+      "type": "result status",
+      "official_location": "Section 7, Affected dependency cones",
+      "plain_language_location": "What did NOT change",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-VE-FORBIDDEN",
+      "type": "non-claim",
+      "official_location": "Section 8, Forbidden items",
+      "plain_language_location": "What did NOT change",
+      "checked": true
+    },
+    {
+      "official_item_id": "PIN-VE-RESIDUAL",
+      "type": "result status",
+      "official_location": "Section 9, Residual status and next checkpoint",
+      "plain_language_location": "What happens next",
+      "checked": true
+    }
+  ],
+  "verification": {
+    "independent_mathematical_review": "NONE AVAILABLE — orchestrator hand-review only (subagent reviewer pool withdrawn mid-session); independence downgraded and disclosed",
+    "publication_review": "PENDING",
+    "decisions_made": ["PIN-VE-D1", "PIN-VE-D2"],
+    "acceptance_axioms_added": [],
+    "open_items_recorded": ["PIN-VE-OPEN-1"],
+    "load_bearing_choices": [
+      "PIN-VE-D1 (RC-representation selected; behavioral reading would collapse N15, source-literal would manufacture its witness)",
+      "PIN-VE-D2 (TMC-account-mediated selected; any-selection breaks V_FALLIBILITY, full-package trivializes its negation)"
+    ],
+    "non_deciding": "PASS claimed via S1/S2 pair differing only in declared content/criticism data; scope disclosed: S1 shows consistency of the N15 shape with the pins, not a countermodel certificate",
+    "steering_defense": "RATIONALE_BASED_ONLY",
+    "original_n_row_readiness": {
+      "PINNED": 0,
+      "PARTIAL": 2,
+      "OPEN": 18
+    },
+    "original_n_rows_discharged": 0,
+    "testing_status": "PROHIBITED",
+    "notes": [
+      "anchors transcribed from display/math form and labeled as transcriptions, not byte quotes",
+      "SPA-v1 parent digest pinned per ERR-SPA-v1 to a9f62ebb...; retired 40681e6c... not used",
+      "the frozen V_FALLIBILITY row's ¬TMC conjunct constrained the D2 selection; disclosed in Section 4",
+      "DSF-B1 bridge (36) keeps grade B, unclaimed; no head-report change"
+    ]
+  }
+}
