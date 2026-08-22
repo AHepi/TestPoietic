@@ -193,6 +193,42 @@
       "verify": "",
       "worker": "treadle"
     },
+    "BAT-Possible": {
+      "accept": "python3 scripts/battery_digest.py zoo/batteries/possible/BATTERY.md --write && python3 scripts/battery_digest.py zoo/batteries/possible/BATTERY.md --verify",
+      "base": "ebcb98aba5636792619823021a6f131029b91bab",
+      "claim_token": 1,
+      "cone": [
+        "zoo/batteries/possible/*"
+      ],
+      "depends_on": [],
+      "goal": "Author an example battery for the Possible term (Possible_Phi) (T3 cluster; inventory section 5; anchors: the N10 row Possible_Phi(T) AND NOT exists b,k PK^cur; fixture PossibleTaskOnly in (62b); family D14). The fragment has NO direct pin candidate. Source-grade constraint: CT_FOUNDATION (constructor-theoretic task possibility, arXiv:1210.7439 sections 3.1-3.2) supplies a physical possibility notion -- a D/P-grade anchor that constrains but does not operationally define the audit-level predicate. Risk corridor (inventory risk: medium): too-weak -- pinning Possible as mere absence of a current PK bearer (NOT exists b,k PK^cur alone), which collapses the N10 conjunction into redundancy: a task with no current PK that is nevertheless physically impossible (constructor-theoretically impossible) would be wrongly admitted, destroying the N10 distinction; too-strong -- pinning Possible as demonstrated realizability (an actual constructor or witnessed construction exists for T), which wrongly excludes tasks that physical law permits but nothing has yet realized (PossibleTaskOnly shape). Positives, near-miss minimal pairs, both corridor walls, one OPEN boundary question. Keep consistent with the Record, Deduction, Prediction, and Pass batteries (zoo/batteries/record/BATTERY.md, zoo/batteries/deduction/BATTERY.md, zoo/batteries/prediction/BATTERY.md, zoo/batteries/pass/BATTERY.md sit in the zoo). Grammar: the FORMAT.md grammar is provided to you as a READ-ONLY REFERENCE section in your context; conform byte-exactly; ids P1..P4/N1..N4/B1 with N4 = too-weak wall and P4 = too-strong wall; wall rows use kind positive or near-miss with the wall role in the heading; near-misses must be pairwise DISTINCT in the clause that admits them (no two N-instances the same single-bit flip of structurally the same positive); any structural assumption not present in the inventory candidate becomes a B instance or is omitted, never a silent positive; every digest cell is the literal PENDING-DIGEST.",
+      "notes": [
+        {
+          "by": "orchestrator",
+          "note": "review: 9/9 digests verified; fabrication negative test FAILs as required; near-misses pairwise distinct (N1..N4 each flip law_permits_constructor on structurally distinct positives P1..P4 with distinct constructor_realized/pk_bearer_exists bit patterns); P4 too-strong wall = PossibleTaskOnly shape (possible, unrealized, no PK), N4 too-weak wall = no-PK-but-impossible; B1 OPEN on compositional possibility (decomposes relation explicitly flagged, no silent assumption); N10 anchor respected -- Possible_Phi independent of pk_bearer_exists; first-attempt commit 39397f94c0, single battery call (glm-5.2)",
+          "result": "PASS"
+        }
+      ],
+      "out_of_scope": "everything outside the cone; no edits to existing batteries, scripts, skills, rules, or docs; testing remains PROHIBITED; no sealing",
+      "reads": [
+        [
+          "zoo/batteries/FORMAT.md",
+          "58e13e137cc7137c7249e72776f2a27e842bb062e29fbefc34ab616bd0b32371"
+        ],
+        [
+          "skills/example-battery/SKILL.md",
+          "7273d3008a9e3f6fb99f742acd57a5a70164fac6706989d8cf8a0fc1b8132be7"
+        ]
+      ],
+      "reviewer": "orchestrator",
+      "shas": [
+        "39397f94c047319ed781bf8ebfbc64a8f38effdd"
+      ],
+      "state": "DONE",
+      "state_ts": 1787439373.388473,
+      "verify": "",
+      "worker": "treadle"
+    },
     "BAT-Prediction": {
       "accept": "python3 scripts/battery_digest.py zoo/batteries/prediction/BATTERY.md --write && python3 scripts/battery_digest.py zoo/batteries/prediction/BATTERY.md --verify",
       "base": "7fb48ceab429b6a9f458ce7b5d7191e320caa10b",
