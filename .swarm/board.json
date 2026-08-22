@@ -28,6 +28,30 @@
       "state_ts": 1787392905.2598438,
       "worker": "treadle"
     },
+    "BAT-Deduction": {
+      "accept": "python3 scripts/battery_digest.py zoo/batteries/deduction/BATTERY.md --write && python3 scripts/battery_digest.py zoo/batteries/deduction/BATTERY.md --verify",
+      "base": "f2e9af63959a39fc30435039297ed56b0cf6b7df",
+      "cone": [
+        "zoo/batteries/deduction/*"
+      ],
+      "depends_on": [],
+      "goal": "Author an example battery for the Deduction term (T3 cluster; inventory section 8; anchors: channel typing in calculus (28) omega_chi in Observation disjoint-union Deduction disjoint-union Prediction; N13 row Record(o_chi) OR Deduction(d_chi) OR Prediction(d_chi); fixture in (62b); families D15/D5). Fragment pin candidate FDerives is a C_DISCRIMINATOR ingredient whose Derives_eta(A-_chi AND Xi_chi, d_chi) form is package-internal (inventory section 3.4(3): lacks complete displayed signature); the bare Deduction(d_chi) must be definable WITHOUT the critical package. Risk corridor: too-weak -- pinning Deduction so that any claimed conclusion counts as a deduction regardless of derivability from the package content (the too-weak wall: a conclusion with no derivation link to A-_chi AND Xi_chi treated as a deduction, wrongly admitted); too-strong -- pinning Deduction so that only package-internal FDerives-shaped derivations count (the too-strong wall: a genuine bare derivation from the theory content, presented outside any critical package, wrongly excluded). Positives, near-miss minimal pairs, both corridor walls, one OPEN boundary question. Keep consistent with the Record battery (zoo/batteries/record/BATTERY.md sits in the zoo; the N13 row is shared). Grammar: the FORMAT.md grammar is provided to you as a READ-ONLY REFERENCE section in your context; conform byte-exactly; ids P1..P4/N1..N4/B1 with N4 = too-weak wall and P4 = too-strong wall; wall rows use kind positive or near-miss with the wall role in the heading (0.2.1 vocabulary); every digest cell is the literal PENDING-DIGEST.",
+      "notes": [
+        {
+          "by": "unknown",
+          "note": "Post-run audit (fourth run under treadle 0.2.1 engine; 0.3.0 assets applied): FIRST-ATTEMPT commit, single call, finish=stop at 16000. 9/9 digests verify; structure 3P/3N minimal pairs (missing derivation link, channel mis-tag, broken chain) + P4 too-strong wall (genuine BareDerives outside any CritPkg wrongly excluded) + N4 too-weak wall (claimed conclusion with no derivation link wrongly admitted) + B1 OPEN (derivation from a proper subset of A-_chi AND Xi_chi); 0.2.1 kind vocabulary; fabrication negative test fails as required. Grading REVIEWED_LOCAL_OBJECTS: driver push=auto failed (no git creds in sandbox); content pushed via MCP. Local sha 29ef3fca (driver commit); reviewable remote object pending push.",
+          "result": "PASS"
+        }
+      ],
+      "out_of_scope": "everything outside the cone; no edits to existing batteries, scripts, skills, rules, or docs; testing remains PROHIBITED; no sealing",
+      "reviewer": "orchestrator",
+      "shas": [
+        "29ef3fca0df7751b9a9f8be4332f02ff427eae88"
+      ],
+      "state": "DONE",
+      "state_ts": 1787408197.1402242,
+      "worker": "treadle"
+    },
     "BAT-DigestHardenedAccept": {
       "accept": "python3 scripts/battery_digest.py zoo/batteries/same_observable_label/BATTERY.md --verify",
       "base": "3c696eb123dc44d8762333f6bf2ff4dbc27db3f7",
