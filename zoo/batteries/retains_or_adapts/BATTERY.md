@@ -151,7 +151,7 @@ Relations:
   defined_in     = {}
   placed_in      = {(v3, Up)}
   behavior       = {(v3, Up, compare_triples)}
-  requires       = {(U, compare_pairs), (Up, compare_triples)}
+  requires     = {(U, compare_pairs), (Up, compare_triples)}
   outcome        = {(v3, Up, pass)}
   core_unchanged = {}
 
@@ -163,7 +163,7 @@ Difference from P3: defined_in(v3, U) is absent; v3 is never placed_in U.
 
 ---
 
-### W1 - Too-weak wall: finite-suite success extends to U'
+### N4 - Too-weak wall: finite-suite success extends to U'
 
 The too-weak reading admits this instance: a variant passes a finite
 test suite in U, and that finite success is taken as evidence of
@@ -206,7 +206,7 @@ Intended reading: EXCLUDES RetainsOrAdapts(v4, U, Up).
 
 ---
 
-### W2 - Too-strong wall: always fails outside U
+### P4 - Too-strong wall: always fails outside U
 
 The too-strong reading excludes this instance: it demands that any
 variant outside U must fail.  The intended reading must ADMIT it
@@ -271,16 +271,16 @@ OPEN: Does RetainsOrAdapts(v6, U, Up) hold when Up imposes no
 
 ---
 
-## Instance registry
+## Registry
 
-| id | digest |
-|----|--------|
-| P1 | 26d11872ccb6 |
-| N1 | 50bcafc45c66 |
-| P2 | 5869a308b4c0 |
-| N2 | 80efcb11a8af |
-| P3 | 9b775d29c4a0 |
-| N3 | e05a492f6dfb |
-| W1 | 7d8b2f90c8c2 |
-| W2 | a1251081bc8b |
-| B1 | 2521a02832cd |
+| id | kind | partner | digest |
+|----|------|---------|--------|
+| P1 | positive | N1 | 2c2795cf7bdb6cf3 |
+| N1 | near-miss | P1 | c1e1d40b49720d89 |
+| P2 | positive | N2 | 0b0a1e0c115e1a88 |
+| N2 | near-miss | P2 | 5aa171250caf6faf |
+| P3 | positive | N3 | bfa45c2cadb1b4da |
+| N3 | near-miss | P3 | 966cc657172ef815 |
+| N4 | near-miss | - | ba22d826601c685a |
+| P4 | positive | - | 33174aebc55d2953 |
+| B1 | boundary | - | 87536bcf2857cbad |
