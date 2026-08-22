@@ -2,15 +2,15 @@
 
 ## Term
 
-**SameObservableLabel(o1, o2)** — two observations bear the same observable label.
+**SameObservableLabel(o1, o2)** - two observations bear the same observable label.
 
 ## Fragment language
 
 Sorts: `Obs` (observations), `Label` (observable label strings), `Val` (measured values)
 
 Functions:
-- `labelOf : Obs → Label`
-- `valueOf : Obs → Val`
+- `labelOf : Obs -> Label`
+- `valueOf : Obs -> Val`
 
 Predicate under test: `SameObservableLabel(o1, o2)`
 
@@ -23,7 +23,7 @@ Predicate under test: `SameObservableLabel(o1, o2)`
 
 ## Positive instances (must admit)
 
-### P1 — identical label, identical value
+### P1 - identical label, identical value
 
 ```
 Obs   = {o1, o2}
@@ -35,7 +35,7 @@ valueOf = {(o1,23.0), (o2,23.0)}
 
 SameObservableLabel(o1, o2) = **true**
 
-### P2 — identical label, different values
+### P2 - identical label, different values
 
 ```
 Obs   = {o3, o4}
@@ -47,7 +47,7 @@ valueOf = {(o3,101.3), (o4,99.8)}
 
 SameObservableLabel(o3, o4) = **true**
 
-### P3 — identical label, different measurement sessions
+### P3 - identical label, different measurement sessions
 
 ```
 Obs   = {o5, o6}
@@ -63,7 +63,7 @@ SameObservableLabel(o5, o6) = **true**
 
 ## Near-miss negatives (must exclude)
 
-### N1 — minimal pair with P1: trailing character differs
+### N1 - minimal pair with P1: trailing character differs
 
 ```
 Obs   = {o1, o7}
@@ -77,7 +77,7 @@ valueOf = {(o1,23.0), (o7,23.0)}
 
 SameObservableLabel(o1, o7) = **false**
 
-### N2 — minimal pair with P2: case differs
+### N2 - minimal pair with P2: case differs
 
 ```
 Obs   = {o3, o8}
@@ -91,7 +91,7 @@ valueOf = {(o3,101.3), (o8,101.3)}
 
 SameObservableLabel(o3, o8) = **false**
 
-### N3 — minimal pair with P3: separator character differs
+### N3 - minimal pair with P3: separator character differs
 
 ```
 Obs   = {o5, o9}
@@ -109,7 +109,7 @@ SameObservableLabel(o5, o9) = **false**
 
 ## Risk corridor walls (mandatory)
 
-### WALL-WEAK — too-weak reading wrongly admits this
+### N4 - too-weak reading wrongly admits this
 
 ```
 Obs   = {o12, o13}
@@ -123,7 +123,7 @@ valueOf = {(o12,23.0), (o13,73.4)}
 
 **Correct classification:** SameObservableLabel(o12, o13) = **false**
 
-### WALL-STRONG — too-strong reading wrongly excludes this
+### P4 - too-strong reading wrongly excludes this
 
 ```
 Obs   = {o14, o15}
@@ -141,7 +141,7 @@ valueOf = {(o14,23.0), (o15,23.5)}
 
 ## Boundary case (OPEN)
 
-### B1 — semantically equivalent labels, syntactically different
+### B1 - semantically equivalent labels, syntactically different
 
 ```
 Obs   = {o10, o11}
@@ -151,25 +151,11 @@ labelOf = {(o10,"temperature"), (o11,"temp")}
 valueOf = {(o10,23.0), (o11,23.0)}
 ```
 
-**OPEN:** Does "same observable label" require exact string identity, or does it admit labels that are conventional abbreviations of the same observable? If the system maintains an alias table mapping `"temp"` → `"temperature"`, these could be the same observable. Without such a table, they are distinct labels.
+**OPEN:** Does "same observable label" require exact string identity, or does it admit labels that are conventional abbreviations of the same observable? If the system maintains an alias table mapping `"temp"` -> `"temperature"`, these could be the same observable. Without such a table, they are distinct labels.
 
 **Question to resolve:** Is SameObservableLabel defined over raw label strings, or over a canonicalized label equivalence class?
 
 ---
-
-## Instance registry
-
-| ID | Type | Hash (content digest) |
-|----|------|-----------------------|
-| P1 | positive | 56fd5d5a6807 |
-| P2 | positive | 93b762c5cef5 |
-| P3 | positive | 3b9c7d783b1a |
-| N1 | near-miss (paired with P1) | 086069914da9 |
-| N2 | near-miss (paired with P2) | a2336ef30226 |
-| N3 | near-miss (paired with P3) | bc073b3d2140 |
-| WALL-WEAK | corridor wall (too-weak) | 0765ce69bf68 |
-| WALL-STRONG | corridor wall (too-strong) | bf5bfe3e7890 |
-| B1 | boundary (OPEN) | 59684054ea58 |
 
 ## Minimal-pair summary
 
@@ -178,3 +164,19 @@ valueOf = {(o10,23.0), (o11,23.0)}
 | P1 | N1 | trailing 's' in label |
 | P2 | N2 | capitalization of first letter |
 | P3 | N3 | underscore vs hyphen separator |
+
+---
+
+## Registry
+
+| id | kind | partner | digest |
+|----|------|---------|--------|
+| P1 | positive | N1 | 8851424d2e849204 |
+| P2 | positive | N2 | 05d9a930a4e81e92 |
+| P3 | positive | N3 | 56d66ed296949f3e |
+| N1 | near-miss | P1 | b1ea656880378ff6 |
+| N2 | near-miss | P2 | 51a10d90df463a42 |
+| N3 | near-miss | P3 | 5759de906b47df62 |
+| N4 | near-miss | - | d4b5f634fb74f295 |
+| P4 | positive | - | b79fd7da428c2a49 |
+| B1 | boundary | - | 5c3e0f002376b549 |
