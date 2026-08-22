@@ -4,6 +4,30 @@
     "wip_limit": 2
   },
   "tasks": {
+    "BAT-ConservativeExtension": {
+      "accept": "python3 scripts/battery_digest.py zoo/batteries/conservative_extension/BATTERY.md --write && python3 scripts/battery_digest.py zoo/batteries/conservative_extension/BATTERY.md --verify",
+      "base": "430c7bc3a53ac2e269361d605fad7b262e73f362",
+      "cone": [
+        "zoo/batteries/conservative_extension/*"
+      ],
+      "depends_on": [],
+      "goal": "Author an example battery for the ConservativeExtension term (inventory section 21; anchors: calculus (3) 'no formula may identify parts of theta and theta-prime without a named equality, port, or conservative-extension relation', calculus (63) heading 'for a conservative extension (eta-prime, theta-prime)', N7 row M'-class and N20 row ConservativeExtension_{eta,theta}^{eta-prime,theta-prime}; DSF-A1 gate / D0 family). This is the carrier relation under the already-batteried leaves SameObservableLabel, MovedConstructorPort, RetainsOrAdapts, EverettianUniversalClaim -- keep the battery consistent with those four existing batteries (read them; they are provided as context or sit in zoo/batteries/). Risk corridor: a too-liberal extension relation manufactures countermodels (too-weak wall: an extension that adds new structure which changes the truth values of old formulas, wrongly admitted); a too-strict one destroys them (too-strong wall: a genuine conservative extension wrongly excluded, e.g. one that adds only fresh predicate names with definitions over the old language). Positives, near-miss minimal pairs, both corridor walls, one OPEN boundary question. Grammar: the FORMAT.md grammar is provided to you as a READ-ONLY REFERENCE section in your context; conform byte-exactly; ids P1..P4/N1..N4/B1 with N4 = too-weak wall and P4 = too-strong wall; every digest cell is the literal PENDING-DIGEST.",
+      "notes": [
+        {
+          "by": "orchestrator",
+          "note": "Post-run audit (first run under treadle 0.2.1): FIRST-ATTEMPT commit -- context_files fix eliminated the grammar failures; evidence log shows zero failed attempts. 9/9 digests verify on the REMOTE bytes (e1515a27...); structure 3P/3N minimal pairs + P4 too-strong wall + N4 too-weak wall + B1 OPEN (Skolemization/choice dependence); fabrication negative test fails as required. Note for owner: this battery registers the walls as kind positive/near-miss with the wall role in the heading (EverettianUniversalClaim used kind wall); the grammar does not constrain the kind vocabulary -- consider pinning it in FORMAT.md if cross-battery uniformity is wanted. Grading REVIEWED_LOCAL_OBJECTS: driver push=auto failed (no git creds in sandbox); content pushed via MCP. Local shas 7f401f61 (driver commit) + fdbfab2 (ASCII normalization, digests recomputed); reviewable remote object acadcc84.",
+          "result": "PASS"
+        }
+      ],
+      "out_of_scope": "everything outside the cone; no edits to existing batteries, scripts, skills, or docs; testing remains PROHIBITED; no sealing",
+      "reviewer": "orchestrator",
+      "shas": [
+        "7f401f6123806f2a95e53610aa5eb563af0735c8"
+      ],
+      "state": "DONE",
+      "state_ts": 1787392905.2598438,
+      "worker": "treadle"
+    },
     "BAT-DigestHardenedAccept": {
       "accept": "python3 scripts/battery_digest.py zoo/batteries/same_observable_label/BATTERY.md --verify",
       "base": "3c696eb123dc44d8762333f6bf2ff4dbc27db3f7",
