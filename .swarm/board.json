@@ -113,6 +113,30 @@
       "state_ts": 1787348636.6857262,
       "worker": "treadle"
     },
+    "BAT-RepresentedConjecture": {
+      "accept": "python3 scripts/battery_digest.py zoo/batteries/represented_conjecture/BATTERY.md --write && python3 scripts/battery_digest.py zoo/batteries/represented_conjecture/BATTERY.md --verify",
+      "base": "b03a8b4632dbce9dc92199a3846e8c91dc1eefe1",
+      "cone": [
+        "zoo/batteries/represented_conjecture/*"
+      ],
+      "depends_on": [],
+      "goal": "Author an example battery for the RepresentedConjecture term (inventory section 11, N15 row 'TypedVEEAnalogue and not RepresentedConjecture_eta(lambda)', family D16; bridge (36) prose: the typed variation-acceptance analogue does not identify a biological variation with a represented conjecture; register scope B-grade). Risk corridor: too-weak -- pinning RepresentedConjecture so that TypedVEEAnalogue implies it (destroys N15, exceeds source scope of (36)); the too-weak wall is a structure where mere typed-structural analogy is treated as conjecture representation, wrongly admitted. Too-strong -- pinning it so nothing in the fragment can ever count as a represented conjecture (makes the N15 denial vacuous); the too-strong wall is a genuine represented conjecture (explicit symbol in the agent's language, used as a hypothesis subject to criticism) wrongly excluded. Positives (biological variations that are NOT represented conjectures, per the row), near-miss minimal pairs, both corridor walls, one OPEN boundary question. Grammar: the FORMAT.md grammar is provided to you as a READ-ONLY REFERENCE section in your context; conform byte-exactly; ids P1..P4/N1..N4/B1 with N4 = too-weak wall and P4 = too-strong wall; wall rows use kind positive or near-miss with the wall role in the heading (0.2.1 vocabulary); every digest cell is the literal PENDING-DIGEST.",
+      "notes": [
+        {
+          "by": "orchestrator",
+          "note": "Post-run audit (second run under treadle 0.2.1): one empty-reply auto-raise (16000->32000), then clean commit. 9/9 digests verify on the REMOTE bytes (231f6675...); structure 3P/3N minimal pairs isolating the three conjuncts (subject_to_criticism, used_as_hypothesis, refers_to) + P4 too-strong wall + N4 too-weak wall (typed-structural analogy treated as representation) + B1 OPEN (does labeling count as hypothesis use); 0.2.1 kind vocabulary used; fabrication negative test fails as required. Grading REVIEWED_LOCAL_OBJECTS: driver push=auto failed (no git creds in sandbox); content pushed via MCP. Local shas c5ba970a (driver commit) + 67c31a0 (heading ASCII normalization; digests unchanged); reviewable remote object 73839ea5.",
+          "result": "PASS"
+        }
+      ],
+      "out_of_scope": "everything outside the cone; no edits to existing batteries, scripts, skills, or docs; testing remains PROHIBITED; no sealing",
+      "reviewer": "orchestrator",
+      "shas": [
+        "c5ba970a232eede889c49ac636bba8dc9e9bca49"
+      ],
+      "state": "DONE",
+      "state_ts": 1787395891.6235075,
+      "worker": "treadle"
+    },
     "BAT-RetainsOrAdapts": {
       "accept": "python3 scripts/battery_digest.py zoo/batteries/retains_or_adapts/BATTERY.md --write && python3 scripts/battery_digest.py zoo/batteries/retains_or_adapts/BATTERY.md --verify",
       "base": "13f97dff1b5e82d13d8355c1bd085325f54e0af5",
@@ -143,7 +167,7 @@
           "result": "PASS"
         }
       ],
-      "out_of_scope": "Do not touch any other battery, skill, or record file.",
+      "out_of_scope": "Do not touch any other battery, record, or skill file.",
       "reviewer": "orchestrator",
       "shas": [
         "8c057006da0f84e07549a9bee6116eb4b1d8f810"
