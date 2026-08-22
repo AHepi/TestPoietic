@@ -91,7 +91,7 @@ provenance: {(build_C, r1)}
 
 ## Corridor walls
 
-### W-WEAK - Too-weak reading wrongly admits: non-constructor moved between ports
+### N4 - Too-weak reading wrongly admits: non-constructor moved between ports
 
 ```
 sorts: Port = {s0, s1}; Constructor = {}; Value = {val_X}
@@ -104,7 +104,7 @@ vacated: {s0}
 
 **Why the too-weak reading admits it:** The weak reading only checks "something moved from one port to another with vacatur" and ignores the constructor requirement. `val_X` is a plain value, not a constructor, so the intended meaning must exclude this.
 
-### W-STRONG - Too-strong reading wrongly excludes: implicit vacatur (no explicit vacated relation)
+### P4 - Too-strong reading wrongly excludes: implicit vacatur (no explicit vacated relation)
 
 ```
 sorts: Port = {t0, t1}; Constructor = {mk_D}
@@ -135,16 +135,16 @@ alias: {(u0, u1)}
 
 ---
 
-## Instance registry
+## Registry
 
-| id | digest |
-|----|--------|
-| P1 | 2aef486d3494 |
-| P2 | d9f075e5363a |
-| P3 | 11e68ce004c3 |
-| N1 | a80b0264b036 |
-| N2 | c0de96c9fa2e |
-| N3 | 756994d89d04 |
-| W-WEAK | 929652f0415e |
-| W-STRONG | 58b0d18b6dac |
-| B1 | 6098f4792066 |
+| id | kind | partner | digest |
+|----|------|---------|--------|
+| P1 | positive | N1 | 598bf76383b53c69 |
+| P2 | positive | N2 | fc43be2c6d253dc9 |
+| P3 | positive | N3 | 1ece7e2252133e63 |
+| N1 | near-miss | P1 | b2cece05f92ec241 |
+| N2 | near-miss | P2 | 3fa5c65e1cd491d5 |
+| N3 | near-miss | P3 | de1dc088440bcc2a |
+| N4 | near-miss | - | dbab0f8447c5c695 |
+| P4 | positive | - | aea80bd8dc72926b |
+| B1 | boundary | - | 7752d3ec03eb2b40 |
