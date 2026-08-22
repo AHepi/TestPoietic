@@ -16,6 +16,7 @@ escalate_model = "deepseek-v4-pro:0813"  # dated pin retained, proxy suffix drop
 skill = "skills/term-pinning/SKILL.md"
 candidates = 2
 max_refinements = 2
+context_files = ["zoo/batteries/FORMAT.md"]
 max_tokens = 16000                        # reasoning models spend the budget on the trace first (defect #1)
 
 [stage.battery]                 # Reed 1: example batteries
@@ -24,6 +25,7 @@ escalate_model = "deepseek-v4-pro:0813"  # dated pin retained, proxy suffix drop
 skill = "skills/example-battery/SKILL.md"
 candidates = 3
 max_refinements = 1
+context_files = ["zoo/batteries/FORMAT.md"]   # grammar is READ context; cone stays the write boundary
 max_tokens = 16000
 
 [stage.refutation]              # Warp W3: countermodel attack
