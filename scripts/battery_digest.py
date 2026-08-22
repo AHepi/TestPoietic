@@ -1,129 +1,105 @@
 #!/usr/bin/env python3
-"""Compute and verify per-instance content digests in a battery file.
+"""Hardened battery digest tool (grammar: zoo/batteries/FORMAT.md).
 
-Battery instances are '### <ID> - <title>' sections each containing at
-least one fenced code block (the explicit structure). The digest of an
-instance is sha256 over the concatenated contents of its fenced blocks
-(in the order they appear), UTF-8, with trailing whitespace stripped per
-line. Models never compute these: they write PENDING-DIGEST (or anything)
-in the registry's digest column; this script fills or verifies it.
+Usage:   battery_digest.py FILE --write      # fill digests; FAILS if zero rows written
+         battery_digest.py FILE --verify     # strict; FAILS on any deviation
+Acceptance command for battery tasks:
+         python3 scripts/battery_digest.py FILE --write && \\
+         python3 scripts/battery_digest.py FILE --verify
 
-Usage:
-    battery_digest.py FILE --write    # rewrite registry digests in place
-    battery_digest.py FILE --verify   # exit 1 if any digest is wrong/missing
-    battery_digest.py FILE --print    # print ID<TAB>digest lines
+Hardened against (field report defects 10-13): vacuous verify when the
+registry heading/columns are absent or renamed; silently skipped rows with
+the wrong column count; "OK" reports when nothing was written; and the
+PENDING-DIGEST catch-22 (--write before --verify is the designed order).
 """
-from __future__ import annotations
-
 import hashlib
 import re
 import sys
+from pathlib import Path
 
-HEAD = re.compile(r"^###\s+([A-Za-z0-9_-]+)\s+[-\u2014]")
-FENCE = re.compile(r"^```")
-ROW = re.compile(r"^(\|\s*([A-Za-z0-9_-]+)\s*\|[^|]*\|)\s*[^|]*\|")
-PENDING = "PENDING-DIGEST"
+HEAD = re.compile(r"^### ([PNB][0-9]+) - .+$")
+REG_HEAD = "## Registry"
+COLS = ["id", "kind", "partner", "digest"]
 
 
-def instance_digests(text: str) -> dict[str, str]:
-    digests: dict[str, str] = {}
-    current: str | None = None
-    in_fence = False
-    buf: list[str] = []
-    blocks: list[str] = []
+def fail(msg):
+    print(f"FAIL: {msg}")
+    sys.exit(1)
 
-    def flush() -> None:
-        if current is None or not blocks:
-            return
-        payload = "\n".join(blocks)
-        digests[current] = hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
-    for line in text.splitlines():
-        m = HEAD.match(line)
-        if m and not in_fence:
-            flush()
-            current = m.group(1)
-            blocks = []
+def parse(text):
+    lines = text.split("\n")
+    if REG_HEAD not in lines:
+        fail(f"registry heading {REG_HEAD!r} not found (defect-10 guard)")
+    reg_at = lines.index(REG_HEAD)
+    blocks, cur = {}, None
+    for i, ln in enumerate(lines[:reg_at]):
+        m = HEAD.match(ln)
+        if m:
+            cur = m.group(1)
+            if cur in blocks:
+                fail(f"duplicate instance id {cur}")
+            blocks[cur] = []
+        elif ln.startswith("### "):
+            fail(f"unparseable heading (line {i+1}): {ln!r} -- see FORMAT.md")
+        elif cur:
+            blocks[cur].append(ln)
+    if not blocks:
+        fail("no instance headings found")
+    rows, header_seen = [], False
+    for i, ln in enumerate(lines[reg_at + 1:], reg_at + 2):
+        if not ln.strip().startswith("|"):
             continue
-        if FENCE.match(line):
-            if in_fence:
-                blocks.append("\n".join(x.rstrip() for x in buf))
-                buf = []
-                in_fence = False
-            else:
-                in_fence = True
+        cells = [c.strip() for c in ln.strip().strip("|").split("|")]
+        if set(c.strip("- ") for c in cells) == {""}:
             continue
-        if in_fence:
-            buf.append(line)
-        elif line.startswith("## ") and current is not None:
-            flush()
-            current = None
-            blocks = []
-    flush()
-    return digests
+        if not header_seen:
+            if [c.lower() for c in cells] != COLS:
+                fail(f"registry columns {cells} != {COLS} (defect-10 guard)")
+            header_seen = True
+            continue
+        if len(cells) != len(COLS):
+            fail(f"registry row line {i} has {len(cells)} columns, need {len(COLS)} (defect-11 guard)")
+        rows.append((i - 1, dict(zip(COLS, cells))))
+    if not header_seen:
+        fail("registry table header row not found")
+    return lines, blocks, rows
 
 
-def rewrite(text: str, digests: dict[str, str]) -> tuple[str, list[str]]:
-    out = []
-    missing = []
-    in_registry = False
-    for line in text.splitlines():
-        h = line.strip().lower()
-        if h.startswith("##") and "registry" in h:
-            in_registry = True
-        elif line.startswith("## ") and in_registry:
-            in_registry = False
-        if in_registry and line.lstrip().startswith("|"):
-            cells = [c.strip() for c in line.split("|")]
-            # cells: ['', id, ..., '']; replace last content cell with digest
-            if (len(cells) >= 4 and cells[1] in digests
-                    and not set(cells[1]) <= set("-: ")
-                    and cells[2] and not set(cells[2]) <= set("-: ")):
-                cells[-2] = digests[cells[1]][:12]
-                line = "| " + " | ".join(c for c in cells[1:-1]) + " |"
-        out.append(line)
-    for iid in digests:
-        if not any(f"| {iid} " in l or f"|{iid} " in l or f"| {iid} " in l
-                   for l in out if l.startswith("|")):
-            # instance has no registry row
-            missing.append(iid)
-    return "\n".join(out) + "\n", missing
+def block_digest(block_lines):
+    body = "\n".join(l.rstrip() for l in block_lines).strip("\n") + "\n"
+    return hashlib.sha256(body.encode()).hexdigest()[:16]
 
 
-def main() -> int:
-    if len(sys.argv) != 3 or sys.argv[2] not in ("--write", "--verify", "--print"):
+def main():
+    if len(sys.argv) != 3 or sys.argv[2] not in ("--write", "--verify"):
         print(__doc__)
-        return 2
-    path, mode = sys.argv[1], sys.argv[2]
-    text = open(path, encoding="utf-8").read()
-    digests = instance_digests(text)
-    if not digests:
-        print(f"FAIL: no instances found in {path}")
-        return 1
-    new_text, missing = rewrite(text, digests)
-    if mode == "--print":
-        for iid, d in digests.items():
-            print(f"{iid}\t{d[:12]}")
-        return 0
-    if missing:
-        print(f"FAIL: instances without registry rows: {', '.join(missing)}")
-        return 1
+        sys.exit(2)
+    path, mode = Path(sys.argv[1]), sys.argv[2]
+    lines, blocks, rows = parse(path.read_text(encoding="utf-8"))
+    row_ids = [r["id"] for _, r in rows]
+    if sorted(row_ids) != sorted(blocks):
+        fail(f"registry ids {sorted(row_ids)} != instance ids {sorted(blocks)}")
     if mode == "--write":
-        open(path, "w", encoding="utf-8").write(new_text)
-        print(f"OK: wrote {len(digests)} digests into {path}")
-        return 0
-    # --verify
-    if PENDING in text:
-        print("FAIL: PENDING-DIGEST markers remain; run --write first")
-        return 1
-    if new_text != text:
-        bad = [iid for iid, d in digests.items()
-               if f"| {d[:12]} |" not in text]
-        print(f"FAIL: stale or placeholder digests for: {', '.join(bad) or 'registry'}")
-        return 1
-    print(f"OK: {len(digests)} instance digests verified in {path}")
-    return 0
+        wrote = 0
+        for ln_idx, r in rows:
+            d = block_digest(blocks[r["id"]])
+            if r["digest"] != d:
+                r["digest"] = d
+                lines[ln_idx] = "| " + " | ".join(r[c] for c in COLS) + " |"
+                wrote += 1
+        if wrote == 0:
+            fail("zero rows rewritten (defect-12 guard: nothing to write is a failure "
+                 "when placeholders were expected; if digests are already current, verify instead)")
+        path.write_text("\n".join(lines), encoding="utf-8")
+        print(f"OK: wrote {wrote} digest(s)")
+        return
+    bad = [r["id"] for _, r in rows
+           if r["digest"] == "PENDING-DIGEST" or r["digest"] != block_digest(blocks[r["id"]])]
+    if bad:
+        fail(f"digest mismatch or PENDING for {bad} -- run --write first (designed order)")
+    print(f"OK: verified {len(rows)} row(s)")
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    main()
