@@ -60,3 +60,15 @@ stage = "review"
 [[routing]]
 prefix = "SMK-"
 stage = "smoke"
+
+[stage.deduction]               # proof search under deterministic replay
+model = "glm-5.2"
+escalate_model = "deepseek-v4-pro:0813"
+skill = "skills/deduction/SKILL.md"
+context_files = ["zoo/derivations/FORMAT.md", "rules/rules.json"]
+max_refinements = 3             # step-addressed errors make refinement productive
+max_tokens = 20000
+
+[[routing]]
+prefix = "DED-"
+stage = "deduction"
