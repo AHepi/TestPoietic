@@ -151,7 +151,7 @@ Relations:
   defined_in     = {}
   placed_in      = {(v3, Up)}
   behavior       = {(v3, Up, compare_triples)}
-  requires     = {(U, compare_pairs), (Up, compare_triples)}
+  requires       = {(U, compare_pairs), (Up, compare_triples)}
   outcome        = {(v3, Up, pass)}
   core_unchanged = {}
 
