@@ -153,7 +153,7 @@ def check(rules_p: Path, theory_p: Path, deriv_p: Path, lax: bool) -> int:
             continue
         g = st.get("grade")
         if g not in grades:
-            errors.append(f"step {sid}: grade {g!r} not in {grades}")
+            errors.append(f"{where}: grade {g!r} not in {grades}")
             continue
         if st.get("rule") == "PREMISE":
             row = st.get("row")
