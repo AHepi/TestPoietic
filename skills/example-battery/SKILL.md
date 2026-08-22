@@ -19,6 +19,14 @@ Before any clause about a term's meaning is written, build its battery.
    only in prose.
 3. Juxtapose everything in one file, positives beside their near-miss
    partners, with one line per pair naming the single difference.
+   Near-misses are pairwise DISTINCT in the clause that admits them: no
+   two N-instances may be the same single-bit flip of (structurally) the
+   same positive -- a battery's discriminating power is the count of
+   distinct negative shapes, not the count of N labels.
+   Any structural assumption not present in the inventory candidate
+   (e.g. licensing a chained/transitive reading of a relation) is never
+   a silent positive: it becomes a boundary (B) instance carrying the
+   question, or it is omitted.
 4. If the term has a recorded risk corridor ("too weak admits X, too
    strong excludes Y"), X and Y are MANDATORY battery members: build the
    structure the too-weak reading wrongly admits and the structure the
