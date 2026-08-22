@@ -35,10 +35,11 @@ Before any clause about a term's meaning is written, build its battery.
    fabrication even if it happens to be correct.
 7. The battery file is parsed by machines: its exact grammar (heading
    form, id pattern, registry table columns) is defined in
-   zoo/batteries/FORMAT.md in the target repository. Conform to it
-   byte-exactly. If FORMAT.md is absent, STOP and report BLOCKED
-   requesting it -- never invent structure; semantically fine but
-   mechanically unparseable output is a failure.
+   zoo/batteries/FORMAT.md and is provided to you as a READ-ONLY
+   REFERENCE section in your context. Conform to it byte-exactly. If
+   that reference section is absent or marked MISSING, STOP and report
+   BLOCKED requesting it -- never invent structure; semantically fine
+   but mechanically unparseable output is a failure.
 8. Instances are proto-members of the model zoo and feed the denotation
    tests. Never delete a battery instance a pin fails on; a failed
    instance is evidence, not clutter.
