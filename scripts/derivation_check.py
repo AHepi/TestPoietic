@@ -2,7 +2,7 @@
 """derivation_check.py -- deterministic replay of model-proposed derivations.
 
 Usage:
-    derivation_check.py RULES.json THEORY.json DERIVATION.json [--lax]
+    derivation_check.py RULES.json THEORY.json DERIVATION.json [--lax] [--attest ATT.json]
 
 Exit codes: 0 all steps PASS and conclusion matches target;
             1 any step FAIL (errors are STEP-ADDRESSED for the refine loop);
@@ -42,9 +42,17 @@ steps. Every non-PREMISE step states its formula explicitly.
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import sys
 from pathlib import Path
+
+
+def attest_key(rules_sha: str, deriv_sha: str, step_id: str, text: str) -> str:
+    """Byte-bound attestation key: any edit to rules or derivation
+    invalidates every attestation automatically. Attestations are owner
+    provenance (who, when, over which bytes, why) -- never verification."""
+    return hashlib.sha256(f"{rules_sha}:{deriv_sha}:{step_id}:{text}".encode()).hexdigest()
 
 
 def is_meta(x) -> bool:
@@ -127,10 +135,17 @@ def grade_leq(order: list, a: str, b: str) -> bool:
     return order.index(a) <= order.index(b)
 
 
-def check(rules_p: Path, theory_p: Path, deriv_p: Path, lax: bool) -> int:
+def check(rules_p: Path, theory_p: Path, deriv_p: Path, lax: bool,
+          attest_p: Path | None = None) -> int:
     rules_doc = json.loads(rules_p.read_text(encoding="utf-8"))
     theory = json.loads(theory_p.read_text(encoding="utf-8"))
     deriv = json.loads(deriv_p.read_text(encoding="utf-8"))
+    rules_sha = hashlib.sha256(rules_p.read_bytes()).hexdigest()
+    deriv_sha = hashlib.sha256(deriv_p.read_bytes()).hexdigest()
+    attest = {}
+    if attest_p and attest_p.exists():
+        attest = {a["key"]: a for a in json.loads(attest_p.read_text()).get("attestations", [])}
+    audited_steps: set = set()
     errors, cannot = [], []
     if rules_doc.get("schema") != "DERIVATION_RULES_V1":
         errors.append("rules: bad schema")
@@ -195,7 +210,15 @@ def check(rules_p: Path, theory_p: Path, deriv_p: Path, lax: bool) -> int:
         for sc in rule.get("side_conditions", []):
             kind = sc.get("kind")
             if kind == "MANUAL":
-                cannot.append(f"{where}: MANUAL side condition unverified: {sc.get('text', '')}")
+                key = attest_key(rules_sha, deriv_sha, sid, sc.get("text", ""))
+                if key in attest:
+                    a = attest[key]
+                    audited_steps.add(sid)
+                    cannot.append(f"{where}: HUMAN_AUDITED by {a.get('by')} on "
+                                  f"{a.get('date')} -- {a.get('reason', '')[:80]} "
+                                  "(provenance, not verification)")
+                else:
+                    cannot.append(f"{where}: MANUAL side condition unverified: {sc.get('text', '')}")
             elif kind == "distinct":
                 vals = [binding.get(v.partition(':')[0]) for v in sc["vars"]]
                 if len({json.dumps(v) for v in vals}) != len(vals):
@@ -245,6 +268,19 @@ def check(rules_p: Path, theory_p: Path, deriv_p: Path, lax: bool) -> int:
             continue
         seen[sid] = st
 
+    # transitive HUMAN_AUDITED taint (sorry-axiom style): any step depending
+    # on an audited step is itself at most HUMAN_AUDITED
+    tainted = set(audited_steps)
+    changed = True
+    while changed:
+        changed = False
+        for st in steps:
+            if st.get("id") in tainted:
+                continue
+            if any(c in tainted for c in st.get("premises", [])):
+                tainted.add(st["id"])
+                changed = True
+
     conc = deriv.get("conclusion_step")
     if conc not in seen:
         errors.append(f"conclusion_step {conc!r} is not a checked step")
@@ -254,10 +290,10 @@ def check(rules_p: Path, theory_p: Path, deriv_p: Path, lax: bool) -> int:
             errors.append(f"target {target!r} not a theory row")
         elif seen[conc]["formula"] != rows[target]["condition"]:
             errors.append(f"conclusion formula does not match target row {target} byte-exactly")
-    return report(errors, cannot, deriv, lax)
+    return report(errors, cannot, deriv, lax, audited_steps, tainted)
 
 
-def report(errors, cannot, deriv, lax) -> int:
+def report(errors, cannot, deriv, lax, audited=(), tainted=()) -> int:
     for e in errors:
         print(f"FAIL {e}")
     for c in cannot:
@@ -266,8 +302,14 @@ def report(errors, cannot, deriv, lax) -> int:
     if errors:
         print(f"RESULT: FAIL ({len(errors)} error(s) over {n} step(s))")
         return 1
+    unaudited = [c for c in cannot if "HUMAN_AUDITED" not in c]
+    if cannot and not unaudited:
+        print(f"RESULT: PASS_HUMAN_AUDITED ({len(audited)} attested step(s); "
+              f"{len(tainted)} step(s) transitively dependent on human audit -- "
+              "this count is the trusted-human base and it grows quietly)")
+        return 0
     if cannot:
-        print(f"RESULT: CHECKED_EXCEPT_MANUAL ({len(cannot)} unverified side condition(s)); "
+        print(f"RESULT: CHECKED_EXCEPT_MANUAL ({len(unaudited)} unverified side condition(s)); "
               "grade the record accordingly")
         return 0 if lax else 3
     print(f"RESULT: PASS ({n} step(s) replayed; conclusion matches target)")
@@ -275,12 +317,18 @@ def report(errors, cannot, deriv, lax) -> int:
 
 
 def main() -> int:
-    args = [a for a in sys.argv[1:] if a != "--lax"]
-    lax = "--lax" in sys.argv
+    argv = sys.argv[1:]
+    lax = "--lax" in argv
+    attest = None
+    if "--attest" in argv:
+        attest = Path(argv[argv.index("--attest") + 1])
+        argv = [a for i, a in enumerate(argv)
+                if a != "--attest" and (i == 0 or argv[i - 1] != "--attest")]
+    args = [a for a in argv if a != "--lax"]
     if len(args) != 3:
         print(__doc__)
         return 2
-    return check(Path(args[0]), Path(args[1]), Path(args[2]), lax)
+    return check(Path(args[0]), Path(args[1]), Path(args[2]), lax, attest)
 
 
 if __name__ == "__main__":
