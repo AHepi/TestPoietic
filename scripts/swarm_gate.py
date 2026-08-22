@@ -77,9 +77,20 @@ def board_path(root: Path) -> Path:
 
 
 TASK_DEFAULTS = {"state": "DRAFT", "goal": "", "cone": [], "base": "",
-                 "accept": "", "out_of_scope": "", "depends_on": [],
-                 "worker": "", "reviewer": "", "shas": [], "notes": [],
+                 "accept": "", "verify": "", "out_of_scope": "",
+                 "depends_on": [], "worker": "", "reviewer": "",
+                 "shas": [], "notes": [], "reads": [], "claim_token": 0,
                  "state_ts": 0.0}
+
+GATE_VERSION = "0.4.0"
+SCHEMA_VERSION = 2
+
+
+def _sha_file(root: Path, rel: str) -> str:
+    p = root / rel
+    if not p.exists():
+        return "MISSING"
+    return hashlib.sha256(p.read_bytes()).hexdigest()
 
 
 def load_board(root: Path) -> dict:
@@ -247,6 +258,77 @@ def _brief_missing(t: dict) -> list[str]:
     return [f for f in BRIEF_FIELDS if not t.get(f)]
 
 
+def cmd_rebuild(root: Path, a) -> None:
+    """rebuild --check: replay the log's determinable projection (states,
+    workers, shas, claim tokens) into a fresh board and compare with
+    board.json. Two representations existing separately is the corruption
+    detector; this computes the comparison. Undetermined fields are listed
+    NOT_CHECKED. Replay across a schema version boundary is refused."""
+    if not a.check:
+        die(2, "only rebuild --check is supported; the board is operating state, not a cache")
+    board = load_board(root)
+    lp = root / SWARM_DIR / "log.jsonl"
+    events = [json.loads(l) for l in lp.read_text(encoding="utf-8").splitlines() if l.strip()]
+    schemas = {e.get("schema", 1) for e in events}
+    if len(schemas) > 1:
+        refuse("REFUSED_REPLAY_DIVERGENT",
+               f"log spans schema versions {sorted(schemas)}; replay across a "
+               "schema change is refused -- migrate explicitly (owner decision)")
+    proj = {}
+    for e in events:
+        tid = e.get("task")
+        if not tid or tid == "-":
+            continue
+        t = proj.setdefault(tid, {"state": "DRAFT", "worker": "", "shas": [], "claim_token": 0})
+        act, d = e.get("action"), e.get("details", {}) or {}
+        if act == "ready":
+            t["state"] = "READY"
+        elif act == "edit":
+            t["state"] = "DRAFT"
+        elif act == "claim":
+            t["state"] = "CLAIMED"; t["worker"] = d.get("worker", t["worker"]); t["claim_token"] += 1
+        elif act == "done":
+            t["state"] = "COMMITTED"
+            sha = d.get("sha")
+            if isinstance(sha, list):
+                t["shas"] += sha
+            elif sha:
+                t["shas"].append(sha)
+        elif act == "verdict":
+            t["state"] = "DONE" if d.get("result") == "PASS" else "READY"
+        elif act == "requeue":
+            t["state"] = "READY"
+    diffs = []
+    for tid, p in proj.items():
+        b = board["tasks"].get(tid)
+        if b is None:
+            diffs.append(f"{tid}: in log, absent from board"); continue
+        if b["state"] != p["state"]:
+            diffs.append(f"{tid}: state board={b['state']} replay={p['state']}")
+        if int(b.get("claim_token", 0)) != p["claim_token"]:
+            diffs.append(f"{tid}: claim_token board={b.get('claim_token')} replay={p['claim_token']}")
+    for tid in board["tasks"]:
+        if tid not in proj:
+            diffs.append(f"{tid}: on board, never in log")
+    if diffs:
+        refuse("REFUSED_REPLAY_DIVERGENT", "; ".join(diffs[:5]))
+    print(f"rebuild --check: projection agrees ({len(proj)} task(s)); "
+          "NOT_CHECKED by replay: goal/cone/accept/verify/base/notes bodies")
+
+
+def cmd_note(root: Path, a) -> None:
+    """Append a note to a task in ANY state (including DONE) through the
+    gate -- closes the out-of-band board edit that annotating finished
+    work used to require. Notes are append-only and logged."""
+    with Lock(root):
+        board = load_board(root)
+        t = board["tasks"].get(a.id) or refuse("REFUSED_TASK_UNKNOWN", a.id)
+        t["notes"].append({"by": a.actor, "ts": time.time(), "note": a.note})
+        save_board(root, board)
+        log_append(root, "note", a.id, a.actor, {"note": a.note})
+    print(f"{a.id}: note appended")
+
+
 def cmd_edit(root: Path, a) -> None:
     """Defect #7: brief repair through the gate, never by hand-editing
     board.json. Allowed only before work starts (DRAFT/READY/BLOCKED);
@@ -258,7 +340,7 @@ def cmd_edit(root: Path, a) -> None:
             refuse("REFUSED_BAD_TRANSITION",
                    f"{a.id} is {t['state']}; briefs are frozen once claimed -- requeue first")
         changed = {}
-        for field in ("goal", "base", "accept"):
+        for field in ("goal", "base", "accept", "verify"):
             v = getattr(a, field, None)
             if v is not None:
                 t[field] = v; changed[field] = v
@@ -335,6 +417,8 @@ def cmd_claim(root: Path, a) -> None:
                                 t["base"], "HEAD"]).returncode != 0:
             print(f"WARN_BASE_BEHIND base {t['base'][:12]} is not an ancestor of HEAD; "
                   "consider re-briefing on the current head")
+        t["claim_token"] = int(t.get("claim_token", 0)) + 1
+        t["reads"] = [[r, _sha_file(root, r)] for r in (a.reads or [])]
         t["state"], t["worker"], t["state_ts"] = "CLAIMED", a.worker, time.time()
         save_board(root, board)
         log_append(root, "claim", a.id, a.worker, {"cone": t["cone"]})
@@ -347,6 +431,17 @@ def cmd_done(root: Path, a) -> None:
         t = board["tasks"].get(a.id) or refuse("REFUSED_TASK_UNKNOWN", a.id)
         if t["state"] != "CLAIMED":
             refuse("REFUSED_BAD_TRANSITION", f"{a.id} is {t['state']}, not CLAIMED")
+        if a.token is not None and int(a.token) != int(t.get("claim_token", 0)):
+            refuse("REFUSED_STALE_CLAIM_TOKEN",
+                   f"{a.id}: presented token {a.token}, current {t.get('claim_token')} -- "
+                   "a newer claim owns this task; this writer's work must not land")
+        stale = [(r, old, _sha_file(root, r)) for r, old in t.get("reads", [])
+                 if _sha_file(root, r) != old]
+        if stale:
+            details = "; ".join(f"{r}: {o[:8]} -> {n[:8]}" for r, o, n in stale)
+            refuse("REFUSED_READSET_STALE",
+                   f"{a.id}: read-context changed since claim ({details}) -- "
+                   "the work was produced against stale reads; requeue and rerun")
         if not a.sha:
             refuse("REFUSED_NOT_COMMITTED",
                    "done requires --sha. A report without commit SHAs is a claim, "
@@ -501,15 +596,20 @@ def main(argv=None) -> None:
     s = sub.add_parser("map"); s.add_argument("--check", action="store_true")
     s = sub.add_parser("add")
     s.add_argument("id"); s.add_argument("--goal"); s.add_argument("--cone", nargs="+")
-    s.add_argument("--base"); s.add_argument("--accept"); s.add_argument("--out-of-scope")
+    s.add_argument("--base"); s.add_argument("--accept"); s.add_argument("--verify")
+    s.add_argument("--out-of-scope")
     s.add_argument("--depends-on", nargs="*")
+    s = sub.add_parser("note"); s.add_argument("id"); s.add_argument("--note", required=True)
     s = sub.add_parser("edit")
     s.add_argument("id"); s.add_argument("--goal"); s.add_argument("--cone", nargs="+")
-    s.add_argument("--base"); s.add_argument("--accept"); s.add_argument("--out-of-scope")
+    s.add_argument("--base"); s.add_argument("--accept"); s.add_argument("--verify")
+    s.add_argument("--out-of-scope")
     s.add_argument("--depends-on", nargs="*")
     s = sub.add_parser("ready"); s.add_argument("id")
     s = sub.add_parser("claim"); s.add_argument("id"); s.add_argument("--worker", required=True)
+    s.add_argument("--reads", nargs="*", help="read-context paths hashed at claim, re-verified at done")
     s = sub.add_parser("done"); s.add_argument("id"); s.add_argument("--sha", nargs="+")
+    s.add_argument("--token", default=None, help="claim token issued at claim; stale tokens are refused")
     s = sub.add_parser("review"); s.add_argument("id"); s.add_argument("--reviewer", required=True)
     s.add_argument("--local-ok", action="store_true",
                    help="review local objects even when a remote exists (graded, not silent)")
@@ -519,6 +619,7 @@ def main(argv=None) -> None:
     s.add_argument("--note"); s.add_argument("--to-draft", action="store_true")
     sub.add_parser("board")
     s = sub.add_parser("verify"); s.add_argument("--stale-hours", type=float, default=6.0)
+    s = sub.add_parser("rebuild"); s.add_argument("--check", action="store_true")
     sub.add_parser("log-verify")
 
     a = p.parse_args(argv)
@@ -528,6 +629,7 @@ def main(argv=None) -> None:
         die(2, f"{root} is not a git repository")
     {"init": cmd_init, "map": cmd_map, "add": cmd_add, "ready": cmd_ready,
      "claim": cmd_claim, "done": cmd_done, "review": cmd_review, "edit": cmd_edit,
+     "note": cmd_note, "rebuild": cmd_rebuild,
      "verdict": cmd_verdict, "requeue": cmd_requeue, "board": cmd_board,
      "verify": cmd_verify, "log-verify": cmd_log_verify}[a.cmd](root, a)
 
