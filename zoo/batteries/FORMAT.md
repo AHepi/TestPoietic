@@ -15,6 +15,9 @@ Parsed by scripts/battery_digest.py. Deviations fail acceptance.
    |----|------|---------|--------|
    | P1 | positive | N1 | PENDING-DIGEST |
 
-   One row per instance, ids matching the headings one-to-one. `partner`
+   One row per instance, ids matching the headings one-to-one. The
+   `kind` column is a CLOSED vocabulary: positive | near-miss | boundary
+   (exactly these strings; P-ids are positive, N-ids near-miss, B-ids
+   boundary, and the checker may enforce the correspondence). `partner`
    names the minimal-pair partner or `-`. Write PENDING-DIGEST; the tool
    fills real digests (`--write`) and acceptance verifies (`--verify`).
