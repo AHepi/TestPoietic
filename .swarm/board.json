@@ -152,6 +152,47 @@
       "verify": "",
       "worker": "treadle"
     },
+    "BAT-Pass": {
+      "accept": "python3 scripts/battery_digest.py zoo/batteries/pass/BATTERY.md --write && python3 scripts/battery_digest.py zoo/batteries/pass/BATTERY.md --verify",
+      "base": "55a053b46d3ee69fa345eb3015402c0c2712e9f3",
+      "claim_token": 1,
+      "cone": [
+        "zoo/batteries/pass/*"
+      ],
+      "depends_on": [],
+      "goal": "Author an example battery for the Pass term (T3 cluster; inventory section 3; anchors: calculus (63) FiniteTheorySuite fixes only L subset-of Theory_eta with |L| finite; Pass occurs in the N8 row: for-all u in L Pass(u) AND there-exists u* in Theory_eta minus L with NOT Pass(u*); family D13). The fragment has NO pin candidate: the C-suite predicates (FCritPkg) test critical packages, not theory-suite membership, so bare Pass(u) must be definable WITHOUT any critical package. Source-grade background: POPPER_LSCD sections 18, 29-30 (comparison/application). Risk corridor (inventory risk: medium): too-weak -- pinning Pass as mere suite membership, so any u in L counts as Pass regardless of test outcome (the too-weak wall: a u in L whose test outcome failed or was never critically examined, treated as Pass, wrongly admitted); too-strong -- pinning Pass as derivability from Theory_eta or as survival against every test in Theory_eta (the too-strong wall: a genuine survived-severe-test pass over the finite suite L -- exactly the N8 shape, with a failure outside L -- wrongly excluded). Positives, near-miss minimal pairs, both corridor walls, one OPEN boundary question. Keep consistent with the Record, Deduction, and Prediction batteries (zoo/batteries/record/BATTERY.md, zoo/batteries/deduction/BATTERY.md, zoo/batteries/prediction/BATTERY.md sit in the zoo). Grammar: the FORMAT.md grammar is provided to you as a READ-ONLY REFERENCE section in your context; conform byte-exactly; ids P1..P4/N1..N4/B1 with N4 = too-weak wall and P4 = too-strong wall; wall rows use kind positive or near-miss with the wall role in the heading; near-misses must be pairwise DISTINCT in the clause that admits them (no two N-instances the same single-bit flip of structurally the same positive); any structural assumption not present in the inventory candidate becomes a B instance or is omitted, never a silent positive; every digest cell is the literal PENDING-DIGEST.",
+      "notes": [
+        {
+          "by": "unknown",
+          "note": "Post-run audit (sixth battery run; second under treadle 0.4.0 grammar): FIRST-ATTEMPT commit, single call, finish=stop at 16000. 9/9 digests verify; near-misses pairwise DISTINCT per 0.4.0 rule 3 (failed outcome / never-examined / one-of-two failed -- three distinct negative shapes); P4 too-strong wall (survival against every Theory_eta test excludes a genuine finite-suite pass -- the N8 shape with existential witness c outside L) + N4 too-weak wall (mere inL membership admits a failed element) + B1 OPEN (is L-membership necessary for Pass, or does test survival outside L suffice -- the fragment has no package to adjudicate severity); closed kind vocabulary; fabrication negative test fails as required. Grading REVIEWED_LOCAL_OBJECTS: driver push=auto failed (no git creds in sandbox); content pushed via MCP. Local sha 93c05de8 (driver commit); reviewable remote object pending push.",
+          "result": "PASS"
+        },
+        {
+          "by": "orchestrator",
+          "note": "Board reconstruction disclosure: the sandbox wiped mid-closeout, losing the gate-written board. The BAT-Pass block was reconstructed from the remote-verified board blob (ea2ced11) plus log evidence: goal text from log line 92, verdict note from line 98, reads hashes confirmed against the live blobs, state_ts set to the verdict log timestamp (epoch 1787414893.0; the gate's sub-second original is unrecoverable and not load-bearing). All other tasks untouched. Two transcription incidents during this closeout are disclosed in commits 6ea27173 (log line 78 normalization, fixed) and 55a053b4 (calls line 16 prompt_sha, fixed).",
+          "ts": 1787416053.7446773
+        }
+      ],
+      "out_of_scope": "everything outside the cone; no edits to existing batteries, scripts, skills, rules, or docs; testing remains PROHIBITED; no sealing",
+      "reads": [
+        [
+          "zoo/batteries/FORMAT.md",
+          "58e13e137cc7137c7249e72776f2a27e842bb062e29fbefc34ab616bd0b32371"
+        ],
+        [
+          "skills/example-battery/SKILL.md",
+          "7273d3008a9e3f6fb99f742acd57a5a70164fac6706989d8cf8a0fc1b8132be7"
+        ]
+      ],
+      "reviewer": "orchestrator",
+      "shas": [
+        "93c05de80d0446eaa75aebb38bbea34c689b83a4"
+      ],
+      "state": "DONE",
+      "state_ts": 1787414893.0,
+      "verify": "",
+      "worker": "treadle"
+    },
     "BAT-Prediction": {
       "accept": "python3 scripts/battery_digest.py zoo/batteries/prediction/BATTERY.md --write && python3 scripts/battery_digest.py zoo/batteries/prediction/BATTERY.md --verify",
       "base": "7fb48ceab429b6a9f458ce7b5d7191e320caa10b",
