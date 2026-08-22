@@ -180,6 +180,6 @@ OPEN QUESTION: The denial constrains only finite data -- "the claim must stay un
 | N2 | near-miss | P2 | 833ca27bfc1f659b |
 | P3 | positive | - | c244cfbc074e5cc5 |
 | N3 | near-miss | P3 | 18606c83525f2de7 |
-| N4 | wall | - | 8dc81ad07379a044 |
-| P4 | wall | - | 2d1060fe9511e599 |
+| N4 | near-miss | P1 | 8dc81ad07379a044 |
+| P4 | positive | P2 | 2d1060fe9511e599 |
 | B1 | boundary | - | e9beac85c61a808b |
