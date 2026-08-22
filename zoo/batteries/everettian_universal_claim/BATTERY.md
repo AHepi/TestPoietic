@@ -174,12 +174,12 @@ OPEN QUESTION: The denial constrains only finite data -- "the claim must stay un
 
 | id | kind | partner | digest |
 |---|---|---|---|
-| P1 | positive | - | PLACEHOLDER-P1 |
-| N1 | near-miss | P1 | PLACEHOLDER-N1 |
-| P2 | positive | - | PLACEHOLDER-P2 |
-| N2 | near-miss | P2 | PLACEHOLDER-N2 |
-| P3 | positive | - | PLACEHOLDER-P3 |
-| N3 | near-miss | P3 | PLACEHOLDER-N3 |
-| N4 | wall | - | PLACEHOLDER-N4 |
-| P4 | wall | - | PLACEHOLDER-P4 |
-| B1 | boundary | - | PLACEHOLDER-B1 |
+| P1 | positive | - | 9a1d791ffd865c16 |
+| N1 | near-miss | P1 | 93ece40b7d5a649b |
+| P2 | positive | - | b1306da64d164a11 |
+| N2 | near-miss | P2 | 833ca27bfc1f659b |
+| P3 | positive | - | c244cfbc074e5cc5 |
+| N3 | near-miss | P3 | 18606c83525f2de7 |
+| N4 | wall | - | 8dc81ad07379a044 |
+| P4 | wall | - | 2d1060fe9511e599 |
+| B1 | boundary | - | e9beac85c61a808b |
