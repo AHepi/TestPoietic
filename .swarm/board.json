@@ -14,9 +14,55 @@
       "goal": "Adopt scripts/battery_digest.py --verify as the standard acceptance command for all future battery tasks (proposal for owner approval; do not run) [OWNER ACCEPTED 2026-08-22: battery_digest.py --verify is the standard acceptance command for battery tasks]",
       "notes": [],
       "out_of_scope": "",
+      "reviewer": "",
       "shas": [],
       "state": "DONE",
+      "state_ts": 0.0,
       "worker": ""
+    },
+    "BAT-EverettianUniversalClaim": {
+      "accept": "python3 scripts/battery_digest.py zoo/batteries/everettian_universal_claim/BATTERY.md --write && python3 scripts/battery_digest.py zoo/batteries/everettian_universal_claim/BATTERY.md --verify",
+      "base": "71dbc4d8ecfef29754597b59d66939ab488f9c27",
+      "cone": [
+        "zoo/batteries/everettian_universal_claim/*"
+      ],
+      "depends_on": [],
+      "goal": "Author an example battery for the EverettianUniversalClaim term (inventory section 23, N20 row, D21 family): the denial in the N20 row, a guard-rail term whose pin is a purely negative constraint (FOR_GENE_STRUCTURE register limit: the Everettian explanatory discussion does not turn other universes into observed data or make a finite cohort exhaustive; the claim must stay unavailable from finite data). Positives, near-miss minimal pairs, both corridor walls (too-weak: an accidental positive pin that lets finite data license the claim; too-strong: a pin so strong the term can never be addressed at all), and one OPEN boundary question.\n\nMANDATORY GRAMMAR (from zoo/batteries/FORMAT.md, reproduced here because it sits outside your cone): instance headings are EXACTLY '### <ID> - <title>' where ID matches ^[PNB][0-9]+$ (e.g. '### P1 - finite cohort does not license the claim'). ANY other '### ' heading is a hard FAIL. Use ids P1, P2, P3 (positives), N1, N2, N3 (near-miss minimal pairs), N4 for the TOO-WEAK wall (a near-miss the weak reading wrongly admits), P4 for the TOO-STRONG wall (a positive the strong reading wrongly excludes), B1 (OPEN boundary). The file ENDS with a line '## Registry' followed by a markdown table with EXACTLY these four columns: id | kind | partner | digest. kind is positive/near-miss/wall/boundary; partner is the minimal-pair partner id or '-'; every digest cell is the literal PENDING-DIGEST. Digests are computed ONLY by scripts/battery_digest.py --write; never invent one.",
+      "notes": [
+        {
+          "by": "treadle",
+          "note": "treadle: stale claim recovered at startup (previous driver exited mid-flight)",
+          "result": "REQUEUE"
+        },
+        {
+          "by": "treadle",
+          "note": "treadle: stale claim recovered at startup (previous driver exited mid-flight)",
+          "result": "REQUEUE"
+        },
+        {
+          "by": "treadle",
+          "note": "treadle: blocked after 3 attempts; full evidence: /tmp/tpclone/.treadle/evidence/BAT-EverettianUniversalClaim-20260822T084250Z.log",
+          "result": "REQUEUE"
+        },
+        {
+          "by": "treadle",
+          "note": "treadle: blocked after 3 attempts; full evidence: /tmp/tpclone/.treadle/evidence/BAT-EverettianUniversalClaim-20260822T085607Z.log",
+          "result": "REQUEUE"
+        },
+        {
+          "by": "orchestrator",
+          "note": "Post-run audit (first run under treadle 0.2.0): 9/9 digests verify on the REMOTE bytes (098f58c9...); structure 3P/3N minimal pairs + N4 too-weak wall + P4 too-strong wall + B1 OPEN; fabrication negative test fails as required; grammar compliant with FORMAT.md. Grading REVIEWED_LOCAL_OBJECTS: driver push=auto failed (no git creds in sandbox); content pushed via MCP. Local shas e2e4622 (driver commit) + 177521f (ASCII normalization, digests recomputed); reviewable remote object c3898a3. Disclosure: push 8c4ce10 transiently carried placeholder digests (orchestrator transcription error), self-caught and corrected in c3898a3 before review. Two brief repairs en route via gate edit: accept arg order fixed; FORMAT.md grammar inlined into the brief because the cone excludes FORMAT.md (skill gap noted for owner).",
+          "result": "PASS"
+        }
+      ],
+      "out_of_scope": "everything outside the cone; no edits to existing batteries, scripts, skills, or docs; testing remains PROHIBITED; no sealing",
+      "reviewer": "orchestrator",
+      "shas": [
+        "e2e462288262591eeac65be894d33769e2176fb5"
+      ],
+      "state": "DONE",
+      "state_ts": 1787390211.2304778,
+      "worker": "treadle"
     },
     "BAT-MovedConstructorPort": {
       "accept": "python3 scripts/battery_digest.py zoo/batteries/moved_constructor_port/BATTERY.md --verify",
@@ -73,7 +119,7 @@
           "result": "PASS"
         }
       ],
-      "out_of_scope": "Do not touch any other battery, skill, or record file.",
+      "out_of_scope": "Do not touch any other battery, record, or skill file.",
       "reviewer": "orchestrator",
       "shas": [
         "8c057006da0f84e07549a9bee6116eb4b1d8f810"
