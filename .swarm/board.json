@@ -167,7 +167,7 @@
           "result": "PASS"
         }
       ],
-      "out_of_scope": "Do not touch any other battery, record, or skill file.",
+      "out_of_scope": "Do not touch any other battery, skill, or record file.",
       "reviewer": "orchestrator",
       "shas": [
         "8c057006da0f84e07549a9bee6116eb4b1d8f810"
