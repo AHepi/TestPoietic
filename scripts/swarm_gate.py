@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""swarm_gate.py — coordination gate for LLM agent swarms working a git repo.
+"""swarm_gate.py -- coordination gate for LLM agent swarms working a git repo.
 
 Stdlib only. Drop into scripts/ and commit it; every agent sandbox that can
 run git can run the gate. State lives in .swarm/ (board.json, map.md,
@@ -76,11 +76,23 @@ def board_path(root: Path) -> Path:
     return root / SWARM_DIR / "board.json"
 
 
+TASK_DEFAULTS = {"state": "DRAFT", "goal": "", "cone": [], "base": "",
+                 "accept": "", "out_of_scope": "", "depends_on": [],
+                 "worker": "", "reviewer": "", "shas": [], "notes": [],
+                 "state_ts": 0.0}
+
+
 def load_board(root: Path) -> dict:
     p = board_path(root)
     if not p.exists():
         die(2, f"no {p}; run: swarm_gate.py init")
-    return json.loads(p.read_text(encoding="utf-8"))
+    board = json.loads(p.read_text(encoding="utf-8"))
+    # defect #6: schema defaults for hand-written or older entries --
+    # a missing optional key must never crash a gate command
+    for t in board.get("tasks", {}).values():
+        for k, v in TASK_DEFAULTS.items():
+            t.setdefault(k, list(v) if isinstance(v, list) else v)
+    return board
 
 
 def save_board(root: Path, board: dict) -> None:
@@ -136,7 +148,7 @@ def build_map(root: Path) -> str:
             if len(parts) > depth:
                 dirs["/".join(parts[:depth]) + "/"] = dirs.get("/".join(parts[:depth]) + "/", 0) + 1
     lines = [
-        "# Repo map (generated — do not edit; regenerate with: swarm_gate.py map)",
+        "# Repo map (generated -- do not edit; regenerate with: swarm_gate.py map)",
         f"branch: {git(root, 'rev-parse', '--abbrev-ref', 'HEAD')}",
         f"head: {git(root, 'rev-parse', 'HEAD')}",
         f"tree_sha: {tree_sha(root)}",
@@ -144,7 +156,7 @@ def build_map(root: Path) -> str:
         "",
         "## Directories",
     ]
-    lines += [f"- `{d}` — {n} files" for d, n in sorted(dirs.items())]
+    lines += [f"- `{d}` -- {n} files" for d, n in sorted(dirs.items())]
     lines += ["", "## Key documents (tracked .md, first heading)"]
     count = 0
     for f in sorted(files):
@@ -153,7 +165,7 @@ def build_map(root: Path) -> str:
         try:
             for ln in (root / f).read_text(encoding="utf-8", errors="replace").split("\n")[:5]:
                 if ln.startswith("# "):
-                    lines.append(f"- `{f}` — {ln[2:].strip()[:90]}")
+                    lines.append(f"- `{f}` -- {ln[2:].strip()[:90]}")
                     count += 1
                     break
         except OSError:
@@ -233,6 +245,35 @@ def cmd_add(root: Path, a) -> None:
 
 def _brief_missing(t: dict) -> list[str]:
     return [f for f in BRIEF_FIELDS if not t.get(f)]
+
+
+def cmd_edit(root: Path, a) -> None:
+    """Defect #7: brief repair through the gate, never by hand-editing
+    board.json. Allowed only before work starts (DRAFT/READY/BLOCKED);
+    any edit drops the task to DRAFT so `ready` re-validates."""
+    with Lock(root):
+        board = load_board(root)
+        t = board["tasks"].get(a.id) or refuse("REFUSED_TASK_UNKNOWN", a.id)
+        if t["state"] not in ("DRAFT", "READY", "BLOCKED"):
+            refuse("REFUSED_BAD_TRANSITION",
+                   f"{a.id} is {t['state']}; briefs are frozen once claimed -- requeue first")
+        changed = {}
+        for field in ("goal", "base", "accept"):
+            v = getattr(a, field, None)
+            if v is not None:
+                t[field] = v; changed[field] = v
+        if a.out_of_scope is not None:
+            t["out_of_scope"] = a.out_of_scope; changed["out_of_scope"] = a.out_of_scope
+        if a.cone:
+            t["cone"] = a.cone; changed["cone"] = a.cone
+        if a.depends_on is not None:
+            t["depends_on"] = a.depends_on; changed["depends_on"] = a.depends_on
+        if not changed:
+            refuse("REFUSED_BAD_TRANSITION", "edit called with nothing to change")
+        t["state"], t["state_ts"] = "DRAFT", time.time()
+        save_board(root, board)
+        log_append(root, "edit", a.id, a.actor, changed)
+    print(f"{a.id} edited -> DRAFT (re-run: ready {a.id})")
 
 
 def cmd_ready(root: Path, a) -> None:
@@ -345,7 +386,7 @@ def cmd_review(root: Path, a) -> None:
                f"{a.id} is {t['state']}. Review only recorded commits; the working "
                "tree and un-pushed local work are not reviewable objects. "
                "Ask the worker to commit+push and run done.")
-    if _remote_required(root, board):
+    if _remote_required(root, board) and not getattr(a, "local_ok", False):
         git(root, "fetch", "-q", "--all", check=False)
         for sha in t["shas"]:
             if not git(root, "branch", "-r", "--contains", sha, check=False):
@@ -462,10 +503,16 @@ def main(argv=None) -> None:
     s.add_argument("id"); s.add_argument("--goal"); s.add_argument("--cone", nargs="+")
     s.add_argument("--base"); s.add_argument("--accept"); s.add_argument("--out-of-scope")
     s.add_argument("--depends-on", nargs="*")
+    s = sub.add_parser("edit")
+    s.add_argument("id"); s.add_argument("--goal"); s.add_argument("--cone", nargs="+")
+    s.add_argument("--base"); s.add_argument("--accept"); s.add_argument("--out-of-scope")
+    s.add_argument("--depends-on", nargs="*")
     s = sub.add_parser("ready"); s.add_argument("id")
     s = sub.add_parser("claim"); s.add_argument("id"); s.add_argument("--worker", required=True)
     s = sub.add_parser("done"); s.add_argument("id"); s.add_argument("--sha", nargs="+")
     s = sub.add_parser("review"); s.add_argument("id"); s.add_argument("--reviewer", required=True)
+    s.add_argument("--local-ok", action="store_true",
+                   help="review local objects even when a remote exists (graded, not silent)")
     s = sub.add_parser("verdict"); s.add_argument("id")
     s.add_argument("--result", choices=["PASS", "FAIL"], required=True); s.add_argument("--note")
     s = sub.add_parser("requeue"); s.add_argument("id")
@@ -480,7 +527,7 @@ def main(argv=None) -> None:
                       capture_output=True).returncode != 0:
         die(2, f"{root} is not a git repository")
     {"init": cmd_init, "map": cmd_map, "add": cmd_add, "ready": cmd_ready,
-     "claim": cmd_claim, "done": cmd_done, "review": cmd_review,
+     "claim": cmd_claim, "done": cmd_done, "review": cmd_review, "edit": cmd_edit,
      "verdict": cmd_verdict, "requeue": cmd_requeue, "board": cmd_board,
      "verify": cmd_verify, "log-verify": cmd_log_verify}[a.cmd](root, a)
 
