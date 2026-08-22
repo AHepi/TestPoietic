@@ -27,28 +27,19 @@ Before any clause about a term's meaning is written, build its battery.
 5. If you cannot construct three positives, the term is not understood
    well enough to pin: record what blocks each attempted instance and
    stop. That record is the deliverable.
-6. Battery instances carry ids and content digests; they are proto-members
-   of the model zoo and feed the denotation tests. You NEVER compute a
-   digest yourself: write PENDING-DIGEST in the registry's digest column.
-   Digests are computed and verified by scripts/battery_digest.py
-   (sha256 over the instance's fenced structure blocks), which the task's
-   acceptance command runs in --verify mode; a self-invented hash is a
-   fabrication and fails acceptance. Never delete a battery
-   instance a pin fails on; a failed instance is evidence, not clutter.
-7. STRICT FILE GRAMMAR (the acceptance script parses this mechanically):
-   - Write ONLY ASCII characters: no em-dashes, arrows, or math symbols;
-     use "-", "->", "!=".
-   - Every instance heading is exactly "### <ID> - <title>" where ID
-     matches [A-Za-z0-9_-]+ (for example "### P1 - Simple move"). Use no
-     other "###" headings: do not write "### Pair 1", and put no
-     parenthetical between the ID and the dash.
-   - Each instance contains at least one fenced code block (three
-     backticks) holding the explicit structure; the content digest is
-     computed over exactly those blocks.
-   - End with one section whose heading contains the word "Registry"
-     (for example "## Instance registry") holding a two-column table:
-     | id | digest |
-     |----|--------|
-     | P1 | PENDING-DIGEST |
-     with one row per instance and ids exactly matching the headings.
+6. Battery instances carry ids. Digests are produced ONLY by the repo's
+   digest tool (scripts/battery_digest.py --write) over the canonical
+   instance bytes; NEVER compute, estimate, or invent a digest yourself.
+   Write the literal placeholder PENDING-DIGEST in every digest cell and
+   let the acceptance command run the tool. A hand-written hash is a
+   fabrication even if it happens to be correct.
+7. The battery file is parsed by machines: its exact grammar (heading
+   form, id pattern, registry table columns) is defined in
+   zoo/batteries/FORMAT.md in the target repository. Conform to it
+   byte-exactly. If FORMAT.md is absent, STOP and report BLOCKED
+   requesting it -- never invent structure; semantically fine but
+   mechanically unparseable output is a failure.
+8. Instances are proto-members of the model zoo and feed the denotation
+   tests. Never delete a battery instance a pin fails on; a failed
+   instance is evidence, not clutter.
 <!-- PROMPT-CORE-END -->
