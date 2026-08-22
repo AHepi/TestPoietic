@@ -11,35 +11,35 @@ recover_stale = true     # requeue this driver's orphaned CLAIMED tasks at start
 max_tokens_cap = 32000   # ceiling for empty-reply auto-raise
 
 [stage.pinning]                 # Reed W1: term pins fitted to batteries
-model = "qwen8.3:cloud"                  # owner arm-eval 2026-08-22: small 8.3 > full 8.7/8.6. TAG UNVERIFIED -- doctor checks it; fall back to glm-5.2:cloud if absent
-escalate_model = "deepseek-v4-pro:0813-cloud"  # dated tag PINNED: plain :cloud silently moved to the 0813 checkpoint
+model = "glm-5.2"                        # per FIXES.md fallback, pending owner's exact qwen tag
+escalate_model = "deepseek-v4-pro:0813"  # dated pin retained, proxy suffix dropped
 skill = "skills/term-pinning/SKILL.md"
 candidates = 2
 max_refinements = 2
 max_tokens = 16000                        # reasoning models spend the budget on the trace first (defect #1)
 
 [stage.battery]                 # Reed 1: example batteries
-model = "qwen8.3:cloud"                  # see pinning-stage note
-escalate_model = "deepseek-v4-pro:0813-cloud"
+model = "glm-5.2"                        # per FIXES.md fallback, pending owner's exact qwen tag
+escalate_model = "deepseek-v4-pro:0813"  # dated pin retained, proxy suffix dropped
 skill = "skills/example-battery/SKILL.md"
 candidates = 3
 max_refinements = 1
 max_tokens = 16000
 
 [stage.refutation]              # Warp W3: countermodel attack
-model = "deepseek-v4-pro:0813-cloud"
+model = "deepseek-v4-pro:0813"   # dated pin retained, proxy suffix dropped
 skill = "skills/refutation-first/SKILL.md"
 max_refinements = 1
 max_tokens = 20000
 
 [stage.review]                  # adversarial review of committed work
 kind = "review"
-model = "deepseek-v4-pro:0813-cloud"
+model = "deepseek-v4-pro:0813"   # dated pin retained, proxy suffix dropped
 skill = "skills/minimal-pair-review/SKILL.md"
 max_tokens = 8000
 
 [stage.smoke]                   # cheap floor / control arm
-model = "gpt-oss:120b-cloud"
+model = "gpt-oss:120b"
 skill = "skills/discharge-typing/SKILL.md"
 max_refinements = 0
 
